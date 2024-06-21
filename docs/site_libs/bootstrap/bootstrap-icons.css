@@ -2,7 +2,7 @@
   font-display: block;
   font-family: "bootstrap-icons";
   src: 
-url("../../site_libs-MAC-C75T46D2VY/bootstrap/bootstrap-icons.woff?2ab2cbbe07fcebb53bdaa7313bb290f2") format("woff");
+url("./bootstrap-icons.woff?2ab2cbbe07fcebb53bdaa7313bb290f2") format("woff");
 }
 
 .bi::before,
