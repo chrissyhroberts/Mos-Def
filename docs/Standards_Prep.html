@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.556">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Supplementary Material : A multiplex bead-based immunoassay and data analysis pipeline for 12 markers of fever severity in dried blood spots - 10&nbsp; Standard curves</title>
+<title>Design, Optimisation, Validation, and Analysis Framework for Multiplex Bead‑Based Biomarker Assays - 13&nbsp; Standard curves</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,40 +19,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -81,7 +47,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -90,14 +62,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
 }</script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -107,12 +78,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Standards_Prep.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Standard curves</span></a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Standards_Prep.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Standard curves</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
@@ -122,10 +93,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Supplementary Material : A multiplex bead-based immunoassay and data analysis pipeline for 12 markers of fever severity in dried blood spots</a> 
+      <a href="./">Design, Optimisation, Validation, and Analysis Framework for Multiplex Bead‑Based Biomarker Assays</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -138,103 +109,115 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">A multiplex bead-based immunoassay and data analysis pipeline for 12 markers of fever severity in dried blood spots</span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Overview</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./fever.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">About this exemplar assay</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./bloodspots.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Dried Blood Spots</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Marker_List.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">List of Markers</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">List of Markers</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Buffers_and_Reagents.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Buffers &amp; Reagents</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Buffers &amp; Reagents</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Capture_Antibody_Prep.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Capture Antibody Preparation</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Capture Antibody Preparation</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Bead_Coupling.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Bead Coupling</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Bead Coupling</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Coupling_Confirmation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Coupling Confirmation</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Coupling Confirmation</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Detection_Antibody_Prep.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Detection Antibody Prep</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Detection Antibody Prep</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./antigens.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Antigens</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Antigens</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./antibody_pairs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Antibody pair screening</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Antibody pair screening</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Cross_Reactivity.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Cross-reactivity Testing</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Cross-reactivity Testing</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Standards_Prep.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Standard curves</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Standard curves</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Magpix_Protocol.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">MagPix Protocol</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">MagPix Protocol</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Coefficients_of_Variation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Coefficients of Variation</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Coefficients of Variation</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Specimen_Testing.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Specimen Testing</span></span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Specimen Testing</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Analysis_01.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Data Analysis - A Tutorial based on the Mos-Def study</span></span></a>
+  <a href="./Analysis_02.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Data Analysis</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./appendix.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Funding &amp; Declarations</span></span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Funding &amp; Declarations</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./CRediT.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">CRediT Framework</span></span></a>
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">CRediT Framework</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -246,19 +229,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview"><span class="header-section-number">10.1</span> Overview</a></li>
-  <li><a href="#protocol" id="toc-protocol" class="nav-link" data-scroll-target="#protocol"><span class="header-section-number">10.2</span> <strong>Protocol</strong></a>
-  <ul class="collapse">
-  <li><a href="#calculations" id="toc-calculations" class="nav-link" data-scroll-target="#calculations"><span class="header-section-number">10.2.1</span> Calculations</a></li>
-  </ul></li>
-  <li><a href="#recommendations" id="toc-recommendations" class="nav-link" data-scroll-target="#recommendations"><span class="header-section-number">10.3</span> Recommendations</a></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview"><span class="header-section-number">13.1</span> Overview</a></li>
+  <li><a href="#recommendations" id="toc-recommendations" class="nav-link" data-scroll-target="#recommendations"><span class="header-section-number">13.2</span> Recommendations</a></li>
+  <li><a href="#protocol" id="toc-protocol" class="nav-link" data-scroll-target="#protocol"><span class="header-section-number">13.3</span> <strong>Protocol</strong></a></li>
   </ul>
 </nav>
     </div>
@@ -267,7 +247,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Standard curves</span></h1>
+<h1 class="title"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Standard curves</span></h1>
 </div>
 
 
@@ -280,176 +260,172 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
   
 
+
 </header>
 
-<section id="overview" class="level2" data-number="10.1">
-<h2 data-number="10.1" class="anchored" data-anchor-id="overview"><span class="header-section-number">10.1</span> Overview</h2>
-<p>This protocol will support you to create a set of standard curves against which experimental fluorescence measurements from clinical specimens will be calibrated, normalised, and converted in to analyte concentration estimates. The standards are made as a multiplexed pool of the recombinant <a href="./antigens.html">antigens</a> for the various bead-conjugated sandwich assays (see <a href="./Bead_Coupling.html">bead coupling</a> and <a href="./antibody_pairs.html">antibody pairs</a>) in the test. This pool is diluted several times, and the dilution series (along with an antigen free ‘buffer blank’ are included on every plate that is run on the MagPix device. This allows the user to normalise fluorescence signal variation between plates, and to establish a dose-response curve for each antigen on each plate. The dose-response curve is later used to convert the fluorescence signals from the multiplexed testing of clinical specimens in to estimates of the concentration of each analyte (see <a href="./Analysis_01.html">Analysis</a>).</p>
+
+<section id="overview" class="level2" data-number="13.1">
+<h2 data-number="13.1" class="anchored" data-anchor-id="overview"><span class="header-section-number">13.1</span> Overview</h2>
+<p>This protocol will support you to create a set of standard curves against which experimental fluorescence measurements from clinical specimens will be calibrated, normalised, and converted in to analyte concentration estimates.</p>
+<p>The standards are made as a multiplexed pool of the recombinant <a href="./antigens.html">antigens</a> for the various bead-conjugated sandwich assays (see <a href="./Bead_Coupling.html">bead coupling</a> and <a href="./antibody_pairs.html">antibody pairs</a>) in the test. This pool is diluted seven times, and the dilution series, along with an antigen free ‘buffer blank’, are included on every plate that is run on the MagPix device. This allows the user to normalise fluorescence signal variation between plates, and to establish a dose-response curve for each antigen on each plate. The dose-response curve is later used to convert the fluorescence signals from the multiplexed testing of clinical specimens in to estimates of the concentration of each analyte (see <a href="Analysis_01.qmd">Analysis</a>).</p>
 </section>
-<section id="protocol" class="level2" data-number="10.2">
-<h2 data-number="10.2" class="anchored" data-anchor-id="protocol"><span class="header-section-number">10.2</span> <strong>Protocol</strong></h2>
+<section id="recommendations" class="level2" data-number="13.2">
+<h2 data-number="13.2" class="anchored" data-anchor-id="recommendations"><span class="header-section-number">13.2</span> Recommendations</h2>
 <ul>
-<li><p>Prepare PBS-TBN as per the Buffers and Reagents protocol.</p></li>
+<li><p>Label all vials with with expiry date (as per data sheet, but rule of thumb 3 months)</p></li>
+<li><p>Handle all protein on ice or in chilled racks.</p></li>
+<li><p>Aliquot standards into single-use volumes and store at -70°C.</p></li>
+<li><p>Aliquot of protein stocks should be thawed on ice and marked for each freeze-thaw cycle, but ideally this should be minimised or avoided.</p></li>
+<li><p>Make substantial volumes of standards for homogeneity. Ideally you should synthesise enough standards for all of your test plates using a single batch of standards. If you have 100 plates to run, you will need 100&nbsp;*&nbsp;70&nbsp;µL = 7 mL per standard. You should make at least 20% extra to account for liquid handling errors and the need to occasionally repeat runs.</p></li>
+<li><p>Standards degrade with time and are best used within 2-3 months. You should aim to process all of your plates in the shortest time-frame possible.</p></li>
+<li><p>Test new standards side-by-side with older formulations, to assess conformity and uniformity</p></li>
+</ul>
+</section>
+<section id="protocol" class="level2" data-number="13.3">
+<h2 data-number="13.3" class="anchored" data-anchor-id="protocol"><span class="header-section-number">13.3</span> <strong>Protocol</strong></h2>
+<ul>
 <li><p>Prepare antigen stocks as per the Antigens protocol.</p></li>
-<li><p>You will aim to create a multiplexed top-standard by mixing volumes of the <a href="./antigens.html">recombinant antigen</a> stocks together and then making up the residual volume with PBS-TBN buffer. A worked example is provided below.</p></li>
-<li><p>LINK TO EXCEL CALCULATOR AS WELL/INSTEAD OF THE CALCS BELOW.</p></li>
+<li><p>Prepare PBS-TBN as per the Buffers and Reagents protocol.</p></li>
+<li><p>You will aim to create a multiplexed top-standard by mixing volumes of the <a href="./antigens.html">recombinant antigen</a> stocks together in PBS-TBN and then serially diluting, to make a series of 7, 4-fold, multiplex dilutions. A blank (Standard 8) consists only of PBS-TBN buffer.</p></li>
+<li><p>These are then aliquotted as 7 separate standards into volumes for running different numbers of plates so that each aliquot is single-use.</p></li>
+<li><p>See <a href="./Standard_dilutions_calculator.xlsx">Standard_dilutions_calculator</a> Excel document for the step-by-step printable protocol</p></li>
 </ul>
-<section id="calculations" class="level3" data-number="10.2.1">
-<h3 data-number="10.2.1" class="anchored" data-anchor-id="calculations"><span class="header-section-number">10.2.1</span> Calculations</h3>
-<ul>
-<li><p><code>target_volume_ml</code> is the total volume (mL) of standards to be created</p></li>
-<li><p><code>Stock_g_ml</code> is a list of the concentrations (g/mL) of the stock antigens</p></li>
-<li><p><code>Target_g_ml</code> is a list of the desired concentrations (g/mL) of the antigens in the multiplexed top-standard</p></li>
-<li><p><code>dilution_factor</code> is a list of the factors required to dilute each antigen to the <code>Target_g_ml</code> activity. It is calculated as <span class="math display">\[dilution\_factor = \frac{Stock\_g\_ml}{Target\_g\_ml}\]</span></p></li>
-<li><p><code>volume_stock_ml</code> is a list of the volumes of each stock antigen solution which will contribute to the <code>target_volume_ml</code>. It is calculated as <span class="math display">\[volume\_stock\_ml = \frac{target\_volume\_ml}{dilution\_factor}\]</span></p></li>
-</ul>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="do">### Composition of top standard from docx</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>formulation_standards <span class="ot">=</span> </span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tibble</span>(</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">Assay =</span> <span class="fu">c</span>(<span class="st">"IL-8"</span>,<span class="st">"IL-10"</span>,<span class="st">"sTREM1"</span>,<span class="st">"Ang-2"</span>,<span class="st">"Ang-1"</span>,<span class="st">"sTNFR1"</span>,<span class="st">"IL-6"</span>,<span class="st">"TRAIL"</span>,<span class="st">"AZU"</span>,<span class="st">"MXA"</span>,<span class="st">"IP10"</span>,<span class="st">"CHI3L1"</span>),</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">Stock_g_ml =</span> <span class="fu">c</span>(<span class="fl">100e-6</span>,<span class="fl">100e-6</span>,<span class="fl">100e-6</span>,<span class="fl">100e-6</span>,<span class="fl">100e-6</span>,<span class="fl">25e-6</span>,<span class="fl">100e-6</span>,<span class="fl">100e-6</span>,<span class="fl">200e-6</span>,<span class="fl">220e-6</span>,<span class="fl">100e-6</span>,<span class="fl">200e-6</span>),</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">Target_g_ml =</span> <span class="fu">c</span>(<span class="fl">2.5e-9</span>,<span class="fl">4e-9</span>,<span class="fl">10e-9</span>,<span class="fl">100e-9</span>,<span class="fl">50e-9</span>,<span class="fl">2.5e-9</span>,<span class="fl">10e-9</span>,<span class="fl">10e-9</span>,<span class="fl">200e-9</span>,<span class="fl">300e-9</span>,<span class="fl">10e-9</span>,<span class="fl">100e-9</span>),</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">dilution_factor =</span> Stock_g_ml<span class="sc">/</span>Target_g_ml,</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  <span class="at">target_volume_ml =</span> <span class="dv">1</span>,</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>  <span class="at">volume_stock_ml =</span> <span class="fu">format</span>(target_volume_ml<span class="sc">/</span>dilution_factor,<span class="at">scientific=</span>T,<span class="at">digits=</span><span class="dv">3</span>)</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>        ) <span class="sc">%&gt;%</span> </span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">dilution_factor =</span> <span class="fu">format</span>(dilution_factor,<span class="at">scientific=</span>F,<span class="at">digits=</span><span class="dv">1</span>))</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(<span class="fu">select</span>(formulation_standards,<span class="sc">-</span>target_volume_ml),<span class="at">digits=</span><span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<table class="table table-sm table-striped small">
-<thead>
-<tr class="header">
-<th style="text-align: left;">Assay</th>
-<th style="text-align: right;">Stock_g_ml</th>
-<th style="text-align: right;">Target_g_ml</th>
-<th style="text-align: left;">dilution_factor</th>
-<th style="text-align: left;">volume_stock_ml</th>
-</tr>
-</thead>
+<p>The final concentrations of the recombinant protein in the standards are shown in Table 1.</p>
+<p>Table 1. Concentration of recombinant protein analytes in the 7 standards (ng/ml).</p>
+<table class="caption-top table">
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">IL-8</td>
-<td style="text-align: right;">1.0e-04</td>
-<td style="text-align: right;">2.5e-09</td>
-<td style="text-align: left;">40000</td>
-<td style="text-align: left;">2.50e-05</td>
+<td>Analyte</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">IL-10</td>
-<td style="text-align: right;">1.0e-04</td>
-<td style="text-align: right;">4.0e-09</td>
-<td style="text-align: left;">25000</td>
-<td style="text-align: left;">4.00e-05</td>
+<td>Ang-1</td>
+<td>50.0</td>
+<td>12.50</td>
+<td>3.13</td>
+<td>0.781</td>
+<td>0.195</td>
+<td>0.0488</td>
+<td>0.0122</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">sTREM1</td>
-<td style="text-align: right;">1.0e-04</td>
-<td style="text-align: right;">1.0e-08</td>
-<td style="text-align: left;">10000</td>
-<td style="text-align: left;">1.00e-04</td>
+<td>Ang-2</td>
+<td>100.0</td>
+<td>25.00</td>
+<td>6.25</td>
+<td>1.563</td>
+<td>0.391</td>
+<td>0.0977</td>
+<td>0.0244</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Ang-2</td>
-<td style="text-align: right;">1.0e-04</td>
-<td style="text-align: right;">1.0e-07</td>
-<td style="text-align: left;">1000</td>
-<td style="text-align: left;">1.00e-03</td>
+<td>Azu</td>
+<td>200.0</td>
+<td>50.00</td>
+<td>12.50</td>
+<td>3.125</td>
+<td>0.781</td>
+<td>0.1953</td>
+<td>0.0488</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Ang-1</td>
-<td style="text-align: right;">1.0e-04</td>
-<td style="text-align: right;">5.0e-08</td>
-<td style="text-align: left;">2000</td>
-<td style="text-align: left;">5.00e-04</td>
+<td>CHI3L1</td>
+<td>100.0</td>
+<td>25.00</td>
+<td>6.25</td>
+<td>1.563</td>
+<td>0.391</td>
+<td>0.0977</td>
+<td>0.0244</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">sTNFR1</td>
-<td style="text-align: right;">2.5e-05</td>
-<td style="text-align: right;">2.5e-09</td>
-<td style="text-align: left;">10000</td>
-<td style="text-align: left;">1.00e-04</td>
+<td>IL-6</td>
+<td>10.0</td>
+<td>2.50</td>
+<td>0.63</td>
+<td>0.156</td>
+<td>0.039</td>
+<td>0.0098</td>
+<td>0.0024</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">IL-6</td>
-<td style="text-align: right;">1.0e-04</td>
-<td style="text-align: right;">1.0e-08</td>
-<td style="text-align: left;">10000</td>
-<td style="text-align: left;">1.00e-04</td>
+<td>IL-8</td>
+<td>2.5</td>
+<td>0.63</td>
+<td>0.16</td>
+<td>0.039</td>
+<td>0.010</td>
+<td>0.0024</td>
+<td>0.0006</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">TRAIL</td>
-<td style="text-align: right;">1.0e-04</td>
-<td style="text-align: right;">1.0e-08</td>
-<td style="text-align: left;">10000</td>
-<td style="text-align: left;">1.00e-04</td>
+<td>IL-10</td>
+<td>4.0</td>
+<td>1.00</td>
+<td>0.25</td>
+<td>0.063</td>
+<td>0.016</td>
+<td>0.0039</td>
+<td>0.0010</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">AZU</td>
-<td style="text-align: right;">2.0e-04</td>
-<td style="text-align: right;">2.0e-07</td>
-<td style="text-align: left;">1000</td>
-<td style="text-align: left;">1.00e-03</td>
+<td>IP-10</td>
+<td>10.0</td>
+<td>2.50</td>
+<td>0.63</td>
+<td>0.156</td>
+<td>0.039</td>
+<td>0.0098</td>
+<td>0.0024</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">MXA</td>
-<td style="text-align: right;">2.2e-04</td>
-<td style="text-align: right;">3.0e-07</td>
-<td style="text-align: left;">733</td>
-<td style="text-align: left;">1.36e-03</td>
+<td>MxA</td>
+<td>300.0</td>
+<td>75.00</td>
+<td>18.75</td>
+<td>4.688</td>
+<td>1.172</td>
+<td>0.2930</td>
+<td>0.0732</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">IP10</td>
-<td style="text-align: right;">1.0e-04</td>
-<td style="text-align: right;">1.0e-08</td>
-<td style="text-align: left;">10000</td>
-<td style="text-align: left;">1.00e-04</td>
+<td>sTREM1</td>
+<td>10.0</td>
+<td>2.50</td>
+<td>0.63</td>
+<td>0.156</td>
+<td>0.039</td>
+<td>0.0098</td>
+<td>0.0024</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">CHI3L1</td>
-<td style="text-align: right;">2.0e-04</td>
-<td style="text-align: right;">1.0e-07</td>
-<td style="text-align: left;">2000</td>
-<td style="text-align: left;">5.00e-04</td>
+<td>TNFR1</td>
+<td>2.5</td>
+<td>0.63</td>
+<td>0.16</td>
+<td>0.039</td>
+<td>0.010</td>
+<td>0.0024</td>
+<td>0.0006</td>
+</tr>
+<tr class="odd">
+<td>TRAIL</td>
+<td>10.0</td>
+<td>2.50</td>
+<td>0.63</td>
+<td>0.156</td>
+<td>0.039</td>
+<td>0.0098</td>
+<td>0.0024</td>
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-<p>After mixing the appropriate volumes (<code>volume_stock_ml</code>) of antigen stocks together in a single tube, the remaining volume of the <code>target_volume_ml</code> is made up with PBS-TBN buffer (see <a href="./Buffers_and_Reagents.html">buffers &amp; reagents</a>).</p>
-<p>The required volume (mL) of PBS-TBN `volume_is calculated as <span class="math display">\[volume\_PBS\_TBN = target\_volume\_ml - (\sum_{i=1}^{n} volume\_stock\_ml_i)\]</span></p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>volume_PBS_TBN <span class="ot">=</span> formulation_standards<span class="sc">$</span>target_volume_ml[<span class="dv">1</span>]<span class="sc">-</span><span class="fu">sum</span>(<span class="fu">as.numeric</span>(formulation_standards<span class="sc">$</span>volume_stock_ml),<span class="at">na.rm=</span>T)</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">message</span>(<span class="fu">str_c</span>(<span class="fu">format</span>(volume_PBS_TBN,<span class="at">scientific =</span> T), <span class="st">" mL"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>9.95075e-01 mL</code></pre>
-</div>
-</div>
-<p>The final step is to carry out a serial dilution of the top-standard, using 1:4 v/v dilutions in PBS-TBN buffer. We used six serial dilutions (creating seven standards including the top-standard) and an 8th “buffer blank” which contained only PBS-TBN buffer (no antigen). During analysis the buffer blank specimen was used to calculate background fluorescence.</p>
-</section>
-</section>
-<section id="recommendations" class="level2" data-number="10.3">
-<h2 data-number="10.3" class="anchored" data-anchor-id="recommendations"><span class="header-section-number">10.3</span> Recommendations</h2>
-<ul>
-<li><p>Label all vials with with expiry date (as per data sheet, but rule of thumb 3 months)</p></li>
-<li><p>Test new standards side-by-side with older formulations, to assess conformity and uniformity</p></li>
-<li><p>Aliquot standard curves into single-plate volumes (70 µL) and store at -70° C</p></li>
-<li><p>Aliquots should be thawed on ice and only used once, rather than re-freezing.</p></li>
-<li><p>Make substantial volumes for homogeneity. Ideally you should synthesise enough standards for all of your test plates using a single batch of standards. If you have 100 plates to run, you will need 100&nbsp;*&nbsp;70&nbsp;µL = 7 mL per standard. You should make at least 20% extra to account for liquid handling errors and the need to occasionally repeat runs.</p></li>
-<li><p>Standards degrade with time and are best used within 2-3 months. You should aim to process all of your plates in the shortest time-frame possible.</p></li>
-</ul>
 
 
 </section>
@@ -534,10 +510,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -547,8 +540,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -560,7 +562,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -604,6 +729,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -629,6 +755,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -690,17 +842,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./Cross_Reactivity.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Cross-reactivity Testing</span></span>
+      <a href="./Cross_Reactivity.html" class="pagination-link" aria-label="Cross-reactivity Testing">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Cross-reactivity Testing</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./Magpix_Protocol.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">MagPix Protocol</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./Magpix_Protocol.html" class="pagination-link" aria-label="MagPix Protocol">
+        <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">MagPix Protocol</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
+
 
 
 

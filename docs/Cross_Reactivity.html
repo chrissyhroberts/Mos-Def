@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.556">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Supplementary Material : A multiplex bead-based immunoassay and data analysis pipeline for 12 markers of fever severity in dried blood spots - 9&nbsp; Cross-reactivity Testing</title>
+<title>Design, Optimisation, Validation, and Analysis Framework for Multiplex Bead‑Based Biomarker Assays - 12&nbsp; Cross-reactivity Testing</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,7 +22,7 @@ ul.task-list li input[type="checkbox"] {
 }
 /* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span { line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -81,7 +81,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -90,6 +96,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -105,12 +112,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Cross_Reactivity.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Cross-reactivity Testing</span></a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Cross_Reactivity.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Cross-reactivity Testing</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
@@ -120,10 +127,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Supplementary Material : A multiplex bead-based immunoassay and data analysis pipeline for 12 markers of fever severity in dried blood spots</a> 
+      <a href="./">Design, Optimisation, Validation, and Analysis Framework for Multiplex Bead‑Based Biomarker Assays</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -136,103 +143,115 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">A multiplex bead-based immunoassay and data analysis pipeline for 12 markers of fever severity in dried blood spots</span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Overview</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./fever.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">About this exemplar assay</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./bloodspots.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Dried Blood Spots</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Marker_List.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">List of Markers</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">List of Markers</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Buffers_and_Reagents.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Buffers &amp; Reagents</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Buffers &amp; Reagents</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Capture_Antibody_Prep.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Capture Antibody Preparation</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Capture Antibody Preparation</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Bead_Coupling.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Bead Coupling</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Bead Coupling</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Coupling_Confirmation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Coupling Confirmation</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Coupling Confirmation</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Detection_Antibody_Prep.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Detection Antibody Prep</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Detection Antibody Prep</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./antigens.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Antigens</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Antigens</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./antibody_pairs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Antibody pair screening</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Antibody pair screening</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Cross_Reactivity.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Cross-reactivity Testing</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Cross-reactivity Testing</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Standards_Prep.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Standard curves</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Standard curves</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Magpix_Protocol.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">MagPix Protocol</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">MagPix Protocol</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Coefficients_of_Variation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Coefficients of Variation</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Coefficients of Variation</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Specimen_Testing.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Specimen Testing</span></span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Specimen Testing</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Analysis_01.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Data Analysis - A Tutorial based on the Mos-Def study</span></span></a>
+  <a href="./Analysis_02.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Data Analysis</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./appendix.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Funding &amp; Declarations</span></span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Funding &amp; Declarations</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./CRediT.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">CRediT Framework</span></span></a>
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">CRediT Framework</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -244,25 +263,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#intro" id="toc-intro" class="nav-link active" data-scroll-target="#intro"><span class="header-section-number">9.1</span> Intro</a></li>
-  <li><a href="#protocol" id="toc-protocol" class="nav-link" data-scroll-target="#protocol"><span class="header-section-number">9.2</span> Protocol</a>
+  <li><a href="#intro" id="toc-intro" class="nav-link active" data-scroll-target="#intro"><span class="header-section-number">12.1</span> Intro</a></li>
+  <li><a href="#protocol" id="toc-protocol" class="nav-link" data-scroll-target="#protocol"><span class="header-section-number">12.2</span> Protocol</a>
   <ul class="collapse">
-  <li><a href="#preparation-needed-prior-to-running-the-cross-reactivity-protocol" id="toc-preparation-needed-prior-to-running-the-cross-reactivity-protocol" class="nav-link" data-scroll-target="#preparation-needed-prior-to-running-the-cross-reactivity-protocol"><span class="header-section-number">9.2.1</span> <strong>Preparation needed prior to running the Cross-Reactivity protocol</strong></a></li>
-  <li><a href="#prepare-analytes" id="toc-prepare-analytes" class="nav-link" data-scroll-target="#prepare-analytes"><span class="header-section-number">9.2.2</span> Prepare analytes</a></li>
+  <li><a href="#preparation-needed-prior-to-running-the-cross-reactivity-protocol" id="toc-preparation-needed-prior-to-running-the-cross-reactivity-protocol" class="nav-link" data-scroll-target="#preparation-needed-prior-to-running-the-cross-reactivity-protocol"><span class="header-section-number">12.2.1</span> <strong>Preparation needed prior to running the Cross-Reactivity protocol</strong></a></li>
+  <li><a href="#prepare-analytes" id="toc-prepare-analytes" class="nav-link" data-scroll-target="#prepare-analytes"><span class="header-section-number">12.2.2</span> Prepare analytes</a></li>
   </ul></li>
-  <li><a href="#results-analysis" id="toc-results-analysis" class="nav-link" data-scroll-target="#results-analysis"><span class="header-section-number">9.3</span> Results &amp; Analysis</a>
+  <li><a href="#results-analysis" id="toc-results-analysis" class="nav-link" data-scroll-target="#results-analysis"><span class="header-section-number">12.3</span> Results &amp; Analysis</a>
   <ul class="collapse">
-  <li><a href="#load-libraries" id="toc-load-libraries" class="nav-link" data-scroll-target="#load-libraries"><span class="header-section-number">9.3.1</span> Load libraries</a></li>
-  <li><a href="#read-in-the-data-from-the-crossreactivity-experiments." id="toc-read-in-the-data-from-the-crossreactivity-experiments." class="nav-link" data-scroll-target="#read-in-the-data-from-the-crossreactivity-experiments."><span class="header-section-number">9.3.2</span> Read in the data from the crossreactivity experiments.</a></li>
-  <li><a href="#create-counterfactuals-and-bind-to-data" id="toc-create-counterfactuals-and-bind-to-data" class="nav-link" data-scroll-target="#create-counterfactuals-and-bind-to-data"><span class="header-section-number">9.3.3</span> Create counterfactuals and bind to data</a></li>
-  <li><a href="#show-results-for-individual-analytes-against-all-assays" id="toc-show-results-for-individual-analytes-against-all-assays" class="nav-link" data-scroll-target="#show-results-for-individual-analytes-against-all-assays"><span class="header-section-number">9.3.4</span> Show results for individual analytes against all assays</a></li>
+  <li><a href="#load-libraries" id="toc-load-libraries" class="nav-link" data-scroll-target="#load-libraries"><span class="header-section-number">12.3.1</span> Load libraries</a></li>
+  <li><a href="#read-in-the-data-from-the-cross-reactivity-experiments." id="toc-read-in-the-data-from-the-cross-reactivity-experiments." class="nav-link" data-scroll-target="#read-in-the-data-from-the-cross-reactivity-experiments."><span class="header-section-number">12.3.2</span> Read in the data from the cross-reactivity experiments.</a></li>
+  <li><a href="#create-counterfactuals-and-bind-to-data" id="toc-create-counterfactuals-and-bind-to-data" class="nav-link" data-scroll-target="#create-counterfactuals-and-bind-to-data"><span class="header-section-number">12.3.3</span> Create counterfactuals and bind to data</a></li>
+  <li><a href="#show-results-for-individual-analytes-against-all-assays" id="toc-show-results-for-individual-analytes-against-all-assays" class="nav-link" data-scroll-target="#show-results-for-individual-analytes-against-all-assays"><span class="header-section-number">12.3.4</span> Show results for individual analytes against all assays</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -272,7 +291,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Cross-reactivity Testing</span></h1>
+<h1 class="title"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Cross-reactivity Testing</span></h1>
 </div>
 
 
@@ -285,58 +304,70 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
   
 
+
 </header>
 
-<section id="intro" class="level2" data-number="9.1">
-<h2 data-number="9.1" class="anchored" data-anchor-id="intro"><span class="header-section-number">9.1</span> Intro</h2>
+
+<section id="intro" class="level2" data-number="12.1">
+<h2 data-number="12.1" class="anchored" data-anchor-id="intro"><span class="header-section-number">12.1</span> Intro</h2>
 <p>Cross-reactivity would occur if an analyte triggered a measurable response in an assay other than that which was intended, for instance if an assay based on detection antibodies intended to be specific for MxA were reactive to purified sTNFR1 antigen. Cross-reactive antibody pairs cannot be trusted to provide specific and accurate estimates of analyte concentration.</p>
 <p>To establish whether any assays were cross-reactive, we tested each assay against a standard curve of purified antigens for both its target analyte (which should be reactive) and all other analytes. Note that this approach cannot rule out assay cross-reactivity to analytes in the blood (or other sample) that were not directly tested here.</p>
-<p>The data presented here include 13 antigens; those on the final 12-plex <a href="./Marker_List.html">list of markers</a>, plus C-Reactive Protein (CRP), which was part of our initial screening process.</p>
+<p>The illustrative data presented here include 13 antigens; those on the final 12-plex <a href="./Marker_List.html">list of markers</a>, plus C-Reactive Protein (CRP), which was part of our initial screening process.</p>
 </section>
-<section id="protocol" class="level2" data-number="9.2">
-<h2 data-number="9.2" class="anchored" data-anchor-id="protocol"><span class="header-section-number">9.2</span> Protocol</h2>
-<p>The protocol is initiated by making 13X stocks of the pure recombinant protein standards (13X because it was done as a 13-plex). Equal volumes of the 13X analytes were then mixed to achieve a multi-analyte pool in which each of the 13 analytes were at 1X concentrations. Separately, each 13X antigen was diluted 1 in 13 to achieve a 1X concentration standard curve of that antigen alone. This was so that each standard curve, either multi- or single-plex, originated from the same dilutions series, thus minimising variability.</p>
-<p>The cross-reactivity assessment can be conducted for any level of multiplex (N-plex) by generating initial protiein standards at N times the 1X concentrations. This cross-reactivity assessment should be repeated if any changes are made to the antibodies or antigens in the assay i.e.&nbsp;if an additional assay were to be added to the multiplex, or a specific antibody or recombinant antigen replaced with another.</p>
-<section id="preparation-needed-prior-to-running-the-cross-reactivity-protocol" class="level3" data-number="9.2.1">
-<h3 data-number="9.2.1" class="anchored" data-anchor-id="preparation-needed-prior-to-running-the-cross-reactivity-protocol"><span class="header-section-number">9.2.1</span> <strong>Preparation needed prior to running the Cross-Reactivity protocol</strong></h3>
+<section id="protocol" class="level2" data-number="12.2">
+<h2 data-number="12.2" class="anchored" data-anchor-id="protocol"><span class="header-section-number">12.2</span> Protocol</h2>
+<p>The protocol is initiated by making 12X stocks of the pure recombinant protein standards (12X because it is a 12-plex). Equal volumes of the 12X analytes were then mixed to achieve a multi-analyte pool in which each of the 12 analytes was at 1X concentrations. Separately, each 12X antigen is also diluted 1 in 12 to achieve a 1X concentration standard curve of that antigen alone. This is so that each standard curve, either multi- or single-plex, originates from the same dilutions series, thus minimising variability.</p>
+<p>The cross-reactivity assessment can be conducted for any level of multiplex (N-plex) by generating initial protein standards at N times the 1X concentrations. This cross-reactivity assessment should be repeated if any changes are made to the antibodies or antigens in the assay i.e.&nbsp;if an additional assay were to be added to the multiplex, or a specific antibody or recombinant antigen replaced with another.</p>
+<section id="preparation-needed-prior-to-running-the-cross-reactivity-protocol" class="level3" data-number="12.2.1">
+<h3 data-number="12.2.1" class="anchored" data-anchor-id="preparation-needed-prior-to-running-the-cross-reactivity-protocol"><span class="header-section-number">12.2.1</span> <strong>Preparation needed prior to running the Cross-Reactivity protocol</strong></h3>
 <ol type="1">
 <li><p>Prepare buffers for general assay procedures as per the Buffers and Reagents protocol.</p></li>
 <li><p>Prepare recombinant protein antigen stock aliquots as per the Antigens protocol.</p></li>
-<li><p>Prepare coupled beads as per the Bead_Coupling and Coupling_Confirmation protocols.</p></li>
+<li><p>Prepare coupled beads as per the <a href="./Bead_Coupling.html">bead coupling protocol</a> and <a href="./Coupling_Confirmation.html">coupling confirmation</a> protocols.</p></li>
 <li><p>Prepare biotin detection antibodies as per the Detection_Antibody_Prep protocol.</p></li>
+<li><p>Ensure that your MagPix is ready for use.</p></li>
 </ol>
 </section>
-<section id="prepare-analytes" class="level3" data-number="9.2.2">
-<h3 data-number="9.2.2" class="anchored" data-anchor-id="prepare-analytes"><span class="header-section-number">9.2.2</span> Prepare analytes</h3>
+<section id="prepare-analytes" class="level3" data-number="12.2.2">
+<h3 data-number="12.2.2" class="anchored" data-anchor-id="prepare-analytes"><span class="header-section-number">12.2.2</span> Prepare analytes</h3>
 <p>⌚ Timing: 1-2 hours set-up, 2 hr + 1 hr + 45 min incubations. Total approx. 6h.</p>
 <p>All incubations are at ambient temperature.</p>
 <p><strong>Tip:</strong> Handle recombinant proteins on ice at all times to minimise degradation.</p>
-<p><strong>NOTE:</strong> All 13 antibody-coupled beads and all 13 biotin-conjugated detection antibodies are present in <u><strong>all assays</strong></u>.</p>
+<p><strong>NOTE:</strong> All 12 antibody-coupled beads and all 12 biotin-conjugated detection antibodies are present in <u><strong>all assays</strong></u>. Only the antigens differ between wells.</p>
 <ol type="1">
 <li><p>Get coupled beads from fridge, bring to ambient temperature, vortex and sonicate for 30 sec of each.</p></li>
 <li><p>Put aliquots of the recombinant protein stocks on ice to thaw.</p></li>
-<li><p>In a protein lo-bind 96-well plate, prepare 4-fold analyte dilutions of each antigen separately (i.e.&nbsp;one column per antigen) in PBS-TBN at 13X the final required concentration. Label the plate to know which order the antigens are in. Some analytes may need an initial pre-dilution in a separate tube.</p>
-<p>e.g.&nbsp;make 100 ul of dilution 1 in row 1, then serially transfer 25 ul into subsequent wells with 75 ul of PBS-TBN, pipetting up and down to mix well between transfers. The Standards Calculator Excel document can also be adjusted for the number of analytes in the multiplex and for the final volume needed.</p></li>
-<li><p>In a second lo-bind plate- for the multiplex standards (‘13-plex’), combine equal volumes (e.g.&nbsp;10 ul) of each of the 13X analyte stocks. i.e.&nbsp;10 ul of each standard 1 will be transferred into well A1 to make 130 ul total, 10 ul of each standard 2 into well A2, etc. Again mixing well by pipetting up and down carefully several times.</p></li>
-<li><p>Into subsequent columns of the second lo-bind plate, add 120 ul of PBS-TBN and transfer 10 ul of each 13X standard to achieve 1X standards of each antigen, pipetting up and down to mix well.</p>
-<h3 id="prepare-beads" data-number="9.2.3" class="anchored"><span class="header-section-number">9.2.3</span> Prepare beads</h3>
+<li><p>In a protein lo-bind 96-well plate, or tubes laid out in this format, prepare 4-fold analyte dilutions of each antigen separately (i.e.&nbsp;one column per antigen) in PBS-TBN at 12X the final required concentration. Label the plate to know which order the antigens are in. Some analytes may need an initial pre-dilution in a separate tube.</p>
+<p>e.g.&nbsp;make 100 µL of dilution 1 in row 1, then serially transfer 25 µL into subsequent wells with 75 µL of PBS-TBN, pipetting up and down to mix well between transfers. The standard_dilutions_calculator Excel document (<a href="./Standard_dilutions_calculator.xlsx">Standard_dilutions_calculator.xlsx</a>) can also be adjusted for the number of analytes in the multiplex and for the final volume needed.</p></li>
+<li><p>In a second lo-bind plate, for the multiplex standards (‘12-plex’), combine equal volumes (e.g.&nbsp;10 µL) of each of the 12X analyte stocks. i.e.&nbsp;10 ul of each standard 1 will be transferred into well A1 to make 120 µL total, 10 ul of each standard 2 into well A2, etc. Again mixing well by pipetting up and down carefully several times. If a plate well capacity is not going to be enough, microtubes can be used instead.</p></li>
+<li><p>Into subsequent columns of the second lo-bind plate, perform a 1 in N-plex dilution, in this case, add 110 µL of PBS-TBN and transfer 10 µL of each 12X standard to achieve 1X standards of each antigen, pipetting up and down to mix well.</p>
+<h3 id="prepare-beads" data-number="12.2.3" class="anchored"><span class="header-section-number">12.2.3</span> Prepare beads</h3>
 <ol start="6" type="1">
-<li><p>Prepare beads for a total of 208 wells, plus additional surplus, in Plates 1,2,3. The aim is to get 20,000 beads/ml [ie 1000 beads/well] based on stock of 7.5x10<sup>6</sup> beads/ml:</p>
-<p>Add <strong>11.044 ml of PBS-TBN</strong> to a Universal (20 ml capacity tube) i.e.&nbsp;11,440 ul final wanted volume - (30.5 ul of 13 bead regions = 396.5 ul total bead volume) = 11,043.5 ul. Total final volume after addition of beads, will be 11.44 ml which allows 10% surplus volume.</p></li>
-<li><p>Vortex bead stocks again as you add <strong>30.5 ul of each bead</strong> to the tube.</p></li>
-<li><p>Get black mylar plates (“assay plates”) and label with date etc.</p></li>
-<li><p>Add 50 ul of diluted beads to all 96 wells of 2 plates, plus columns 01 and 02 of a third plate.</p></li>
-<li><p>Wash beads once: put plates on magent for 60 sec, discard liquid, remove form magent to add 100 ul PBST, replace on magent for 60 sec, discard liquid, dab gently on tissue to remove excess liquid. Cover plates until addition of antigens to prevent drying.</p></li>
-<li><p>Transfer the multiplex and single-plex standards to the assay plates into duplicate wells of 30 ul each, as per the plate layouts below.</p></li>
+<li><p>Prepare beads for all wells, plus 10% volume surplus. The aim is to get 20,000 beads/mL [ie 1000 beads/well] based on stock of 7.5x10<sup>6</sup> beads/mL:</p>
+<p>Add <strong>11.074 ml of PBS-TBN</strong> to a Universal (20 mL capacity tube) i.e.&nbsp;11,440 µL final wanted volume - (30.5 µL of 12 bead regions = 366 µL total bead volume) = 11,074 µL. Total final volume after addition of beads, will be 11.44 mL which allows the 10% surplus volume.</p></li>
+<li><p>Vortex bead stocks again as you add <strong>30.5 µL of each bead</strong> to the tube.</p></li>
+<li><p>Label black plates (“assay plates”) with date, plate number, etc.</p></li>
+<li><p>Add 50 µL of the mixed, diluted, beads to all 96 wells of 2 plates, plus columns 01 and 02 of a third plate.</p></li>
+<li><p>Wash beads once: put plates on magnet for 60 s, discard liquid, remove from magnet and add 100 µL PBST, replace on magnet for 60 s, discard liquid, dab gently on tissue to remove excess liquid. Cover plates until addition of antigens to prevent drying.</p></li>
+<li><p>Transfer the multiplex and single-plex standards to the assay plates into duplicate wells of 30 µL each, as per the plate layouts below.</p></li>
 <li><p>Cover and incubate the plates on a shaker at ~200 rpm for 2 hours.</p></li>
 </ol></li>
 </ol>
-<p>Tables. Plate layouts for cross-reactivity assessment assay. Each well will contain all capture antibodies (beads) and all detection antibodies, but either all antigens (13-plex) or each antigen alone (where named).</p>
-<table class="table">
+<p>Tables. Plate layouts for cross-reactivity assessment assay. Each well contains all capture antibodies (beads) and all detection antibodies, but either all antigens (12-plex) or each antigen alone (where named).</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
 <thead>
 <tr class="header">
 <th>Plate 1</th>
-<th>13-plex</th>
+<th>12-plex</th>
 <th>CHI3L1</th>
 <th>IL-8</th>
 <th>sTNFR1</th>
@@ -356,79 +387,88 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 <tr class="even">
 <td>Row A</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>Standard 1</td>
+<td>Standard 1</td>
+<td>Standard 1</td>
+<td>Standard 1</td>
+<td>Standard 1</td>
+<td>Standard 1</td>
 </tr>
 <tr class="odd">
 <td>Row B</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>Standard 2</td>
+<td>Standard 2</td>
+<td>Standard 2</td>
+<td>Standard 2</td>
+<td>Standard 2</td>
+<td>Standard 2</td>
 </tr>
 <tr class="even">
 <td>Row C</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>Standard 3</td>
+<td>Standard 3</td>
+<td>Standard 3</td>
+<td>Standard 3</td>
+<td>Standard 3</td>
+<td>Standard 3</td>
 </tr>
 <tr class="odd">
 <td>Row D</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>Standard 4</td>
+<td>Standard 4</td>
+<td>Standard 4</td>
+<td>Standard 4</td>
+<td>Standard 4</td>
+<td>Standard 4</td>
 </tr>
 <tr class="even">
 <td>Row E</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>Standard 5</td>
+<td>Standard 5</td>
+<td>Standard 5</td>
+<td>Standard 5</td>
+<td>Standard 5</td>
+<td>Standard 5</td>
 </tr>
 <tr class="odd">
 <td>Row F</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>Standard 6</td>
+<td>Standard 6</td>
+<td>Standard 6</td>
+<td>Standard 6</td>
+<td>Standard 6</td>
+<td>Standard 6</td>
 </tr>
 <tr class="even">
 <td>Row G</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>Standard 7</td>
+<td>Standard 7</td>
+<td>Standard 7</td>
+<td>Standard 7</td>
+<td>Standard 7</td>
+<td>Standard 7</td>
 </tr>
 <tr class="odd">
 <td>Row H</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>Blank</td>
+<td>Blank</td>
+<td>Blank</td>
+<td>Blank</td>
+<td>Blank</td>
+<td>Blank</td>
 </tr>
 </tbody>
 </table>
-<table class="table">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
 <thead>
 <tr class="header">
 <th>Plate 2</th>
@@ -452,88 +492,97 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 <tr class="even">
 <td>Row A</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>Standard 1</td>
+<td>Standard 1</td>
+<td>Standard 1</td>
+<td>Standard 1</td>
+<td>Standard 1</td>
+<td>Standard 1</td>
 </tr>
 <tr class="odd">
 <td>Row B</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>Standard 2</td>
+<td>Standard 2</td>
+<td>Standard 2</td>
+<td>Standard 2</td>
+<td>Standard 2</td>
+<td>Standard 2</td>
 </tr>
 <tr class="even">
 <td>Row C</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>Standard 3</td>
+<td>Standard 3</td>
+<td>Standard 3</td>
+<td>Standard 3</td>
+<td>Standard 3</td>
+<td>Standard 3</td>
 </tr>
 <tr class="odd">
 <td>Row D</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>Standard 4</td>
+<td>Standard 4</td>
+<td>Standard 4</td>
+<td>Standard 4</td>
+<td>Standard 4</td>
+<td>Standard 4</td>
 </tr>
 <tr class="even">
 <td>Row E</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>Standard 5</td>
+<td>Standard 5</td>
+<td>Standard 5</td>
+<td>Standard 5</td>
+<td>Standard 5</td>
+<td>Standard 5</td>
 </tr>
 <tr class="odd">
 <td>Row F</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>Standard 6</td>
+<td>Standard 6</td>
+<td>Standard 6</td>
+<td>Standard 6</td>
+<td>Standard 6</td>
+<td>Standard 6</td>
 </tr>
 <tr class="even">
 <td>Row G</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>Standard 7</td>
+<td>Standard 7</td>
+<td>Standard 7</td>
+<td>Standard 7</td>
+<td>Standard 7</td>
+<td>Standard 7</td>
 </tr>
 <tr class="odd">
 <td>Row H</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>Blank</td>
+<td>Blank</td>
+<td>Blank</td>
+<td>Blank</td>
+<td>Blank</td>
+<td>Blank</td>
 </tr>
 </tbody>
 </table>
-<table class="table">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 16%">
+<col style="width: 9%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 15%">
+</colgroup>
 <thead>
 <tr class="header">
 <th>Plate 3</th>
 <th>sTREM1</th>
-<th>EMPTY</th>
-<th>EMPTY</th>
-<th>EMPTY</th>
-<th>EMPTY</th>
-<th>EMPTY</th>
+<th>Empty</th>
+<th><strong>Empty</strong></th>
+<th><strong>Empty</strong></th>
+<th><strong>Empty</strong></th>
+<th><strong>Empty</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -548,7 +597,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 <tr class="even">
 <td>Row A</td>
-<td></td>
+<td>Standard 1</td>
 <td></td>
 <td></td>
 <td></td>
@@ -557,7 +606,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 <tr class="odd">
 <td>Row B</td>
-<td></td>
+<td>Standard 2</td>
 <td></td>
 <td></td>
 <td></td>
@@ -566,7 +615,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 <tr class="even">
 <td>Row C</td>
-<td></td>
+<td>Standard 3</td>
 <td></td>
 <td></td>
 <td></td>
@@ -575,7 +624,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 <tr class="odd">
 <td>Row D</td>
-<td></td>
+<td>Standard 4</td>
 <td></td>
 <td></td>
 <td></td>
@@ -584,7 +633,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 <tr class="even">
 <td>Row E</td>
-<td></td>
+<td>Standard 5</td>
 <td></td>
 <td></td>
 <td></td>
@@ -593,7 +642,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 <tr class="odd">
 <td>Row F</td>
-<td></td>
+<td>Standard 6</td>
 <td></td>
 <td></td>
 <td></td>
@@ -602,7 +651,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 <tr class="even">
 <td>Row G</td>
-<td></td>
+<td>Standard 7</td>
 <td></td>
 <td></td>
 <td></td>
@@ -611,7 +660,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 <tr class="odd">
 <td>Row H</td>
-<td></td>
+<td>Blank</td>
 <td></td>
 <td></td>
 <td></td>
@@ -623,34 +672,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>12. During the incubation, prepare biotin detection antibodies for 3 plates. The excess can be stored frozen for future use.</p>
 <ol start="13" type="1">
 <li>Wash the plates 3 times with PBST as before.</li>
-<li>Add 30 ul per well of detection antibodies to all wells.</li>
-<li>Cover and inclubate, shaking, for 1 hour.</li>
-<li>During incubation, prepare SA-PE at 3 ug/ml for a total of 6.9 ml in PBS-TBN.</li>
+<li>Add 30 µL per well of the detection antibody mix to all used wells.</li>
+<li>Cover and incubate, shaking, for 1 hour.</li>
+<li>During incubation, prepare SA-PE at 3 µg/mL by adding 20.7 µL of SA-PE stock (1 mg/mL) into 6.9 mL PBS-TBN.</li>
 <li>Wash plates 3 times with PBST as before.</li>
-<li>Add 30 ul per well of the diluted SA-PE to all wells.</li>
+<li>Add 30 µL per well of the diluted SA-PE to all used wells.</li>
+<li>Cover and incubate, shaking, for 45 minutes.</li>
 <li>Wash plates 3 times with PBST as before.</li>
-<li>Add 100 ul PBS-TBN to each well, cover and refrigerate overnight.</li>
-<li>Read plates on Mag-Pix first thing the next day.</li>
+<li>Add 100 µL PBS-TBN to each well, cover and refrigerate overnight.</li>
+<li>Read plates on MagPix first thing the next day.</li>
 </ol>
-<p>Example data analysis using real data is given below.</p>
+<p>Example data analysis using real data are given below.</p>
 </section>
 </section>
-<section id="results-analysis" class="level2" data-number="9.3">
-<h2 data-number="9.3" class="anchored" data-anchor-id="results-analysis"><span class="header-section-number">9.3</span> Results &amp; Analysis</h2>
-<p>The raw data are in long format in the file <code>data/crossreactivity_data/crossreactivity_data_long.csv</code></p>
+<section id="results-analysis" class="level2" data-number="12.3">
+<h2 data-number="12.3" class="anchored" data-anchor-id="results-analysis"><span class="header-section-number">12.3</span> Results &amp; Analysis</h2>
+<p>The raw data are in long format in the file <a href="data/crossreactivity_data/crossreactivity_data_long.csv">data/crossreactivity_data/crossreactivity_data_long.csv</a></p>
 <p>Each line represents a well of the Luminex plate in which there was…</p>
 <ul>
 <li><p>An analyte at one of 8 concentrations</p></li>
-<li><p>Detection antibodies for one of the 13 individual assays</p></li>
+<li><p>Detection antibodies for one of the 13 individual assays (as there were 13 at the time of performing this cross-reactivity assessment).</p></li>
 </ul>
-<section id="load-libraries" class="level3" data-number="9.3.1">
-<h3 data-number="9.3.1" class="anchored" data-anchor-id="load-libraries"><span class="header-section-number">9.3.1</span> Load libraries</h3>
+<section id="load-libraries" class="level3" data-number="12.3.1">
+<h3 data-number="12.3.1" class="anchored" data-anchor-id="load-libraries"><span class="header-section-number">12.3.1</span> Load libraries</h3>
 </section>
-<section id="read-in-the-data-from-the-crossreactivity-experiments." class="level3" data-number="9.3.2">
-<h3 data-number="9.3.2" class="anchored" data-anchor-id="read-in-the-data-from-the-crossreactivity-experiments."><span class="header-section-number">9.3.2</span> Read in the data from the crossreactivity experiments.</h3>
+<section id="read-in-the-data-from-the-cross-reactivity-experiments." class="level3" data-number="12.3.2">
+<h3 data-number="12.3.2" class="anchored" data-anchor-id="read-in-the-data-from-the-cross-reactivity-experiments."><span class="header-section-number">12.3.2</span> Read in the data from the cross-reactivity experiments.</h3>
 <div class="cell">
 <div class="cell-output-display">
-<table class="table table-sm table-striped small">
+<table class="caption-top table table-sm table-striped small">
 <thead>
 <tr class="header">
 <th style="text-align: left;">Location</th>
@@ -775,453 +825,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: right;">2</td>
 <td style="text-align: right;">2</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">11(1,C2)</td>
-<td style="text-align: left;">Ang.1</td>
-<td style="text-align: right;">487.0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">13plex</td>
-<td style="text-align: right;">11</td>
-<td style="text-align: left;">C</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">3</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">12(1,D2)</td>
-<td style="text-align: left;">Ang.1</td>
-<td style="text-align: right;">156.5</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">13plex</td>
-<td style="text-align: right;">12</td>
-<td style="text-align: left;">D</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">4</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">13(1,E2)</td>
-<td style="text-align: left;">Ang.1</td>
-<td style="text-align: right;">87.0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">13plex</td>
-<td style="text-align: right;">13</td>
-<td style="text-align: left;">E</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">5</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">14(1,F2)</td>
-<td style="text-align: left;">Ang.1</td>
-<td style="text-align: right;">72.0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">13plex</td>
-<td style="text-align: right;">14</td>
-<td style="text-align: left;">F</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">6</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">15(1,G2)</td>
-<td style="text-align: left;">Ang.1</td>
-<td style="text-align: right;">75.0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">13plex</td>
-<td style="text-align: right;">15</td>
-<td style="text-align: left;">G</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">7</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">16(1,H2)</td>
-<td style="text-align: left;">Ang.1</td>
-<td style="text-align: right;">68.0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">13plex</td>
-<td style="text-align: right;">16</td>
-<td style="text-align: left;">H</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">8</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">17(1,A3)</td>
-<td style="text-align: left;">Ang.1</td>
-<td style="text-align: right;">80.0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">CHI3L1</td>
-<td style="text-align: right;">17</td>
-<td style="text-align: left;">A</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">1</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">18(1,B3)</td>
-<td style="text-align: left;">Ang.1</td>
-<td style="text-align: right;">75.0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">CHI3L1</td>
-<td style="text-align: right;">18</td>
-<td style="text-align: left;">B</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">2</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">19(1,C3)</td>
-<td style="text-align: left;">Ang.1</td>
-<td style="text-align: right;">71.0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">CHI3L1</td>
-<td style="text-align: right;">19</td>
-<td style="text-align: left;">C</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">3</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">20(1,D3)</td>
-<td style="text-align: left;">Ang.1</td>
-<td style="text-align: right;">74.0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">CHI3L1</td>
-<td style="text-align: right;">20</td>
-<td style="text-align: left;">D</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">4</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">21(1,E3)</td>
-<td style="text-align: left;">Ang.1</td>
-<td style="text-align: right;">75.0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">CHI3L1</td>
-<td style="text-align: right;">21</td>
-<td style="text-align: left;">E</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">5</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">22(1,F3)</td>
-<td style="text-align: left;">Ang.1</td>
-<td style="text-align: right;">70.0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">CHI3L1</td>
-<td style="text-align: right;">22</td>
-<td style="text-align: left;">F</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">6</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">23(1,G3)</td>
-<td style="text-align: left;">Ang.1</td>
-<td style="text-align: right;">70.0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">CHI3L1</td>
-<td style="text-align: right;">23</td>
-<td style="text-align: left;">G</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">7</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">24(1,H3)</td>
-<td style="text-align: left;">Ang.1</td>
-<td style="text-align: right;">69.0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">CHI3L1</td>
-<td style="text-align: right;">24</td>
-<td style="text-align: left;">H</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">8</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">25(1,A4)</td>
-<td style="text-align: left;">Ang.1</td>
-<td style="text-align: right;">74.0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">CHI3L1</td>
-<td style="text-align: right;">25</td>
-<td style="text-align: left;">A</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">1</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">26(1,B4)</td>
-<td style="text-align: left;">Ang.1</td>
-<td style="text-align: right;">70.0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">CHI3L1</td>
-<td style="text-align: right;">26</td>
-<td style="text-align: left;">B</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">2</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">27(1,C4)</td>
-<td style="text-align: left;">Ang.1</td>
-<td style="text-align: right;">71.5</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">CHI3L1</td>
-<td style="text-align: right;">27</td>
-<td style="text-align: left;">C</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">3</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">28(1,D4)</td>
-<td style="text-align: left;">Ang.1</td>
-<td style="text-align: right;">68.0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">CHI3L1</td>
-<td style="text-align: right;">28</td>
-<td style="text-align: left;">D</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">4</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">29(1,E4)</td>
-<td style="text-align: left;">Ang.1</td>
-<td style="text-align: right;">69.0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">CHI3L1</td>
-<td style="text-align: right;">29</td>
-<td style="text-align: left;">E</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">5</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">30(1,F4)</td>
-<td style="text-align: left;">Ang.1</td>
-<td style="text-align: right;">78.5</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">CHI3L1</td>
-<td style="text-align: right;">30</td>
-<td style="text-align: left;">F</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">6</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">31(1,G4)</td>
-<td style="text-align: left;">Ang.1</td>
-<td style="text-align: right;">70.0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">CHI3L1</td>
-<td style="text-align: right;">31</td>
-<td style="text-align: left;">G</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">7</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">32(1,H4)</td>
-<td style="text-align: left;">Ang.1</td>
-<td style="text-align: right;">72.0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">CHI3L1</td>
-<td style="text-align: right;">32</td>
-<td style="text-align: left;">H</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">8</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">33(1,A5)</td>
-<td style="text-align: left;">Ang.1</td>
-<td style="text-align: right;">69.0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">IL.8</td>
-<td style="text-align: right;">33</td>
-<td style="text-align: left;">A</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">1</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">34(1,B5)</td>
-<td style="text-align: left;">Ang.1</td>
-<td style="text-align: right;">65.0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">IL.8</td>
-<td style="text-align: right;">34</td>
-<td style="text-align: left;">B</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">2</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">35(1,C5)</td>
-<td style="text-align: left;">Ang.1</td>
-<td style="text-align: right;">64.0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">IL.8</td>
-<td style="text-align: right;">35</td>
-<td style="text-align: left;">C</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">3</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">36(1,D5)</td>
-<td style="text-align: left;">Ang.1</td>
-<td style="text-align: right;">66.0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">IL.8</td>
-<td style="text-align: right;">36</td>
-<td style="text-align: left;">D</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">4</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">37(1,E5)</td>
-<td style="text-align: left;">Ang.1</td>
-<td style="text-align: right;">66.5</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">IL.8</td>
-<td style="text-align: right;">37</td>
-<td style="text-align: left;">E</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">5</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">38(1,F5)</td>
-<td style="text-align: left;">Ang.1</td>
-<td style="text-align: right;">65.0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">IL.8</td>
-<td style="text-align: right;">38</td>
-<td style="text-align: left;">F</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">6</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">39(1,G5)</td>
-<td style="text-align: left;">Ang.1</td>
-<td style="text-align: right;">63.5</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">IL.8</td>
-<td style="text-align: right;">39</td>
-<td style="text-align: left;">G</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">7</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">40(1,H5)</td>
-<td style="text-align: left;">Ang.1</td>
-<td style="text-align: right;">76.0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">IL.8</td>
-<td style="text-align: right;">40</td>
-<td style="text-align: left;">H</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">8</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">41(1,A6)</td>
-<td style="text-align: left;">Ang.1</td>
-<td style="text-align: right;">61.0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">IL.8</td>
-<td style="text-align: right;">41</td>
-<td style="text-align: left;">A</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">1</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">42(1,B6)</td>
-<td style="text-align: left;">Ang.1</td>
-<td style="text-align: right;">75.0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">IL.8</td>
-<td style="text-align: right;">42</td>
-<td style="text-align: left;">B</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">2</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">43(1,C6)</td>
-<td style="text-align: left;">Ang.1</td>
-<td style="text-align: right;">71.0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">IL.8</td>
-<td style="text-align: right;">43</td>
-<td style="text-align: left;">C</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">3</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">44(1,D6)</td>
-<td style="text-align: left;">Ang.1</td>
-<td style="text-align: right;">70.0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">IL.8</td>
-<td style="text-align: right;">44</td>
-<td style="text-align: left;">D</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">4</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">45(1,E6)</td>
-<td style="text-align: left;">Ang.1</td>
-<td style="text-align: right;">66.0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">IL.8</td>
-<td style="text-align: right;">45</td>
-<td style="text-align: left;">E</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">5</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">46(1,F6)</td>
-<td style="text-align: left;">Ang.1</td>
-<td style="text-align: right;">71.0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">IL.8</td>
-<td style="text-align: right;">46</td>
-<td style="text-align: left;">F</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">6</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">47(1,G6)</td>
-<td style="text-align: left;">Ang.1</td>
-<td style="text-align: right;">77.0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">IL.8</td>
-<td style="text-align: right;">47</td>
-<td style="text-align: left;">G</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">7</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">48(1,H6)</td>
-<td style="text-align: left;">Ang.1</td>
-<td style="text-align: right;">70.0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">IL.8</td>
-<td style="text-align: right;">48</td>
-<td style="text-align: left;">H</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">8</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">49(1,A7)</td>
-<td style="text-align: left;">Ang.1</td>
-<td style="text-align: right;">69.0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">sTNFR.1</td>
-<td style="text-align: right;">49</td>
-<td style="text-align: left;">A</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">1</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">50(1,B7)</td>
-<td style="text-align: left;">Ang.1</td>
-<td style="text-align: right;">68.0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">sTNFR.1</td>
-<td style="text-align: right;">50</td>
-<td style="text-align: left;">B</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">2</td>
-</tr>
 </tbody>
 </table>
 </div>
 </div>
 </section>
-<section id="create-counterfactuals-and-bind-to-data" class="level3" data-number="9.3.3">
-<h3 data-number="9.3.3" class="anchored" data-anchor-id="create-counterfactuals-and-bind-to-data"><span class="header-section-number">9.3.3</span> Create counterfactuals and bind to data</h3>
+<section id="create-counterfactuals-and-bind-to-data" class="level3" data-number="12.3.3">
+<h3 data-number="12.3.3" class="anchored" data-anchor-id="create-counterfactuals-and-bind-to-data"><span class="header-section-number">12.3.3</span> Create counterfactuals and bind to data</h3>
 <p>The counterfactuals are used in the charts below to show the response curves when the assay is tested against its own analyte. These are shown as grey bars in the charts.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>counterfactuals <span class="ot">=</span> <span class="fu">filter</span>(mfi_allplates,assay<span class="sc">==</span>analyte) <span class="sc">%&gt;%</span> </span>
@@ -1236,8 +846,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>mfi_allplates <span class="ot">&lt;-</span> <span class="fu">left_join</span>(mfi_allplates,counterfactuals)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="show-results-for-individual-analytes-against-all-assays" class="level3" data-number="9.3.4">
-<h3 data-number="9.3.4" class="anchored" data-anchor-id="show-results-for-individual-analytes-against-all-assays"><span class="header-section-number">9.3.4</span> Show results for individual analytes against all assays</h3>
+<section id="show-results-for-individual-analytes-against-all-assays" class="level3" data-number="12.3.4">
+<h3 data-number="12.3.4" class="anchored" data-anchor-id="show-results-for-individual-analytes-against-all-assays"><span class="header-section-number">12.3.4</span> Show results for individual analytes against all assays</h3>
 <p>Each experiment was repeated and charts below show the results of experiments 1 &amp; 2.</p>
 <p>Define a function to plot each analyte.</p>
 <div class="cell">
@@ -1251,125 +861,177 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">"Analyte Response (MFI)"</span>)</span>
 <span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<section id="ang-1" class="level4" data-number="9.3.4.1">
-<h4 data-number="9.3.4.1" class="anchored" data-anchor-id="ang-1"><span class="header-section-number">9.3.4.1</span> Ang-1</h4>
+<section id="ang-1" class="level4" data-number="12.3.4.1">
+<h4 data-number="12.3.4.1" class="anchored" data-anchor-id="ang-1"><span class="header-section-number">12.3.4.1</span> Ang-1</h4>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">assay.plot</span>(<span class="at">showanalyte =</span> <span class="st">"Ang.1"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="Cross_Reactivity_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid" width="672"></p>
+<div>
+<figure class="figure">
+<p><img src="Cross_Reactivity_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
-<section id="ang-2" class="level4" data-number="9.3.4.2">
-<h4 data-number="9.3.4.2" class="anchored" data-anchor-id="ang-2"><span class="header-section-number">9.3.4.2</span> Ang-2</h4>
+<section id="ang-2" class="level4" data-number="12.3.4.2">
+<h4 data-number="12.3.4.2" class="anchored" data-anchor-id="ang-2"><span class="header-section-number">12.3.4.2</span> Ang-2</h4>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">assay.plot</span>(<span class="at">showanalyte =</span> <span class="st">"Ang.2"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="Cross_Reactivity_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="672"></p>
+<div>
+<figure class="figure">
+<p><img src="Cross_Reactivity_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
-<section id="azu" class="level4" data-number="9.3.4.3">
-<h4 data-number="9.3.4.3" class="anchored" data-anchor-id="azu"><span class="header-section-number">9.3.4.3</span> Azu</h4>
+<section id="azu" class="level4" data-number="12.3.4.3">
+<h4 data-number="12.3.4.3" class="anchored" data-anchor-id="azu"><span class="header-section-number">12.3.4.3</span> Azu</h4>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">assay.plot</span>(<span class="at">showanalyte =</span> <span class="st">"Azu"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="Cross_Reactivity_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid" width="672"></p>
+<div>
+<figure class="figure">
+<p><img src="Cross_Reactivity_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
-<section id="chi3l1" class="level4" data-number="9.3.4.4">
-<h4 data-number="9.3.4.4" class="anchored" data-anchor-id="chi3l1"><span class="header-section-number">9.3.4.4</span> CHI3L1</h4>
+<section id="chi3l1" class="level4" data-number="12.3.4.4">
+<h4 data-number="12.3.4.4" class="anchored" data-anchor-id="chi3l1"><span class="header-section-number">12.3.4.4</span> CHI3L1</h4>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">assay.plot</span>(<span class="at">showanalyte =</span> <span class="st">"CHI3L1"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="Cross_Reactivity_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid" width="672"></p>
+<div>
+<figure class="figure">
+<p><img src="Cross_Reactivity_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
-<section id="crp" class="level4" data-number="9.3.4.5">
-<h4 data-number="9.3.4.5" class="anchored" data-anchor-id="crp"><span class="header-section-number">9.3.4.5</span> CRP</h4>
+<section id="crp" class="level4" data-number="12.3.4.5">
+<h4 data-number="12.3.4.5" class="anchored" data-anchor-id="crp"><span class="header-section-number">12.3.4.5</span> CRP</h4>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">assay.plot</span>(<span class="at">showanalyte =</span> <span class="st">"CRP"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="Cross_Reactivity_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid" width="672"></p>
+<div>
+<figure class="figure">
+<p><img src="Cross_Reactivity_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
-<section id="il-10" class="level4" data-number="9.3.4.6">
-<h4 data-number="9.3.4.6" class="anchored" data-anchor-id="il-10"><span class="header-section-number">9.3.4.6</span> IL-10</h4>
+<section id="il-10" class="level4" data-number="12.3.4.6">
+<h4 data-number="12.3.4.6" class="anchored" data-anchor-id="il-10"><span class="header-section-number">12.3.4.6</span> IL-10</h4>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">assay.plot</span>(<span class="at">showanalyte =</span> <span class="st">"IL.10"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="Cross_Reactivity_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid" width="672"></p>
+<div>
+<figure class="figure">
+<p><img src="Cross_Reactivity_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
-<section id="il-6" class="level4" data-number="9.3.4.7">
-<h4 data-number="9.3.4.7" class="anchored" data-anchor-id="il-6"><span class="header-section-number">9.3.4.7</span> IL-6</h4>
+<section id="il-6" class="level4" data-number="12.3.4.7">
+<h4 data-number="12.3.4.7" class="anchored" data-anchor-id="il-6"><span class="header-section-number">12.3.4.7</span> IL-6</h4>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">assay.plot</span>(<span class="at">showanalyte =</span> <span class="st">"IL.6"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="Cross_Reactivity_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid" width="672"></p>
+<div>
+<figure class="figure">
+<p><img src="Cross_Reactivity_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
-<section id="il-8" class="level4" data-number="9.3.4.8">
-<h4 data-number="9.3.4.8" class="anchored" data-anchor-id="il-8"><span class="header-section-number">9.3.4.8</span> IL-8</h4>
+<section id="il-8" class="level4" data-number="12.3.4.8">
+<h4 data-number="12.3.4.8" class="anchored" data-anchor-id="il-8"><span class="header-section-number">12.3.4.8</span> IL-8</h4>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">assay.plot</span>(<span class="at">showanalyte =</span> <span class="st">"IL.8"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="Cross_Reactivity_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid" width="672"></p>
+<div>
+<figure class="figure">
+<p><img src="Cross_Reactivity_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
-<section id="ip-10" class="level4" data-number="9.3.4.9">
-<h4 data-number="9.3.4.9" class="anchored" data-anchor-id="ip-10"><span class="header-section-number">9.3.4.9</span> IP-10</h4>
+<section id="ip-10" class="level4" data-number="12.3.4.9">
+<h4 data-number="12.3.4.9" class="anchored" data-anchor-id="ip-10"><span class="header-section-number">12.3.4.9</span> IP-10</h4>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">assay.plot</span>(<span class="at">showanalyte =</span> <span class="st">"IP.10"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="Cross_Reactivity_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid" width="672"></p>
+<div>
+<figure class="figure">
+<p><img src="Cross_Reactivity_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
-<section id="mxa" class="level4" data-number="9.3.4.10">
-<h4 data-number="9.3.4.10" class="anchored" data-anchor-id="mxa"><span class="header-section-number">9.3.4.10</span> MxA</h4>
+<section id="mxa" class="level4" data-number="12.3.4.10">
+<h4 data-number="12.3.4.10" class="anchored" data-anchor-id="mxa"><span class="header-section-number">12.3.4.10</span> MxA</h4>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">assay.plot</span>(<span class="at">showanalyte =</span> <span class="st">"MxA"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="Cross_Reactivity_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid" width="672"></p>
+<div>
+<figure class="figure">
+<p><img src="Cross_Reactivity_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
-<section id="stnf-r1" class="level4" data-number="9.3.4.11">
-<h4 data-number="9.3.4.11" class="anchored" data-anchor-id="stnf-r1"><span class="header-section-number">9.3.4.11</span> sTNF-R1</h4>
+<section id="stnf-r1" class="level4" data-number="12.3.4.11">
+<h4 data-number="12.3.4.11" class="anchored" data-anchor-id="stnf-r1"><span class="header-section-number">12.3.4.11</span> sTNF-R1</h4>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">assay.plot</span>(<span class="at">showanalyte =</span> <span class="st">"sTNFR.1"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="Cross_Reactivity_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid" width="672"></p>
+<div>
+<figure class="figure">
+<p><img src="Cross_Reactivity_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
-<section id="strem-1" class="level4" data-number="9.3.4.12">
-<h4 data-number="9.3.4.12" class="anchored" data-anchor-id="strem-1"><span class="header-section-number">9.3.4.12</span> sTREM-1</h4>
+<section id="strem-1" class="level4" data-number="12.3.4.12">
+<h4 data-number="12.3.4.12" class="anchored" data-anchor-id="strem-1"><span class="header-section-number">12.3.4.12</span> sTREM-1</h4>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">assay.plot</span>(<span class="at">showanalyte =</span> <span class="st">"sTREM.1"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="Cross_Reactivity_files/figure-html/unnamed-chunk-16-1.png" class="img-fluid" width="672"></p>
+<div>
+<figure class="figure">
+<p><img src="Cross_Reactivity_files/figure-html/unnamed-chunk-16-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
-<section id="trail" class="level4" data-number="9.3.4.13">
-<h4 data-number="9.3.4.13" class="anchored" data-anchor-id="trail"><span class="header-section-number">9.3.4.13</span> TRAIL</h4>
+<section id="trail" class="level4" data-number="12.3.4.13">
+<h4 data-number="12.3.4.13" class="anchored" data-anchor-id="trail"><span class="header-section-number">12.3.4.13</span> TRAIL</h4>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">assay.plot</span>(<span class="at">showanalyte =</span> <span class="st">"TRAIL"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="Cross_Reactivity_files/figure-html/unnamed-chunk-17-1.png" class="img-fluid" width="672"></p>
+<div>
+<figure class="figure">
+<p><img src="Cross_Reactivity_files/figure-html/unnamed-chunk-17-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
-<section id="show-13-plex-results" class="level4" data-number="9.3.4.14">
-<h4 data-number="9.3.4.14" class="anchored" data-anchor-id="show-13-plex-results"><span class="header-section-number">9.3.4.14</span> Show 13-plex results</h4>
+<section id="show-13-plex-results" class="level4" data-number="12.3.4.14">
+<h4 data-number="12.3.4.14" class="anchored" data-anchor-id="show-13-plex-results"><span class="header-section-number">12.3.4.14</span> Show 13-plex results</h4>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
@@ -1379,7 +1041,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>mfi_allplates <span class="ot">=</span> <span class="fu">read_csv</span>(<span class="st">"data/crossreactivity_data/crossreactivity_data_long.csv"</span>, <span class="at">show_col_types =</span> <span class="cn">FALSE</span>)</span>
 <span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the plot with rotated facet labels and reduced y-axis ticks</span></span>
-<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="fu">filter</span>(mfi_allplates, assay <span class="sc">!=</span> <span class="st">"13plex"</span>)) <span class="sc">+</span></span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>myplot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="fu">filter</span>(mfi_allplates, assay <span class="sc">!=</span> <span class="st">"13plex"</span>)) <span class="sc">+</span></span>
 <span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>, <span class="fu">aes</span>(standard, mfi), <span class="at">fill =</span> <span class="st">"black"</span>) <span class="sc">+</span></span>
 <span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_grid</span>(analyte <span class="sc">~</span> assay,<span class="at">scales =</span> <span class="st">"free_y"</span>) <span class="sc">+</span></span>
 <span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">"Assay &amp; Standard being tested"</span>) <span class="sc">+</span></span>
@@ -1387,9 +1049,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
 <span id="cb16-15"><a href="#cb16-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">strip.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">90</span>, <span class="at">hjust =</span> <span class="dv">0</span>),</span>
 <span id="cb16-16"><a href="#cb16-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">strip.text.y =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">0</span>)</span>
-<span id="cb16-17"><a href="#cb16-17" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb16-17"><a href="#cb16-17" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb16-18"><a href="#cb16-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-19"><a href="#cb16-19" aria-hidden="true" tabindex="-1"></a>myplot</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="Cross_Reactivity_files/figure-html/unnamed-chunk-18-1.png" class="img-fluid" width="672"></p>
+<div>
+<figure class="figure">
+<p><img src="Cross_Reactivity_files/figure-html/unnamed-chunk-18-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
 </div>
 </div>
 
@@ -1478,10 +1146,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -1491,8 +1176,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -1504,7 +1198,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -1548,6 +1365,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -1573,6 +1391,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -1634,17 +1478,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./antibody_pairs.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Antibody pair screening</span></span>
+      <a href="./antibody_pairs.html" class="pagination-link" aria-label="Antibody pair screening">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Antibody pair screening</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./Standards_Prep.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Standard curves</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./Standards_Prep.html" class="pagination-link" aria-label="Standard curves">
+        <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Standard curves</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
+
 
 
 

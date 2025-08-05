@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.556">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Supplementary Material : A multiplex bead-based immunoassay and data analysis pipeline for 12 markers of fever severity in dried blood spots - 12&nbsp; Coefficients of Variation</title>
+<title>Design, Optimisation, Validation, and Analysis Framework for Multiplex Bead‑Based Biomarker Assays - 15&nbsp; Coefficients of Variation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -47,7 +81,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -56,12 +96,42 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -71,12 +141,12 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Coefficients_of_Variation.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Coefficients of Variation</span></a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Coefficients_of_Variation.html"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Coefficients of Variation</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
@@ -86,10 +156,10 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Supplementary Material : A multiplex bead-based immunoassay and data analysis pipeline for 12 markers of fever severity in dried blood spots</a> 
+      <a href="./">Design, Optimisation, Validation, and Analysis Framework for Multiplex Bead‑Based Biomarker Assays</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -102,103 +172,115 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">A multiplex bead-based immunoassay and data analysis pipeline for 12 markers of fever severity in dried blood spots</span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Overview</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./fever.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">About this exemplar assay</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./bloodspots.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Dried Blood Spots</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Marker_List.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">List of Markers</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">List of Markers</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Buffers_and_Reagents.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Buffers &amp; Reagents</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Buffers &amp; Reagents</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Capture_Antibody_Prep.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Capture Antibody Preparation</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Capture Antibody Preparation</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Bead_Coupling.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Bead Coupling</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Bead Coupling</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Coupling_Confirmation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Coupling Confirmation</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Coupling Confirmation</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Detection_Antibody_Prep.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Detection Antibody Prep</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Detection Antibody Prep</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./antigens.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Antigens</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Antigens</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./antibody_pairs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Antibody pair screening</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Antibody pair screening</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Cross_Reactivity.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Cross-reactivity Testing</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Cross-reactivity Testing</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Standards_Prep.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Standard curves</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Standard curves</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Magpix_Protocol.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">MagPix Protocol</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">MagPix Protocol</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Coefficients_of_Variation.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Coefficients of Variation</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Coefficients of Variation</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Specimen_Testing.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Specimen Testing</span></span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Specimen Testing</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Analysis_01.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Data Analysis - A Tutorial based on the Mos-Def study</span></span></a>
+  <a href="./Analysis_02.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Data Analysis</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./appendix.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Funding &amp; Declarations</span></span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Funding &amp; Declarations</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./CRediT.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">CRediT Framework</span></span></a>
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">CRediT Framework</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -210,17 +292,30 @@ ul.task-list li input[type="checkbox"] {
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview"><span class="header-section-number">12.1</span> Overview</a></li>
-  <li><a href="#reagents-consumables-equipment" id="toc-reagents-consumables-equipment" class="nav-link" data-scroll-target="#reagents-consumables-equipment"><span class="header-section-number">12.2</span> Reagents, consumables &amp; equipment</a></li>
-  <li><a href="#protocol" id="toc-protocol" class="nav-link" data-scroll-target="#protocol"><span class="header-section-number">12.3</span> Protocol</a></li>
-  <li><a href="#analysis-interpretation-of-results" id="toc-analysis-interpretation-of-results" class="nav-link" data-scroll-target="#analysis-interpretation-of-results"><span class="header-section-number">12.4</span> Analysis &amp; interpretation of results</a></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview"><span class="header-section-number">15.1</span> Overview</a></li>
+  <li><a href="#reagents-consumables-equipment" id="toc-reagents-consumables-equipment" class="nav-link" data-scroll-target="#reagents-consumables-equipment"><span class="header-section-number">15.2</span> Reagents, consumables &amp; equipment</a>
+  <ul class="collapse">
+  <li><a href="#samples" id="toc-samples" class="nav-link" data-scroll-target="#samples"><span class="header-section-number">15.2.1</span> Samples</a></li>
+  <li><a href="#experimental-design-intra-assay-cv" id="toc-experimental-design-intra-assay-cv" class="nav-link" data-scroll-target="#experimental-design-intra-assay-cv"><span class="header-section-number">15.2.2</span> Experimental Design : Intra-assay CV</a></li>
+  </ul></li>
+  <li><a href="#experimental-design-inter-assay-cv" id="toc-experimental-design-inter-assay-cv" class="nav-link" data-scroll-target="#experimental-design-inter-assay-cv"><span class="header-section-number">15.3</span> Experimental Design : Inter-assay CV</a></li>
+  <li><a href="#protocol" id="toc-protocol" class="nav-link" data-scroll-target="#protocol"><span class="header-section-number">15.4</span> Protocol</a></li>
+  <li><a href="#analysis-interpretation-of-results" id="toc-analysis-interpretation-of-results" class="nav-link" data-scroll-target="#analysis-interpretation-of-results"><span class="header-section-number">15.5</span> Analysis &amp; interpretation of results</a>
+  <ul class="collapse">
+  <li><a href="#libraries" id="toc-libraries" class="nav-link" data-scroll-target="#libraries"><span class="header-section-number">15.5.1</span> Libraries</a></li>
+  <li><a href="#intra-assay-cv-estimation" id="toc-intra-assay-cv-estimation" class="nav-link" data-scroll-target="#intra-assay-cv-estimation"><span class="header-section-number">15.5.2</span> Intra-assay CV Estimation</a></li>
+  <li><a href="#interpretation" id="toc-interpretation" class="nav-link" data-scroll-target="#interpretation"><span class="header-section-number">15.5.3</span> interpretation</a></li>
+  <li><a href="#inter-assay-cv" id="toc-inter-assay-cv" class="nav-link" data-scroll-target="#inter-assay-cv"><span class="header-section-number">15.5.4</span> Inter-assay CV</a></li>
+  <li><a href="#interpretation-1" id="toc-interpretation-1" class="nav-link" data-scroll-target="#interpretation-1"><span class="header-section-number">15.5.5</span> Interpretation</a></li>
+  </ul></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">15.6</span> Summary</a></li>
   </ul>
 </nav>
     </div>
@@ -229,7 +324,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Coefficients of Variation</span></h1>
+<h1 class="title"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Coefficients of Variation</span></h1>
 </div>
 
 
@@ -242,53 +337,68 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
 
-<p>TEGWEN NOTES: 201017 results files. 200918 protocol.</p>
-<section id="overview" class="level2" data-number="12.1">
-<h2 data-number="12.1" class="anchored" data-anchor-id="overview"><span class="header-section-number">12.1</span> Overview</h2>
+
+<section id="overview" class="level2" data-number="15.1">
+<h2 data-number="15.1" class="anchored" data-anchor-id="overview"><span class="header-section-number">15.1</span> Overview</h2>
 <p>This protocol can be used to calculate the inter- and intra-assay variation. It can be performed repeatedly on different days or by different operators to provide a measure of variation.</p>
-<p>The protocol was run here using anonymous DBS samples and recombinant protein standards. 12 repeats of pooled DBS eluate were run on plate 1, 12 repeats of the protein standards on plate 2, and single wells of each of these samples on a further 6 plates.</p>
-<p>This protocol was carried out when the CRP assay was still part of the multiplex. It has since been removed.</p>
+<p>This protocol measures how consistent an assay’s results are:</p>
+<ul>
+<li><p><strong>Intra-assay variation</strong> is variation within the same run</p>
+<ul>
+<li><p>(e.g., running the same samples multiple times in one experiment).</p></li>
+<li><p>This tells you the precision of the assay in a single test session.</p></li>
+</ul></li>
+<li><p><strong>Inter-assay variation</strong> is variation between different runs</p>
+<ul>
+<li><p>(e.g., same samples tested on different days or by different people).</p></li>
+<li><p>This tells you the reproducibility across time and operators.</p></li>
+</ul></li>
+</ul>
+<p>By performing the assay repeatedly under these conditions, you can quantify both types of variation, usually as a coefficient of variation (CV%) to confirm reliability. CV measures percentage variation in the estimate of the analyte concentration compared to the mean of all results.</p>
+<p><span class="math display">\[
+\mathrm{CV\%} = \frac{\sigma}{\mu} \times 100\quad\text{where}\quad\sigma = \sqrt{\frac{\sum_{i=1}^n (x_i - \mu)^2}{n - 1}}, \;\mu = \frac{\sum_{i=1}^n x_i}{n}
+\]</span></p>
+<p>The protocol was run here using anonymous DBS samples and recombinant protein standards.</p>
 </section>
-<section id="reagents-consumables-equipment" class="level2" data-number="12.2">
-<h2 data-number="12.2" class="anchored" data-anchor-id="reagents-consumables-equipment"><span class="header-section-number">12.2</span> Reagents, consumables &amp; equipment</h2>
+<section id="reagents-consumables-equipment" class="level2" data-number="15.2">
+<h2 data-number="15.2" class="anchored" data-anchor-id="reagents-consumables-equipment"><span class="header-section-number">15.2</span> Reagents, consumables &amp; equipment</h2>
 <ol type="1">
-<li><p>Items form the Shopping List and the following equipment will be needed:</p></li>
-<li><p>Prepare General Assay Buffers as per Buffers and Reagents protocol.</p></li>
-<li><p>Prepare capture and detection antibodies and recombinant protein standards as per the respective protocols.</p></li>
-<li><p>Couple beads and confirm coupling as per respective protocols.</p></li>
-<li></li>
+<li><p>General Assay Buffers as per <a href="./Buffers_and_Reagents.html">buffers &amp; reagents section</a>.</p></li>
+<li><p><a href="./Capture_Antibody_Prep.html">Capture</a> and <a href="./Detection_Antibody_Prep.html">detection antibodies</a> and <a href="./Standards_Prep.html">recombinant protein standards</a> as per the respective protocols.</p></li>
+<li><p><a href="./Bead_Coupling.html">Coupled</a> and <a href="./Coupling_Confirmation.html">confirmed</a> beads as per the respective protocols.</p></li>
 </ol>
-<p>Table …. Lab worksheet to record batch dates and reagents. Supplier is bio-techne unless specified.</p>
-<table class="table">
+<p>Table 1. Lab worksheet to record batch dates and reagents. Supplier is bio-techne unless specified.</p>
+<table class="caption-top table">
 <colgroup>
 <col style="width: 8%">
 <col style="width: 12%">
-<col style="width: 20%">
+<col style="width: 19%">
 <col style="width: 8%">
 <col style="width: 12%">
 <col style="width: 12%">
-<col style="width: 9%">
-<col style="width: 14%">
+<col style="width: 8%">
+<col style="width: 13%">
 </colgroup>
 <tbody>
 <tr class="odd">
 <td></td>
 <td>Antibody on bead</td>
-<td>Bead Ab conc (ug/millionbeads)</td>
+<td>Bead Ab conc (µg/millionbeads)</td>
 <td>Bead region</td>
 <td>Date beads coupled</td>
 <td>Antigen</td>
 <td>Detection Ab</td>
-<td>Detection Ab (ug/ml)</td>
+<td>Detection Ab (µg/mL)</td>
 </tr>
 <tr class="even">
 <td><strong>CRP</strong></td>
 <td>MAB17071</td>
 <td><strong>5</strong></td>
 <td>12</td>
-<td></td>
+<td>n/a</td>
 <td>1707-CR</td>
 <td>BAM17072</td>
 <td>1</td>
@@ -415,45 +525,967 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
+<section id="samples" class="level3" data-number="15.2.1">
+<h3 data-number="15.2.1" class="anchored" data-anchor-id="samples"><span class="header-section-number">15.2.1</span> Samples</h3>
+<ul>
+<li><p>DBS samples 1-4 from 4 different individuals</p>
+<ul>
+<li>DBS1, DBS2, DBS3, DBS4</li>
+</ul></li>
+<li><p>Spiked DBS made with healthy human blood spiked with the recombinant protein antigens at high, medium, low and zero levels</p>
+<ul>
+<li><p>High DBS, Med DBS, Low DBS, Blank DBS</p>
+<ul>
+<li>spiked analyte activity identical to standards 1, 3, 6 and 8, respectively.</li>
+</ul></li>
+</ul></li>
+<li><p>Recombinant protein standards 1-8 in PBS-TBN</p>
+<ul>
+<li>Std1, Std2, Std3, Std4, Std5, Std6, Std7, Std8</li>
+</ul></li>
+</ul>
 </section>
-<section id="protocol" class="level2" data-number="12.3">
-<h2 data-number="12.3" class="anchored" data-anchor-id="protocol"><span class="header-section-number">12.3</span> Protocol</h2>
-<p>⌚ Timing: 1-2 hours on Day 1 (if eluting DBS),</p>
-<ol type="1">
-<li><p>If using DBS: The day before assay day, prepare elution buffer with 1 ml of 25X protease inhibitor plus 24 ml PBS-TBN. In 8 x 5 ml tubes, add 16 DBS to each tube. Add 800 ul elution buffer to each tube and incubate overnight at 4C.</p></li>
-<li><p>On assay day, get coupled beads from the fridge, vortex and sonicate for 30 sec of each.</p></li>
-<li><p>Dilute beads: add <strong>14.183 ml of PBS-TBN</strong> to a universal. Total final volume after addition of beads, will be 14.7 ml. (14.7 ml minus 517.4 ul) (288 wells, 3 plates’ worth x 50 ul = 14.4 ml)</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp; Vortex bead stocks again immediately before pipetting and add ____ <strong>ul of each bead</strong> to the tube (to get 20k beads/ml [ie 1000 beads/well] based on stock of ____x10<sup>6</sup> beads/ml). Tick as you add the beads:</p>
-<table class="table">
+<section id="experimental-design-intra-assay-cv" class="level3" data-number="15.2.2">
+<h3 data-number="15.2.2" class="anchored" data-anchor-id="experimental-design-intra-assay-cv"><span class="header-section-number">15.2.2</span> Experimental Design : Intra-assay CV</h3>
+<ul>
+<li><p>Twelve within-plate repeats of pooled DBS eluate (DBS1-DBS4) were run on plate 1</p></li>
+<li><p>Twelve within-plate repeats of the spiked DBS (High DBS, Med DBS etc) were run on plate 1</p></li>
+<li><p>Twelve within-plate repeats of the protein standards (Std1-Std8) were run on plate 2</p>
+<p><em>N.B. This protocol was carried out when the CRP assay was still part of the multiplex. It has since been removed.</em></p>
+<h4 id="plate-1-layout-intra-assay" data-number="15.2.2.1" class="anchored"><span class="header-section-number">15.2.2.1</span> Plate 1 Layout (Intra-assay)</h4></li>
+</ul>
+<table class="caption-top table">
 <colgroup>
-<col style="width: 12%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+<th>7</th>
+<th>8</th>
+<th>9</th>
+<th>10</th>
+<th>11</th>
+<th>12</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>DBS1</td>
+<td>DBS1</td>
+<td>DBS1</td>
+<td>DBS1</td>
+<td>DBS1</td>
+<td>DBS1</td>
+<td>DBS1</td>
+<td>DBS1</td>
+<td>DBS1</td>
+<td>DBS1</td>
+<td>DBS1</td>
+<td>DBS1</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td>DBS2</td>
+<td>DBS2</td>
+<td>DBS2</td>
+<td>DBS2</td>
+<td>DBS2</td>
+<td>DBS2</td>
+<td>DBS2</td>
+<td>DBS2</td>
+<td>DBS2</td>
+<td>DBS2</td>
+<td>DBS2</td>
+<td>DBS2</td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td>DBS3</td>
+<td>DBS3</td>
+<td>DBS3</td>
+<td>DBS3</td>
+<td>DBS3</td>
+<td>DBS3</td>
+<td>DBS3</td>
+<td>DBS3</td>
+<td>DBS3</td>
+<td>DBS3</td>
+<td>DBS3</td>
+<td>DBS3</td>
+</tr>
+<tr class="even">
+<td>D</td>
+<td>DBS4</td>
+<td>DBS4</td>
+<td>DBS4</td>
+<td>DBS4</td>
+<td>DBS4</td>
+<td>DBS4</td>
+<td>DBS4</td>
+<td>DBS4</td>
+<td>DBS4</td>
+<td>DBS4</td>
+<td>DBS4</td>
+<td>DBS4</td>
+</tr>
+<tr class="odd">
+<td>E</td>
+<td>High DBS</td>
+<td>High DBS</td>
+<td>High DBS</td>
+<td>High DBS</td>
+<td>High DBS</td>
+<td>High DBS</td>
+<td>High DBS</td>
+<td>High DBS</td>
+<td>High DBS</td>
+<td>High DBS</td>
+<td>High DBS</td>
+<td>High DBS</td>
+</tr>
+<tr class="even">
+<td>F</td>
+<td>Med DBS</td>
+<td>Med DBS</td>
+<td>Med DBS</td>
+<td>Med DBS</td>
+<td>Med DBS</td>
+<td>Med DBS</td>
+<td>Med DBS</td>
+<td>Med DBS</td>
+<td>Med DBS</td>
+<td>Med DBS</td>
+<td>Med DBS</td>
+<td>Med DBS</td>
+</tr>
+<tr class="odd">
+<td>G</td>
+<td>Low DBS</td>
+<td>Low DBS</td>
+<td>Low DBS</td>
+<td>Low DBS</td>
+<td>Low DBS</td>
+<td>Low DBS</td>
+<td>Low DBS</td>
+<td>Low DBS</td>
+<td>Low DBS</td>
+<td>Low DBS</td>
+<td>Low DBS</td>
+<td>Low DBS</td>
+</tr>
+<tr class="even">
+<td>H</td>
+<td>Blank DBS</td>
+<td>Blank DBS</td>
+<td>Blank DBS</td>
+<td>Blank DBS</td>
+<td>Blank DBS</td>
+<td>Blank DBS</td>
+<td>Blank DBS</td>
+<td>Blank DBS</td>
+<td>Blank DBS</td>
+<td>Blank DBS</td>
+<td>Blank DBS</td>
+<td>Blank DBS</td>
+</tr>
+</tbody>
+</table>
+<section id="plate-2-layout-intra-assay" class="level4" data-number="15.2.2.2">
+<h4 data-number="15.2.2.2" class="anchored" data-anchor-id="plate-2-layout-intra-assay"><span class="header-section-number">15.2.2.2</span> Plate 2 Layout (Intra-assay)</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 6%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+<th>7</th>
+<th>8</th>
+<th>9</th>
+<th>10</th>
+<th>11</th>
+<th>12</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>Std1</td>
+<td>Std1</td>
+<td>Std1</td>
+<td>Std1</td>
+<td>Std1</td>
+<td>Std1</td>
+<td>Std1</td>
+<td>Std1</td>
+<td>Std1</td>
+<td>Std1</td>
+<td>Std1</td>
+<td>Std1</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td>Std2</td>
+<td>Std2</td>
+<td>Std2</td>
+<td>Std2</td>
+<td>Std2</td>
+<td>Std2</td>
+<td>Std2</td>
+<td>Std2</td>
+<td>Std2</td>
+<td>Std2</td>
+<td>Std2</td>
+<td>Std2</td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td>Std3</td>
+<td>Std3</td>
+<td>Std3</td>
+<td>Std3</td>
+<td>Std3</td>
+<td>Std3</td>
+<td>Std3</td>
+<td>Std3</td>
+<td>Std3</td>
+<td>Std3</td>
+<td>Std3</td>
+<td>Std3</td>
+</tr>
+<tr class="even">
+<td>D</td>
+<td>Std4</td>
+<td>Std4</td>
+<td>Std4</td>
+<td>Std4</td>
+<td>Std4</td>
+<td>Std4</td>
+<td>Std4</td>
+<td>Std4</td>
+<td>Std4</td>
+<td>Std4</td>
+<td>Std4</td>
+<td>Std4</td>
+</tr>
+<tr class="odd">
+<td>E</td>
+<td>Std5</td>
+<td>Std5</td>
+<td>Std5</td>
+<td>Std5</td>
+<td>Std5</td>
+<td>Std5</td>
+<td>Std5</td>
+<td>Std5</td>
+<td>Std5</td>
+<td>Std5</td>
+<td>Std5</td>
+<td>Std5</td>
+</tr>
+<tr class="even">
+<td>F</td>
+<td>Std6</td>
+<td>Std6</td>
+<td>Std6</td>
+<td>Std6</td>
+<td>Std6</td>
+<td>Std6</td>
+<td>Std6</td>
+<td>Std6</td>
+<td>Std6</td>
+<td>Std6</td>
+<td>Std6</td>
+<td>Std6</td>
+</tr>
+<tr class="odd">
+<td>G</td>
+<td>Std7</td>
+<td>Std7</td>
+<td>Std7</td>
+<td>Std7</td>
+<td>Std7</td>
+<td>Std7</td>
+<td>Std7</td>
+<td>Std7</td>
+<td>Std7</td>
+<td>Std7</td>
+<td>Std7</td>
+<td>Std7</td>
+</tr>
+<tr class="even">
+<td>H</td>
+<td>Std8</td>
+<td>Std8</td>
+<td>Std8</td>
+<td>Std8</td>
+<td>Std8</td>
+<td>Std8</td>
+<td>Std8</td>
+<td>Std8</td>
+<td>Std8</td>
+<td>Std8</td>
+<td>Std8</td>
+<td>Std8</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+<section id="experimental-design-inter-assay-cv" class="level2" data-number="15.3">
+<h2 data-number="15.3" class="anchored" data-anchor-id="experimental-design-inter-assay-cv"><span class="header-section-number">15.3</span> Experimental Design : Inter-assay CV</h2>
+<ul>
+<li>On each of six plates, single replicates of all specimens (Pooled DBS, Spiked DBS, Standards)</li>
+</ul>
+<section id="plate-3-8-layout-interassay" class="level4" data-number="15.3.0.1">
+<h4 data-number="15.3.0.1" class="anchored" data-anchor-id="plate-3-8-layout-interassay"><span class="header-section-number">15.3.0.1</span> Plate 3-8 Layout (Interassay)</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 6%">
+<col style="width: 15%">
+<col style="width: 8%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 6%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+<th>7</th>
+<th>8</th>
+<th>9</th>
+<th>10</th>
+<th>11</th>
+<th>12</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>DBS1</td>
+<td>Std1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td>DBS2</td>
+<td>Std2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td>DBS3</td>
+<td>Std3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>D</td>
+<td>DBS4</td>
+<td>Std4</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>E</td>
+<td>High DBS</td>
+<td>Std5</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>F</td>
+<td>Med DBS</td>
+<td>Std6</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>G</td>
+<td>Low DBS</td>
+<td>Std7</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>H</td>
+<td>Blank DBS</td>
+<td>Std8</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="protocol" class="level2" data-number="15.4">
+<h2 data-number="15.4" class="anchored" data-anchor-id="protocol"><span class="header-section-number">15.4</span> Protocol</h2>
+<p>⌚ Timing: 1-2 hours to prepare prior to assay day, about 6-7 hours on assay day, including incubations.</p>
+<ol type="1">
+<li>Eluting DBS samples: The day before assay day, prepare elution buffer with 1 mL of 25X protease inhibitor plus 24 mL PBS-TBN. In 8 x 5 mL tubes, add 20 DBS to each tube of the individual donor and spiked DBS. Add 1 mL elution buffer to each tube and incubate overnight at 4C.</li>
+</ol>
+<!-- -->
+<ol type="1">
+<li><p>On assay day, get coupled beads from fridge, vortex and sonicate for 30 sec of each.</p></li>
+<li><p>Dilute beads: add <strong>14.183 mL of PBS-TBN</strong> to a universal. Total final volume after addition of beads, will be 14.7 mL. (14.7 mL minus 517.4 µL) (288 wells, 3 plates’ worth x 50 ul = 14.4 mL)</p></li>
+<li><p>Vortex bead stocks again immediately before pipetting and add ____ µL <strong>of each bead</strong> to the tube (to get 20k beads/mL [ie 1000 beads/well] based on stock of ____x10<sup>6</sup> beads/mL). Tick as you add the beads:</p>
+<table class="caption-top table">
+<colgroup>
 <col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 12%">
 <col style="width: 12%">
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>CRP</p>
-<p>sTNFR1</p>
-<p>IL6</p>
-<p>IL8</p></td>
 <td><p>Ang1</p>
 <p>Ang2</p>
-<p>TRAIL</p>
 <p>Azu</p></td>
-<td><p>IL10</p>
-<p>sTREM1</p>
-<p>IP-10</p>
+<td><p>IL-6</p>
+<p>IL-8</p>
+<p>IL-10</p></td>
+<td><p>IP-10</p>
 <p>CHI3L1</p>
 <p>MxA</p></td>
+<td><p>sTREM1</p>
+<p>sTNFR1</p>
+<p>TRAIL</p></td>
 </tr>
 </tbody>
 </table></li>
-<li><p>&nbsp;&nbsp;&nbsp;&nbsp; Get black plates and label with date etc.</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp; Add 50 ul of diluted beads to all labelled wells.</p></li>
+<li><p>Label 8 black plates with plate number, date, etc.</p></li>
+<li><p>Add 50 µL of diluted beads to all required wells, as per plate layouts:</p></li>
+<li><p>Wash the beads once: put plate on magnet, wait 60 sec, flick out liquid, remove from magnet, add 100 µL PBST to each well, back on magnet 60 sec, flick out liquid, bang gently on tissue.</p></li>
+<li><p>Vortex the eluted DBS samples.</p></li>
+<li><p>Thaw, vortex &amp; pool the buffer standards. Mix again before dispensing.</p></li>
+<li><p>Add <strong>30 µL/well</strong> of standards and RBC-DBS eluate to respective wells.</p></li>
+<li><p>Add <strong>30</strong> <strong>µL/well</strong> of PBS-TBN+pi as standard 8.</p></li>
+<li><p>Cover and incubate on gentle shaker for <strong>120 mins</strong>. Record start time:______________</p></li>
+<li><p>During the incubation, prepare biotin detection antibodies for 3 plates. The excess can be stored frozen for future use.</p></li>
+<li><p>Wash the plates 3 times with PBST as before.</p></li>
+<li><p>Add 30 µL per well of the detection antibody mix to all used wells.</p></li>
+<li><p>Cover and incubate, shaking, for 1 hour.</p></li>
+<li><p>During incubation, prepare SA-PE at 3 µg/mL by adding <strong>___TBC___</strong> µL of SA-PE stock (1 mg/mL) into <strong>___ TBC__</strong>mL PBS-TBN.</p></li>
+<li><p>Wash plates 3 times with PBST as before.</p></li>
+<li><p>Add 30 µL per well of the diluted SA-PE to all used wells.</p></li>
+<li><p>Cover and incubate, shaking, for 45 minutes.</p></li>
+<li><p>Wash plates 3 times with PBST as before.</p></li>
+<li><p>Add 100 µL PBS-TBN to each well, cover and refrigerate overnight.</p></li>
+<li><p>Read plates on MagPix first thing the next day.</p>
+<p>Example data analysis using real data is given below.</p></li>
 </ol>
 </section>
-<section id="analysis-interpretation-of-results" class="level2" data-number="12.4">
-<h2 data-number="12.4" class="anchored" data-anchor-id="analysis-interpretation-of-results"><span class="header-section-number">12.4</span> Analysis &amp; interpretation of results</h2>
+<section id="analysis-interpretation-of-results" class="level2" data-number="15.5">
+<h2 data-number="15.5" class="anchored" data-anchor-id="analysis-interpretation-of-results"><span class="header-section-number">15.5</span> Analysis &amp; interpretation of results</h2>
+<section id="libraries" class="level3" data-number="15.5.1">
+<h3 data-number="15.5.1" class="anchored" data-anchor-id="libraries"><span class="header-section-number">15.5.1</span> Libraries</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(reshape2)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(flextable)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(kableExtra)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="intra-assay-cv-estimation" class="level3" data-number="15.5.2">
+<h3 data-number="15.5.2" class="anchored" data-anchor-id="intra-assay-cv-estimation"><span class="header-section-number">15.5.2</span> Intra-assay CV Estimation</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Helper function to calculate CV table for a given data frame</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>calc_cv <span class="ot">&lt;-</span> <span class="cf">function</span>(data, <span class="at">keep =</span> <span class="cn">NULL</span>) {</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.null</span>(keep)) data <span class="ot">&lt;-</span> data[keep, ]</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  data <span class="sc">%&gt;%</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">group_by</span>(Sample, Assay) <span class="sc">%&gt;%</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">summarise</span>(</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>      <span class="at">n =</span> <span class="fu">n</span>(),</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>      <span class="at">mean =</span> <span class="fu">mean</span>(MFI, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>      <span class="at">sd =</span> <span class="fu">sd</span>(MFI, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>      <span class="at">CV =</span> <span class="dv">100</span> <span class="sc">*</span> (sd <span class="sc">/</span> mean),</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>      <span class="at">.groups =</span> <span class="st">"drop"</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">%&gt;%</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    <span class="fu">group_by</span>(Assay) <span class="sc">%&gt;%</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">summarise</span>(<span class="at">CV =</span> <span class="fu">mean</span>(CV, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="at">.groups =</span> <span class="st">"drop"</span>)</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="co"># Read and reshape a plate CSV</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>read_plate <span class="ot">&lt;-</span> <span class="cf">function</span>(file, assay_cols) {</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">read_csv</span>(file, <span class="at">skip =</span> <span class="dv">41</span>, <span class="at">show_col_types =</span> <span class="cn">FALSE</span>,<span class="at">name_repair =</span> <span class="st">"universal"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>    <span class="fu">slice</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">96</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="fu">across</span>(<span class="dv">3</span><span class="sc">:</span><span class="dv">16</span>, as.numeric)) <span class="sc">%&gt;%</span></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>    <span class="fu">pivot_longer</span>(</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>      <span class="at">cols =</span> {{ assay_cols }},</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>      <span class="at">names_to =</span> <span class="st">"Assay"</span>,</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>      <span class="at">values_to =</span> <span class="st">"MFI"</span></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a><span class="co"># Process plates</span></span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>p1 <span class="ot">&lt;-</span> <span class="fu">read_plate</span>(<span class="st">"data/cv/INTRAASSAY_CV_plate_01.csv"</span>, CRP<span class="sc">:</span>CH3L1)</span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>p2 <span class="ot">&lt;-</span> <span class="fu">read_plate</span>(<span class="st">"data/cv/INTRAASSAY_CV_plate_02.csv"</span>, Ang<span class="fl">.1</span><span class="sc">:</span>TRAIL)</span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate CVs</span></span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a><span class="co"># Works without NSE issues:</span></span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>pooled_dbs_results <span class="ot">&lt;-</span> <span class="fu">calc_cv</span>(p1, <span class="fu">str_starts</span>(p1<span class="sc">$</span>Sample, <span class="st">"DBS"</span>)) <span class="sc">%&gt;%</span> <span class="fu">rename</span>(<span class="st">"Intra_CV_Pooled_DBS"</span><span class="ot">=</span>CV )</span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>spiked_dbs_results <span class="ot">&lt;-</span> <span class="fu">calc_cv</span>(p1, <span class="sc">!</span><span class="fu">str_starts</span>(p1<span class="sc">$</span>Sample, <span class="st">"DBS"</span>)) <span class="sc">%&gt;%</span> <span class="fu">rename</span>(<span class="st">"Intra_CV_Spiked_DBS"</span><span class="ot">=</span>CV )</span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>recombinant_results <span class="ot">&lt;-</span> <span class="fu">calc_cv</span>(p2)  <span class="sc">%&gt;%</span> <span class="fu">rename</span>(<span class="st">"Intra_CV_Standards"</span><span class="ot">=</span>CV ) <span class="co"># no filter</span></span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a><span class="co"># Combine into one table</span></span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>CV_table_intra_assay <span class="ot">&lt;-</span> pooled_dbs_results <span class="sc">%&gt;%</span></span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(spiked_dbs_results, <span class="at">by =</span> <span class="st">"Assay"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(recombinant_results, <span class="at">by =</span> <span class="st">"Assay"</span>)</span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a><span class="co"># Display</span></span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(CV_table_intra_assay,<span class="at">digits =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Assay</th>
+<th style="text-align: right;">Intra_CV_Pooled_DBS</th>
+<th style="text-align: right;">Intra_CV_Spiked_DBS</th>
+<th style="text-align: right;">Intra_CV_Standards</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Ang.1</td>
+<td style="text-align: right;">6.82</td>
+<td style="text-align: right;">5.48</td>
+<td style="text-align: right;">12.59</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Ang.2</td>
+<td style="text-align: right;">5.53</td>
+<td style="text-align: right;">6.32</td>
+<td style="text-align: right;">9.38</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Azu</td>
+<td style="text-align: right;">3.75</td>
+<td style="text-align: right;">4.31</td>
+<td style="text-align: right;">7.50</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">CH3L1</td>
+<td style="text-align: right;">5.41</td>
+<td style="text-align: right;">2.62</td>
+<td style="text-align: right;">4.21</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">CRP</td>
+<td style="text-align: right;">4.72</td>
+<td style="text-align: right;">1.75</td>
+<td style="text-align: right;">8.96</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">IL.10</td>
+<td style="text-align: right;">5.84</td>
+<td style="text-align: right;">4.60</td>
+<td style="text-align: right;">8.06</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">IL.6</td>
+<td style="text-align: right;">4.28</td>
+<td style="text-align: right;">6.33</td>
+<td style="text-align: right;">6.41</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">IL.8</td>
+<td style="text-align: right;">5.55</td>
+<td style="text-align: right;">8.32</td>
+<td style="text-align: right;">7.89</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">IP.10</td>
+<td style="text-align: right;">6.38</td>
+<td style="text-align: right;">6.80</td>
+<td style="text-align: right;">7.56</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">MxA</td>
+<td style="text-align: right;">4.50</td>
+<td style="text-align: right;">5.18</td>
+<td style="text-align: right;">5.84</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">TRAIL</td>
+<td style="text-align: right;">5.87</td>
+<td style="text-align: right;">5.87</td>
+<td style="text-align: right;">11.20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sTNF.R1</td>
+<td style="text-align: right;">3.36</td>
+<td style="text-align: right;">5.26</td>
+<td style="text-align: right;">12.38</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sTREM1</td>
+<td style="text-align: right;">6.94</td>
+<td style="text-align: right;">6.26</td>
+<td style="text-align: right;">25.28</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="interpretation" class="level3" data-number="15.5.3">
+<h3 data-number="15.5.3" class="anchored" data-anchor-id="interpretation"><span class="header-section-number">15.5.3</span> interpretation</h3>
+<p><strong>1. All CVs are comfortably low</strong></p>
+<ul>
+<li><p>Generally, intra-assay CVs under <strong>10%</strong> are considered very good for immunoassays, and under <strong>15%</strong> is acceptable for most biomarker work.</p></li>
+<li><p>The pooled DBS and spiked DBS samples are all well under 10%, which suggests that the assay reproducibility is strong.</p></li>
+<li><p>The recombinant standards are a little higher for a few assays (12–25%), but still mostly within acceptable bounds except for <strong>sTREM1</strong>.</p></li>
+</ul>
+<p><strong>2. sTREM1 might be the one to watch</strong></p>
+<ul>
+<li><p><strong>25%</strong> CV in recombinant standards is high.</p></li>
+<li><p>This might be due to:</p>
+<ul>
+<li><p>Low signal strength near the detection limit.</p></li>
+<li><p>Pipetting or bead-count variability.</p></li>
+<li><p>Poor stability in recombinant form.</p></li>
+</ul></li>
+<li><p>Worth checking raw MFI values to see if it’s just noise from low readings.</p></li>
+<li><p>Also worth remembering this when looking at clinical data.</p></li>
+</ul>
+<p><strong>3. Recombinant standards tend to have higher CVs than DBS</strong></p>
+<ul>
+<li><p>For example, <strong>Ang.1</strong> is 6.8% (pooled DBS) vs.&nbsp;12.6% (standards).</p></li>
+<li><p>This pattern might be due to:</p>
+<ul>
+<li><p>Matrix mismatch. The recombinant standards are in buffer rather than a complex matrix like DBS.</p></li>
+<li><p>Bead performance differences when analytes are spiked into clean buffer.</p></li>
+</ul></li>
+<li><p>This isn’t unusual, but it’s worth noting if you ever compare results directly between recombinant standards and real samples.</p></li>
+</ul>
+<p><strong>5. No obvious systematic matrix-specific instability</strong></p>
+<ul>
+<li><p>There’s no assay where the pooled DBS CV is high but standards are low, meaning that the DBS format doesn’t seem to be introducing extra noise.</p></li>
+<li><p>That’s a good sign for assay robustness in the intended sample type.</p></li>
+</ul>
+</section>
+<section id="inter-assay-cv" class="level3" data-number="15.5.4">
+<h3 data-number="15.5.4" class="anchored" data-anchor-id="inter-assay-cv"><span class="header-section-number">15.5.4</span> Inter-assay CV</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Vector of plate numbers</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>plates <span class="ot">&lt;-</span> <span class="fu">sprintf</span>(<span class="st">"P%d"</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Read and combine without ...17 column that R creates on read</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>df2 <span class="ot">&lt;-</span> <span class="fu">map_dfr</span>(plates, <span class="cf">function</span>(plate) {</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  file <span class="ot">&lt;-</span> <span class="fu">sprintf</span>(<span class="st">"data/cv/INTERASSAY_CV_plate_%02d.csv"</span>, <span class="fu">as.integer</span>(<span class="fu">sub</span>(<span class="st">"P"</span>, <span class="st">""</span>, plate)))</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">read_csv</span>(file, <span class="at">skip =</span> <span class="dv">41</span>, <span class="at">show_col_types =</span> <span class="cn">FALSE</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">slice</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">16</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(<span class="sc">-</span><span class="fu">starts_with</span>(<span class="st">"..."</span>)) <span class="sc">%&gt;%</span>  <span class="co"># drop those unnamed columns</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">plate =</span> plate)</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert assay columns to numeric</span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>df2_num <span class="ot">&lt;-</span> df2 <span class="sc">%&gt;%</span></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="fu">across</span>(</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>    <span class="fu">c</span>(<span class="st">`</span><span class="at">CRP</span><span class="st">`</span><span class="sc">:</span><span class="st">`</span><span class="at">CH3L1</span><span class="st">`</span>), <span class="co"># all your assay columns in order</span></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>    as.numeric</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>  ))</span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Pivot longer like p1/p2</span></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>df2 <span class="ot">&lt;-</span> df2_num <span class="sc">%&gt;%</span></span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(</span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>    <span class="at">cols =</span> CRP<span class="sc">:</span>CH3L1,  <span class="co"># all assay columns</span></span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>    <span class="at">names_to =</span> <span class="st">"Assay"</span>,</span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>    <span class="at">values_to =</span> <span class="st">"MFI"</span></span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Pooled DBS</span></span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a>inter_pooled_dbs <span class="ot">&lt;-</span> <span class="fu">calc_cv</span>(</span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a>  df2, </span>
+<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a>  <span class="fu">str_starts</span>(df2<span class="sc">$</span>Sample, <span class="st">"DBS"</span>)</span>
+<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a>) <span class="sc">%&gt;%</span></span>
+<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">inter_CV_pooled_DBS =</span> CV)</span>
+<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Spiked DBS (but not starting with "DBS")</span></span>
+<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a>inter_spiked_dbs <span class="ot">&lt;-</span> <span class="fu">calc_cv</span>(</span>
+<span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a>  df2, </span>
+<span id="cb3-40"><a href="#cb3-40" aria-hidden="true" tabindex="-1"></a>  <span class="sc">!</span><span class="fu">str_starts</span>(df2<span class="sc">$</span>Sample, <span class="st">"DBS"</span>)</span>
+<span id="cb3-41"><a href="#cb3-41" aria-hidden="true" tabindex="-1"></a>) <span class="sc">%&gt;%</span></span>
+<span id="cb3-42"><a href="#cb3-42" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">inter_CV_spiked_DBS =</span> CV)</span>
+<span id="cb3-43"><a href="#cb3-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-44"><a href="#cb3-44" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. Recombinant standards</span></span>
+<span id="cb3-45"><a href="#cb3-45" aria-hidden="true" tabindex="-1"></a><span class="co">#    If recombinant standards are in a separate pattern like "Rec" or "Std", filter accordingly</span></span>
+<span id="cb3-46"><a href="#cb3-46" aria-hidden="true" tabindex="-1"></a><span class="co">#    Here, I'll assume they're *everything* in df2_long (same as your recombinant p2 case)</span></span>
+<span id="cb3-47"><a href="#cb3-47" aria-hidden="true" tabindex="-1"></a>inter_recombinant <span class="ot">&lt;-</span> <span class="fu">calc_cv</span>(</span>
+<span id="cb3-48"><a href="#cb3-48" aria-hidden="true" tabindex="-1"></a>  df2,<span class="fu">str_starts</span>(df2<span class="sc">$</span>Sample,<span class="st">"Std"</span>)</span>
+<span id="cb3-49"><a href="#cb3-49" aria-hidden="true" tabindex="-1"></a>) <span class="sc">%&gt;%</span></span>
+<span id="cb3-50"><a href="#cb3-50" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">inter_CV_recombinant =</span> CV)</span>
+<span id="cb3-51"><a href="#cb3-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-52"><a href="#cb3-52" aria-hidden="true" tabindex="-1"></a><span class="co"># ---- Join into one table ----</span></span>
+<span id="cb3-53"><a href="#cb3-53" aria-hidden="true" tabindex="-1"></a>inter_assay_table <span class="ot">&lt;-</span> inter_pooled_dbs <span class="sc">%&gt;%</span></span>
+<span id="cb3-54"><a href="#cb3-54" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(inter_spiked_dbs, <span class="at">by =</span> <span class="st">"Assay"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb3-55"><a href="#cb3-55" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(inter_recombinant, <span class="at">by =</span> <span class="st">"Assay"</span>)</span>
+<span id="cb3-56"><a href="#cb3-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-57"><a href="#cb3-57" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(inter_assay_table,<span class="at">digits =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 28%">
+<col style="width: 28%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Assay</th>
+<th style="text-align: right;">inter_CV_pooled_DBS</th>
+<th style="text-align: right;">inter_CV_spiked_DBS</th>
+<th style="text-align: right;">inter_CV_recombinant</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Ang-1</td>
+<td style="text-align: right;">4.19</td>
+<td style="text-align: right;">5.92</td>
+<td style="text-align: right;">7.12</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Ang-2</td>
+<td style="text-align: right;">5.42</td>
+<td style="text-align: right;">6.22</td>
+<td style="text-align: right;">6.41</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Azu</td>
+<td style="text-align: right;">3.29</td>
+<td style="text-align: right;">4.53</td>
+<td style="text-align: right;">5.46</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">CH3L1</td>
+<td style="text-align: right;">2.82</td>
+<td style="text-align: right;">2.96</td>
+<td style="text-align: right;">3.45</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">CRP</td>
+<td style="text-align: right;">2.42</td>
+<td style="text-align: right;">4.09</td>
+<td style="text-align: right;">4.82</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">IL-10</td>
+<td style="text-align: right;">4.69</td>
+<td style="text-align: right;">5.41</td>
+<td style="text-align: right;">6.23</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">IL-6</td>
+<td style="text-align: right;">5.26</td>
+<td style="text-align: right;">4.14</td>
+<td style="text-align: right;">3.90</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">IL-8</td>
+<td style="text-align: right;">3.81</td>
+<td style="text-align: right;">7.16</td>
+<td style="text-align: right;">6.75</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">IP-10</td>
+<td style="text-align: right;">3.97</td>
+<td style="text-align: right;">5.65</td>
+<td style="text-align: right;">5.66</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">MxA</td>
+<td style="text-align: right;">4.62</td>
+<td style="text-align: right;">4.14</td>
+<td style="text-align: right;">3.89</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">TRAIL</td>
+<td style="text-align: right;">3.70</td>
+<td style="text-align: right;">6.17</td>
+<td style="text-align: right;">7.04</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sTNF-R1</td>
+<td style="text-align: right;">2.89</td>
+<td style="text-align: right;">6.37</td>
+<td style="text-align: right;">7.27</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sTREM1</td>
+<td style="text-align: right;">3.47</td>
+<td style="text-align: right;">6.07</td>
+<td style="text-align: right;">6.52</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="interpretation-1" class="level3" data-number="15.5.5">
+<h3 data-number="15.5.5" class="anchored" data-anchor-id="interpretation-1"><span class="header-section-number">15.5.5</span> Interpretation</h3>
+<p><strong>1. All inter-assay CVs are comfortably low</strong></p>
+<ul>
+<li><p>Everything is below ~8%, which is excellent for inter-assay reproducibility.</p></li>
+<li><p>In biomarker assays, inter-assay CVs under 10% are considered very strong; you’re well under that threshold across the board.</p></li>
+</ul>
+<p><strong>2. Pooled DBS vs.&nbsp;Spiked DBS vs.&nbsp;Recombinant</strong></p>
+<ul>
+<li><p><strong>Pooled DBS</strong> CVs are consistently lowest for most analytes.</p>
+<ul>
+<li>Suggests that the pooled DBS specimens are very stable and reproducible across plates.</li>
+</ul></li>
+<li><p><strong>Spiked DBS</strong> sometimes slightly higher</p>
+<ul>
+<li><p>e.g., IL-8 jumps to 7.16% from 3.81% in pooled DBS.</p></li>
+<li><p>This could be due to pipetting variability or how spikes integrate into the DBS matrix.</p></li>
+</ul></li>
+<li><p><strong>Recombinant</strong> CVs are generally a little higher than pooled DBS but not alarmingly so (e.g., CRP: 2.42% → 4.82%).</p>
+<ul>
+<li>This is common because recombinant standards are often in a clean buffer and don’t always mimic real sample matrix behavior.</li>
+</ul></li>
+</ul>
+<p><strong>3. No major outliers</strong></p>
+<ul>
+<li><p>The worst CV is IL-8 in spiked DBS (7.16%), but this is still well within the “good” range.</p></li>
+<li><p>No single assay looks unstable across all sample types.</p></li>
+<li><p>Some analytes (e.g., MxA, IL-6) have slightly higher pooled DBS CVs than recombinants, but the differences are small (&lt;1–2%).</p></li>
+</ul>
+</section>
+</section>
+<section id="summary" class="level2" data-number="15.6">
+<h2 data-number="15.6" class="anchored" data-anchor-id="summary"><span class="header-section-number">15.6</span> Summary</h2>
+<p>The intra- and inter-assay precision results indicate that the multiplex immunoassay is performing with strong reproducibility across sample types.</p>
+<ul>
+<li><p><strong>Reliable performance in DBS format</strong> – Both pooled and spiked DBS specimens showed consistently low intra- and inter-assay CVs, all well below the commonly accepted 10% threshold for high-quality immunoassays. This supports the use of DBS as a stable and reproducible matrix for these analytes.</p></li>
+<li><p><strong>Recombinant standards less precise but acceptable</strong> – CVs for recombinant standards were generally higher than for DBS, particularly for a few analytes such as sTREM1. This is likely due to matrix differences (buffer vs.&nbsp;DBS), lower signal levels, or inherent instability of some recombinant proteins. While still mostly within acceptable limits, this should be considered when interpreting calibration and QC data.</p></li>
+<li><p><strong>sTREM1 warrants monitoring</strong> – Elevated CV (~25%) in recombinant standards suggests potential instability or variability in this assay. This should be monitored in future runs, and raw signal data reviewed to confirm whether variability is due to low-level signal noise or other technical factors.</p></li>
+<li><p><strong>No evidence of matrix-specific instability</strong> – The lack of any assay showing high CVs in DBS but low CVs in standards suggests the DBS format itself is not introducing additional variability.</p></li>
+</ul>
+<p>Overall, these findings provide confidence in the robustness of the assay system for use with DBS samples, while highlighting the importance of monitoring recombinant standard performance, particularly for sTREM1.</p>
 
 
 </section>
@@ -538,10 +1570,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -551,8 +1600,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -564,7 +1622,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -608,6 +1789,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -633,6 +1815,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -694,17 +1902,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./Magpix_Protocol.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">MagPix Protocol</span></span>
+      <a href="./Magpix_Protocol.html" class="pagination-link" aria-label="MagPix Protocol">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">MagPix Protocol</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./Specimen_Testing.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Specimen Testing</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./Specimen_Testing.html" class="pagination-link" aria-label="Specimen Testing">
+        <span class="nav-page-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Specimen Testing</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
+
 
 
 

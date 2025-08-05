@@ -1,0 +1,71 @@
+Manufacturer,Part No.,Pack size,PRODUCT DESCRIPTION,Component
+bio-techne,370-0010,3,Lightning-Link (R) Rapid Type A Biotin Antibody Labeling Kit,Detection
+bio-techne,AF2200,100 ug,Human Azurocidin/CAP37/HBP Affinity Purified Polyclonal Ab,Detection
+bio-techne,AF7946,100 ug,Human MxA/Mx1 Affinity Purified Polyclonal Ab,Detection
+bio-techne,BAF1278,50 ug,Human TREM-1 Biotinylated Affinity Purified PAb,Detection
+bio-techne,BAF206,50 ug,Human/Primate IL-6 Biotinylated Affinity Purified PAb,Detection
+bio-techne,BAF208,50 ug,Human IL-8/CXCL8 Biotinylated Affinity Purified PAb,Detection
+bio-techne,BAF217,100 ug,Human IL-10 Biotinylated Affinity Purified PAb,Detection
+bio-techne,BAF225,50 ug,Human TNF RI/TNFRSF1A Biotinylated Affinity Purified PAb,Detection
+bio-techne,BAF2599,50 ug,Human/Primate Chitinase 3-like 1 Biotinylated Aff Pur PAb,Detection
+bio-techne,BAF266,50 ug,Human CXCL10/IP-10 Biotinylated Affinity Purified PAb,Detection
+bio-techne,BAF375,50 ug,Human/Primate TRAIL/TNFSF10 Biotinylated Aff Pur PAb,Detection
+bio-techne,BAF623,50 ug,Human Angiopoietin-2 Biotinylated Affinity Purified PAb,Detection
+bio-techne,BAF923,50 ug,Human Angiopoietin-1 Biotinylated Affinity Purified PAb,Detection
+bio-techne,H00054210-M04,100 µg,TREM1 Antibody (2E2),Capture
+bio-techne,MAB206-100,100 µg,Human/Primate IL-6 MAb (Clone 6708),Capture
+bio-techne,MAB2172-100,100 µg,Human IL-10 MAb (Clone 127107),Capture
+bio-techne,MAB225-100,100 µg,Human TNF RI/TNFRSF1A MAb (Clone 16803),Capture
+bio-techne,MAB25991-100,100 µg,Human/Primate Chitinase 3-like 1 MAb (Clone 384327),Capture
+bio-techne,MAB266-100,100 µg,Human CXCL10/IP-10/CRG-2 MAb (Clone 33036),Capture
+bio-techne,MAB375-100,100 µg,Human TRAIL/TNFSF10 MAb (Clone 75411),Capture
+bio-techne,MAB9231-100,100 µg,Human Angiopoietin-1 MAb (Clone 171733),Capture
+bio-techne,NB110-85467,100 µg,Angiopoietin-2 Antibody (MM0020-1F29),Capture
+bio-techne,NBP2-12045,100 µg,Azurocidin/CAP37/HBP Antibody (MM0099-7F31),Capture
+Thermo,M801,500 µg,Anti IL-8 (clone 3IL8-H10),Capture
+Thermo,MA5-24914,100 µg,Anti MxA,Capture
+bio-techne,2599-CH-050,50 µg,Recombinant Human Chitinase 3-like 1 Protein,Antigen
+bio-techne,375-TL-010,10 µg,Recombinant Human TRAIL/TNFSF10 Protein,Antigen
+bio-techne,623-AN-025,25 µg,Recombinant Human Angiopoietin-2 Protein,Antigen
+bio-techne,636-R1-025,25 µg,Recombinant Human sTNFR1/TNFRSF1A Protein,Antigen
+bio-techne,923-AN-025,25 µg,Recombinant Human Angiopoietin-1 Protein,Antigen
+bio-techne,1064-IL-010,10 µg,Recombinant Human IL-10 (aa 19-178) Protein,Antigen
+bio-techne,1278-TR-050,50 µg,Recombinant Human TREM-1 Fc Chimera Protein,Antigen
+bio-techne,206-IL-010,10 µg,Recombinant Human IL-6 Protein,Antigen
+bio-techne,208-IL-010,10 µg,Recombinant Human IL-8/CXCL8 Protein,Antigen
+bio-techne,2200-SE-050,50 µg,Recombinant Human Azurocidin/CAP37/HBP Protein,Antigen
+bio-techne,266-IP-010,10 µg,Recombinant Human CXCL10/IP-10 Protein,Antigen
+Insight Biotechnology,TP307418,20 µg,MX1 (NM_002462) Human Recombinant Protein,Antigen
+bio-techne,1707-CR-200,200 µg,Recombinant Human C-Reactive Protein/CRP Protein,Antigen2
+bio-techne,321-FL-050,50 µg,Recombinant Human VEGFR1/Flt-1 Fc Chimera Protein,Antigen2
+bio-techne,9607-PN-050,50 µg,Recombinant Human Procalcitonin Protein CF,Antigen2
+Luminex,MC10014-01,12.5m (1ml),Bead region 14,Beads
+Luminex,MC10015-01,12.5m (1ml),Bead region 15,Beads
+Luminex,MC10018-01,12.5m (1ml),Bead region 18,Beads
+Luminex,MC10020-01,12.5m (1ml),Bead region 20,Beads
+Luminex,MC10021-01,12.5m (1ml),Bead region 21,Beads
+Luminex,MC10022-01,12.5m (1ml),Bead region 22,Beads
+Luminex,MC10025-01,12.5m (1ml),Bead region 25,Beads
+Luminex,MC10026-01,12.5m (1ml),Bead region 26,Beads
+Luminex,MC10027-01,12.5m (1ml),Bead region 27,Beads
+Luminex,MC10028-01,12.5m (1ml),Bead region 28,Beads
+Luminex,MC10029-01,12.5m (1ml),Bead region 29,Beads
+Luminex,MC10030-01,12.5m (1ml),Bead region 30,Beads
+Bio-Rad,171025001,40,Bio-Plex Pro Black plates,Materials
+Thermo,40-50030,4,MagPix Drive Fluid Plus,Materials
+Sigma,P4417-100TAB,100 tablets,PBS tablets,Buffer
+Roche,11697498001,20 tabs,Protease inhibitor (for DBS samples),Buffer
+Thermo,MPX-CAL-K25,25 weeks of use,MagPix Calibration kit,Other
+Thermo,MPX-PVER-K25,25 days of use,MagPix Verification kit,Other
+Sigma,A4503-100G,100 g,BSA,Buffer
+Sigma,11851335,5 g,EDC,Buffer
+Sigma,10391314,500 mg,NHS,Buffer
+any suitable,,,Sticky plate covers,Materials
+any suitable,,,200 µl tips,Materials
+Thermo,S866,1 mg,SA-PE,Detection
+Sigma,M3671,50 g,MES,Buffer
+Sigma,S8282,500 g,Sodium phosphate monobasic,Buffer
+Sigma,P1379-100ML,100 ml,Tween 20,Buffer
+Sigma,S5881-500G,500 g,NaOH (sodium hydroxide),Buffer
+any suitable,,,0.2 um syringe filter,Materials
+any suitable,,,20-50 ml syringe,Materials

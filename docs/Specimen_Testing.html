@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.556">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Supplementary Material : A multiplex bead-based immunoassay and data analysis pipeline for 12 markers of fever severity in dried blood spots - 13&nbsp; Specimen Testing</title>
+<title>Design, Optimisation, Validation, and Analysis Framework for Multiplex Bead‑Based Biomarker Assays - 16&nbsp; Specimen Testing</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./Analysis_01.html" rel="next">
+<link href="./Analysis_02.html" rel="next">
 <link href="./Coefficients_of_Variation.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -47,7 +47,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -56,6 +62,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -71,12 +78,12 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Specimen_Testing.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Specimen Testing</span></a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Specimen_Testing.html"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Specimen Testing</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
@@ -86,10 +93,10 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Supplementary Material : A multiplex bead-based immunoassay and data analysis pipeline for 12 markers of fever severity in dried blood spots</a> 
+      <a href="./">Design, Optimisation, Validation, and Analysis Framework for Multiplex Bead‑Based Biomarker Assays</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -102,103 +109,115 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">A multiplex bead-based immunoassay and data analysis pipeline for 12 markers of fever severity in dried blood spots</span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Overview</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./fever.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">About this exemplar assay</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./bloodspots.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Dried Blood Spots</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Marker_List.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">List of Markers</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">List of Markers</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Buffers_and_Reagents.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Buffers &amp; Reagents</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Buffers &amp; Reagents</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Capture_Antibody_Prep.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Capture Antibody Preparation</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Capture Antibody Preparation</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Bead_Coupling.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Bead Coupling</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Bead Coupling</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Coupling_Confirmation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Coupling Confirmation</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Coupling Confirmation</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Detection_Antibody_Prep.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Detection Antibody Prep</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Detection Antibody Prep</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./antigens.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Antigens</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Antigens</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./antibody_pairs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Antibody pair screening</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Antibody pair screening</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Cross_Reactivity.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Cross-reactivity Testing</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Cross-reactivity Testing</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Standards_Prep.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Standard curves</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Standard curves</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Magpix_Protocol.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">MagPix Protocol</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">MagPix Protocol</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Coefficients_of_Variation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Coefficients of Variation</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Coefficients of Variation</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Specimen_Testing.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Specimen Testing</span></span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Specimen Testing</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Analysis_01.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Data Analysis - A Tutorial based on the Mos-Def study</span></span></a>
+  <a href="./Analysis_02.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Data Analysis</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./appendix.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Funding &amp; Declarations</span></span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Funding &amp; Declarations</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./CRediT.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">CRediT Framework</span></span></a>
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">CRediT Framework</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -210,14 +229,17 @@ ul.task-list li input[type="checkbox"] {
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#testing-dbs-samples-with-the-biomarker-assay" id="toc-testing-dbs-samples-with-the-biomarker-assay" class="nav-link active" data-scroll-target="#testing-dbs-samples-with-the-biomarker-assay"><span class="header-section-number">14</span> <strong>Testing DBS samples with the biomarker assay</strong></a></li>
+  <li><a href="#testing-dbs-samples-with-the-biomarker-assay" id="toc-testing-dbs-samples-with-the-biomarker-assay" class="nav-link active" data-scroll-target="#testing-dbs-samples-with-the-biomarker-assay"><span class="header-section-number">17</span> <strong>Testing DBS samples with the biomarker assay</strong></a>
+  <ul class="collapse">
+  <li><a href="#lab-worksheet-protocol" id="toc-lab-worksheet-protocol" class="nav-link" data-scroll-target="#lab-worksheet-protocol"><span class="header-section-number">17.0.1</span> Lab worksheet protocol</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -226,7 +248,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Specimen Testing</span></h1>
+<h1 class="title"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Specimen Testing</span></h1>
 </div>
 
 
@@ -239,4391 +261,552 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
 
-<section id="testing-dbs-samples-with-the-biomarker-assay" class="level1" data-number="14">
-<h1 data-number="14"><span class="header-section-number">14</span> <strong>Testing DBS samples with the biomarker assay</strong></h1>
-<p>Lab worksheet protocol</p>
-<p>Assay dates _____________ done by ____________________</p>
+
+<section id="testing-dbs-samples-with-the-biomarker-assay" class="level1" data-number="17">
+<h1 data-number="17"><span class="header-section-number">17</span> <strong>Testing DBS samples with the biomarker assay</strong></h1>
+<p><strong>Reagents and materials needed</strong></p>
+<ul>
+<li><p>All materials on the Shopping List.</p></li>
+<li><p>Vortex mixer, sonicating waterbath, shaking platform, microfuge, pipettes and reservoirs.</p></li>
+<li><p>PBS and PBS-TBN as per Buffers and Reagents protocol.</p></li>
+<li><p>Coupled beads as per Bead Coupling protocol.</p></li>
+<li><p>Detection antibodies as per Detection Antibody Prep.</p></li>
+</ul>
+<section id="lab-worksheet-protocol" class="level3" data-number="17.0.1">
+<h3 data-number="17.0.1" class="anchored" data-anchor-id="lab-worksheet-protocol"><span class="header-section-number">17.0.1</span> Lab worksheet protocol</h3>
+<p>Assay date __________________________ done by _____________________________</p>
 <p><strong>Aim</strong></p>
 <p>To measure 12 immune markers in dried blood spot samples.</p>
-<p><strong>Important notes/Things that differ this time:</strong></p>
-<p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Biotin Ab aliquots allow for multichannel pipetting.</p>
-<p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DBS rehydrated at 1 per 50 ul (2 in 100 ul) overnight.</p>
-<p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Samples are run in SINGLE wells at each dilution.</p>
-<p>All samples, standards &amp; detection Abs are <strong>30 ul per well</strong> volume.</p>
-<p>Record date that standards were pre-diluted and frozen on __________</p>
-<p><strong>Sample plate IDs:</strong> ……………………………………………………………………………</p>
-<ol type="1">
-<li>Dispense samples into elution plates and record sample ID electronically to correspond with plate name.</li>
-</ol>
-<p><strong>Assay set-up</strong></p>
-<table class="table">
+<p><strong>Important notes</strong></p>
+<p>DBS rehydrated 2 x 6 mm spots in 100 ul PBS-TBN+pi overnight.</p>
+<p>All samples, standards &amp; detection antibodies are <strong>30 ul per well</strong> volume.</p>
+<p>Conduct your own Risk Assessment for the risks associated with your samples and handle accordingly.</p>
+<p>Record date that standards were diluted and frozen on _______________</p>
+<p><strong>Sample plate IDs:</strong> ……………………………………………………………………………….</p>
+<p><strong>Assay overview and timings</strong></p>
+<table class="caption-top table">
 <colgroup>
-<col style="width: 3%">
-<col style="width: 9%">
-<col style="width: 3%">
-<col style="width: 44%">
-<col style="width: 3%">
-<col style="width: 15%">
-<col style="width: 3%">
-<col style="width: 12%">
-<col style="width: 3%">
-</colgroup>
-<tbody>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td>All 12 beads</td>
-<td></td>
-<td>DBS eluted in PBS-TBN+pi &amp; previously frozen buffer standards</td>
-<td></td>
-<td>All 12 detection Abs</td>
-<td></td>
-<td>SA-PE @ 3 ug/ml</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p><strong>All reagents (bio-techne unless specified)</strong></p>
-
-<table class="table">
-<tbody>
-<tr class="odd">
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-</tr>
-<tr class="even">
-<td>
-</td>
-<td>
-<p>
-Antibody on bead
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-Bead Ab conc (ug/million)
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-Bead region
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-Date beads coupled
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-Ag
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-Biotin detection Ab
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-Biotin Ab expiry
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-detection Ab (ug/ml)
-</p>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-</tr>
-<tr class="odd">
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-</tr>
-<tr class="even">
-<td>
-</td>
-<td>
-<p>
-<strong>IL8</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-M801 (Thermo)
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-<strong>5</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-22
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-230516
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-208-IL
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-BAF208
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-1.5
-</p>
-</td>
-<td>
-</td>
-</tr>
-<tr class="odd">
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-</tr>
-<tr class="even">
-<td>
-</td>
-<td>
-<p>
-<strong>sTNF-R1</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-MAB225
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-<strong>6</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-20
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-230516
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-636-R1
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-BAF225
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-1.5
-</p>
-</td>
-<td>
-</td>
-</tr>
-<tr class="odd">
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-</tr>
-<tr class="even">
-<td>
-</td>
-<td>
-<p>
-<strong>IL6</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-MAB206
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-<strong>5</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-21
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-230516
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-206-IL
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-BAF206
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-1
-</p>
-</td>
-<td>
-</td>
-</tr>
-<tr class="odd">
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-</tr>
-<tr class="even">
-<td>
-</td>
-<td>
-<p>
-<strong>Ang2</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-NB110-85467
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-<strong>5</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-15
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-230516
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-623-AN
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-BAF623
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-1
-</p>
-</td>
-<td>
-</td>
-</tr>
-<tr class="odd">
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-</tr>
-<tr class="even">
-<td>
-</td>
-<td>
-<p>
-<strong>Ang1</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-MAB9231
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-<strong>5</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-18
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-<strong>220729</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-923-AN
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-BAF923
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-1.5
-</p>
-</td>
-<td>
-</td>
-</tr>
-<tr class="odd">
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-</tr>
-<tr class="even">
-<td>
-</td>
-<td>
-<p>
-<strong>TRAIL</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-MAB375
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-<strong>6</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-25
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-230516
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-375-TL
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-BAF375
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-1
-</p>
-</td>
-<td>
-</td>
-</tr>
-<tr class="odd">
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-</tr>
-<tr class="even">
-<td>
-</td>
-<td>
-<p>
-<strong>IL10</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-MAB2172
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-<strong>4</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-26
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-230516
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-1064-IL
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-BAF217
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-1.5
-</p>
-</td>
-<td>
-</td>
-</tr>
-<tr class="odd">
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-</tr>
-<tr class="even">
-<td>
-</td>
-<td>
-<p>
-<strong>sTREM1</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-H00054210-M04
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-<strong>6</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-14
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-230516
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-1278-TR
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-BAF1278
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-2
-</p>
-</td>
-<td>
-</td>
-</tr>
-<tr class="odd">
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-</tr>
-<tr class="even">
-<td>
-</td>
-<td>
-<p>
-<strong>IP-10</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-MAB266
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-<strong>5</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-29
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-<strong>220729</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-266-IP
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-BAF266
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-1
-</p>
-</td>
-<td>
-</td>
-</tr>
-<tr class="odd">
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-</tr>
-<tr class="even">
-<td>
-</td>
-<td>
-<p>
-<strong>Azu</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-NBP2-12045
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-<strong>7</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-27
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-230516
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-2200-SE
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-AF2200+B
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-1.5
-</p>
-</td>
-<td>
-</td>
-</tr>
-<tr class="odd">
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-</tr>
-<tr class="even">
-<td>
-</td>
-<td>
-<p>
-<strong>MxA</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-MA5-24914 (Thermo)
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-<strong>6</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-28
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-230516
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-TP307418
-</p>
-<p>
-(OriGene)
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-AF7946+B
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-1
-</p>
-</td>
-<td>
-</td>
-</tr>
-<tr class="odd">
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-</tr>
-<tr class="even">
-<td>
-</td>
-<td>
-<p>
-<strong>Chit/CH3L1</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-MAB25991
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-<strong>4.5</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-30
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-<strong>220729</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-2599-CH
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-BAF2599
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-1
-</p>
-</td>
-<td>
-</td>
-</tr>
-<tr class="odd">
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-</tr>
-</tbody>
-
-</table>
-<p><u><strong>Preparation</strong></u></p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp; Book MagPix on Skedda for the day after running the assay: <a href="https://app.skedda.com/account/login?returnUrl=https%3A%2F%2Flshtm.skedda.com%2Fbooking%2Fmine" class="uri">https://app.skedda.com/account/login?returnUrl=https%3A%2F%2Flshtm.skedda.com%2Fbooking%2Fmine</a></p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp; Prepare elution buffer fresh on day of use:</p>
-<p>o&nbsp; Protease inhibitor: dissolve 1 tablet in 2 ml PBS to give 25X (Sigma, cOmplete, 04693116001)</p>
-<p>o&nbsp; PBS-TBN</p>
-<p><strong>24 ml PBS-TBN + 1 ml of 25X protease inhibitor solution</strong></p>
-<p># Tablets are in fridge in 247, sonicate to get them to dissolve quicker.</p>
-
-<table class="table">
-<tbody>
-<tr class="odd">
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-</tr>
-<tr class="even">
-<td>
-</td>
-<td>
-<p>
-Number of plates
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-PBS-TBN volume (ul)
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-Total volume (ul)
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-25X Protease inhibitor (ul)
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-This many tablets
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-Number of plates
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-PBS-TBN volume (ul)
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-Total volume (ul)
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-25X Protease inhibitor (ul)
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-This many tablets
-</p>
-</td>
-<td>
-</td>
-</tr>
-<tr class="odd">
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-</tr>
-<tr class="even">
-<td>
-</td>
-<td>
-<p>
-1
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;8,448
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;8,800
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;352
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-1
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-6
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;50,688
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;52,800
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;2,112
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-2
-</p>
-</td>
-<td>
-</td>
-</tr>
-<tr class="odd">
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-</tr>
-<tr class="even">
-<td>
-</td>
-<td>
-<p>
-2
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;16,896
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;17,600
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;704
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-1
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-7
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;59,136
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;61,600
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;2,464
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-2
-</p>
-</td>
-<td>
-</td>
-</tr>
-<tr class="odd">
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-</tr>
-<tr class="even">
-<td>
-</td>
-<td>
-<p>
-3
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;25,344
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;26,400
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;1,056
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-1
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-8
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;67,584
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;70,400
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;2,816
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-2
-</p>
-</td>
-<td>
-</td>
-</tr>
-<tr class="odd">
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-</tr>
-<tr class="even">
-<td>
-</td>
-<td>
-<p>
-4
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;33,792
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;35,200
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;1,408
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-1
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-9
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;76,032
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;79,200
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;3,168
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-2
-</p>
-</td>
-<td>
-</td>
-</tr>
-<tr class="odd">
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-</tr>
-<tr class="even">
-<td>
-</td>
-<td>
-<p>
-5
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-42,240
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;44,000
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-1,760
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-1
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-<strong>10</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-<strong>84,480</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-<strong>88,000</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-<strong>3,520</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-<strong>2</strong>
-</p>
-</td>
-<td>
-</td>
-</tr>
-<tr class="odd">
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-</tr>
-</tbody>
-
-</table>
-<p>&nbsp;&nbsp;&nbsp;&nbsp; Label black plate(s) with date &amp; plate ID.</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp; Add 100 ul/well of elution buffer to DBS in the low-bind plate that they are in.</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp; Cover with sticky plate cover, label, and place in fridge overnight. Time put in fridge ______________</p>
-<p><u><strong>Assay running</strong></u></p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp; GET ICE FIRST! 2<sup>nd</sup> floor- new room 209.</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp; Take the box of wet ice to get standards from -70. When thawed, put in fridge.</p>
-<p>PBS-TBN makes the blank, standard 8.</p>
-<p>#Do not re-freeze standards. Just use a new aliquot each day.</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp; Bring sample plates to ambient temperature &amp; put on a shaker until ready to use. Start time ___________</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp; Prepare beads: Get coupled beads from fridge, vortex and sonicate for 30 sec of each.</p>
-<p>#Take care to select the correct bead batches for each bead.</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp; Add the “Buffer volume” of PNS-TBN to a single tube. Allows 7% surplus.</p>
-
-<table class="table">
-<tbody>
-<tr class="odd">
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-</tr>
-<tr class="even">
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-<p>
-Bead volume of each bead (ul)
-</p>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-</tr>
-<tr class="odd">
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-</tr>
-<tr class="even">
-<td>
-</td>
-<td>
-<p>
-Plates
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-<strong>Buffer volume (ul)</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-Total needed (ml)
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-<strong>230516</strong> beads
-</p>
-<p>
-(8.8 x 10<sup>6</sup> stock)
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-<strong>220729</strong> beads (small tubes) 12.4 x 10<sup>6</sup>
-</p>
-</td>
-<td>
-</td>
-</tr>
-<tr class="odd">
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-</tr>
-<tr class="even">
-<td>
-</td>
-<td>
-<p>
-1
-</p>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-<p>
-5136
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-8.3
-</p>
-</td>
-<td>
-</td>
-</tr>
-<tr class="odd">
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-</tr>
-<tr class="even">
-<td>
-</td>
-<td>
-<p>
-2
-</p>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-<p>
-10272
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-16.6
-</p>
-</td>
-<td>
-</td>
-</tr>
-<tr class="odd">
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-</tr>
-<tr class="even">
-<td>
-</td>
-<td>
-<p>
-3
-</p>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-<p>
-15408
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-24.9
-</p>
-</td>
-<td>
-</td>
-</tr>
-<tr class="odd">
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-</tr>
-<tr class="even">
-<td>
-</td>
-<td>
-<p>
-4
-</p>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-<p>
-20544
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-33.1
-</p>
-</td>
-<td>
-</td>
-</tr>
-<tr class="odd">
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-</tr>
-<tr class="even">
-<td>
-</td>
-<td>
-<p>
-5
-</p>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-<p>
-25680
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-41.4
-</p>
-</td>
-<td>
-</td>
-</tr>
-<tr class="odd">
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-</tr>
-<tr class="even">
-<td>
-</td>
-<td>
-<p>
-6
-</p>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-<p>
-30816
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-49.7
-</p>
-</td>
-<td>
-</td>
-</tr>
-<tr class="odd">
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-</tr>
-<tr class="even">
-<td>
-</td>
-<td>
-<p>
-7
-</p>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-<p>
-35952
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-58.0
-</p>
-</td>
-<td>
-</td>
-</tr>
-<tr class="odd">
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-</tr>
-<tr class="even">
-<td>
-</td>
-<td>
-<p>
-8
-</p>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-<p>
-41088
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-66.3
-</p>
-</td>
-<td>
-</td>
-</tr>
-<tr class="odd">
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-</tr>
-<tr class="even">
-<td>
-</td>
-<td>
-<p>
-9
-</p>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-<p>
-46224
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-74.6
-</p>
-</td>
-<td>
-</td>
-</tr>
-<tr class="odd">
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-</tr>
-<tr class="even">
-<td>
-</td>
-<td>
-<p>
-<strong>10</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-<strong>50,060.4</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-<strong>51360</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-<strong>116.8</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-<strong>82.8</strong>
-</p>
-</td>
-<td>
-</td>
-</tr>
-<tr class="odd">
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-</tr>
-</tbody>
-
-</table>
-<p>&nbsp;&nbsp;&nbsp;&nbsp; Vortex bead stocks again &amp; add volumeof each bead to the tube.</p>
-<p>(calculated to get 20k beads/ml [ie 1000 beads/well). Tick as you add the beads:</p>
-
-<table class="table">
-<tbody>
-<tr class="odd">
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-</tr>
-<tr class="even">
-<td>
-</td>
-<td>
-<p>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TNFR1
-</p>
-<p>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MxA
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Ang1</strong>
-</p>
-<p>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ang2
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IL10
-</p>
-<p>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TREM
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IL6
-</p>
-<p>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IL8
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TRAIL
-</p>
-<p>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Azu
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>IP-10</strong>
-</p>
-<p>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Chit</strong>
-</p>
-</td>
-<td>
-</td>
-</tr>
-<tr class="odd">
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-</tr>
-</tbody>
-
-</table>
-<p>&nbsp;&nbsp;&nbsp;&nbsp; Add <u><strong>50 ul</strong></u> of mixed beads to ALL wells with multichannel.</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp; Wash the beads: put plate on magnet, 60 sec, flick out liquid, remove from magnet add 100 ul PBST to each well, on magnet 60 sec, flick out wash liquid, bang gently on tissue.</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp; Vortex &amp; spin down the standards.</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp; Add <strong>30 ul/well</strong> of all samples to the black plate with multichannel.</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp; Add STANDARDS, 30 ul per well in duplicates.</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp; Cover plates with black cover &amp; incubate on shaker at room temp for 2 hours. Start _______ Ended _____</p>
-<p>During incubation, prepare biotin detection Abs…</p>
-<p><strong>Detection Abs</strong>: Get aliquots of appropriate size from the freezer, depending on number of plates being run. Fill in expiry dates on table at the start of this protocol.</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp; Add <strong>PBS-TBN</strong> to a tube for: ……………………………………………………………..… ↓</p>
-<table class="table">
-<colgroup>
-<col style="width: 2%">
-<col style="width: 13%">
-<col style="width: 2%">
-<col style="width: 14%">
-<col style="width: 2%">
-<col style="width: 32%">
-<col style="width: 2%">
-<col style="width: 22%">
-<col style="width: 2%">
-</colgroup>
-<tbody>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td><strong>Number of plates</strong></td>
-<td></td>
-<td>Volume of each Ab (ul)</td>
-<td></td>
-<td><p>Total</p>
-<p>(allowing 3.16ml per plate which is almost 10% extra)</p></td>
-<td></td>
-<td><p><strong>Volume of PBS-TBN</strong></p>
-<p>(ul, before adding Abs. Now 12-plex)</p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td><strong>1</strong></td>
-<td></td>
-<td>14</td>
-<td></td>
-<td>3160</td>
-<td></td>
-<td><strong>3,010.7</strong></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td><strong>2</strong></td>
-<td></td>
-<td>28</td>
-<td></td>
-<td>6320</td>
-<td></td>
-<td><strong>6,021.7</strong></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td><strong>3</strong></td>
-<td></td>
-<td>42</td>
-<td></td>
-<td>9480</td>
-<td></td>
-<td><strong>9,032.8</strong></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td><strong>4</strong></td>
-<td></td>
-<td>56</td>
-<td></td>
-<td>12640</td>
-<td></td>
-<td><strong>12,044.0</strong></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td><strong>5</strong></td>
-<td></td>
-<td>70</td>
-<td></td>
-<td>15800</td>
-<td></td>
-<td><strong>15,052.5</strong></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td><strong>6</strong></td>
-<td></td>
-<td>84</td>
-<td></td>
-<td>18960</td>
-<td></td>
-<td><strong>18,063.1</strong></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td><strong>7</strong></td>
-<td></td>
-<td>98</td>
-<td></td>
-<td>22120</td>
-<td></td>
-<td><strong>21,073.6</strong></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td><strong>8</strong></td>
-<td></td>
-<td>112</td>
-<td></td>
-<td>25280</td>
-<td></td>
-<td><strong>24,084.2</strong></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td><strong>9</strong></td>
-<td></td>
-<td>126</td>
-<td></td>
-<td>28440</td>
-<td></td>
-<td><strong>27,094.7</strong></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td><strong>10</strong></td>
-<td></td>
-<td>140</td>
-<td></td>
-<td>31600</td>
-<td></td>
-<td><strong>30,105.2</strong></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p>&nbsp;&nbsp;&nbsp;&nbsp; Use this to recover the full volume from biotin Ab aliquot tubes. i.e.&nbsp;add 200 ul of buffer to the aliquot tube, vortex mix, spin down, then transfer all of it back to the main tube.</p>
-<p><strong>NOTE- Azu and MxA are <u>NOT</u> aliquots, just take the volume needed out of the glass vial (fridge door)</strong></p>
-<p>Tick as you add each Ab:</p>
-<table class="table">
-<colgroup>
-<col style="width: 5%">
-<col style="width: 26%">
-<col style="width: 5%">
-<col style="width: 26%">
-<col style="width: 5%">
 <col style="width: 20%">
-<col style="width: 5%">
-</colgroup>
-<tbody>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TNFR1</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IL6</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IL8</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MxA ***</p></td>
-<td></td>
-<td><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ang1</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ang2</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TRAIL</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Azu ***</p></td>
-<td></td>
-<td><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IL10</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TREM</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IP-10</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chit</p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-
-<table class="table">
-<tbody>
-<tr class="odd">
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-</tr>
-<tr class="even">
-<td>
-</td>
-<td>
-<p>
-***
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-Number of plates
-</p>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-</tr>
-<tr class="odd">
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-</tr>
-<tr class="even">
-<td>
-</td>
-<td>
-<p>
-1
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-2
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-3
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-4
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-5
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-6
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-7
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-8
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-9
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-10
-</p>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-</tr>
-<tr class="odd">
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-</tr>
-<tr class="even">
-<td>
-</td>
-<td>
-<p>
-<strong>Azu</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-<strong>5.6</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-<strong>11.0</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-<strong>16.3</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-<strong>21.6</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-<strong>28.5</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-<strong>34.1</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-<strong>39.8</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-<strong>45.5</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-<strong>51.2</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-<strong>56.9</strong>
-</p>
-</td>
-<td>
-</td>
-</tr>
-<tr class="odd">
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-</tr>
-<tr class="even">
-<td>
-</td>
-<td>
-<p>
-<strong>MxA</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-<strong>3.7</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-<strong>7.3</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-<strong>10.9</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-<strong>14.4</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-<strong>19.0</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-<strong>22.8</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-<strong>26.6</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-<strong>30.3</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-<strong>34.1</strong>
-</p>
-</td>
-<td>
-</td>
-<td>
-<p>
-<strong>37.9</strong>
-</p>
-</td>
-<td>
-</td>
-</tr>
-<tr class="odd">
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-</tr>
-</tbody>
-
-</table>
-<p>Back to the plate when incubation is over….</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp; <strong>WASHES</strong>: Prepare a wad of blue roll <u>AND</u> tub of Presept in sink- 2 tablets in about 1 L of tap water.</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp; Putplate on magnet, wait 60 sec, still on magnet, turn plate over on tissue and bang gently. Discard tissue into autoclave bin. Remove plate from magnet &amp; add <strong>100 ul PBST</strong> to each well. Subsequent washes can be emptied into disinfectant in the sink.</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp; Add <strong>30 ul/well</strong> of detection antibody mixture……</p>
-<p>è These are new fixed volume aliquots (now with 10% added volume) so there <u><strong>is</strong></u> enough to multichannel! <strong>😊</strong></p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp; Cover plates &amp; gentle shake for 60 mins. Start time __________ Ended ___________</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp; DURING THE INCUBATION, prepare SA-PE to be 3 ug/ml. (This includes 10% extra volume to allow multichannel pipetting):</p>
-<table class="table">
-<colgroup>
-<col style="width: 5%">
-<col style="width: 8%">
-<col style="width: 5%">
-<col style="width: 25%">
-<col style="width: 5%">
-<col style="width: 19%">
-<col style="width: 5%">
+<col style="width: 4%">
 <col style="width: 23%">
 <col style="width: 5%">
+<col style="width: 17%">
+<col style="width: 5%">
+<col style="width: 9%">
+<col style="width: 5%">
+<col style="width: 6%">
 </colgroup>
 <tbody>
 <tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td>Plates</td>
-<td></td>
-<td><strong>PBS-TBN volume (ml)</strong></td>
-<td></td>
-<td>Total needed (ml)</td>
-<td></td>
-<td><strong>SA-PE volume (ul)</strong></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td>1</td>
-<td></td>
-<td><strong>3.151</strong></td>
-<td></td>
-<td>3.160</td>
-<td></td>
-<td><strong>9.5</strong></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td>2</td>
-<td></td>
-<td><strong>6.301</strong></td>
-<td></td>
-<td>6.320</td>
-<td></td>
-<td><strong>19.0</strong></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td>3</td>
-<td></td>
-<td><strong>9.452</strong></td>
-<td></td>
-<td>9.480</td>
-<td></td>
-<td><strong>28.4</strong></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td>4</td>
-<td></td>
-<td><strong>12.602</strong></td>
-<td></td>
-<td>12.640</td>
-<td></td>
-<td><strong>37.9</strong></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td>5</td>
-<td></td>
-<td><strong>15.753</strong></td>
-<td></td>
-<td>15.800</td>
-<td></td>
-<td><strong>47.4</strong></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td>6</td>
-<td></td>
-<td><strong>18.903</strong></td>
-<td></td>
-<td>18.960</td>
-<td></td>
-<td><strong>56.9</strong></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td>7</td>
-<td></td>
-<td><strong>22.054</strong></td>
-<td></td>
-<td>22.120</td>
-<td></td>
-<td><strong>66.4</strong></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td>8</td>
-<td></td>
-<td><strong>25.204</strong></td>
-<td></td>
-<td>25.280</td>
-<td></td>
-<td><strong>75.8</strong></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td>9</td>
-<td></td>
-<td><strong>28.355</strong></td>
-<td></td>
-<td>28.440</td>
-<td></td>
-<td><strong>85.3</strong></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td>10</td>
-<td></td>
-<td><strong>31.505</strong></td>
-<td></td>
-<td>31.600</td>
-<td></td>
-<td><strong>94.8</strong></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>12 beads coupled with capture antibodies</td>
+<td>1 wash</td>
+<td><p>DBS eluate &amp; previously frozen buffer standards</p>
+<p>2 hour incubation</p></td>
+<td>3 washes</td>
+<td><p>12 biotin-conjugated detection Abs.</p>
+<p>1 hour incubation</p></td>
+<td>3 washes</td>
+<td><p>SA-PE @ 3 ug/ml</p>
+<p>45 min incubation</p></td>
+<td>3 washes</td>
+<td><p>PBS-TBN</p>
+<p>MagPix read</p></td>
 </tr>
 </tbody>
 </table>
-<p>&nbsp;&nbsp;&nbsp;&nbsp; Wash plate 3 times with <strong>100 ul PBST</strong> to each well.</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp; Add 30 ul/well of the SA-PE dilution across the plate.</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp; Cover &amp; incubate 45 mins on gentle shaker. Start time ___________ Ended ___________</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp; Wash 3 times with <strong>100 ul PBST</strong> to each well.</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp; Add 100 ul/well of PBS-TBN.</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp; Cover plate and store plate in fridge to be read tomorrow.</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp; On day of reading: MIX plate on shaker before putting in the MagPix machine.</p>
+<p><strong>Summary of assay reagents (bio-techne unless specified)</strong></p>
+<p>Complete columns to record bead coupling date and biotin antibody expiry date:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 7%">
+<col style="width: 13%">
+<col style="width: 14%">
+<col style="width: 7%">
+<col style="width: 10%">
+<col style="width: 6%">
+<col style="width: 11%">
+<col style="width: 14%">
+<col style="width: 11%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Assay</td>
+<td>Capture antibody on bead</td>
+<td>Bead Ab conc (ug/million)</td>
+<td>Bead region</td>
+<td>Date beads coupled</td>
+<td>Antigen</td>
+<td>Biotin detection Ab</td>
+<td>Biotin detection Ab expiry</td>
+<td>detection Ab (ug/ml)</td>
+</tr>
+<tr class="even">
+<td><strong>IL8</strong></td>
+<td>M801 (Thermo)</td>
+<td><strong>5</strong></td>
+<td>22</td>
+<td></td>
+<td>208-IL</td>
+<td>BAF208</td>
+<td></td>
+<td>1.5</td>
+</tr>
+<tr class="odd">
+<td><strong>sTNF-R1</strong></td>
+<td>MAB225</td>
+<td><strong>6</strong></td>
+<td>20</td>
+<td></td>
+<td>636-R1</td>
+<td>BAF225</td>
+<td></td>
+<td>1.5</td>
+</tr>
+<tr class="even">
+<td><strong>IL6</strong></td>
+<td>MAB206</td>
+<td><strong>5</strong></td>
+<td>21</td>
+<td></td>
+<td>206-IL</td>
+<td>BAF206</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td><strong>Ang2</strong></td>
+<td>NB110-85467</td>
+<td><strong>5</strong></td>
+<td>15</td>
+<td></td>
+<td>623-AN</td>
+<td>BAF623</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td><strong>Ang1</strong></td>
+<td>MAB9231</td>
+<td><strong>5</strong></td>
+<td>18</td>
+<td></td>
+<td>923-AN</td>
+<td>BAF923</td>
+<td></td>
+<td>1.5</td>
+</tr>
+<tr class="odd">
+<td><strong>TRAIL</strong></td>
+<td>MAB375</td>
+<td><strong>6</strong></td>
+<td>25</td>
+<td></td>
+<td>375-TL</td>
+<td>BAF375</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td><strong>IL10</strong></td>
+<td>MAB2172</td>
+<td><strong>4</strong></td>
+<td>26</td>
+<td></td>
+<td>1064-IL</td>
+<td>BAF217</td>
+<td></td>
+<td>1.5</td>
+</tr>
+<tr class="odd">
+<td><strong>sTREM1</strong></td>
+<td>H00054210-M04</td>
+<td><strong>6</strong></td>
+<td>14</td>
+<td></td>
+<td>1278-TR</td>
+<td>BAF1278</td>
+<td></td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td><strong>IP-10</strong></td>
+<td>MAB266</td>
+<td><strong>5</strong></td>
+<td>29</td>
+<td></td>
+<td>266-IP</td>
+<td>BAF266</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td><strong>Azu</strong></td>
+<td>NBP2-12045</td>
+<td><strong>7</strong></td>
+<td>27</td>
+<td></td>
+<td>2200-SE</td>
+<td>AF2200+B</td>
+<td></td>
+<td>1.5</td>
+</tr>
+<tr class="even">
+<td><strong>MxA</strong></td>
+<td>MA5-24914 (Thermo)</td>
+<td><strong>6</strong></td>
+<td>28</td>
+<td></td>
+<td><p>TP307418</p>
+<p>(OriGene)</p></td>
+<td>AF7946+B</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td><strong>CHI3L1</strong></td>
+<td>MAB25991</td>
+<td><strong>4.5</strong></td>
+<td>30</td>
+<td></td>
+<td>2599-CH</td>
+<td>BAF2599</td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p><u><strong>Sample preparation in advance</strong></u></p>
+<ol type="1">
+<li>Dispense DBS samples into elution plates and record sample ID electronically to correspond with plate name and layout. Dispensed DBS can be sealed and stored as per the original sample storage so that they are ready to be tested in larger batches.</li>
+</ol>
+<p><strong>Day before assay day</strong></p>
+<ol start="2" type="1">
+<li><p>Check that MagPix machine is in working order and that calibration &amp; verification kits and drive fluid are available.</p></li>
+<li><p>Prepare DBS elution buffer fresh on day of use:</p></li>
+</ol>
+<p>Protease inhibitor: dissolve 1 tablet per 2 ml PBS to give 25X (Sigma, cOmplete, 04693116001)</p>
+<ol start="4" type="1">
+<li>Combine PBS-TBN with 25X protease inhibitor solution for the number of plates to be run on the day:</li>
+</ol>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Number of plates</strong></td>
+<td>PBS-TBN volume (ul)</td>
+<td>Total volume (ul)</td>
+<td>25X Protease inhibitor (ul)</td>
+<td>This many tablets</td>
+<td><strong>Number of plates</strong></td>
+<td>PBS-TBN volume (ul)</td>
+<td>Total volume (ul)</td>
+<td>25X Protease inhibitor (ul)</td>
+<td>This many tablets</td>
+</tr>
+<tr class="even">
+<td><strong>1</strong></td>
+<td>8,448</td>
+<td>8,800</td>
+<td>352</td>
+<td>1</td>
+<td><strong>6</strong></td>
+<td>50,688</td>
+<td>52,800</td>
+<td>2,112</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td><strong>2</strong></td>
+<td>16,896</td>
+<td>17,600</td>
+<td>704</td>
+<td>1</td>
+<td><strong>7</strong></td>
+<td>59,136</td>
+<td>61,600</td>
+<td>2,464</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td><strong>3</strong></td>
+<td>25,344</td>
+<td>26,400</td>
+<td>1,056</td>
+<td>1</td>
+<td><strong>8</strong></td>
+<td>67,584</td>
+<td>70,400</td>
+<td>2,816</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td><strong>4</strong></td>
+<td>33,792</td>
+<td>35,200</td>
+<td>1,408</td>
+<td>1</td>
+<td><strong>9</strong></td>
+<td>76,032</td>
+<td>79,200</td>
+<td>3,168</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td><strong>5</strong></td>
+<td>42,240</td>
+<td>44,000</td>
+<td>1,760</td>
+<td>1</td>
+<td><strong>10</strong></td>
+<td>84,480</td>
+<td>88,000</td>
+<td>3,520</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<ol start="5" type="1">
+<li><p>Label black plate(s) with date &amp; plate ID.</p></li>
+<li><p>Add 100 ul/well of elution buffer to DBS in the low-bind plate that they are in.</p></li>
+<li><p>Seal with sticky plate cover, label, and place in fridge overnight. Time put in fridge ______________</p></li>
+</ol>
+<p><u><strong>Assay running day</strong></u></p>
+<ol start="8" type="1">
+<li><p>Get a box of wet ice, if available.</p></li>
+<li><p>Retrieve standards from -80 freezer and put on ice or in fridge to thaw.</p></li>
+</ol>
+<p>Tip: Do not re-freeze standards. Use a new aliquot each day.</p>
+<ol start="10" type="1">
+<li><p>Bring eluted sample plates to ambient temperature &amp; put on a shaker until ready to use. Start time ___________</p></li>
+<li><p>Prepare beads: get coupled beads from fridge, vortex and sonicate for 30 sec of each.</p></li>
+<li><p>Add the volume of PBS-TBN to a single tube for the number of plates being run on the day. This allows 7% surplus.</p></li>
+</ol>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 27%">
+<col style="width: 21%">
+<col style="width: 34%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Plates</td>
+<td><strong>PBS-TBN volume (uL)</strong></td>
+<td>Total needed (ul)</td>
+<td>Bead volume of each bead (ul)</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td></td>
+<td>5,136</td>
+<td>8.3</td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td></td>
+<td>10,272</td>
+<td>16.6</td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td></td>
+<td>15,408</td>
+<td>24.9</td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td></td>
+<td>20,544</td>
+<td>33.1</td>
+</tr>
+<tr class="even">
+<td>5</td>
+<td></td>
+<td>25,680</td>
+<td>41.4</td>
+</tr>
+<tr class="odd">
+<td>6</td>
+<td></td>
+<td>30,816</td>
+<td>49.7</td>
+</tr>
+<tr class="even">
+<td>7</td>
+<td></td>
+<td>35,952</td>
+<td>58.0</td>
+</tr>
+<tr class="odd">
+<td>8</td>
+<td></td>
+<td>41,088</td>
+<td>66.3</td>
+</tr>
+<tr class="even">
+<td>9</td>
+<td></td>
+<td>46,224</td>
+<td>74.6</td>
+</tr>
+<tr class="odd">
+<td>10</td>
+<td>50,060.4</td>
+<td>51,360</td>
+<td>82.8</td>
+</tr>
+</tbody>
+</table>
+<ol start="13" type="1">
+<li>Vortex bead stocks again &amp; add volume of each bead to the tube.</li>
+</ol>
+<p>(calculated to get 20k beads/ml [ie 1000 beads/well). Tick as you add the beads:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 13%">
+<col style="width: 11%">
+<col style="width: 13%">
+<col style="width: 11%">
+<col style="width: 12%">
+<col style="width: 13%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><p>sTNFR1</p>
+<p>MxA</p></td>
+<td><p>Ang1</p>
+<p>Ang2</p></td>
+<td><p>IL-10</p>
+<p>sTREM1</p></td>
+<td><p>IL-6</p>
+<p>IL-8</p></td>
+<td><p>TRAIL</p>
+<p>Azu</p></td>
+<td><p>IP-10</p>
+<p>CHI3L1</p></td>
+</tr>
+</tbody>
+</table>
+<ol start="14" type="1">
+<li><p>Add <u><strong>50 ul</strong></u> of mixed beads to each well.</p></li>
+<li><p>Wash the beads: put plate on magnet, wait 60 sec, with the plate still firmly on the magent flick out the liquid. Remove plate from magnet to add <strong>100 ul PBST</strong> to each well. Return plate to magnet for 60 sec, flick out wash liquid as before, dab firmly but gently on tissue to remove excess liquid.</p></li>
+<li><p>Vortex &amp; spin down the standards.</p></li>
+<li><p>Add <strong>30 ul per well</strong> of each sample to the black plate.</p></li>
+<li><p>Add <strong>30 ul per well</strong> of each standard in duplicate to the black plate.</p></li>
+<li><p>Cover plates with black cover or foil &amp; incubate on shaker at room temp for 2 hours. Start _______ Ended ________</p></li>
+<li><p>During the incubation, prepare biotin detection antibodies:</p></li>
+<li><p><strong>Detection Abs</strong>: Get aliquots of appropriate size from the freezer, depending on number of plates being run. Fill in expiry dates on table at the start of this protocol.</p></li>
+<li><p>Combine detection antibodies as per Detection Antibody Prep protocol.</p></li>
+</ol>
+<p>Back to the plate when incubation is over….</p>
+<ol start="23" type="1">
+<li><p><strong>3</strong> <strong>WASHES</strong> with <strong>100 ul PBST</strong> to each well as before. <strong>NOTE that you should follow your Risk Assessment when disposing of samples.</strong></p></li>
+<li><p>Add <strong>30 ul/well</strong> of the preopared detection antibody mixture.</p></li>
+<li><p>Cover plates &amp; inclubate on shaker for 60 mins. Start time __________ Ended ___________</p></li>
+<li><p>During the incubation, prepare SA-PE to be 3 ug/ml from the 1 mg/ml stock. (This includes 10% extra volume to allow multichannel pipetting):</p></li>
+</ol>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 17%">
+<col style="width: 29%">
+<col style="width: 22%">
+<col style="width: 27%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Plates</td>
+<td><strong>PBS-TBN volume (ml)</strong></td>
+<td>Total needed (ml)</td>
+<td><strong>SA-PE volume (ul)</strong></td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td><strong>3.151</strong></td>
+<td>3.160</td>
+<td><strong>9.5</strong></td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td><strong>6.301</strong></td>
+<td>6.320</td>
+<td><strong>19.0</strong></td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td><strong>9.452</strong></td>
+<td>9.480</td>
+<td><strong>28.4</strong></td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td><strong>12.602</strong></td>
+<td>12.640</td>
+<td><strong>37.9</strong></td>
+</tr>
+<tr class="even">
+<td>5</td>
+<td><strong>15.753</strong></td>
+<td>15.800</td>
+<td><strong>47.4</strong></td>
+</tr>
+<tr class="odd">
+<td>6</td>
+<td><strong>18.903</strong></td>
+<td>18.960</td>
+<td><strong>56.9</strong></td>
+</tr>
+<tr class="even">
+<td>7</td>
+<td><strong>22.054</strong></td>
+<td>22.120</td>
+<td><strong>66.4</strong></td>
+</tr>
+<tr class="odd">
+<td>8</td>
+<td><strong>25.204</strong></td>
+<td>25.280</td>
+<td><strong>75.8</strong></td>
+</tr>
+<tr class="even">
+<td>9</td>
+<td><strong>28.355</strong></td>
+<td>28.440</td>
+<td><strong>85.3</strong></td>
+</tr>
+<tr class="odd">
+<td>10</td>
+<td><strong>31.505</strong></td>
+<td>31.600</td>
+<td><strong>94.8</strong></td>
+</tr>
+</tbody>
+</table>
+<ol start="27" type="1">
+<li><p>3 WASHES: wash plate 3 times with <strong>100 ul PBST</strong> to each well as before.</p></li>
+<li><p>Add <strong>30 ul/well of SA-PE</strong> dilution across the plate.</p></li>
+<li><p>Cover &amp; incubate for 45 mins on shaker. Start time ___________ Ended ___________</p></li>
+<li><p>3 WASHES: wash 3 times with <strong>100 ul PBST</strong> to each well well as before.</p></li>
+<li><p>Add <strong>100 ul/well of PBS-TBN</strong>.</p></li>
+<li><p>Cover plate and store plate in fridge if reading the next day, or read immediately.</p></li>
+<li><p>On day of reading: mix plate on gentle shaker before putting in the MagPix machine.</p></li>
+</ol>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -4706,10 +889,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -4719,8 +919,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -4732,7 +941,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -4776,6 +1108,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -4801,6 +1134,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -4862,17 +1221,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./Coefficients_of_Variation.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Coefficients of Variation</span></span>
+      <a href="./Coefficients_of_Variation.html" class="pagination-link" aria-label="Coefficients of Variation">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Coefficients of Variation</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./Analysis_01.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Data Analysis - A Tutorial based on the Mos-Def study</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./Analysis_02.html" class="pagination-link" aria-label="Data Analysis">
+        <span class="nav-page-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Data Analysis</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
+
 
 
 

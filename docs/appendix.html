@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.556">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Supplementary Material : A multiplex bead-based immunoassay and data analysis pipeline for 12 markers of fever severity in dried blood spots - 15&nbsp; Funding &amp; Declarations</title>
+<title>Design, Optimisation, Validation, and Analysis Framework for Multiplex Bead‑Based Biomarker Assays - 18&nbsp; Funding &amp; Declarations</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,7 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./CRediT.html" rel="next">
-<link href="./Analysis_01.html" rel="prev">
+<link href="./Analysis_02.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -47,7 +47,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -56,6 +62,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -71,12 +78,12 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./appendix.html"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Funding &amp; Declarations</span></a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./appendix.html"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Funding &amp; Declarations</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
@@ -86,10 +93,10 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Supplementary Material : A multiplex bead-based immunoassay and data analysis pipeline for 12 markers of fever severity in dried blood spots</a> 
+      <a href="./">Design, Optimisation, Validation, and Analysis Framework for Multiplex Bead‑Based Biomarker Assays</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -102,103 +109,115 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">A multiplex bead-based immunoassay and data analysis pipeline for 12 markers of fever severity in dried blood spots</span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Overview</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./fever.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">About this exemplar assay</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./bloodspots.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Dried Blood Spots</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Marker_List.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">List of Markers</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">List of Markers</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Buffers_and_Reagents.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Buffers &amp; Reagents</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Buffers &amp; Reagents</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Capture_Antibody_Prep.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Capture Antibody Preparation</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Capture Antibody Preparation</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Bead_Coupling.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Bead Coupling</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Bead Coupling</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Coupling_Confirmation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Coupling Confirmation</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Coupling Confirmation</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Detection_Antibody_Prep.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Detection Antibody Prep</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Detection Antibody Prep</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./antigens.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Antigens</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Antigens</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./antibody_pairs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Antibody pair screening</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Antibody pair screening</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Cross_Reactivity.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Cross-reactivity Testing</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Cross-reactivity Testing</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Standards_Prep.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Standard curves</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Standard curves</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Magpix_Protocol.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">MagPix Protocol</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">MagPix Protocol</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Coefficients_of_Variation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Coefficients of Variation</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Coefficients of Variation</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Specimen_Testing.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Specimen Testing</span></span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Specimen Testing</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Analysis_01.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Data Analysis - A Tutorial based on the Mos-Def study</span></span></a>
+  <a href="./Analysis_02.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Data Analysis</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./appendix.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Funding &amp; Declarations</span></span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Funding &amp; Declarations</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./CRediT.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">CRediT Framework</span></span></a>
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">CRediT Framework</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -210,20 +229,18 @@ ul.task-list li input[type="checkbox"] {
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#funding" id="toc-funding" class="nav-link active" data-scroll-target="#funding"><span class="header-section-number">15.1</span> Funding</a></li>
-  <li><a href="#ethics-statement" id="toc-ethics-statement" class="nav-link" data-scroll-target="#ethics-statement"><span class="header-section-number">15.2</span> Ethics statement</a></li>
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"><span class="header-section-number">15.3</span> </a></li>
-  <li><a href="#mit-license" id="toc-mit-license" class="nav-link" data-scroll-target="#mit-license"><span class="header-section-number">15.4</span> MIT License</a>
+  <li><a href="#funding" id="toc-funding" class="nav-link active" data-scroll-target="#funding"><span class="header-section-number">18.1</span> Funding</a></li>
+  <li><a href="#ethics-statement" id="toc-ethics-statement" class="nav-link" data-scroll-target="#ethics-statement"><span class="header-section-number">18.2</span> Ethics statement</a></li>
+  <li><a href="#mit-license" id="toc-mit-license" class="nav-link" data-scroll-target="#mit-license"><span class="header-section-number">18.3</span> MIT License</a>
   <ul class="collapse">
-  <li><a href="#disclaimer-1" id="toc-disclaimer-1" class="nav-link" data-scroll-target="#disclaimer-1"><span class="header-section-number">15.4.1</span> <strong>Disclaimer 1</strong></a></li>
-  <li><a href="#disclaimer-2" id="toc-disclaimer-2" class="nav-link" data-scroll-target="#disclaimer-2"><span class="header-section-number">15.4.2</span> <strong>Disclaimer 2</strong></a></li>
+  <li><a href="#disclaimer" id="toc-disclaimer" class="nav-link" data-scroll-target="#disclaimer"><span class="header-section-number">18.3.1</span> <strong>Disclaimer</strong></a></li>
   </ul></li>
   </ul>
 </nav>
@@ -233,7 +250,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Funding &amp; Declarations</span></h1>
+<h1 class="title"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Funding &amp; Declarations</span></h1>
 </div>
 
 
@@ -246,220 +263,1280 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
+
 
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="images/MosDef-logo.png" class="img-fluid"></p>
+<div>
+<figure class="figure">
+<p><img src="images/MosDef-logo.png" class="img-fluid figure-img" width="312"></p>
+</figure>
 </div>
 </div>
-<section id="funding" class="level2" data-number="15.1">
-<h2 data-number="15.1" class="anchored" data-anchor-id="funding"><span class="header-section-number">15.1</span> Funding</h2>
-<p>This work was funded by Global Health Labs and the United Kingdom Foreign, Commonwealth and Development Office (FCDO).</p>
+</div>
+<section id="funding" class="level2" data-number="18.1">
+<h2 data-number="18.1" class="anchored" data-anchor-id="funding"><span class="header-section-number">18.1</span> Funding</h2>
+<p>This work is part of the Mos-Def study. It was funded by GHLabs (<a href="https://www.ghlabs.org/" class="uri">https://www.ghlabs.org/</a>).</p>
 </section>
-<section id="ethics-statement" class="level2" data-number="15.2">
-<h2 data-number="15.2" class="anchored" data-anchor-id="ethics-statement"><span class="header-section-number">15.2</span> Ethics statement</h2>
-<p>Ethical approval for this study was granted by the ethics committee of the London School of Hygiene &amp; Tropical Medicine, as well as the National Ethics Committee for Health Research of the Lao People’s Democratic Republic (Lao PDR), where sample collection took place. Informed consent or assent was given by all participants, or their carers or guardians, as appropriate.</p>
+<section id="ethics-statement" class="level2" data-number="18.2">
+<h2 data-number="18.2" class="anchored" data-anchor-id="ethics-statement"><span class="header-section-number">18.2</span> Ethics statement</h2>
+<p>Ethical approval for this study was granted by the ethics committee of the London School of Hygiene &amp; Tropical Medicine.</p>
 </section>
-<section id="section" class="level2" data-number="15.3">
-<h2 data-number="15.3" class="anchored" data-anchor-id="section"><span class="header-section-number">15.3</span> </h2>
-</section>
-<section id="mit-license" class="level2" data-number="15.4">
-<h2 data-number="15.4" class="anchored" data-anchor-id="mit-license"><span class="header-section-number">15.4</span> MIT License</h2>
-<p>(C) 2024, Chrissy h Roberts, Tegwen Marlais. LSHTM</p>
+<section id="mit-license" class="level2" data-number="18.3">
+<h2 data-number="18.3" class="anchored" data-anchor-id="mit-license"><span class="header-section-number">18.3</span> MIT License</h2>
+<p>(C) 2024, 2025, Chrissy h Roberts, Tegwen Marlais. LSHTM</p>
 <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
 <p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
-<section id="disclaimer-1" class="level3" data-number="15.4.1">
-<h3 data-number="15.4.1" class="anchored" data-anchor-id="disclaimer-1"><span class="header-section-number">15.4.1</span> <strong>Disclaimer 1</strong></h3>
-<p>This project makes use of third-party R packages, which are dynamically linked. To the best of our knowledge, this project does not incorporate or statically link any third-party code. The licenses of these third-party packages are respected and their respective notices are included below. Please refer to the documentation of each package for more details about their licenses and terms of use.</p>
+<section id="disclaimer" class="level3" data-number="18.3.1">
+<h3 data-number="18.3.1" class="anchored" data-anchor-id="disclaimer"><span class="header-section-number">18.3.1</span> <strong>Disclaimer</strong></h3>
+<p>This project makes use of third-party R packages, which are dynamically linked. The licenses of these third-party packages are respected and their respective notices are included below. Please refer to the documentation of each package for more details about their licenses and terms of use.</p>
 <div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>              package packrat.version                                License
-1           BiasedUrn          2.0.12                                  GPL-3
-2                 DBI           1.2.3                          LGPL (&gt;= 2.1)
-3          KernSmooth         2.23-24                              Unlimited
-4                MASS        7.3-60.2                          GPL-2 | GPL-3
-5              Matrix           1.7-0              GPL (&gt;= 2) | file LICENCE
-6        MatrixModels           0.5-3                             GPL (&gt;= 2)
-7                  R6           2.5.1                     MIT + file LICENSE
-8        RColorBrewer           1.1-3                     Apache License 2.0
-9               ROCit           2.1.2                                  GPL-3
-10               Rcpp          1.0.12                             GPL (&gt;= 2)
-11          RcppEigen       0.3.4.0.0              GPL (&gt;= 2) | file LICENSE
-12            SparseM            1.83                             GPL (&gt;= 2)
-13            TH.data           1.1-2                                  GPL-3
-14              abind           1.4-5                            LGPL (&gt;= 2)
-15            askpass           1.2.0                     MIT + file LICENSE
-16          backports           1.5.0                          GPL-2 | GPL-3
-17          base64enc           0.1-3                          GPL-2 | GPL-3
-18                bit           4.0.5                          GPL-2 | GPL-3
-19              bit64           4.0.5                          GPL-2 | GPL-3
-20               blob           1.2.4                     MIT + file LICENSE
-21               boot          1.3-30                              Unlimited
-22              broom           1.0.6                     MIT + file LICENSE
-23              bslib           0.7.0                     MIT + file LICENSE
-24             cachem           1.1.0                     MIT + file LICENSE
-25              callr           3.7.6                     MIT + file LICENSE
-26                car           3.1-2                             GPL (&gt;= 2)
-27            carData           3.0-5                             GPL (&gt;= 2)
-28         cellranger           1.1.0                     MIT + file LICENSE
-29              class          7.3-22                          GPL-2 | GPL-3
-30           classInt          0.4-10                             GPL (&gt;= 2)
-31                cli           3.6.2                     MIT + file LICENSE
-32              clipr           0.8.0                                  GPL-3
-33          codetools          0.2-20                                    GPL
-34         colorspace           2.1-0            BSD_3_clause + file LICENSE
-35         commonmark           1.9.1            BSD_2_clause + file LICENSE
-36         conflicted           1.2.0                     MIT + file LICENSE
-37              cpp11           0.4.7                     MIT + file LICENSE
-38             crayon           1.5.2                     MIT + file LICENSE
-39          crosstalk           1.2.1                     MIT + file LICENSE
-40               crul           1.4.2                     MIT + file LICENSE
-41               curl           5.2.1                     MIT + file LICENSE
-42         data.table          1.15.4                 MPL-2.0 | file LICENSE
-43             dbplyr           2.5.0                     MIT + file LICENSE
-44             digest          0.6.35                             GPL (&gt;= 2)
-45              dplyr           1.1.4                     MIT + file LICENSE
-46                drc           3.0-1                   GPL-2 | file LICENCE
-47             dtplyr           1.3.1                     MIT + file LICENSE
-48              e1071          1.7-14                          GPL-2 | GPL-3
-49               epiR          2.0.75                             GPL (&gt;= 2)
-50           evaluate          0.24.0                     MIT + file LICENSE
-51              fansi           1.0.6                          GPL-2 | GPL-3
-52             farver           2.1.2                     MIT + file LICENSE
-53            fastmap           1.2.0                     MIT + file LICENSE
-54          flextable           0.9.6                                  GPL-3
-55  fontBitstreamVera           0.1.1                           file LICENCE
-56     fontLiberation           0.1.0                           file LICENSE
-57        fontawesome           0.5.2                     MIT + file LICENSE
-58         fontquiver           0.2.1                   GPL-3 | file LICENSE
-59            forcats           1.0.0                     MIT + file LICENSE
-60                 fs           1.6.4                     MIT + file LICENSE
-61             gargle           1.5.2                     MIT + file LICENSE
-62            gdtools           0.3.7                   GPL-3 | file LICENSE
-63           generics           0.1.3                     MIT + file LICENSE
-64             gfonts           0.2.0                                  GPL-3
-65            ggplot2           3.5.1                     MIT + file LICENSE
-66               glue           1.7.0                     MIT + file LICENSE
-67        googledrive           2.1.1                     MIT + file LICENSE
-68      googlesheets4           1.1.1                     MIT + file LICENSE
-69             gtable           0.3.5                     MIT + file LICENSE
-70             gtools           3.9.5                                  GPL-2
-71              haven           2.5.4                     MIT + file LICENSE
-72              highr            0.11                                    GPL
-73                hms           1.1.3                     MIT + file LICENSE
-74          htmltools         0.5.8.1                             GPL (&gt;= 2)
-75        htmlwidgets           1.6.4                     MIT + file LICENSE
-76           httpcode           0.3.0                     MIT + file LICENSE
-77             httpuv          1.6.15              GPL (&gt;= 2) | file LICENSE
-78               httr           1.4.7                     MIT + file LICENSE
-79                ids           1.0.1                     MIT + file LICENSE
-80            isoband           0.2.7                     MIT + file LICENSE
-81          jquerylib           0.1.4                     MIT + file LICENSE
-82           jsonlite           1.8.8                     MIT + file LICENSE
-83            kernlab          0.9-32                                  GPL-2
-84              knitr            1.47                                    GPL
-85           labeling           0.4.3         MIT + file LICENSE | Unlimited
-86              later           1.3.2                     MIT + file LICENSE
-87            lattice          0.22-6                             GPL (&gt;= 2)
-88           lazyeval           0.2.2                                  GPL-3
-89          lifecycle           1.0.4                     MIT + file LICENSE
-90               lme4        1.1-35.4                             GPL (&gt;= 2)
-91          lubridate           1.9.3                             GPL (&gt;= 2)
-92           magrittr           2.0.3                     MIT + file LICENSE
-93            memoise           2.0.1                     MIT + file LICENSE
-94               mgcv           1.9-1                             GPL (&gt;= 2)
-95               mime            0.12                                    GPL
-96              minqa           1.2.7                                  GPL-2
-97           mixtools           2.0.0                             GPL (&gt;= 2)
-98             mnormt           2.1.1                          GPL-2 | GPL-3
-99             modelr          0.1.11                                  GPL-3
-100          multcomp          1.4-25                                  GPL-2
-101           munsell           0.5.1                     MIT + file LICENSE
-102           mvtnorm           1.2-5                                  GPL-2
-103              nlme         3.1-165                             GPL (&gt;= 2)
-104            nloptr           2.1.0                            LGPL (&gt;= 3)
-105              nnet          7.3-19                          GPL-2 | GPL-3
-106          numDeriv      2016.8-1.1                                  GPL-2
-107           officer           0.6.6                     MIT + file LICENSE
-108           openssl           2.2.0                     MIT + file LICENSE
-109           packrat           0.9.2                                  GPL-2
-110            pander           0.6.5                  AGPL-3 | file LICENSE
-111         patchwork           1.2.0                     MIT + file LICENSE
-112          pbkrtest           0.5.2                             GPL (&gt;= 2)
-113            pillar           1.9.0                     MIT + file LICENSE
-114         pkgconfig           2.0.3                     MIT + file LICENSE
-115            plotly          4.10.4                     MIT + file LICENSE
-116           plotrix           3.8-4                             GPL (&gt;= 2)
-117       prettyunits           1.2.0                     MIT + file LICENSE
-118          processx           3.8.4                     MIT + file LICENSE
-119          progress           1.2.3                     MIT + file LICENSE
-120          promises           1.3.0                     MIT + file LICENSE
-121             proxy          0.4-27                                  GPL-2
-122                ps           1.7.6                     MIT + file LICENSE
-123             psych           2.4.3                             GPL (&gt;= 2)
-124             purrr           1.0.2                     MIT + file LICENSE
-125          quantreg            5.98                             GPL (&gt;= 2)
-126              ragg           1.3.2                     MIT + file LICENSE
-127          rappdirs           0.3.3                     MIT + file LICENSE
-128             readr           2.1.5                     MIT + file LICENSE
-129            readxl           1.4.3                     MIT + file LICENSE
-130           rematch           2.0.0                     MIT + file LICENSE
-131          rematch2           2.1.2                     MIT + file LICENSE
-132            reprex           2.1.0                     MIT + file LICENSE
-133             rlang           1.1.4                     MIT + file LICENSE
-134         rmarkdown            2.27                                  GPL-3
-135        rstudioapi          0.16.0                     MIT + file LICENSE
-136             rvest           1.0.4                     MIT + file LICENSE
-137                s2           1.1.6                Apache License (== 2.0)
-138          sandwich           3.1-0                          GPL-2 | GPL-3
-139              sass           0.4.9                     MIT + file LICENSE
-140            scales           1.3.0                     MIT + file LICENSE
-141         segmented           2.1-0                                    GPL
-142           selectr           0.4-2            BSD_3_clause + file LICENCE
-143                sf          1.0-16             GPL-2 | MIT + file LICENSE
-144             shiny         1.8.1.1                   GPL-3 | file LICENSE
-145       sourcetools         0.1.7-1                     MIT + file LICENSE
-146           stringi           1.8.4                           file LICENSE
-147           stringr           1.5.1                     MIT + file LICENSE
-148          survival           3.6-4                            LGPL (&gt;= 2)
-149               sys           3.4.2                     MIT + file LICENSE
-150       systemfonts           1.1.0                     MIT + file LICENSE
-151       textshaping           0.4.0                     MIT + file LICENSE
-152            tibble           3.2.1                     MIT + file LICENSE
-153             tidyr           1.3.1                     MIT + file LICENSE
-154        tidyselect           1.2.1                     MIT + file LICENSE
-155         tidyverse           2.0.0                     MIT + file LICENSE
-156        timechange           0.3.0                             GPL (&gt;= 3)
-157           tinytex            0.51                     MIT + file LICENSE
-158         triebeard           0.4.1                     MIT + file LICENSE
-159              tzdb           0.4.0                     MIT + file LICENSE
-160             units           0.8-5                                  GPL-2
-161          urltools           1.7.3                     MIT + file LICENSE
-162              utf8           1.2.4 Apache License (== 2.0) | file LICENSE
-163              uuid           1.2-0                     MIT + file LICENSE
-164             vctrs           0.6.5                     MIT + file LICENSE
-165       viridisLite           0.4.2                     MIT + file LICENSE
-166             vroom           1.6.5                     MIT + file LICENSE
-167             withr           3.0.0                     MIT + file LICENSE
-168                wk           0.9.1                     MIT + file LICENSE
-169              xfun            0.45                     MIT + file LICENSE
-170              xml2           1.3.6                     MIT + file LICENSE
-171            xtable           1.8-4                             GPL (&gt;= 2)
-172              yaml           2.3.8            BSD_3_clause + file LICENSE
-173               zip           2.3.1                     MIT + file LICENSE
-174               zoo          1.8-12                          GPL-2 | GPL-3</code></pre>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 24%">
+<col style="width: 15%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">package</th>
+<th style="text-align: left;">Version</th>
+<th style="text-align: left;">License</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">AnnotationDbi</td>
+<td style="text-align: left;">1.70.0</td>
+<td style="text-align: left;">Artistic-2.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">BH</td>
+<td style="text-align: left;">1.87.0-1</td>
+<td style="text-align: left;">BSL-1.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">BiasedUrn</td>
+<td style="text-align: left;">2.0.12</td>
+<td style="text-align: left;">GPL-3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Biobase</td>
+<td style="text-align: left;">2.68.0</td>
+<td style="text-align: left;">Artistic-2.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">BiocGenerics</td>
+<td style="text-align: left;">0.54.0</td>
+<td style="text-align: left;">Artistic-2.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">BiocManager</td>
+<td style="text-align: left;">1.30.26</td>
+<td style="text-align: left;">Artistic-2.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">BiocParallel</td>
+<td style="text-align: left;">1.42.1</td>
+<td style="text-align: left;">GPL-2 | GPL-3 | BSL-1.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">BiocVersion</td>
+<td style="text-align: left;">3.21.1</td>
+<td style="text-align: left;">Artistic-2.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Biostrings</td>
+<td style="text-align: left;">2.76.0</td>
+<td style="text-align: left;">Artistic-2.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Boruta</td>
+<td style="text-align: left;">9.0.0</td>
+<td style="text-align: left;">GPL (&gt;= 2)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">DBI</td>
+<td style="text-align: left;">1.2.3</td>
+<td style="text-align: left;">LGPL (&gt;= 2.1)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Deriv</td>
+<td style="text-align: left;">4.2.0</td>
+<td style="text-align: left;">GPL (&gt;= 3)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Formula</td>
+<td style="text-align: left;">1.2-5</td>
+<td style="text-align: left;">GPL-2 | GPL-3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GPArotation</td>
+<td style="text-align: left;">2025.3-1</td>
+<td style="text-align: left;">GPL (&gt;= 2)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GenomeInfoDb</td>
+<td style="text-align: left;">1.44.1</td>
+<td style="text-align: left;">Artistic-2.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GenomeInfoDbData</td>
+<td style="text-align: left;">1.2.14</td>
+<td style="text-align: left;">Artistic-2.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">IRanges</td>
+<td style="text-align: left;">2.42.0</td>
+<td style="text-align: left;">Artistic-2.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">KEGGREST</td>
+<td style="text-align: left;">1.48.1</td>
+<td style="text-align: left;">Artistic-2.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">KernSmooth</td>
+<td style="text-align: left;">2.23-26</td>
+<td style="text-align: left;">Unlimited</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">MASS</td>
+<td style="text-align: left;">7.3-65</td>
+<td style="text-align: left;">GPL-2 | GPL-3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Matrix</td>
+<td style="text-align: left;">1.7-3</td>
+<td style="text-align: left;">GPL (&gt;= 2) | file LICENCE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">MatrixGenerics</td>
+<td style="text-align: left;">1.20.0</td>
+<td style="text-align: left;">Artistic-2.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">MatrixModels</td>
+<td style="text-align: left;">0.5-4</td>
+<td style="text-align: left;">GPL (&gt;= 2)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ModelMetrics</td>
+<td style="text-align: left;">1.2.2.2</td>
+<td style="text-align: left;">GPL (&gt;= 2)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">R6</td>
+<td style="text-align: left;">2.6.1</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RColorBrewer</td>
+<td style="text-align: left;">1.1-3</td>
+<td style="text-align: left;">Apache License 2.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROCit</td>
+<td style="text-align: left;">2.1.2</td>
+<td style="text-align: left;">GPL-3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RSQLite</td>
+<td style="text-align: left;">2.4.2</td>
+<td style="text-align: left;">LGPL (&gt;= 2.1)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Rcpp</td>
+<td style="text-align: left;">1.1.0</td>
+<td style="text-align: left;">GPL (&gt;= 2)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RcppEigen</td>
+<td style="text-align: left;">0.3.4.0.2</td>
+<td style="text-align: left;">GPL (&gt;= 2) | file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Rdpack</td>
+<td style="text-align: left;">2.6.4</td>
+<td style="text-align: left;">GPL (&gt;= 2)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">S4Vectors</td>
+<td style="text-align: left;">0.46.0</td>
+<td style="text-align: left;">Artistic-2.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SQUAREM</td>
+<td style="text-align: left;">2021.1</td>
+<td style="text-align: left;">GPL (&gt;= 2)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SparseM</td>
+<td style="text-align: left;">1.84-2</td>
+<td style="text-align: left;">GPL (&gt;= 2)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">TH.data</td>
+<td style="text-align: left;">1.1-3</td>
+<td style="text-align: left;">GPL-3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">UCSC.utils</td>
+<td style="text-align: left;">1.4.0</td>
+<td style="text-align: left;">Artistic-2.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">XML</td>
+<td style="text-align: left;">3.99-0.18</td>
+<td style="text-align: left;">BSD_3_clause + file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">XVector</td>
+<td style="text-align: left;">0.48.0</td>
+<td style="text-align: left;">Artistic-2.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">abind</td>
+<td style="text-align: left;">1.4-8</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">annotate</td>
+<td style="text-align: left;">1.86.1</td>
+<td style="text-align: left;">Artistic-2.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">askpass</td>
+<td style="text-align: left;">1.2.1</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">backports</td>
+<td style="text-align: left;">1.5.0</td>
+<td style="text-align: left;">GPL-2 | GPL-3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">base64enc</td>
+<td style="text-align: left;">0.1-3</td>
+<td style="text-align: left;">GPL-2 | GPL-3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">bit</td>
+<td style="text-align: left;">4.6.0</td>
+<td style="text-align: left;">GPL-2 | GPL-3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">bit64</td>
+<td style="text-align: left;">4.6.0-1</td>
+<td style="text-align: left;">GPL-2 | GPL-3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">blob</td>
+<td style="text-align: left;">1.2.4</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">boot</td>
+<td style="text-align: left;">1.3-31</td>
+<td style="text-align: left;">Unlimited</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">broom</td>
+<td style="text-align: left;">1.0.9</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">bslib</td>
+<td style="text-align: left;">0.9.0</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">cachem</td>
+<td style="text-align: left;">1.1.0</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">callr</td>
+<td style="text-align: left;">3.7.6</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">car</td>
+<td style="text-align: left;">3.1-3</td>
+<td style="text-align: left;">GPL (&gt;= 2)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">carData</td>
+<td style="text-align: left;">3.0-5</td>
+<td style="text-align: left;">GPL (&gt;= 2)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">caret</td>
+<td style="text-align: left;">7.0-1</td>
+<td style="text-align: left;">GPL (&gt;= 2)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">cellranger</td>
+<td style="text-align: left;">1.1.0</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">class</td>
+<td style="text-align: left;">7.3-23</td>
+<td style="text-align: left;">GPL-2 | GPL-3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">classInt</td>
+<td style="text-align: left;">0.4-11</td>
+<td style="text-align: left;">GPL (&gt;= 2)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">cli</td>
+<td style="text-align: left;">3.6.5</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">clipr</td>
+<td style="text-align: left;">0.8.0</td>
+<td style="text-align: left;">GPL-3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">clock</td>
+<td style="text-align: left;">0.7.3</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">codetools</td>
+<td style="text-align: left;">0.2-20</td>
+<td style="text-align: left;">GPL</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">commonmark</td>
+<td style="text-align: left;">2.0.0</td>
+<td style="text-align: left;">BSD_2_clause + file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">conflicted</td>
+<td style="text-align: left;">1.2.0</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">cowplot</td>
+<td style="text-align: left;">1.2.0</td>
+<td style="text-align: left;">GPL-2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">cpp11</td>
+<td style="text-align: left;">0.5.2</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">crayon</td>
+<td style="text-align: left;">1.5.3</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">crosstalk</td>
+<td style="text-align: left;">1.2.1</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">curl</td>
+<td style="text-align: left;">6.4.0</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">data.table</td>
+<td style="text-align: left;">1.17.8</td>
+<td style="text-align: left;">MPL-2.0 | file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">dbplyr</td>
+<td style="text-align: left;">2.5.0</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">diagram</td>
+<td style="text-align: left;">1.6.5</td>
+<td style="text-align: left;">GPL (&gt;= 2)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">digest</td>
+<td style="text-align: left;">0.6.37</td>
+<td style="text-align: left;">GPL (&gt;= 2)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">doBy</td>
+<td style="text-align: left;">4.7.0</td>
+<td style="text-align: left;">GPL (&gt;= 2)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">doParallel</td>
+<td style="text-align: left;">1.0.17</td>
+<td style="text-align: left;">GPL-2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">dplyr</td>
+<td style="text-align: left;">1.1.4</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">drc</td>
+<td style="text-align: left;">3.0-1</td>
+<td style="text-align: left;">GPL-2 | file LICENCE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">dtplyr</td>
+<td style="text-align: left;">1.3.1</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">e1071</td>
+<td style="text-align: left;">1.7-16</td>
+<td style="text-align: left;">GPL-2 | GPL-3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">edgeR</td>
+<td style="text-align: left;">4.6.3</td>
+<td style="text-align: left;">GPL (&gt;=2)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">epiR</td>
+<td style="text-align: left;">2.0.85</td>
+<td style="text-align: left;">GPL (&gt;= 2)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">evaluate</td>
+<td style="text-align: left;">1.0.4</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">farver</td>
+<td style="text-align: left;">2.1.2</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">fastmap</td>
+<td style="text-align: left;">1.2.0</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">flextable</td>
+<td style="text-align: left;">0.9.9</td>
+<td style="text-align: left;">GPL-3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">fontBitstreamVera</td>
+<td style="text-align: left;">0.1.1</td>
+<td style="text-align: left;">file LICENCE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">fontLiberation</td>
+<td style="text-align: left;">0.1.0</td>
+<td style="text-align: left;">file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">fontawesome</td>
+<td style="text-align: left;">0.5.3</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">fontquiver</td>
+<td style="text-align: left;">0.2.1</td>
+<td style="text-align: left;">GPL-3 | file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">forcats</td>
+<td style="text-align: left;">1.0.0</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">foreach</td>
+<td style="text-align: left;">1.5.2</td>
+<td style="text-align: left;">Apache License (== 2.0)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">formatR</td>
+<td style="text-align: left;">1.14</td>
+<td style="text-align: left;">GPL</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">fs</td>
+<td style="text-align: left;">1.6.6</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">futile.logger</td>
+<td style="text-align: left;">1.4.3</td>
+<td style="text-align: left;">LGPL-3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">futile.options</td>
+<td style="text-align: left;">1.0.1</td>
+<td style="text-align: left;">LGPL-3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">future</td>
+<td style="text-align: left;">1.67.0</td>
+<td style="text-align: left;">LGPL (&gt;= 2.1)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">future.apply</td>
+<td style="text-align: left;">1.20.0</td>
+<td style="text-align: left;">GPL (&gt;= 2)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">gargle</td>
+<td style="text-align: left;">1.5.2</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">gdtools</td>
+<td style="text-align: left;">0.4.2</td>
+<td style="text-align: left;">GPL-3 | file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">genefilter</td>
+<td style="text-align: left;">1.90.0</td>
+<td style="text-align: left;">Artistic-2.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">generics</td>
+<td style="text-align: left;">0.1.4</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ggplot2</td>
+<td style="text-align: left;">3.5.2</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ggtext</td>
+<td style="text-align: left;">0.1.2</td>
+<td style="text-align: left;">GPL-2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">globals</td>
+<td style="text-align: left;">0.18.0</td>
+<td style="text-align: left;">LGPL (&gt;= 2.1)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">glue</td>
+<td style="text-align: left;">1.8.0</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">googledrive</td>
+<td style="text-align: left;">2.1.1</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">googlesheets4</td>
+<td style="text-align: left;">1.1.1</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">gower</td>
+<td style="text-align: left;">1.0.2</td>
+<td style="text-align: left;">GPL-3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">gridtext</td>
+<td style="text-align: left;">0.1.5</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">gtable</td>
+<td style="text-align: left;">0.3.6</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">gtools</td>
+<td style="text-align: left;">3.9.5</td>
+<td style="text-align: left;">GPL-2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">hardhat</td>
+<td style="text-align: left;">1.4.1</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">haven</td>
+<td style="text-align: left;">2.5.5</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">highr</td>
+<td style="text-align: left;">0.11</td>
+<td style="text-align: left;">GPL</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">hms</td>
+<td style="text-align: left;">1.1.3</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">htmltools</td>
+<td style="text-align: left;">0.5.8.1</td>
+<td style="text-align: left;">GPL (&gt;= 2)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">htmlwidgets</td>
+<td style="text-align: left;">1.6.4</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">httr</td>
+<td style="text-align: left;">1.4.7</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ids</td>
+<td style="text-align: left;">1.0.1</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ipred</td>
+<td style="text-align: left;">0.9-15</td>
+<td style="text-align: left;">GPL (&gt;= 2)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">isoband</td>
+<td style="text-align: left;">0.2.7</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">iterators</td>
+<td style="text-align: left;">1.0.14</td>
+<td style="text-align: left;">Apache License (== 2.0)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">jpeg</td>
+<td style="text-align: left;">0.1-11</td>
+<td style="text-align: left;">GPL-2 | GPL-3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">jquerylib</td>
+<td style="text-align: left;">0.1.4</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">jsonlite</td>
+<td style="text-align: left;">2.0.0</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">kableExtra</td>
+<td style="text-align: left;">1.4.0</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">kernlab</td>
+<td style="text-align: left;">0.9-33</td>
+<td style="text-align: left;">GPL-2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">knitr</td>
+<td style="text-align: left;">1.50</td>
+<td style="text-align: left;">GPL</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">labeling</td>
+<td style="text-align: left;">0.4.3</td>
+<td style="text-align: left;">MIT + file LICENSE | Unlimited</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">lambda.r</td>
+<td style="text-align: left;">1.2.4</td>
+<td style="text-align: left;">LGPL-3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">later</td>
+<td style="text-align: left;">1.4.2</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">lattice</td>
+<td style="text-align: left;">0.22-7</td>
+<td style="text-align: left;">GPL (&gt;= 2)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">lava</td>
+<td style="text-align: left;">1.8.1</td>
+<td style="text-align: left;">GPL-3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">lazyeval</td>
+<td style="text-align: left;">0.2.2</td>
+<td style="text-align: left;">GPL-3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">lifecycle</td>
+<td style="text-align: left;">1.0.4</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">limma</td>
+<td style="text-align: left;">3.64.3</td>
+<td style="text-align: left;">GPL (&gt;=2)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">listenv</td>
+<td style="text-align: left;">0.9.1</td>
+<td style="text-align: left;">LGPL (&gt;= 2.1)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">litedown</td>
+<td style="text-align: left;">0.7</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">lme4</td>
+<td style="text-align: left;">1.1-37</td>
+<td style="text-align: left;">GPL (&gt;= 2)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">locfit</td>
+<td style="text-align: left;">1.5-9.12</td>
+<td style="text-align: left;">GPL (&gt;= 2)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">lubridate</td>
+<td style="text-align: left;">1.9.4</td>
+<td style="text-align: left;">GPL (&gt;= 2)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">magrittr</td>
+<td style="text-align: left;">2.0.3</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">markdown</td>
+<td style="text-align: left;">2.0</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">matrixStats</td>
+<td style="text-align: left;">1.5.0</td>
+<td style="text-align: left;">Artistic-2.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">memoise</td>
+<td style="text-align: left;">2.0.1</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">mgcv</td>
+<td style="text-align: left;">1.9-3</td>
+<td style="text-align: left;">GPL (&gt;= 2)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">microbenchmark</td>
+<td style="text-align: left;">1.5.0</td>
+<td style="text-align: left;">BSD_2_clause + file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">mime</td>
+<td style="text-align: left;">0.13</td>
+<td style="text-align: left;">GPL</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">minpack.lm</td>
+<td style="text-align: left;">1.2-4</td>
+<td style="text-align: left;">GPL-3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">minqa</td>
+<td style="text-align: left;">1.2.8</td>
+<td style="text-align: left;">GPL-2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">mixtools</td>
+<td style="text-align: left;">2.0.0.1</td>
+<td style="text-align: left;">GPL (&gt;= 2)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">mnormt</td>
+<td style="text-align: left;">2.1.1</td>
+<td style="text-align: left;">GPL-2 | GPL-3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">modelr</td>
+<td style="text-align: left;">0.1.11</td>
+<td style="text-align: left;">GPL-3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">moments</td>
+<td style="text-align: left;">0.14.1</td>
+<td style="text-align: left;">GPL (&gt;= 2)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">multcomp</td>
+<td style="text-align: left;">1.4-28</td>
+<td style="text-align: left;">GPL-2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">mvtnorm</td>
+<td style="text-align: left;">1.3-3</td>
+<td style="text-align: left;">GPL-2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">nlme</td>
+<td style="text-align: left;">3.1-168</td>
+<td style="text-align: left;">GPL (&gt;= 2)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">nloptr</td>
+<td style="text-align: left;">2.2.1</td>
+<td style="text-align: left;">LGPL (&gt;= 3)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">nnet</td>
+<td style="text-align: left;">7.3-20</td>
+<td style="text-align: left;">GPL-2 | GPL-3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">numDeriv</td>
+<td style="text-align: left;">2016.8-1.1</td>
+<td style="text-align: left;">GPL-2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">officer</td>
+<td style="text-align: left;">0.6.10</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">openssl</td>
+<td style="text-align: left;">2.3.3</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">pROC</td>
+<td style="text-align: left;">1.19.0.1</td>
+<td style="text-align: left;">GPL (&gt;= 3)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">packrat</td>
+<td style="text-align: left;">0.9.3</td>
+<td style="text-align: left;">GPL-2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">pander</td>
+<td style="text-align: left;">0.6.6</td>
+<td style="text-align: left;">AGPL-3 | file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">parallelly</td>
+<td style="text-align: left;">1.45.1</td>
+<td style="text-align: left;">LGPL (&gt;= 2.1)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">patchwork</td>
+<td style="text-align: left;">1.3.1</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">pbkrtest</td>
+<td style="text-align: left;">0.5.5</td>
+<td style="text-align: left;">GPL (&gt;= 2)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">pillar</td>
+<td style="text-align: left;">1.11.0</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">pkgconfig</td>
+<td style="text-align: left;">2.0.3</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">plogr</td>
+<td style="text-align: left;">0.2.0</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">plotly</td>
+<td style="text-align: left;">4.11.0</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">plotrix</td>
+<td style="text-align: left;">3.8-4</td>
+<td style="text-align: left;">GPL (&gt;= 2)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">plyr</td>
+<td style="text-align: left;">1.8.9</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">png</td>
+<td style="text-align: left;">0.1-8</td>
+<td style="text-align: left;">GPL-2 | GPL-3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">prettyunits</td>
+<td style="text-align: left;">1.2.0</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">processx</td>
+<td style="text-align: left;">3.8.6</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">prodlim</td>
+<td style="text-align: left;">2025.04.28</td>
+<td style="text-align: left;">GPL (&gt;= 2)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">progress</td>
+<td style="text-align: left;">1.2.3</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">progressr</td>
+<td style="text-align: left;">0.15.1</td>
+<td style="text-align: left;">GPL (&gt;= 3)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">promises</td>
+<td style="text-align: left;">1.3.3</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">proxy</td>
+<td style="text-align: left;">0.4-27</td>
+<td style="text-align: left;">GPL-2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ps</td>
+<td style="text-align: left;">1.9.1</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">psych</td>
+<td style="text-align: left;">2.5.6</td>
+<td style="text-align: left;">GPL (&gt;= 2)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">purrr</td>
+<td style="text-align: left;">1.1.0</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">quantreg</td>
+<td style="text-align: left;">6.1</td>
+<td style="text-align: left;">GPL (&gt;= 2)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ragg</td>
+<td style="text-align: left;">1.4.0</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">randomForest</td>
+<td style="text-align: left;">4.7-1.2</td>
+<td style="text-align: left;">GPL (&gt;= 2)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ranger</td>
+<td style="text-align: left;">0.17.0</td>
+<td style="text-align: left;">GPL-3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">rappdirs</td>
+<td style="text-align: left;">0.3.3</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">rbibutils</td>
+<td style="text-align: left;">2.3</td>
+<td style="text-align: left;">GPL-2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">readr</td>
+<td style="text-align: left;">2.1.5</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">readxl</td>
+<td style="text-align: left;">1.4.5</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">recipes</td>
+<td style="text-align: left;">1.3.1</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">reformulas</td>
+<td style="text-align: left;">0.4.1</td>
+<td style="text-align: left;">GPL-3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">rematch</td>
+<td style="text-align: left;">2.0.0</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">rematch2</td>
+<td style="text-align: left;">2.1.2</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">renv</td>
+<td style="text-align: left;">1.1.5</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">reprex</td>
+<td style="text-align: left;">2.1.1</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">reshape2</td>
+<td style="text-align: left;">1.4.4</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">rlang</td>
+<td style="text-align: left;">1.1.6</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">rmarkdown</td>
+<td style="text-align: left;">2.29</td>
+<td style="text-align: left;">GPL-3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">rpart</td>
+<td style="text-align: left;">4.1.24</td>
+<td style="text-align: left;">GPL-2 | GPL-3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">rstudioapi</td>
+<td style="text-align: left;">0.17.1</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">rvest</td>
+<td style="text-align: left;">1.0.4</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">s2</td>
+<td style="text-align: left;">1.1.9</td>
+<td style="text-align: left;">Apache License (== 2.0)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sandwich</td>
+<td style="text-align: left;">3.1-1</td>
+<td style="text-align: left;">GPL-2 | GPL-3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sass</td>
+<td style="text-align: left;">0.4.10</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">scales</td>
+<td style="text-align: left;">1.4.0</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">segmented</td>
+<td style="text-align: left;">2.1-4</td>
+<td style="text-align: left;">GPL</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">selectr</td>
+<td style="text-align: left;">0.4-2</td>
+<td style="text-align: left;">BSD_3_clause + file LICENCE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sf</td>
+<td style="text-align: left;">1.0-21</td>
+<td style="text-align: left;">GPL-2 | MIT + file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">shape</td>
+<td style="text-align: left;">1.4.6.1</td>
+<td style="text-align: left;">GPL (&gt;= 3)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">snow</td>
+<td style="text-align: left;">0.4-4</td>
+<td style="text-align: left;">GPL</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sparsevctrs</td>
+<td style="text-align: left;">0.3.4</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">statmod</td>
+<td style="text-align: left;">1.5.0</td>
+<td style="text-align: left;">GPL-2 | GPL-3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">stringi</td>
+<td style="text-align: left;">1.8.7</td>
+<td style="text-align: left;">file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">stringr</td>
+<td style="text-align: left;">1.5.1</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">survival</td>
+<td style="text-align: left;">3.8-3</td>
+<td style="text-align: left;">LGPL (&gt;= 2)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sva</td>
+<td style="text-align: left;">3.56.0</td>
+<td style="text-align: left;">Artistic-2.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">svglite</td>
+<td style="text-align: left;">2.2.1</td>
+<td style="text-align: left;">GPL (&gt;= 2)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sys</td>
+<td style="text-align: left;">3.4.3</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">systemfonts</td>
+<td style="text-align: left;">1.2.3</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">textshaping</td>
+<td style="text-align: left;">1.0.1</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">tibble</td>
+<td style="text-align: left;">3.3.0</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">tidyr</td>
+<td style="text-align: left;">1.3.1</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">tidyselect</td>
+<td style="text-align: left;">1.2.1</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">tidyverse</td>
+<td style="text-align: left;">2.0.0</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">timeDate</td>
+<td style="text-align: left;">4041.110</td>
+<td style="text-align: left;">GPL (&gt;= 2)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">timechange</td>
+<td style="text-align: left;">0.3.0</td>
+<td style="text-align: left;">GPL (&gt;= 3)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">tinytex</td>
+<td style="text-align: left;">0.57</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">tzdb</td>
+<td style="text-align: left;">0.5.0</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">units</td>
+<td style="text-align: left;">0.8-7</td>
+<td style="text-align: left;">GPL-2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">utf8</td>
+<td style="text-align: left;">1.2.6</td>
+<td style="text-align: left;">Apache License (== 2.0) | file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">uuid</td>
+<td style="text-align: left;">1.2-1</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">vctrs</td>
+<td style="text-align: left;">0.6.5</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">viridisLite</td>
+<td style="text-align: left;">0.4.2</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">vroom</td>
+<td style="text-align: left;">1.6.5</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">withr</td>
+<td style="text-align: left;">3.0.2</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">wk</td>
+<td style="text-align: left;">0.9.4</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">xfun</td>
+<td style="text-align: left;">0.52</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">xml2</td>
+<td style="text-align: left;">1.3.8</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">xtable</td>
+<td style="text-align: left;">1.8-4</td>
+<td style="text-align: left;">GPL (&gt;= 2)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">yaml</td>
+<td style="text-align: left;">2.3.10</td>
+<td style="text-align: left;">BSD_3_clause + file LICENSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">zip</td>
+<td style="text-align: left;">2.3.3</td>
+<td style="text-align: left;">MIT + file LICENSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">zoo</td>
+<td style="text-align: left;">1.8-14</td>
+<td style="text-align: left;">GPL-2 | GPL-3</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
-</section>
-<section id="disclaimer-2" class="level3" data-number="15.4.2">
-<h3 data-number="15.4.2" class="anchored" data-anchor-id="disclaimer-2"><span class="header-section-number">15.4.2</span> <strong>Disclaimer 2</strong></h3>
-<p>The EM code used in the chapter which presents ways to analyse the data is partially modified from code found on <a href="https://dozenoaks.twelvetreeslab.co.uk/2019/06/mixture-models" class="uri"><em>https://dozenoaks.twelvetreeslab.co.uk/2019/06/mixture-models</em></a><em>.</em> The source code appears to have been aggregated from various open sources and we interpret a copyright notice by the author of the webpage referred to here, to actually refer only to the body text and not to the code presented and subsequently modified for use here. We believe that all of the code statically linked from <a href="https://dozenoaks.twelvetreeslab.co.uk/2019/06/mixture-models" class="uri">https://dozenoaks.twelvetreeslab.co.uk/2019/06/mixture-models</a> is actually open source and likely to be derived from the following sources.</p>
-<p><a href="https://cran.r-project.org/web/packages/mixtools/index.html" class="uri">https://cran.r-project.org/web/packages/mixtools/index.html</a></p>
-<p><a href="https://cran.r-project.org/web/packages/mixtools/vignettes/mixtools.pdf" class="uri">https://cran.r-project.org/web/packages/mixtools/vignettes/mixtools.pdf</a></p>
-<p><a href="https://exploringdatablog.blogspot.com/2011/08/fitting-mixture-distributions-with-r.html" class="uri">https://exploringdatablog.blogspot.com/2011/08/fitting-mixture-distributions-with-r.html</a></p>
-<p><a href="http://tinyheero.github.io/2015/10/13/mixture-model.html" class="uri">http://tinyheero.github.io/2015/10/13/mixture-model.html</a></p>
-<p><a href="http://tinyheero.github.io/2016/01/03/gmm-em.html#checking-for-convergence" class="uri">http://tinyheero.github.io/2016/01/03/gmm-em.html#checking-for-convergence</a></p>
 <p>Please respect the licenses of the code originators.</p>
 
 
@@ -546,10 +1623,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -559,8 +1653,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -572,7 +1675,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -616,6 +1842,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -641,6 +1868,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -702,17 +1955,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./Analysis_01.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Data Analysis - A Tutorial based on the Mos-Def study</span></span>
+      <a href="./Analysis_02.html" class="pagination-link" aria-label="Data Analysis">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Data Analysis</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./CRediT.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">CRediT Framework</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./CRediT.html" class="pagination-link" aria-label="CRediT Framework">
+        <span class="nav-page-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">CRediT Framework</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
+
 
 
 

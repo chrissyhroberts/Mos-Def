@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.556">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Supplementary Material : A multiplex bead-based immunoassay and data analysis pipeline for 12 markers of fever severity in dried blood spots - 1&nbsp; List of Markers</title>
+<title>Design, Optimisation, Validation, and Analysis Framework for Multiplex Bead‑Based Biomarker Assays - 4&nbsp; List of Markers</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,6 +24,7 @@ ul.task-list li input[type="checkbox"] {
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -50,7 +51,7 @@ div.csl-indent {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./Buffers_and_Reagents.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./bloodspots.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -66,7 +67,13 @@ div.csl-indent {
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -75,6 +82,7 @@ div.csl-indent {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -90,12 +98,12 @@ div.csl-indent {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Marker_List.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">List of Markers</span></a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Marker_List.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">List of Markers</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
@@ -105,10 +113,10 @@ div.csl-indent {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Supplementary Material : A multiplex bead-based immunoassay and data analysis pipeline for 12 markers of fever severity in dried blood spots</a> 
+      <a href="./">Design, Optimisation, Validation, and Analysis Framework for Multiplex Bead‑Based Biomarker Assays</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -121,103 +129,115 @@ div.csl-indent {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">A multiplex bead-based immunoassay and data analysis pipeline for 12 markers of fever severity in dried blood spots</span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Overview</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./fever.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">About this exemplar assay</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./bloodspots.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Dried Blood Spots</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Marker_List.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">List of Markers</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">List of Markers</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Buffers_and_Reagents.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Buffers &amp; Reagents</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Buffers &amp; Reagents</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Capture_Antibody_Prep.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Capture Antibody Preparation</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Capture Antibody Preparation</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Bead_Coupling.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Bead Coupling</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Bead Coupling</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Coupling_Confirmation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Coupling Confirmation</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Coupling Confirmation</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Detection_Antibody_Prep.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Detection Antibody Prep</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Detection Antibody Prep</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./antigens.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Antigens</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Antigens</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./antibody_pairs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Antibody pair screening</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Antibody pair screening</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Cross_Reactivity.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Cross-reactivity Testing</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Cross-reactivity Testing</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Standards_Prep.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Standard curves</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Standard curves</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Magpix_Protocol.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">MagPix Protocol</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">MagPix Protocol</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Coefficients_of_Variation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Coefficients of Variation</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Coefficients of Variation</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Specimen_Testing.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Specimen Testing</span></span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Specimen Testing</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Analysis_01.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Data Analysis - A Tutorial based on the Mos-Def study</span></span></a>
+  <a href="./Analysis_02.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Data Analysis</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./appendix.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Funding &amp; Declarations</span></span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Funding &amp; Declarations</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./CRediT.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">CRediT Framework</span></span></a>
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">CRediT Framework</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -229,34 +249,34 @@ div.csl-indent {
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#markers-included-in-the-assay" id="toc-markers-included-in-the-assay" class="nav-link active" data-scroll-target="#markers-included-in-the-assay"><span class="header-section-number">1.1</span> Markers included in the assay</a>
+  <li><a href="#markers-included-in-the-exemplar-assay" id="toc-markers-included-in-the-exemplar-assay" class="nav-link active" data-scroll-target="#markers-included-in-the-exemplar-assay"><span class="header-section-number">4.1</span> Markers included in the exemplar assay</a>
   <ul class="collapse">
-  <li><a href="#angiopoietin-1-ang-1" id="toc-angiopoietin-1-ang-1" class="nav-link" data-scroll-target="#angiopoietin-1-ang-1"><span class="header-section-number">1.1.1</span> Angiopoietin-1 (Ang-1)</a></li>
-  <li><a href="#angiopoietin-2-ang-2" id="toc-angiopoietin-2-ang-2" class="nav-link" data-scroll-target="#angiopoietin-2-ang-2"><span class="header-section-number">1.1.2</span> Angiopoietin-2 (Ang-2)</a></li>
-  <li><a href="#azurocidin-1-azu" id="toc-azurocidin-1-azu" class="nav-link" data-scroll-target="#azurocidin-1-azu"><span class="header-section-number">1.1.3</span> Azurocidin 1 (Azu)</a></li>
-  <li><a href="#chitinase-3-like-1-chi3l1" id="toc-chitinase-3-like-1-chi3l1" class="nav-link" data-scroll-target="#chitinase-3-like-1-chi3l1"><span class="header-section-number">1.1.4</span> Chitinase 3-like 1 (CHI3L1)</a></li>
-  <li><a href="#interleukin-6-il-6" id="toc-interleukin-6-il-6" class="nav-link" data-scroll-target="#interleukin-6-il-6"><span class="header-section-number">1.1.5</span> Interleukin 6 (IL-6)</a></li>
-  <li><a href="#interleukin-8-il-8" id="toc-interleukin-8-il-8" class="nav-link" data-scroll-target="#interleukin-8-il-8"><span class="header-section-number">1.1.6</span> Interleukin 8 (IL-8)</a></li>
-  <li><a href="#interleukin-10-il-10" id="toc-interleukin-10-il-10" class="nav-link" data-scroll-target="#interleukin-10-il-10"><span class="header-section-number">1.1.7</span> Interleukin 10 (IL-10)</a></li>
-  <li><a href="#interferon-gamma-inducible-protein-10-ip-10" id="toc-interferon-gamma-inducible-protein-10-ip-10" class="nav-link" data-scroll-target="#interferon-gamma-inducible-protein-10-ip-10"><span class="header-section-number">1.1.8</span> Interferon gamma inducible protein 10 (IP-10)</a></li>
-  <li><a href="#myxovirus-resistance-protein-a-mxa" id="toc-myxovirus-resistance-protein-a-mxa" class="nav-link" data-scroll-target="#myxovirus-resistance-protein-a-mxa"><span class="header-section-number">1.1.9</span> Myxovirus resistance protein A (MxA)</a></li>
-  <li><a href="#soluble-tumor-necrosis-factor-receptor-1-stnfr1" id="toc-soluble-tumor-necrosis-factor-receptor-1-stnfr1" class="nav-link" data-scroll-target="#soluble-tumor-necrosis-factor-receptor-1-stnfr1"><span class="header-section-number">1.1.10</span> Soluble Tumor necrosis factor receptor 1 (sTNFR1)</a></li>
-  <li><a href="#soluble-triggering-receptor-expressed-on-myeloid-cells-strem-1" id="toc-soluble-triggering-receptor-expressed-on-myeloid-cells-strem-1" class="nav-link" data-scroll-target="#soluble-triggering-receptor-expressed-on-myeloid-cells-strem-1"><span class="header-section-number">1.1.11</span> Soluble Triggering receptor expressed on myeloid cells (sTREM-1)</a></li>
-  <li><a href="#tnf-related-apoptosis-inducing-ligand-trail" id="toc-tnf-related-apoptosis-inducing-ligand-trail" class="nav-link" data-scroll-target="#tnf-related-apoptosis-inducing-ligand-trail"><span class="header-section-number">1.1.12</span> TNF-related apoptosis-inducing ligand (TRAIL)</a></li>
+  <li><a href="#angiopoietin-1-ang-1" id="toc-angiopoietin-1-ang-1" class="nav-link" data-scroll-target="#angiopoietin-1-ang-1"><span class="header-section-number">4.1.1</span> Angiopoietin-1 (Ang-1)</a></li>
+  <li><a href="#angiopoietin-2-ang-2" id="toc-angiopoietin-2-ang-2" class="nav-link" data-scroll-target="#angiopoietin-2-ang-2"><span class="header-section-number">4.1.2</span> Angiopoietin-2 (Ang-2)</a></li>
+  <li><a href="#azurocidin-1-azu" id="toc-azurocidin-1-azu" class="nav-link" data-scroll-target="#azurocidin-1-azu"><span class="header-section-number">4.1.3</span> Azurocidin 1 (Azu)</a></li>
+  <li><a href="#chitinase-3-like-1-chi3l1" id="toc-chitinase-3-like-1-chi3l1" class="nav-link" data-scroll-target="#chitinase-3-like-1-chi3l1"><span class="header-section-number">4.1.4</span> Chitinase 3-like 1 (CHI3L1)</a></li>
+  <li><a href="#interleukin-6-il-6" id="toc-interleukin-6-il-6" class="nav-link" data-scroll-target="#interleukin-6-il-6"><span class="header-section-number">4.1.5</span> Interleukin 6 (IL-6)</a></li>
+  <li><a href="#interleukin-8-il-8" id="toc-interleukin-8-il-8" class="nav-link" data-scroll-target="#interleukin-8-il-8"><span class="header-section-number">4.1.6</span> Interleukin 8 (IL-8)</a></li>
+  <li><a href="#interleukin-10-il-10" id="toc-interleukin-10-il-10" class="nav-link" data-scroll-target="#interleukin-10-il-10"><span class="header-section-number">4.1.7</span> Interleukin 10 (IL-10)</a></li>
+  <li><a href="#interferon-gamma-inducible-protein-10-ip-10" id="toc-interferon-gamma-inducible-protein-10-ip-10" class="nav-link" data-scroll-target="#interferon-gamma-inducible-protein-10-ip-10"><span class="header-section-number">4.1.8</span> Interferon gamma inducible protein 10 (IP-10)</a></li>
+  <li><a href="#myxovirus-resistance-protein-a-mxa" id="toc-myxovirus-resistance-protein-a-mxa" class="nav-link" data-scroll-target="#myxovirus-resistance-protein-a-mxa"><span class="header-section-number">4.1.9</span> Myxovirus resistance protein A (MxA)</a></li>
+  <li><a href="#soluble-tumor-necrosis-factor-receptor-1-stnfr1" id="toc-soluble-tumor-necrosis-factor-receptor-1-stnfr1" class="nav-link" data-scroll-target="#soluble-tumor-necrosis-factor-receptor-1-stnfr1"><span class="header-section-number">4.1.10</span> Soluble Tumor necrosis factor receptor 1 (sTNFR1)</a></li>
+  <li><a href="#soluble-triggering-receptor-expressed-on-myeloid-cells-1-strem-1" id="toc-soluble-triggering-receptor-expressed-on-myeloid-cells-1-strem-1" class="nav-link" data-scroll-target="#soluble-triggering-receptor-expressed-on-myeloid-cells-1-strem-1"><span class="header-section-number">4.1.11</span> Soluble Triggering receptor expressed on myeloid cells 1 (sTREM-1)</a></li>
+  <li><a href="#tnf-related-apoptosis-inducing-ligand-trail" id="toc-tnf-related-apoptosis-inducing-ligand-trail" class="nav-link" data-scroll-target="#tnf-related-apoptosis-inducing-ligand-trail"><span class="header-section-number">4.1.12</span> TNF-related apoptosis-inducing ligand (TRAIL)</a></li>
   </ul></li>
-  <li><a href="#markers-which-were-screened-but-which-failed-assay-quality-tests" id="toc-markers-which-were-screened-but-which-failed-assay-quality-tests" class="nav-link" data-scroll-target="#markers-which-were-screened-but-which-failed-assay-quality-tests"><span class="header-section-number">1.2</span> Markers which were screened, but which failed assay quality tests</a>
+  <li><a href="#markers-which-were-screened-but-which-failed-assay-quality-tests" id="toc-markers-which-were-screened-but-which-failed-assay-quality-tests" class="nav-link" data-scroll-target="#markers-which-were-screened-but-which-failed-assay-quality-tests"><span class="header-section-number">4.2</span> Markers which were screened, but which failed assay quality tests</a>
   <ul class="collapse">
-  <li><a href="#procalcitonin-pct" id="toc-procalcitonin-pct" class="nav-link" data-scroll-target="#procalcitonin-pct"><span class="header-section-number">1.2.1</span> <strong>Procalcitonin (PCT)</strong></a></li>
-  <li><a href="#c-reactive-protein-crp" id="toc-c-reactive-protein-crp" class="nav-link" data-scroll-target="#c-reactive-protein-crp"><span class="header-section-number">1.2.2</span> C-Reactive Protein (CRP)</a></li>
+  <li><a href="#procalcitonin-pct" id="toc-procalcitonin-pct" class="nav-link" data-scroll-target="#procalcitonin-pct"><span class="header-section-number">4.2.1</span> <strong>Procalcitonin (PCT)</strong></a></li>
+  <li><a href="#c-reactive-protein-crp" id="toc-c-reactive-protein-crp" class="nav-link" data-scroll-target="#c-reactive-protein-crp"><span class="header-section-number">4.2.2</span> C-Reactive Protein (CRP)</a></li>
+  <li><a href="#soluble-fems-like-tyrosine-kinase-1-sflt-1" id="toc-soluble-fems-like-tyrosine-kinase-1-sflt-1" class="nav-link" data-scroll-target="#soluble-fems-like-tyrosine-kinase-1-sflt-1"><span class="header-section-number">4.2.3</span> Soluble FEMS-like tyrosine kinase 1 (sFlt-1)</a></li>
   </ul></li>
-  <li><a href="#sflt-1" id="toc-sflt-1" class="nav-link" data-scroll-target="#sflt-1"><span class="header-section-number">1.3</span> sFlt-1</a></li>
   </ul>
 </nav>
     </div>
@@ -265,7 +285,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">List of Markers</span></h1>
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">List of Markers</span></h1>
 </div>
 
 
@@ -278,88 +298,109 @@ div.csl-indent {
   </div>
   
 
+
 </header>
 
-<section id="markers-included-in-the-assay" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="markers-included-in-the-assay"><span class="header-section-number">1.1</span> Markers included in the assay</h2>
-<section id="angiopoietin-1-ang-1" class="level3" data-number="1.1.1">
-<h3 data-number="1.1.1" class="anchored" data-anchor-id="angiopoietin-1-ang-1"><span class="header-section-number">1.1.1</span> Angiopoietin-1 (Ang-1)</h3>
+
+<section id="markers-included-in-the-exemplar-assay" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="markers-included-in-the-exemplar-assay"><span class="header-section-number">4.1</span> Markers included in the exemplar assay</h2>
+<section id="angiopoietin-1-ang-1" class="level3" data-number="4.1.1">
+<h3 data-number="4.1.1" class="anchored" data-anchor-id="angiopoietin-1-ang-1"><span class="header-section-number">4.1.1</span> Angiopoietin-1 (Ang-1)</h3>
 <p>Constitutively expressed by pericytes and smooth muscle cells, also stored in platelets <span class="citation" data-cites="brouwers2013">(<a href="references.html#ref-brouwers2013" role="doc-biblioref">Brouwers et al. 2013</a>)</span>. Ang-1 is an agonist binding the TIE2 receptor. It promotes endothelial cell survival and maintains vascular quiescence. Activates or inhibits angiogenesis, depending on the context. Ang-1 mediates blood vessel maturation/stability <span class="citation" data-cites="leligdowicz2018">(<a href="references.html#ref-leligdowicz2018" role="doc-biblioref">Leligdowicz et al. 2018</a>)</span>.</p>
 </section>
-<section id="angiopoietin-2-ang-2" class="level3" data-number="1.1.2">
-<h3 data-number="1.1.2" class="anchored" data-anchor-id="angiopoietin-2-ang-2"><span class="header-section-number">1.1.2</span> Angiopoietin-2 (Ang-2)</h3>
+<section id="angiopoietin-2-ang-2" class="level3" data-number="4.1.2">
+<h3 data-number="4.1.2" class="anchored" data-anchor-id="angiopoietin-2-ang-2"><span class="header-section-number">4.1.2</span> Angiopoietin-2 (Ang-2)</h3>
 <p>Expressed by endothelial cells. Ang-2 binds to TIE2 in competition with Ang-1 but is an antagonist. Increased Ang-2 levels lead to increased vascular leakage, resulting from destabilised vascular endothelium, remodelling, and leakiness <span class="citation" data-cites="kim2016">(<a href="references.html#ref-kim2016" role="doc-biblioref">Kim et al. 2016</a>)</span>. Ang/Tie2 dysregulation is thought to be “pathogen agnostic” <span class="citation" data-cites="leligdowicz2018">(<a href="references.html#ref-leligdowicz2018" role="doc-biblioref">Leligdowicz et al. 2018</a>)</span>.</p>
 </section>
-<section id="azurocidin-1-azu" class="level3" data-number="1.1.3">
-<h3 data-number="1.1.3" class="anchored" data-anchor-id="azurocidin-1-azu"><span class="header-section-number">1.1.3</span> Azurocidin 1 (Azu)</h3>
+<section id="azurocidin-1-azu" class="level3" data-number="4.1.3">
+<h3 data-number="4.1.3" class="anchored" data-anchor-id="azurocidin-1-azu"><span class="header-section-number">4.1.3</span> Azurocidin 1 (Azu)</h3>
 <p>Released early in infection from granules in polymorphonuclear leukocytes. Azu acts as a chemo-attractant to several leukocyte types, provokes cytokine secretion, and induces capillary leakage. Azu is directly cytotoxic to certain Gram-negative bacteria <span class="citation" data-cites="fisher2017">(<a href="references.html#ref-fisher2017" role="doc-biblioref">Fisher and Linder 2017</a>)</span>.</p>
 </section>
-<section id="chitinase-3-like-1-chi3l1" class="level3" data-number="1.1.4">
-<h3 data-number="1.1.4" class="anchored" data-anchor-id="chitinase-3-like-1-chi3l1"><span class="header-section-number">1.1.4</span> Chitinase 3-like 1 (CHI3L1)</h3>
+<section id="chitinase-3-like-1-chi3l1" class="level3" data-number="4.1.4">
+<h3 data-number="4.1.4" class="anchored" data-anchor-id="chitinase-3-like-1-chi3l1"><span class="header-section-number">4.1.4</span> Chitinase 3-like 1 (CHI3L1)</h3>
 <p>Produced by many cell types, including immune, epithelial and others. Overexpressed in infectious and non-infectious inflammatory conditions, including sepsis and cancer. Crucial role in protecting against pathogens, antigen- and oxidant-induced injury responses, inflammation, and tissue repair and remodelling. Regulates a range of essential biological processes <span class="citation" data-cites="zhao2020">(<a href="references.html#ref-zhao2020" role="doc-biblioref">Zhao et al. 2020</a>)</span>.</p>
 </section>
-<section id="interleukin-6-il-6" class="level3" data-number="1.1.5">
-<h3 data-number="1.1.5" class="anchored" data-anchor-id="interleukin-6-il-6"><span class="header-section-number">1.1.5</span> Interleukin 6 (IL-6)</h3>
-<p>Produced by immune and other cell types during chronic and acute inflammation. Triggers actue phase proteins in the liver. Can be pro- and anti-inflammatory. Stimulates B cells to produce antibodies. Links innate to acquired immune response by promoting differentiation of CD4+ T cells. Pyrogenic and pro-coagulative. <strong>Tanaka 2014 <a href="https://doi.org/10.1101%2Fcshperspect.a016295" class="uri">https://doi.org/10.1101%2Fcshperspect.a016295</a> &amp; Kang 2021 <a href="https://doi.org/10.1038%2Fs12276-021-00649-0" class="uri">https://doi.org/10.1038%2Fs12276-021-00649-0</a></strong></p>
+<section id="interleukin-6-il-6" class="level3" data-number="4.1.5">
+<h3 data-number="4.1.5" class="anchored" data-anchor-id="interleukin-6-il-6"><span class="header-section-number">4.1.5</span> Interleukin 6 (IL-6)</h3>
+<p>Produced by immune and other cell types during chronic and acute inflammation. Triggers acute phase proteins in the liver. Can be pro- and anti-inflammatory. Stimulates B cells to produce antibodies. Links innate to acquired immune response by promoting differentiation of CD4+ T cells. Pyrogenic and pro-coagulative <span class="citation" data-cites="Tanaka2014">(<a href="references.html#ref-Tanaka2014" role="doc-biblioref">Tanaka, Narazaki, and Kishimoto 2014</a>)</span>, <span class="citation" data-cites="Kang2021">(<a href="references.html#ref-Kang2021" role="doc-biblioref">Kang and Kishimoto 2021</a>)</span>.</p>
 </section>
-<section id="interleukin-8-il-8" class="level3" data-number="1.1.6">
-<h3 data-number="1.1.6" class="anchored" data-anchor-id="interleukin-8-il-8"><span class="header-section-number">1.1.6</span> Interleukin 8 (IL-8)</h3>
-<p>Produced by many cell types including monocytes, lymphocytes, granulocytes, fibroblasts, endothelial cells, epithelial cells, hepatocytes, mesangial cells and chondrocytes and is released only under inflammatory conditions. Platelets store IL-8 in their granules and rapidly release IL-8 in inflammation <span class="citation" data-cites="matsushima2022">(<a href="references.html#ref-matsushima2022" role="doc-biblioref">Matsushima, Yang, and Oppenheim 2022</a>)</span>.</p>
+<section id="interleukin-8-il-8" class="level3" data-number="4.1.6">
+<h3 data-number="4.1.6" class="anchored" data-anchor-id="interleukin-8-il-8"><span class="header-section-number">4.1.6</span> Interleukin 8 (IL-8)</h3>
+<p>Produced by many cell types including monocytes, lymphocytes, granulocytes, fibroblasts, endothelial and epithelial cells, hepatocytes, mesangial cells and chondrocytes and is released only under inflammatory conditions. Platelets store IL-8 in their granules and rapidly release IL-8 in inflammation <span class="citation" data-cites="matsushima2022">(<a href="references.html#ref-matsushima2022" role="doc-biblioref">Matsushima, Yang, and Oppenheim 2022</a>)</span>.</p>
 </section>
-<section id="interleukin-10-il-10" class="level3" data-number="1.1.7">
-<h3 data-number="1.1.7" class="anchored" data-anchor-id="interleukin-10-il-10"><span class="header-section-number">1.1.7</span> Interleukin 10 (IL-10)</h3>
-<p>A key anti-inflammatory mediator. Regulator of cellular immune response. Produced by various cell types and detected by macrophages and a range of other cell types. Limits antigen presentation and anti-microbial mechanisms such as nitric oxide production. <strong>Saraiva 2020 https://doi.org/10.1084/jem.20190418</strong></p>
+<section id="interleukin-10-il-10" class="level3" data-number="4.1.7">
+<h3 data-number="4.1.7" class="anchored" data-anchor-id="interleukin-10-il-10"><span class="header-section-number">4.1.7</span> Interleukin 10 (IL-10)</h3>
+<p>A key anti-inflammatory mediator. Regulator of cellular immune response. Produced by various cell types and detected by macrophages and a range of other cell types. Limits antigen presentation and anti-microbial mechanisms such as nitric oxide production <span class="citation" data-cites="Saraiva2019">(<a href="references.html#ref-Saraiva2019" role="doc-biblioref">Saraiva, Vieira, and O’Garra 2019</a>)</span>.</p>
 </section>
-<section id="interferon-gamma-inducible-protein-10-ip-10" class="level3" data-number="1.1.8">
-<h3 data-number="1.1.8" class="anchored" data-anchor-id="interferon-gamma-inducible-protein-10-ip-10"><span class="header-section-number">1.1.8</span> Interferon gamma inducible protein 10 (IP-10)</h3>
-<p>A chemokine released from various immune cells in response to IFNg and other cytokines. Activates and recruits lymphocytes. Elevated in viral and HIV infection, particularly acute HIV [<span class="citation" data-cites="lei2019">Lei et al. (<a href="references.html#ref-lei2019" role="doc-biblioref">2019</a>)</span>]<span class="citation" data-cites="hayney2017">(<a href="references.html#ref-hayney2017" role="doc-biblioref">Hayney et al. 2017</a>)</span>. Associated with disease progression.</p>
+<section id="interferon-gamma-inducible-protein-10-ip-10" class="level3" data-number="4.1.8">
+<h3 data-number="4.1.8" class="anchored" data-anchor-id="interferon-gamma-inducible-protein-10-ip-10"><span class="header-section-number">4.1.8</span> Interferon gamma inducible protein 10 (IP-10)</h3>
+<p>A chemokine released from various immune cells in response to IFNg and other cytokines. Activates and recruits lymphocytes. Elevated in viral and HIV infection, particularly acute HIV <span class="citation" data-cites="lei2019">(<a href="references.html#ref-lei2019" role="doc-biblioref">Lei et al. 2019</a>)</span>,<span class="citation" data-cites="hayney2017">(<a href="references.html#ref-hayney2017" role="doc-biblioref">Hayney et al. 2017</a>)</span>. Associated with disease progression.</p>
 </section>
-<section id="myxovirus-resistance-protein-a-mxa" class="level3" data-number="1.1.9">
-<h3 data-number="1.1.9" class="anchored" data-anchor-id="myxovirus-resistance-protein-a-mxa"><span class="header-section-number">1.1.9</span> Myxovirus resistance protein A (MxA)</h3>
-<p>Cytoplasmic GTPase with activity against Influenza A a range of other viruses. Inhibits viral gene transcription by binding to the viral nucleoprotein. MxA is activated by type I and type III interferons. <strong>Haller 2020</strong></p>
+<section id="myxovirus-resistance-protein-a-mxa" class="level3" data-number="4.1.9">
+<h3 data-number="4.1.9" class="anchored" data-anchor-id="myxovirus-resistance-protein-a-mxa"><span class="header-section-number">4.1.9</span> Myxovirus resistance protein A (MxA)</h3>
+<p>Cytoplasmic GTPase with activity against Influenza A and a range of other viruses. Inhibits viral gene transcription by binding to the viral nucleoprotein. MxA is activated by type I and type III interferons <span class="citation" data-cites="Haller2019">(<a href="references.html#ref-Haller2019" role="doc-biblioref">Haller and Kochs 2019</a>)</span>.</p>
 </section>
-<section id="soluble-tumor-necrosis-factor-receptor-1-stnfr1" class="level3" data-number="1.1.10">
-<h3 data-number="1.1.10" class="anchored" data-anchor-id="soluble-tumor-necrosis-factor-receptor-1-stnfr1"><span class="header-section-number">1.1.10</span> Soluble Tumor necrosis factor receptor 1 (sTNFR1)</h3>
-<p>Increased levels of soluble TNFR1 are competitive inhibitors for circulating TNF, thereby reducing signalling through TNFR1 (an endogenous pyrogen) that can promote cell death, tissue damage and subsequent inflammation. <strong>NEED REFS.</strong></p>
+<section id="soluble-tumor-necrosis-factor-receptor-1-stnfr1" class="level3" data-number="4.1.10">
+<h3 data-number="4.1.10" class="anchored" data-anchor-id="soluble-tumor-necrosis-factor-receptor-1-stnfr1"><span class="header-section-number">4.1.10</span> Soluble Tumor necrosis factor receptor 1 (sTNFR1)</h3>
+<p>The soluble form of TNFR1 is a competitive inhibitor for circulating TNF, thereby reducing signalling through TNFR1 (an endogenous pyrogen), that can promote a wide range of functions from cell death, tissue damage and subsequent inflammation, to cell proliferation and immune modulation <span class="citation" data-cites="Ruiz2021">(<a href="references.html#ref-Ruiz2021" role="doc-biblioref">Ruiz et al. 2021</a>)</span>, <span class="citation" data-cites="Bemelmans2017">(<a href="references.html#ref-Bemelmans2017" role="doc-biblioref">Bemelmans, Tits, and Buurman 2017</a>)</span>, <span class="citation" data-cites="AlLamki2015">(<a href="references.html#ref-AlLamki2015" role="doc-biblioref">Al-Lamki and Mayadas 2015</a>)</span></p>
 </section>
-<section id="soluble-triggering-receptor-expressed-on-myeloid-cells-strem-1" class="level3" data-number="1.1.11">
-<h3 data-number="1.1.11" class="anchored" data-anchor-id="soluble-triggering-receptor-expressed-on-myeloid-cells-strem-1"><span class="header-section-number">1.1.11</span> Soluble Triggering receptor expressed on myeloid cells (sTREM-1)</h3>
-<p>Soluble form of TREM‐1 shed from the membrane of activated phagocytes in response to bacterial and fungal infections. <strong>NEED REFS.</strong></p>
+<section id="soluble-triggering-receptor-expressed-on-myeloid-cells-1-strem-1" class="level3" data-number="4.1.11">
+<h3 data-number="4.1.11" class="anchored" data-anchor-id="soluble-triggering-receptor-expressed-on-myeloid-cells-1-strem-1"><span class="header-section-number">4.1.11</span> Soluble Triggering receptor expressed on myeloid cells 1 (sTREM-1)</h3>
+<p>Soluble form of TREM‐1 shed from the membrane of activated phagocytes in response to bacterial and fungal infections. sTREM-1 contains an immunoglobulin-like domain that recognises ligands including those connected to bacterial-derived molecules. sTREM-1 possibly originates from the activation of TREM-1 by an infection, being at very low levels in healthy controls. sTREM-1 may also competitively bind TREM-1 ligands and be anti-inflammatory <span class="citation" data-cites="Theobald2024">(<a href="references.html#ref-Theobald2024" role="doc-biblioref">Theobald et al. 2024</a>)</span></p>
 </section>
-<section id="tnf-related-apoptosis-inducing-ligand-trail" class="level3" data-number="1.1.12">
-<h3 data-number="1.1.12" class="anchored" data-anchor-id="tnf-related-apoptosis-inducing-ligand-trail"><span class="header-section-number">1.1.12</span> TNF-related apoptosis-inducing ligand (TRAIL)</h3>
-<p>Elevated in viral infections and possibly downregulated in bacterial infections. Viruses may stimulate TRAIL expression in host or immune cells, may also sensitize host cells to TRAIL-mediated induction of apoptosis. <strong>NEED REFS.</strong></p>
+<section id="tnf-related-apoptosis-inducing-ligand-trail" class="level3" data-number="4.1.12">
+<h3 data-number="4.1.12" class="anchored" data-anchor-id="tnf-related-apoptosis-inducing-ligand-trail"><span class="header-section-number">4.1.12</span> TNF-related apoptosis-inducing ligand (TRAIL)</h3>
+<p>TRAIL is consitutively expressed in various tissues, and by various immune cells including natural killer (NK) cells, activated T cells, natural killer T cells (NKT cells), dendritic cells and monocyte/macrophages. Elevated in viral infections and possibly downregulated in bacterial infections. Viruses may stimulate TRAIL expression in host or immune cells, and may also sensitize host cells to TRAIL-mediated induction of apoptosis <span class="citation" data-cites="Gyurkovska2016">(<a href="references.html#ref-Gyurkovska2016" role="doc-biblioref">Gyurkovska and Ivanovska 2016</a>)</span>.</p>
 </section>
 </section>
-<section id="markers-which-were-screened-but-which-failed-assay-quality-tests" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="markers-which-were-screened-but-which-failed-assay-quality-tests"><span class="header-section-number">1.2</span> Markers which were screened, but which failed assay quality tests</h2>
-<section id="procalcitonin-pct" class="level3" data-number="1.2.1">
-<h3 data-number="1.2.1" class="anchored" data-anchor-id="procalcitonin-pct"><span class="header-section-number">1.2.1</span> <strong>Procalcitonin (PCT)</strong></h3>
-<p>Produced in the thyroid, but also in all parenchymal tissues during bacterial infection. PCT is secreted in response to bacterial endotoxins, lipopolysaccharides, and inflammatory cytokines. It is inhibited by IFN-gamma during the response to viral infections (Davies 2015- linked below)</p>
+<section id="markers-which-were-screened-but-which-failed-assay-quality-tests" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="markers-which-were-screened-but-which-failed-assay-quality-tests"><span class="header-section-number">4.2</span> Markers which were screened, but which failed assay quality tests</h2>
+<section id="procalcitonin-pct" class="level3" data-number="4.2.1">
+<h3 data-number="4.2.1" class="anchored" data-anchor-id="procalcitonin-pct"><span class="header-section-number">4.2.1</span> <strong>Procalcitonin (PCT)</strong></h3>
+<p>Produced in the thyroid, but also in all parenchymal tissues during bacterial infection. PCT is secreted in response to bacterial endotoxins, lipopolysaccharides, and inflammatory cytokines. It is inhibited by IFN-gamma during the response to viral infections <span class="citation" data-cites="Davies2015">(<a href="references.html#ref-Davies2015" role="doc-biblioref">Davies 2015</a>)</span></p>
 <p>The PCT assay was screened out of our multiplex due to difficulty in finding a working pair of antibodies that did not cross-react with other antigens in the multiplex, particularly azurocidin.</p>
-<p><a href="https://jcp.bmj.com/content/68/9/675" class="uri">https://jcp.bmj.com/content/68/9/675</a></p>
 </section>
-<section id="c-reactive-protein-crp" class="level3" data-number="1.2.2">
-<h3 data-number="1.2.2" class="anchored" data-anchor-id="c-reactive-protein-crp"><span class="header-section-number">1.2.2</span> C-Reactive Protein (CRP)</h3>
-<p>CRP is a component of the innate immune response. It is produced by hepatocytes, … and activates Complement, as well as IL-6 secretion… READ tHIS REVIEW FOR MORE… (Sproston 2018, linked below)</p>
-<p><a href="https://www.frontiersin.org/articles/10.3389/fimmu.2018.00754/full" class="uri">https://www.frontiersin.org/articles/10.3389/fimmu.2018.00754/full</a></p>
+<section id="c-reactive-protein-crp" class="level3" data-number="4.2.2">
+<h3 data-number="4.2.2" class="anchored" data-anchor-id="c-reactive-protein-crp"><span class="header-section-number">4.2.2</span> C-Reactive Protein (CRP)</h3>
+<p>An acute phase component of the innate immune response, decreasing within hours once the stimulus is removed. CRP is produced by hepatocytes and several other cell types in response to IL-6 in combination with other stimuli. Serum levels can rise by up to 1000-fold. CRP acts by triggering complement, and activates the cellular response by binding to the Fc portion of IgG <span class="citation" data-cites="Sproston2018">(<a href="references.html#ref-Sproston2018" role="doc-biblioref">Sproston and Ashworth 2018</a>)</span>.</p>
 <p>The CRP assay was dropped from the multiplex because a reliable standard curve could not be obtained and, crucially, because of the need for much higher sample dilution than the other markers.</p>
 </section>
-</section>
-<section id="sflt-1" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="sflt-1"><span class="header-section-number">1.3</span> sFlt-1</h2>
-<p>add some info here - also reason why screened out</p>
+<section id="soluble-fems-like-tyrosine-kinase-1-sflt-1" class="level3" data-number="4.2.3">
+<h3 data-number="4.2.3" class="anchored" data-anchor-id="soluble-fems-like-tyrosine-kinase-1-sflt-1"><span class="header-section-number">4.2.3</span> Soluble FEMS-like tyrosine kinase 1 (sFlt-1)</h3>
+<p>Flt-1, also known as VEGF Receptor 1, is primarily active in the vascular endothelium. The soluble form, sFlt-1, binds to circulating VEGF, reducing the effect of VEGF which normally induces neovascularisation. sFlt-1 is elevated in endothelial dysfunction, such as sepsis <span class="citation" data-cites="Ugalde2024">(<a href="references.html#ref-Ugalde2024" role="doc-biblioref">Ugalde et al. 2024</a>)</span>, <span class="citation" data-cites="Wazan2024">(<a href="references.html#ref-Wazan2024" role="doc-biblioref">Wazan, Widhibrata, and Liu 2024</a>)</span>, <span class="citation" data-cites="Greco2018">(<a href="references.html#ref-Greco2018" role="doc-biblioref">Greco et al. 2018</a>)</span>.</p>
+<p>The sFlt-1 assay was removed from the multiplex due to difficulty in finding a working antibody pair and respective recombinant protein. All screened options gave little or no signal.</p>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-AlLamki2015" class="csl-entry" role="listitem">
+Al-Lamki, Rafia S., and Tanya N. Mayadas. 2015. <span>“TNF Receptors: Signaling Pathways and Contribution to Renal Dysfunction.”</span> <em>Kidney International</em> 87 (2): 281–96. <a href="https://doi.org/10.1038/ki.2014.285">https://doi.org/10.1038/ki.2014.285</a>.
+</div>
+<div id="ref-Bemelmans2017" class="csl-entry" role="listitem">
+Bemelmans, M. H. A., L. J. H. van Tits, and W. A. Buurman. 2017. <span>“Tumor Necrosis Factor: Function, Release and Clearance.”</span> <em>Critical Reviews in Immunology</em> 37 (2–6): 249–59. <a href="https://doi.org/10.1615/critrevimmunol.v37.i2-6.50">https://doi.org/10.1615/critrevimmunol.v37.i2-6.50</a>.
+</div>
 <div id="ref-brouwers2013" class="csl-entry" role="listitem">
 Brouwers, Judith, Rintis Noviyanti, Rob Fijnheer, Philip G. de Groot, Leily Trianty, Siti Mudaliana, Mark Roest, Din Syafruddin, Andre van der Ven, and Quirijn de Mast. 2013. <span>“Platelet Activation Determines Angiopoietin-1 and VEGF Levels in Malaria: Implications for Their Use as Biomarkers.”</span> Edited by Ana Paula Arez. <em>PLoS ONE</em> 8 (6): e64850. <a href="https://doi.org/10.1371/journal.pone.0064850">https://doi.org/10.1371/journal.pone.0064850</a>.
+</div>
+<div id="ref-Davies2015" class="csl-entry" role="listitem">
+Davies, Julie. 2015. <span>“Procalcitonin.”</span> <em>Journal of Clinical Pathology</em> 68 (9): 675–79. <a href="https://doi.org/10.1136/jclinpath-2014-202807">https://doi.org/10.1136/jclinpath-2014-202807</a>.
 </div>
 <div id="ref-fisher2017" class="csl-entry" role="listitem">
 Fisher, J., and A. Linder. 2017. <span>“Heparin<span>-</span>Binding Protein: A Key Player in the Pathophysiology of Organ Dysfunction in Sepsis.”</span> <em>Journal of Internal Medicine</em> 281 (6): 562–74. <a href="https://doi.org/10.1111/joim.12604">https://doi.org/10.1111/joim.12604</a>.
 </div>
+<div id="ref-Greco2018" class="csl-entry" role="listitem">
+Greco, Marilena, Claudio Palumbo, Fernando Sicuro, and Giambattista Lobreglio. 2018. <span>“Soluble Fms-Like Tyrosine Kinase-1 Is a Marker of Endothelial Dysfunction During Sepsis.”</span> <em>Journal of Clinical Medicine Research</em> 10 (9): 700–706. <a href="https://doi.org/10.14740/jocmr3505w">https://doi.org/10.14740/jocmr3505w</a>.
+</div>
+<div id="ref-Gyurkovska2016" class="csl-entry" role="listitem">
+Gyurkovska, Valeriya, and Nina Ivanovska. 2016. <span>“Distinct Roles of TNF-Related Apoptosis-Inducing Ligand (TRAIL) in Viral and Bacterial Infections: From Pathogenesis to Pathogen Clearance.”</span> <em>Inflammation Research</em> 65 (6): 427–37. <a href="https://doi.org/10.1007/s00011-016-0934-1">https://doi.org/10.1007/s00011-016-0934-1</a>.
+</div>
+<div id="ref-Haller2019" class="csl-entry" role="listitem">
+Haller, Otto, and Georg Kochs. 2019. <span>“Mx Genes: Host Determinants Controlling Influenza Virus Infection and Trans-Species Transmission.”</span> <em>Human Genetics</em> 139 (6–7): 695–705. <a href="https://doi.org/10.1007/s00439-019-02092-8">https://doi.org/10.1007/s00439-019-02092-8</a>.
+</div>
 <div id="ref-hayney2017" class="csl-entry" role="listitem">
 Hayney, Mary S., Kelsey M. Henriquez, Jodi H. Barnet, Tola Ewers, Heather M. Champion, Sean Flannery, and Bruce Barrett. 2017. <span>“Serum IFN-γ-Induced Protein 10 (IP-10) as a Biomarker for Severity of Acute Respiratory Infection in Healthy Adults.”</span> <em>Journal of Clinical Virology</em> 90 (May): 32–37. <a href="https://doi.org/10.1016/j.jcv.2017.03.003">https://doi.org/10.1016/j.jcv.2017.03.003</a>.
+</div>
+<div id="ref-Kang2021" class="csl-entry" role="listitem">
+Kang, Sujin, and Tadamitsu Kishimoto. 2021. <span>“Interplay Between Interleukin-6 Signaling and the Vascular Endothelium in Cytokine Storms.”</span> <em>Experimental &amp;Amp; Molecular Medicine</em> 53 (7): 1116–23. <a href="https://doi.org/10.1038/s12276-021-00649-0">https://doi.org/10.1038/s12276-021-00649-0</a>.
 </div>
 <div id="ref-kim2016" class="csl-entry" role="listitem">
 Kim, Minah, Breanna Allen, Emilia A. Korhonen, Maximilian Nitschké, Hee Won Yang, Peter Baluk, Pipsa Saharinen, et al. 2016. <span>“Opposing Actions of Angiopoietin-2 on Tie2 Signaling and FOXO1 Activation.”</span> <em>Journal of Clinical Investigation</em> 126 (9): 3511–25. <a href="https://doi.org/10.1172/jci84871">https://doi.org/10.1172/jci84871</a>.
@@ -373,10 +414,32 @@ Leligdowicz, Aleksandra, Melissa Richard-Greenblatt, Julie Wright, Valerie M. Cr
 <div id="ref-matsushima2022" class="csl-entry" role="listitem">
 Matsushima, Kouji, De Yang, and Joost J. Oppenheim. 2022. <span>“Interleukin-8: An Evolving Chemokine.”</span> <em>Cytokine</em> 153 (May): 155828. <a href="https://doi.org/10.1016/j.cyto.2022.155828">https://doi.org/10.1016/j.cyto.2022.155828</a>.
 </div>
+<div id="ref-Ruiz2021" class="csl-entry" role="listitem">
+Ruiz, Andy, Yadira Palacios, Irene Garcia, and Leslie Chavez-Galan. 2021. <span>“Transmembrane TNF and Its Receptors TNFR1 and TNFR2 in Mycobacterial Infections.”</span> <em>International Journal of Molecular Sciences</em> 22 (11): 5461. <a href="https://doi.org/10.3390/ijms22115461">https://doi.org/10.3390/ijms22115461</a>.
+</div>
+<div id="ref-Saraiva2019" class="csl-entry" role="listitem">
+Saraiva, Margarida, Paulo Vieira, and Anne O’Garra. 2019. <span>“Biology and Therapeutic Potential of Interleukin-10.”</span> <em>Journal of Experimental Medicine</em> 217 (1). <a href="https://doi.org/10.1084/jem.20190418">https://doi.org/10.1084/jem.20190418</a>.
+</div>
+<div id="ref-Sproston2018" class="csl-entry" role="listitem">
+Sproston, Nicola R., and Jason J. Ashworth. 2018. <span>“Role of c-Reactive Protein at Sites of Inflammation and Infection.”</span> <em>Frontiers in Immunology</em> 9 (April). <a href="https://doi.org/10.3389/fimmu.2018.00754">https://doi.org/10.3389/fimmu.2018.00754</a>.
+</div>
+<div id="ref-Tanaka2014" class="csl-entry" role="listitem">
+Tanaka, T., M. Narazaki, and T. Kishimoto. 2014. <span>“IL-6 in Inflammation, Immunity, and Disease.”</span> <em>Cold Spring Harbor Perspectives in Biology</em> 6 (10): a016295–95. <a href="https://doi.org/10.1101/cshperspect.a016295">https://doi.org/10.1101/cshperspect.a016295</a>.
+</div>
+<div id="ref-Theobald2024" class="csl-entry" role="listitem">
+Theobald, Vivienne, Felix Carl Fabian Schmitt, Chiara Simone Middel, Lena Gaissmaier, Thorsten Brenner, and Markus Alexander Weigand. 2024. <span>“Triggering Receptor Expressed on Myeloid Cells-1 in Sepsis, and Current Insights into Clinical Studies.”</span> <em>Critical Care</em> 28 (1). <a href="https://doi.org/10.1186/s13054-024-04798-2">https://doi.org/10.1186/s13054-024-04798-2</a>.
+</div>
+<div id="ref-Ugalde2024" class="csl-entry" role="listitem">
+Ugalde, Miguel Javier, Alberto Caballero, Marta Martín Fernández, Eduardo Tamayo, and Olga de la Varga-Martínez. 2024. <span>“Valor Del Biomarcador Tirosina Quinasa 1 Soluble Tipo Fms (sFLT-1) En El Diagnóstico y Pronóstico de La Sepsis: Una Revisión Sistemática.”</span> <em>Medicina Clínica</em> 163 (5): 224–31. <a href="https://doi.org/10.1016/j.medcli.2024.03.027">https://doi.org/10.1016/j.medcli.2024.03.027</a>.
+</div>
+<div id="ref-Wazan2024" class="csl-entry" role="listitem">
+Wazan, Layal EI, Ariel Widhibrata, and Guei-Sheung Liu. 2024. <span>“Soluble FLT-1 in Angiogenesis: Pathophysiological Roles and Therapeutic Implications.”</span> <em>Angiogenesis</em> 27 (4): 641–61. <a href="https://doi.org/10.1007/s10456-024-09942-8">https://doi.org/10.1007/s10456-024-09942-8</a>.
+</div>
 <div id="ref-zhao2020" class="csl-entry" role="listitem">
 Zhao, Ting, Zhongping Su, Yingchang Li, Xiaoren Zhang, and Qiang You. 2020. <span>“Chitinase-3 Like-Protein-1 Function and Its Role in Diseases.”</span> <em>Signal Transduction and Targeted Therapy</em> 5 (1). <a href="https://doi.org/10.1038/s41392-020-00303-7">https://doi.org/10.1038/s41392-020-00303-7</a>.
 </div>
 </div>
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -459,10 +522,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -472,8 +552,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -485,7 +574,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -529,6 +741,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -554,6 +767,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -615,17 +854,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">A multiplex bead-based immunoassay and data analysis pipeline for 12 markers of fever severity in dried blood spots</span>
+      <a href="./bloodspots.html" class="pagination-link" aria-label="Dried Blood Spots">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Dried Blood Spots</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./Buffers_and_Reagents.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Buffers &amp; Reagents</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./Buffers_and_Reagents.html" class="pagination-link" aria-label="Buffers &amp; Reagents">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Buffers &amp; Reagents</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
+
 
 
 

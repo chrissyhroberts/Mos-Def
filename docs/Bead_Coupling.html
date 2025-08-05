@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.556">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Supplementary Material : A multiplex bead-based immunoassay and data analysis pipeline for 12 markers of fever severity in dried blood spots - 4&nbsp; Bead Coupling</title>
+<title>Design, Optimisation, Validation, and Analysis Framework for Multiplex Bead‑Based Biomarker Assays - 7&nbsp; Bead Coupling</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -47,7 +47,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -56,6 +62,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -71,12 +78,12 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Bead_Coupling.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Bead Coupling</span></a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Bead_Coupling.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Bead Coupling</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
@@ -86,10 +93,10 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Supplementary Material : A multiplex bead-based immunoassay and data analysis pipeline for 12 markers of fever severity in dried blood spots</a> 
+      <a href="./">Design, Optimisation, Validation, and Analysis Framework for Multiplex Bead‑Based Biomarker Assays</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -102,103 +109,115 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">A multiplex bead-based immunoassay and data analysis pipeline for 12 markers of fever severity in dried blood spots</span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Overview</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./fever.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">About this exemplar assay</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./bloodspots.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Dried Blood Spots</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Marker_List.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">List of Markers</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">List of Markers</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Buffers_and_Reagents.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Buffers &amp; Reagents</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Buffers &amp; Reagents</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Capture_Antibody_Prep.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Capture Antibody Preparation</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Capture Antibody Preparation</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Bead_Coupling.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Bead Coupling</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Bead Coupling</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Coupling_Confirmation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Coupling Confirmation</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Coupling Confirmation</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Detection_Antibody_Prep.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Detection Antibody Prep</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Detection Antibody Prep</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./antigens.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Antigens</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Antigens</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./antibody_pairs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Antibody pair screening</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Antibody pair screening</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Cross_Reactivity.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Cross-reactivity Testing</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Cross-reactivity Testing</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Standards_Prep.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Standard curves</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Standard curves</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Magpix_Protocol.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">MagPix Protocol</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">MagPix Protocol</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Coefficients_of_Variation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Coefficients of Variation</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Coefficients of Variation</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Specimen_Testing.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Specimen Testing</span></span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Specimen Testing</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Analysis_01.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Data Analysis - A Tutorial based on the Mos-Def study</span></span></a>
+  <a href="./Analysis_02.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Data Analysis</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./appendix.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Funding &amp; Declarations</span></span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Funding &amp; Declarations</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./CRediT.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">CRediT Framework</span></span></a>
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">CRediT Framework</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -210,18 +229,18 @@ ul.task-list li input[type="checkbox"] {
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#assay-specific-reagents" id="toc-assay-specific-reagents" class="nav-link active" data-scroll-target="#assay-specific-reagents"><span class="header-section-number">4.1</span> Assay-specific reagents</a></li>
-  <li><a href="#other-consumables-reagents-and-equipment-needed." id="toc-other-consumables-reagents-and-equipment-needed." class="nav-link" data-scroll-target="#other-consumables-reagents-and-equipment-needed."><span class="header-section-number">4.2</span> Other consumables, reagents and equipment needed.</a></li>
-  <li><a href="#preparation" id="toc-preparation" class="nav-link" data-scroll-target="#preparation"><span class="header-section-number">4.3</span> Preparation</a></li>
-  <li><a href="#protocol-a---coupling-beads-for-8-plates" id="toc-protocol-a---coupling-beads-for-8-plates" class="nav-link" data-scroll-target="#protocol-a---coupling-beads-for-8-plates"><span class="header-section-number">4.4</span> Protocol A - Coupling beads for 8 plates</a></li>
-  <li><a href="#protocol-b---coupling-beads-for-52-plates" id="toc-protocol-b---coupling-beads-for-52-plates" class="nav-link" data-scroll-target="#protocol-b---coupling-beads-for-52-plates"><span class="header-section-number">4.5</span> Protocol B - Coupling beads for 52 plates</a></li>
+  <li><a href="#assay-specific-reagents" id="toc-assay-specific-reagents" class="nav-link active" data-scroll-target="#assay-specific-reagents"><span class="header-section-number">7.1</span> Assay-specific reagents</a></li>
+  <li><a href="#other-consumables-reagents-and-equipment-needed." id="toc-other-consumables-reagents-and-equipment-needed." class="nav-link" data-scroll-target="#other-consumables-reagents-and-equipment-needed."><span class="header-section-number">7.2</span> Other consumables, reagents and equipment needed.</a></li>
+  <li><a href="#preparation" id="toc-preparation" class="nav-link" data-scroll-target="#preparation"><span class="header-section-number">7.3</span> Preparation</a></li>
+  <li><a href="#protocol-a---coupling-beads-for-8-plates" id="toc-protocol-a---coupling-beads-for-8-plates" class="nav-link" data-scroll-target="#protocol-a---coupling-beads-for-8-plates"><span class="header-section-number">7.4</span> Protocol A - Coupling beads for 8 plates</a></li>
+  <li><a href="#protocol-b---coupling-beads-for-52-plates" id="toc-protocol-b---coupling-beads-for-52-plates" class="nav-link" data-scroll-target="#protocol-b---coupling-beads-for-52-plates"><span class="header-section-number">7.5</span> Protocol B - Coupling beads for 52 plates</a></li>
   </ul>
 </nav>
     </div>
@@ -230,7 +249,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Bead Coupling</span></h1>
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Bead Coupling</span></h1>
 </div>
 
 
@@ -243,21 +262,23 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
+
 
 <p>We provide two versions of this protocol for coupling enough beads for 8 plates using 120 µL of bead stock (Protocol A), or a larger-scale coupling which provides enough beads for about 52 plates using 500 µL of bead stock (Protocol B).</p>
 <p>Variations on the number of beads may be calculated using the Luminex Cookbook scaling table available online from Luminex.</p>
-<section id="assay-specific-reagents" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="assay-specific-reagents"><span class="header-section-number">4.1</span> Assay-specific reagents</h2>
+<section id="assay-specific-reagents" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="assay-specific-reagents"><span class="header-section-number">7.1</span> Assay-specific reagents</h2>
 <p>Table 1. Assay-specific reagents needed for bead coupling.</p>
-<table class="table">
+<table class="caption-top table">
 <colgroup>
-<col style="width: 9%">
-<col style="width: 19%">
-<col style="width: 15%">
-<col style="width: 12%">
-<col style="width: 13%">
-<col style="width: 28%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -465,14 +486,14 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 </section>
-<section id="other-consumables-reagents-and-equipment-needed." class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="other-consumables-reagents-and-equipment-needed."><span class="header-section-number">4.2</span> Other consumables, reagents and equipment needed.</h2>
+<section id="other-consumables-reagents-and-equipment-needed." class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="other-consumables-reagents-and-equipment-needed."><span class="header-section-number">7.2</span> Other consumables, reagents and equipment needed.</h2>
 <p>Table 2. Other materials needed for bead coupling.</p>
-<table class="table">
+<table class="caption-top table">
 <colgroup>
-<col style="width: 52%">
-<col style="width: 16%">
-<col style="width: 30%">
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -560,13 +581,13 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 </section>
-<section id="preparation" class="level2" data-number="4.3">
-<h2 data-number="4.3" class="anchored" data-anchor-id="preparation"><span class="header-section-number">4.3</span> Preparation</h2>
-<p>This protocol uses EDC [1-ethyl-3-(3-dimethylaminopropyl)-carbodiimide hydrochloride)]. EDC absorbs moisture from the air. It is helpful to aliquot it into 50 mg, single-use, amounts in screw cap tubes on receipt and to store these in individual ziplock bags with desiccant, at -20° C.</p>
+<section id="preparation" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="preparation"><span class="header-section-number">7.3</span> Preparation</h2>
+<p>This protocol uses EDC [1-ethyl-3-(3-dimethylaminopropyl)-carbodiimide hydrochloride]. EDC absorbs moisture from the air. It is helpful to aliquot it into 50 mg, single-use, amounts in screw cap tubes on receipt and to store these in individual ziplock bags with desiccant, at -20° C.</p>
 <p>For quality assurance processes, we recommend keeping note of the lot numbers and expiry dates of both beads and capture antibodies. The diagnostic performance of beads changes with time, see bead validity information elsewhere in this paper for individual bead validity, however all beads are useable for 3 months.</p>
 </section>
-<section id="protocol-a---coupling-beads-for-8-plates" class="level2" data-number="4.4">
-<h2 data-number="4.4" class="anchored" data-anchor-id="protocol-a---coupling-beads-for-8-plates"><span class="header-section-number">4.4</span> Protocol A - Coupling beads for 8 plates</h2>
+<section id="protocol-a---coupling-beads-for-8-plates" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="protocol-a---coupling-beads-for-8-plates"><span class="header-section-number">7.4</span> Protocol A - Coupling beads for 8 plates</h2>
 <p>⌚ Timing: 2 hours, then 2 hours incubation, 1h45m to finish. Total approx. 5h45m.</p>
 <p>This protocol takes place at ambient temperature. All incubations are at ambient temperature.</p>
 <p><strong>Tip:</strong> Protect beads from light with a foil cover when they are not being manipulated such as during incubations.</p>
@@ -578,21 +599,21 @@ ul.task-list li input[type="checkbox"] {
 <li>Transfer 120 µL of bead stock (1.5 x 10<sup>6</sup> beads for 8 full plates) into each respective tube.</li>
 <li>Put tubes in magnet rack for 60 s.</li>
 <li>Remove supernatant without disturbing beads.</li>
-<li>Wash beads: Remove tubes from magnet rack. Add 100 µL dH2O. Vortex &amp; sonicate for ~20 s of each.</li>
-<li>Tube into magnet rack, 60 s.</li>
+<li>Wash beads: Remove tubes from magnet rack. Add 100 µL dH<sub>2</sub>O. Vortex &amp; sonicate for ~20 s of each.</li>
+<li>Insert tube into magnet rack, 60 s.</li>
 <li>Remove supernatant without disturbing beads.</li>
 <li>Activate beads: Remove tube from magnet rack. Add 80 µL Activation buffer. Vortex &amp; sonicate, ~20 s each.</li>
 <li>In two separate tubes, make up 50 mg/mL sulfo-NHS and 50 mg/mL EDC in Activation buffer. 25 mg in 500 µL is sufficient for 12 bead couplings. These should always be made fresh during the protocol immediately before use, and not stored.</li>
 <li>Add 10 µL of the sulfo-NHS solution to the beads. Vortex.</li>
 <li>Add 10 µL of the EDC solution to the beads. Vortex.</li>
 <li>Incubate 10 mins @ room temp. Vortex. Incubate for further 10 mins.</li>
-<li>During the incubation, set up new 1.5 ml tubes for antibody dilution in MES buffer, one tube per bead region.</li>
+<li>During the incubation, set up new 1.5 mL tubes for antibody dilution in MES buffer, one tube per bead region.</li>
 <li>Dispense 400 µL MES to each tube.</li>
-<li>Remove the MES volume indicated for each antibody in Table 3, column 5 (so that when antibody is added, the volume is restored to 400 uL in each case).</li>
+<li>Remove the MES volume indicated for each antibody in Table 3, column 5 (so that when antibody is added, the volume is restored to 400 µL in each case).</li>
 <li>Add in the required volume of each antibody (Table 3, column 5):</li>
 </ol>
 <p>Table 3. Capture antibody for 1.5 x 10<sup>6</sup> beads, for 8 plates.</p>
-<table class="table">
+<table class="caption-top table">
 <colgroup>
 <col style="width: 9%">
 <col style="width: 22%">
@@ -708,35 +729,35 @@ ul.task-list li input[type="checkbox"] {
 </table>
 <ol start="20" type="1">
 <li>Set these antibody tubes aside and continue with the beads.</li>
-<li>Bead tube into magnet rack, 60 s.</li>
+<li>Insert bead tube into magnet rack, 60 s.</li>
 <li>Remove supernatant without disturbing beads.</li>
 <li>MES wash 1: Remove tube from magnet rack. Add 250 µL MES buffer. Vortex &amp; sonicate for ~ 20 s each.</li>
-<li>Tube into magnet rack, 60 s.</li>
+<li>Insert tube into magnet rack, 60 s.</li>
 <li>Remove supernatant without disturbing beads.</li>
 <li>MES wash 2: Remove tube from magnet rack. Add 250 µL MES buffer. Vortex &amp; sonicate for ~ 20 s each.</li>
-<li>Tube into magnet rack, 60 s.</li>
+<li>Insert tube into magnet rack, 60 s.</li>
 <li>Remove supernatant without disturbing beads.</li>
 <li>Add 100 µL MES buffer to each bead tube.</li>
 <li>Transfer all 400 µL of each antibody dilution into the respective bead tubes and vortex. (So that the antibody amount is eventually diluted in 0.5 mL of MES by the time it is incubated with the beads, as per Luminex scale-up table).</li>
 <li>Incubate 2 hours on rotating mixer at room temp. Record start time ______________</li>
-<li>Tube into magnet rack, 60 s.</li>
+<li>Insert tube into magnet rack, 60 s.</li>
 <li>Remove supernatant without disturbing beads.</li>
 <li>Remove tube from magnet rack. Add 500 µL PBS-TBN. Vortex &amp; sonicate for ~20 s.</li>
-<li>Tube into magnet rack, 60 s.</li>
+<li>Insert tube into magnet rack, 60 s.</li>
 <li>Remove supernatant without disturbing beads.</li>
 <li>PBS-TBN wash 1: Remove tube from magnet rack. Add 1 mL PBS-TBN. Vortex &amp; sonicate for ~20 s.</li>
-<li>Tube into magnet rack, 60 s.</li>
+<li>Insert tube into magnet rack, 60 s.</li>
 <li>Remove supernatant without disturbing beads.</li>
 <li>PBS-TBN wash 2: Remove tube from magnet rack. Add 1 mL PBS-TBN. Vortex &amp; sonicate for ~20 s.</li>
-<li>Tube into magnet rack, 60 s.</li>
+<li>Insert tube into magnet rack, 60 s.</li>
 <li>Remove supernatant without disturbing beads.</li>
 <li>Remove tube from magnet rack. Resuspend coupled beads in 200 µL PBS-TBN. Vortex. This is 1.66x the original volume (120 µL) to give a theoretical count of 7.5 x 10<sup>6</sup> beads/mL.</li>
 <li>Ensure newly coupled bead tubes are fully labelled with at least: assay, bead region, date.</li>
 <li>Store the coupled beads at +4°C and protect from light.</li>
 </ol>
 </section>
-<section id="protocol-b---coupling-beads-for-52-plates" class="level2" data-number="4.5">
-<h2 data-number="4.5" class="anchored" data-anchor-id="protocol-b---coupling-beads-for-52-plates"><span class="header-section-number">4.5</span> Protocol B - Coupling beads for 52 plates</h2>
+<section id="protocol-b---coupling-beads-for-52-plates" class="level2" data-number="7.5">
+<h2 data-number="7.5" class="anchored" data-anchor-id="protocol-b---coupling-beads-for-52-plates"><span class="header-section-number">7.5</span> Protocol B - Coupling beads for 52 plates</h2>
 <p>⌚ Timing: 2 hours, then 2 hours incubation, 1h45m to finish. Total approx. 5h45m.</p>
 <p>The protocol takes place at ambient temperature. All incubations are at ambient temperature.</p>
 <ol type="1">
@@ -747,8 +768,8 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Transfer 500 µL of bead stock (6.25 x 10<sup>6</sup> beads for ~52 full plates) into each respective tube.</p></li>
 <li><p>Put tube in magnet rack for 60 s.</p></li>
 <li><p>Remove supernatant without disturbing beads.</p></li>
-<li><p>Wash beads: Remove tubes from magnet rack. Add 100 µL dH2O. Vortex &amp; sonicate for ~20 s of each.</p></li>
-<li><p>Tube into magnet rack, 60 s.</p></li>
+<li><p>Wash beads: Remove tubes from magnet rack. Add 100 µL dH<sub>2</sub>O. Vortex &amp; sonicate for ~20 s of each.</p></li>
+<li><p>Insert tube into magnet rack, 60 s.</p></li>
 <li><p>Remove supernatant without disturbing beads.</p></li>
 <li><p>Activate beads: Remove tube from magnet rack. Add 80 µL Activation buffer. Vortex &amp; sonicate, ~20 s each.</p></li>
 <li><p>In two separate tubes, make up 50 mg/mL sulfo-NHS and 50 mg/mL EDC in Activation buffer. 25 mg in 500 µL is sufficient for 12 bead couplings. These should always be made fresh during the protocol immediately before use, and not stored.</p></li>
@@ -757,11 +778,11 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Incubate 10 mins @ room temp. Vortex. Incubate for further 10 mins.</p></li>
 <li><p>During the incubation, set up new 1.5 mL tubes for antibody dilution in MES buffer, one tube per bead region.</p></li>
 <li><p>Dispense 400 µL MES to each tube.</p></li>
-<li><p>Remove the MES volume indicated for each antibody in Table 4, column 5 (so that when antibody is added, the volume is restored to 400 uL in each case).</p></li>
+<li><p>Remove the MES volume indicated for each antibody in Table 4, column 5 (so that when antibody is added, the volume is restored to 400 µL in each case).</p></li>
 <li><p>Add in the required volume of each antibody (Table 4, column 5):</p>
 <p>Table 4. Capture antibody for 6.25 x 10<sup>6</sup> beads, for approx. 52 plates.</p></li>
 </ol>
-<table class="table">
+<table class="caption-top table">
 <colgroup>
 <col style="width: 9%">
 <col style="width: 22%">
@@ -781,7 +802,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Antibody amount per million beads</li>
 </ol></th>
 <th><ol start="4" type="1">
-<li>Number of 10 ul aliquots of capture Ab needed</li>
+<li>Number of 10 µL aliquots of capture Ab needed</li>
 </ol></th>
 <th><ol start="5" type="1">
 <li>Volume of capture antibody needed for 1.5e<sup>6</sup> beads (µL)</li>
@@ -828,7 +849,7 @@ ul.task-list li input[type="checkbox"] {
 <td>IL-8</td>
 <td>M801 (Thermo)</td>
 <td>5</td>
-<td>4 (1 if 50 ul aliquot)</td>
+<td>4 (1 if 50 µL aliquot)</td>
 <td>31.3</td>
 </tr>
 <tr class="odd">
@@ -877,27 +898,27 @@ ul.task-list li input[type="checkbox"] {
 </table>
 <ol start="20" type="1">
 <li>Set these antibody tubes aside and continue with the beads.</li>
-<li>Bead tube into magnet rack, 60 s.</li>
+<li>Insert bead tube into magnet rack, 60 s.</li>
 <li>Remove supernatant without disturbing beads.</li>
 <li>MES wash 1: Remove tube from magnet rack. Add 500 µL MES buffer. Vortex &amp; sonicate for ~ 20 s each.</li>
-<li>Tube into magnet rack, 60 s.</li>
+<li>Insert tube into magnet rack, 60 s.</li>
 <li>Remove supernatant without disturbing beads.</li>
 <li>MES wash 2: Remove tube from magnet rack. Add 500 µL MES buffer. Vortex &amp; sonicate for ~ 20 s each.</li>
-<li>Tube into magnet rack, 60 s.</li>
+<li>Insert tube into magnet rack, 60 s.</li>
 <li>Remove supernatant without disturbing beads.</li>
 <li>Add 100 µL MES buffer to beads.</li>
 <li>Transfer all 400 µL of each antibody dilution into the respective bead tubes and vortex. (So that the antibody amount is eventually diluted in 0.5 mL of MES by the time it is incubated with the beads, as per Luminex scale-up table).</li>
 <li>Incubate 2 hours on rotating mixer at room temp. Record start time ______________</li>
-<li>Tube into magnet rack, 60 s.</li>
+<li>Insert tube into magnet rack, 60 s.</li>
 <li>Remove supernatant without disturbing beads.</li>
 <li>Remove tube from magnet rack. Add 500 µL PBS-TBN. Vortex &amp; sonicate for ~20 s.</li>
-<li>Tube into magnet rack, 60 s.</li>
+<li>Insert tube into magnet rack, 60 s.</li>
 <li>Remove supernatant without disturbing beads.</li>
 <li>PBS-TBN wash 1: Remove tube from magnet rack. Add 1 mL PBS-TBN. Vortex &amp; sonicate for ~20 s.</li>
-<li>Tube into magnet rack, 60 s.</li>
+<li>Insert tube into magnet rack, 60 s.</li>
 <li>Remove supernatant without disturbing beads.</li>
 <li>PBS-TBN wash 2: Remove tube from magnet rack. Add 1 mL PBS-TBN. Vortex &amp; sonicate for ~20 s.</li>
-<li>Tube into magnet rack, 60 s.</li>
+<li>Insert tube into magnet rack, 60 s.</li>
 <li>Remove supernatant without disturbing beads.</li>
 <li>Remove tube from magnet rack. Resuspend coupled beads in 830 µL PBS-TBN. Vortex. This is 1.66x the original volume (500 µL) to give a theoretical count of 7.5 x 10<sup>6</sup> beads/mL.</li>
 <li>Ensure newly coupled bead tubes are fully labelled with at least: assay, bead region, date.</li>
@@ -987,10 +1008,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -1000,8 +1038,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -1013,7 +1060,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -1057,6 +1227,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -1082,6 +1253,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -1143,17 +1340,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./Capture_Antibody_Prep.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Capture Antibody Preparation</span></span>
+      <a href="./Capture_Antibody_Prep.html" class="pagination-link" aria-label="Capture Antibody Preparation">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Capture Antibody Preparation</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./Coupling_Confirmation.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Coupling Confirmation</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./Coupling_Confirmation.html" class="pagination-link" aria-label="Coupling Confirmation">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Coupling Confirmation</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
+
 
 
 
