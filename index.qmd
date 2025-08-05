@@ -14,6 +14,11 @@ The method is presented through the lens of a novel multimarker immunoassay for 
 
 These protocols also provide information on how to perform quality assurance experiments and to evaluate performance parameters such as the coefficient of variation. We also provide some analysis protocols which will support you to import, process and perform a quality controlled analysis of data from this or any multiplexed immuno-bead assay created on the MagPix platform.
 
+## Citation
+
+**To cite this work, please use:**\
+Marlais, T., Drakeley, C., & Roberts, C.H. (2025). *Design, Optimisation, Validation, and Analysis Framework for Multiplex Bead‑Based Biomarker Assays. London School of Hygiene & Tropical Medicine.* Retrieved \[YYYY-MM-DD\] from <https://chrissyhroberts.github.io/Mos-Def/Marker_List.html>. DOI pending.
+
 ## About the method
 
 The assay is a multiplexed sandwich assay designed for use with the Luminex MagPix and related devices. During the assay, analytes are bound to addressable microbeads using bead-bound, analyte-specific antibodies. The analytes bound to the beads then form complexes with analyte-specific biotin-conjugated detection antibodies followed by streptavidin-phycoerythrin (SA-PE) fluorescent reporter. This sandwich assay offers high specificity for the analytes, ensuring that each bead becomes fluorescent only when conjugated with the intended analyte. The level of SA-PE fluorescence serves as a proxy for the quantity of analyte bound to each bead. The addressable signals of the microbeads then allow for the identification of which analyte corresponds to a given SA-PE fluorescence signal. When performed with a plurality of capture-antibody conjugated beads and a corresponding set of biotin conjugated detection antibodies, the platform allows a highly specific estimate of analyte concentration across the 12 targets. To allow full reproduction of our panel of markers for febrile diseases, we provide exhaustive detail in the supplement.
