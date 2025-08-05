@@ -1143,7 +1143,7 @@ This line of code runs a **confusion matrix analysis** for the subset of partici
 kable(compute_conf_matrix_stats(data = filter(df_wider,hiv_comb=="HIV_Negative"),condition = "il_8_z>0.2",outcome_col = "dead_or_alive"),digits = 2)
 ```
 
-## Identifying clusters via Principal Components Analysis
+### Identifying clusters via Principal Components Analysis
 
 This section conducts a **Principal Component Analysis (PCA)** on the z-scored biomarker panel to explore the underlying structure of the data. It evaluates how much of the overall variation is captured by each principal component and assesses the potential for dimensionality reduction. While all biomarkers were already standardised, PCA was applied with additional scaling for consistency. The output provides insight into the dominant patterns across biomarkers and helps inform multivariate modelling strategies.
 
@@ -1291,7 +1291,7 @@ This approach explores **profile-wide variance** in the PCA space to identify in
 
 We compute a **Mahalanobis distance** for each sample, quantifying how far its position in PCA space lies from the centroid of the "Alive" group (i.e., survivors). This reflects multivariate deviation across all principal components.
 
-#### Method:
+Method:
 
 -   **Controls**: Used only the `Alive` group to compute:
 
@@ -1345,7 +1345,7 @@ summary(glm(dead_or_alive ~ log(mahalanobis_distance), data = df_wider, family =
 
 ```
 
-## Marker Importance and Selection
+### Marker Importance and Selection
 
 So far, we’ve explored both **individual biomarker effects** and **composite multivariate structures** (e.g. via PCA and Mahalanobis distance) for predicting mortality. While informative, these approaches do not explicitly rank biomarkers by their **predictive relevance**.
 
@@ -1367,11 +1367,11 @@ The justification for a variable selection approach is that it:
 
 -   Enhances interpretability and potential biological insight
 
-### Approaches Used for variable selection
+**Approaches Used for variable selection**
 
 We apply two complementary techniques:
 
-#### 1. **Boruta Feature Selection**
+**Boruta Feature Selection**
 
 -   A *wrapper algorithm* built around random forests.
 
@@ -1381,7 +1381,7 @@ We apply two complementary techniques:
 
 -   Well suited for **highly-dimensional and noisy data**.
 
-#### 2. **Recursive Feature Elimination (RFE)**
+**Recursive Feature Elimination (RFE)**
 
 -   A *greedy backward selection* method.
 
@@ -1394,7 +1394,7 @@ We apply two complementary techniques:
 To reflect more practical diagnostic settings, we extended the dataset to include additional **demographic and clinical predictors**:
 
 | Variable | Description |
-|-----------------------|-------------------------------------------------|
+|------------------------|------------------------------------------------|
 | `sex` | Randomly assigned binary variable (Male/Female), \~50:50 split |
 | `age` | Uniformly distributed between 18 and 87 |
 | `temp` | Simulated body temperature, slightly elevated in patients who died |
@@ -1555,7 +1555,7 @@ boruta.imp %>%
   theme(axis.text.x = element_text(angle = 90, hjust = 1))
 ```
 
-#### Recursive Feature Elimination (RFE) on Boruta-selected variables
+### Recursive Feature Elimination (RFE) on Boruta-selected variables
 
 This chunk applies **Recursive Feature Elimination (RFE)** to the **Boruta-confirmed variables** to identify the most parsimonious subset of predictors for classifying mortality (`dead_or_alive`).
 
@@ -1723,13 +1723,13 @@ This demonstrates that:
 
 -   Simple clinical and demographic factors like **temperature** and **HIV status** dramatically enhance predictive performance and these can be parsimoniously identified through Boruta and RFE.
 
-# Summary
+## Summary
 
 This analysis walks through a **complete pipeline for biomarker evaluation**, simulating what a robust approach might look like in real-world clinical research. It highlights best practices for handling, transforming, selecting, and modelling data — even though the data used here are synthetic.
 
 ------------------------------------------------------------------------
 
-#### **1. Data Import & Pre-processing**
+**1. Data Import & Pre-processing**
 
 -   **Raw data** representing biomarker values from assay plates (e.g., ELISA or multiplex formats) were loaded.
 
@@ -1739,7 +1739,7 @@ This analysis walks through a **complete pipeline for biomarker evaluation**, si
 
 ------------------------------------------------------------------------
 
-#### **2. Initial Outcome Assessment**
+**2. Initial Outcome Assessment**
 
 -   **Univariate ROC curves** were plotted for individual biomarkers (e.g., IL-8) to evaluate crude discriminatory power.
 
@@ -1749,7 +1749,7 @@ This analysis walks through a **complete pipeline for biomarker evaluation**, si
 
 ------------------------------------------------------------------------
 
-#### **3. Multivariate Feature Profiling**
+**3. Multivariate Feature Profiling**
 
 -   **Principal Component Analysis (PCA)** was used to explore latent structure across all biomarkers:
 
@@ -1761,7 +1761,7 @@ This analysis walks through a **complete pipeline for biomarker evaluation**, si
 
 ------------------------------------------------------------------------
 
-#### **4. Adding Clinical Covariates**
+**4. Adding Clinical Covariates**
 
 -   Demographic and physiological variables (e.g., age, sex, temperature, respiratory rate) were added to mirror real clinical settings.
 
@@ -1769,7 +1769,7 @@ This analysis walks through a **complete pipeline for biomarker evaluation**, si
 
 ------------------------------------------------------------------------
 
-#### **5. Feature Selection via Boruta**
+**5. Feature Selection via Boruta**
 
 -   The **Boruta algorithm** selected all relevant features using a robust wrapper method with a random forest backend.
 
@@ -1779,7 +1779,7 @@ This analysis walks through a **complete pipeline for biomarker evaluation**, si
 
 ------------------------------------------------------------------------
 
-#### **6. Feature Reduction with RFE**
+**6. Feature Reduction with RFE**
 
 -   **Recursive Feature Elimination (RFE)** was applied to the confirmed Boruta variables.
 
@@ -1789,7 +1789,7 @@ This analysis walks through a **complete pipeline for biomarker evaluation**, si
 
 ------------------------------------------------------------------------
 
-#### **7. Multivariate Model Building & ROC Evaluation**
+**7. Multivariate Model Building & ROC Evaluation**
 
 -   A logistic regression model using the top 3 features was fit and compared to IL-8 alone:
 
@@ -1801,7 +1801,7 @@ This analysis walks through a **complete pipeline for biomarker evaluation**, si
 
 ------------------------------------------------------------------------
 
-### Final Reflection
+## Final Reflection
 
 This approach exemplifies a **best-practice pipeline** for evaluating candidate biomarkers in biomedical research:
 

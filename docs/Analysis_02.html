@@ -335,25 +335,19 @@ window.Quarto = {
   <li><a href="#interaction-model-biomarkers-hiv-status" id="toc-interaction-model-biomarkers-hiv-status" class="nav-link" data-scroll-target="#interaction-model-biomarkers-hiv-status"><span class="header-section-number">17.7.6</span> <strong>Interaction Model: Biomarkers × HIV Status</strong></a></li>
   <li><a href="#ppvnpv-charts" id="toc-ppvnpv-charts" class="nav-link" data-scroll-target="#ppvnpv-charts"><span class="header-section-number">17.7.7</span> PPV/NPV charts</a></li>
   <li><a href="#calculate-confusion-matrix-based-on-a-chosen-threshold" id="toc-calculate-confusion-matrix-based-on-a-chosen-threshold" class="nav-link" data-scroll-target="#calculate-confusion-matrix-based-on-a-chosen-threshold"><span class="header-section-number">17.7.8</span> Calculate confusion Matrix based on a chosen threshold</a></li>
+  <li><a href="#identifying-clusters-via-principal-components-analysis" id="toc-identifying-clusters-via-principal-components-analysis" class="nav-link" data-scroll-target="#identifying-clusters-via-principal-components-analysis"><span class="header-section-number">17.7.9</span> Identifying clusters via Principal Components Analysis</a></li>
+  <li><a href="#linear-regression-to-identify-prognostic-principal-components" id="toc-linear-regression-to-identify-prognostic-principal-components" class="nav-link" data-scroll-target="#linear-regression-to-identify-prognostic-principal-components"><span class="header-section-number">17.7.10</span> Linear Regression to identify prognostic Principal Components</a></li>
+  <li><a href="#interpreting-pcs-with-loadings-plots" id="toc-interpreting-pcs-with-loadings-plots" class="nav-link" data-scroll-target="#interpreting-pcs-with-loadings-plots"><span class="header-section-number">17.7.11</span> Interpreting PCs with loadings plots</a></li>
+  <li><a href="#roc-analysis-of-pc-associations-with-outcomes" id="toc-roc-analysis-of-pc-associations-with-outcomes" class="nav-link" data-scroll-target="#roc-analysis-of-pc-associations-with-outcomes"><span class="header-section-number">17.7.12</span> ROC analysis of PC associations with outcomes</a></li>
+  <li><a href="#mahalanobis-distance-for-outlier-detection-or-risk-scoring" id="toc-mahalanobis-distance-for-outlier-detection-or-risk-scoring" class="nav-link" data-scroll-target="#mahalanobis-distance-for-outlier-detection-or-risk-scoring"><span class="header-section-number">17.7.13</span> <strong>Mahalanobis Distance for Outlier Detection or Risk Scoring</strong></a></li>
+  <li><a href="#marker-importance-and-selection" id="toc-marker-importance-and-selection" class="nav-link" data-scroll-target="#marker-importance-and-selection"><span class="header-section-number">17.7.14</span> Marker Importance and Selection</a></li>
+  <li><a href="#variable-selection" id="toc-variable-selection" class="nav-link" data-scroll-target="#variable-selection"><span class="header-section-number">17.7.15</span> Variable Selection</a></li>
+  <li><a href="#enhancing-clinical-relevance-adding-demographic-and-clinical-variables" id="toc-enhancing-clinical-relevance-adding-demographic-and-clinical-variables" class="nav-link" data-scroll-target="#enhancing-clinical-relevance-adding-demographic-and-clinical-variables"><span class="header-section-number">17.7.16</span> Enhancing Clinical Relevance: Adding Demographic and Clinical Variables</a></li>
+  <li><a href="#boruta-analysis" id="toc-boruta-analysis" class="nav-link" data-scroll-target="#boruta-analysis"><span class="header-section-number">17.7.17</span> Boruta Analysis</a></li>
+  <li><a href="#recursive-feature-elimination-rfe-on-boruta-selected-variables" id="toc-recursive-feature-elimination-rfe-on-boruta-selected-variables" class="nav-link" data-scroll-target="#recursive-feature-elimination-rfe-on-boruta-selected-variables"><span class="header-section-number">17.7.18</span> Recursive Feature Elimination (RFE) on Boruta-selected variables</a></li>
   </ul></li>
-  <li><a href="#identifying-clusters-via-principal-components-analysis" id="toc-identifying-clusters-via-principal-components-analysis" class="nav-link" data-scroll-target="#identifying-clusters-via-principal-components-analysis"><span class="header-section-number">17.8</span> Identifying clusters via Principal Components Analysis</a>
-  <ul class="collapse">
-  <li><a href="#linear-regression-to-identify-prognostic-principal-components" id="toc-linear-regression-to-identify-prognostic-principal-components" class="nav-link" data-scroll-target="#linear-regression-to-identify-prognostic-principal-components"><span class="header-section-number">17.8.1</span> Linear Regression to identify prognostic Principal Components</a></li>
-  <li><a href="#interpreting-pcs-with-loadings-plots" id="toc-interpreting-pcs-with-loadings-plots" class="nav-link" data-scroll-target="#interpreting-pcs-with-loadings-plots"><span class="header-section-number">17.8.2</span> Interpreting PCs with loadings plots</a></li>
-  <li><a href="#roc-analysis-of-pc-associations-with-outcomes" id="toc-roc-analysis-of-pc-associations-with-outcomes" class="nav-link" data-scroll-target="#roc-analysis-of-pc-associations-with-outcomes"><span class="header-section-number">17.8.3</span> ROC analysis of PC associations with outcomes</a></li>
-  <li><a href="#mahalanobis-distance-for-outlier-detection-or-risk-scoring" id="toc-mahalanobis-distance-for-outlier-detection-or-risk-scoring" class="nav-link" data-scroll-target="#mahalanobis-distance-for-outlier-detection-or-risk-scoring"><span class="header-section-number">17.8.4</span> <strong>Mahalanobis Distance for Outlier Detection or Risk Scoring</strong></a></li>
-  </ul></li>
-  <li><a href="#marker-importance-and-selection" id="toc-marker-importance-and-selection" class="nav-link" data-scroll-target="#marker-importance-and-selection"><span class="header-section-number">17.9</span> Marker Importance and Selection</a>
-  <ul class="collapse">
-  <li><a href="#variable-selection" id="toc-variable-selection" class="nav-link" data-scroll-target="#variable-selection"><span class="header-section-number">17.9.1</span> Variable Selection</a></li>
-  <li><a href="#approaches-used-for-variable-selection" id="toc-approaches-used-for-variable-selection" class="nav-link" data-scroll-target="#approaches-used-for-variable-selection"><span class="header-section-number">17.9.2</span> Approaches Used for variable selection</a></li>
-  <li><a href="#enhancing-clinical-relevance-adding-demographic-and-clinical-variables" id="toc-enhancing-clinical-relevance-adding-demographic-and-clinical-variables" class="nav-link" data-scroll-target="#enhancing-clinical-relevance-adding-demographic-and-clinical-variables"><span class="header-section-number">17.9.3</span> Enhancing Clinical Relevance: Adding Demographic and Clinical Variables</a></li>
-  <li><a href="#boruta-analysis" id="toc-boruta-analysis" class="nav-link" data-scroll-target="#boruta-analysis"><span class="header-section-number">17.9.4</span> Boruta Analysis</a></li>
-  </ul></li>
-  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">18</span> Summary</a>
-  <ul class="collapse">
-  <li><a href="#final-reflection" id="toc-final-reflection" class="nav-link" data-scroll-target="#final-reflection"><span class="header-section-number">18.0.1</span> Final Reflection</a></li>
-  </ul></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">17.8</span> Summary</a></li>
+  <li><a href="#final-reflection" id="toc-final-reflection" class="nav-link" data-scroll-target="#final-reflection"><span class="header-section-number">17.9</span> Final Reflection</a></li>
   </ul>
 </nav>
     </div>
@@ -1779,9 +1773,8 @@ Number of Fisher Scoring iterations: 6</code></pre>
 </div>
 </div>
 </section>
-</section>
-<section id="identifying-clusters-via-principal-components-analysis" class="level2" data-number="17.8">
-<h2 data-number="17.8" class="anchored" data-anchor-id="identifying-clusters-via-principal-components-analysis"><span class="header-section-number">17.8</span> Identifying clusters via Principal Components Analysis</h2>
+<section id="identifying-clusters-via-principal-components-analysis" class="level3" data-number="17.7.9">
+<h3 data-number="17.7.9" class="anchored" data-anchor-id="identifying-clusters-via-principal-components-analysis"><span class="header-section-number">17.7.9</span> Identifying clusters via Principal Components Analysis</h3>
 <p>This section conducts a <strong>Principal Component Analysis (PCA)</strong> on the z-scored biomarker panel to explore the underlying structure of the data. It evaluates how much of the overall variation is captured by each principal component and assesses the potential for dimensionality reduction. While all biomarkers were already standardised, PCA was applied with additional scaling for consistency. The output provides insight into the dominant patterns across biomarkers and helps inform multivariate modelling strategies.</p>
 <p>First we will normalise all the assays using the median method. In the real world we might want to test this first for each assay as shown above. The summary shows how much of the total variance can be explained by the various principal components.</p>
 <div class="cell">
@@ -1852,8 +1845,9 @@ Cumulative Proportion  0.72024 0.79282 0.86353 0.93336 1.00000</code></pre>
 </div>
 </div>
 </div>
-<section id="linear-regression-to-identify-prognostic-principal-components" class="level3" data-number="17.8.1">
-<h3 data-number="17.8.1" class="anchored" data-anchor-id="linear-regression-to-identify-prognostic-principal-components"><span class="header-section-number">17.8.1</span> Linear Regression to identify prognostic Principal Components</h3>
+</section>
+<section id="linear-regression-to-identify-prognostic-principal-components" class="level3" data-number="17.7.10">
+<h3 data-number="17.7.10" class="anchored" data-anchor-id="linear-regression-to-identify-prognostic-principal-components"><span class="header-section-number">17.7.10</span> Linear Regression to identify prognostic Principal Components</h3>
 <p>A logistic regression can be fitted using the first 12 principal components (PC1–PC12) as predictors of mortality (<code>dead_or_alive</code>), aiming to identify components carrying diagnostic or prognostic signal.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(</span>
@@ -1924,8 +1918,8 @@ Number of Fisher Scoring iterations: 4</code></pre>
 </div>
 <p>These results suggest that multiple PCs contain diagnostically useful signal, and that unsupervised dimensionality reduction preserves meaningful information relevant to mortality classification.</p>
 </section>
-<section id="interpreting-pcs-with-loadings-plots" class="level3" data-number="17.8.2">
-<h3 data-number="17.8.2" class="anchored" data-anchor-id="interpreting-pcs-with-loadings-plots"><span class="header-section-number">17.8.2</span> Interpreting PCs with loadings plots</h3>
+<section id="interpreting-pcs-with-loadings-plots" class="level3" data-number="17.7.11">
+<h3 data-number="17.7.11" class="anchored" data-anchor-id="interpreting-pcs-with-loadings-plots"><span class="header-section-number">17.7.11</span> Interpreting PCs with loadings plots</h3>
 <p>To understand what each principal component represents, loadings plots are generated. These show how strongly each original biomarker contributes to a given principal component.</p>
 <ul>
 <li><p><strong>PC1 Loadings</strong>: This component captures the dominant pattern of variance across the biomarker panel. Large positive or negative loadings indicate biomarkers that are highly correlated with this axis.</p></li>
@@ -1954,8 +1948,8 @@ Number of Fisher Scoring iterations: 4</code></pre>
 <li><p>Remember that this is a simulated data set, so these patterns are also not real.</p></li>
 </ul>
 </section>
-<section id="roc-analysis-of-pc-associations-with-outcomes" class="level3" data-number="17.8.3">
-<h3 data-number="17.8.3" class="anchored" data-anchor-id="roc-analysis-of-pc-associations-with-outcomes"><span class="header-section-number">17.8.3</span> ROC analysis of PC associations with outcomes</h3>
+<section id="roc-analysis-of-pc-associations-with-outcomes" class="level3" data-number="17.7.12">
+<h3 data-number="17.7.12" class="anchored" data-anchor-id="roc-analysis-of-pc-associations-with-outcomes"><span class="header-section-number">17.7.12</span> ROC analysis of PC associations with outcomes</h3>
 <p>You can also use PCs as the input to a ROC analysis.</p>
 <p>In this case, a multi-marker test fails to improve on a single marker test - Again please remember that this is a simulated clinical data set.</p>
 <div class="cell">
@@ -1974,12 +1968,11 @@ Number of Fisher Scoring iterations: 4</code></pre>
 </div>
 </div>
 </section>
-<section id="mahalanobis-distance-for-outlier-detection-or-risk-scoring" class="level3" data-number="17.8.4">
-<h3 data-number="17.8.4" class="anchored" data-anchor-id="mahalanobis-distance-for-outlier-detection-or-risk-scoring"><span class="header-section-number">17.8.4</span> <strong>Mahalanobis Distance for Outlier Detection or Risk Scoring</strong></h3>
+<section id="mahalanobis-distance-for-outlier-detection-or-risk-scoring" class="level3" data-number="17.7.13">
+<h3 data-number="17.7.13" class="anchored" data-anchor-id="mahalanobis-distance-for-outlier-detection-or-risk-scoring"><span class="header-section-number">17.7.13</span> <strong>Mahalanobis Distance for Outlier Detection or Risk Scoring</strong></h3>
 <p>This approach explores <strong>profile-wide variance</strong> in the PCA space to identify individuals whose overall biomarker profile deviates from the “normal” (control) pattern.</p>
 <p>We compute a <strong>Mahalanobis distance</strong> for each sample, quantifying how far its position in PCA space lies from the centroid of the “Alive” group (i.e., survivors). This reflects multivariate deviation across all principal components.</p>
-<section id="method" class="level4" data-number="17.8.4.1">
-<h4 data-number="17.8.4.1" class="anchored" data-anchor-id="method"><span class="header-section-number">17.8.4.1</span> Method:</h4>
+<p>Method:</p>
 <ul>
 <li><p><strong>Controls</strong>: Used only the <code>Alive</code> group to compute:</p>
 <ul>
@@ -2054,10 +2047,8 @@ Number of Fisher Scoring iterations: 4</code></pre>
 </div>
 </div>
 </section>
-</section>
-</section>
-<section id="marker-importance-and-selection" class="level2" data-number="17.9">
-<h2 data-number="17.9" class="anchored" data-anchor-id="marker-importance-and-selection"><span class="header-section-number">17.9</span> Marker Importance and Selection</h2>
+<section id="marker-importance-and-selection" class="level3" data-number="17.7.14">
+<h3 data-number="17.7.14" class="anchored" data-anchor-id="marker-importance-and-selection"><span class="header-section-number">17.7.14</span> Marker Importance and Selection</h3>
 <p>So far, we’ve explored both <strong>individual biomarker effects</strong> and <strong>composite multivariate structures</strong> (e.g.&nbsp;via PCA and Mahalanobis distance) for predicting mortality. While informative, these approaches do not explicitly rank biomarkers by their <strong>predictive relevance</strong>.</p>
 <p>To refine the model and move toward a <strong>parsimonious and interpretable diagnostic signature</strong>, we next assess:</p>
 <ol type="1">
@@ -2065,43 +2056,38 @@ Number of Fisher Scoring iterations: 4</code></pre>
 <li><p><strong>Which subset of markers can be used without sacrificing accuracy?</strong></p></li>
 </ol>
 <p>This step focuses on <strong>feature importance</strong> and <strong>selection</strong>, key concepts in diagnostic biomarker development and model generalisation.</p>
-<section id="variable-selection" class="level3" data-number="17.9.1">
-<h3 data-number="17.9.1" class="anchored" data-anchor-id="variable-selection"><span class="header-section-number">17.9.1</span> Variable Selection</h3>
+</section>
+<section id="variable-selection" class="level3" data-number="17.7.15">
+<h3 data-number="17.7.15" class="anchored" data-anchor-id="variable-selection"><span class="header-section-number">17.7.15</span> Variable Selection</h3>
 <p>The justification for a variable selection approach is that it:</p>
 <ul>
 <li><p>Reduces overfitting and improves generalisability</p></li>
 <li><p>Lowers cost and complexity for downstream assays</p></li>
 <li><p>Enhances interpretability and potential biological insight</p></li>
 </ul>
-</section>
-<section id="approaches-used-for-variable-selection" class="level3" data-number="17.9.2">
-<h3 data-number="17.9.2" class="anchored" data-anchor-id="approaches-used-for-variable-selection"><span class="header-section-number">17.9.2</span> Approaches Used for variable selection</h3>
+<p><strong>Approaches Used for variable selection</strong></p>
 <p>We apply two complementary techniques:</p>
-<section id="boruta-feature-selection" class="level4" data-number="17.9.2.1">
-<h4 data-number="17.9.2.1" class="anchored" data-anchor-id="boruta-feature-selection"><span class="header-section-number">17.9.2.1</span> 1. <strong>Boruta Feature Selection</strong></h4>
+<p><strong>Boruta Feature Selection</strong></p>
 <ul>
 <li><p>A <em>wrapper algorithm</em> built around random forests.</p></li>
 <li><p>Compares original variables to their permuted (shadow) counterparts.</p></li>
 <li><p>Retains variables that show consistently higher importance than the best random feature.</p></li>
 <li><p>Well suited for <strong>highly-dimensional and noisy data</strong>.</p></li>
 </ul>
-</section>
-<section id="recursive-feature-elimination-rfe" class="level4" data-number="17.9.2.2">
-<h4 data-number="17.9.2.2" class="anchored" data-anchor-id="recursive-feature-elimination-rfe"><span class="header-section-number">17.9.2.2</span> 2. <strong>Recursive Feature Elimination (RFE)</strong></h4>
+<p><strong>Recursive Feature Elimination (RFE)</strong></p>
 <ul>
 <li><p>A <em>greedy backward selection</em> method.</p></li>
 <li><p>Iteratively removes the <strong>least important</strong> features based on model weight (e.g., in logistic regression or random forest).</p></li>
 <li><p>Efficient in identifying a minimal <strong>optimal feature subset</strong>.</p></li>
 </ul>
 </section>
-</section>
-<section id="enhancing-clinical-relevance-adding-demographic-and-clinical-variables" class="level3" data-number="17.9.3">
-<h3 data-number="17.9.3" class="anchored" data-anchor-id="enhancing-clinical-relevance-adding-demographic-and-clinical-variables"><span class="header-section-number">17.9.3</span> Enhancing Clinical Relevance: Adding Demographic and Clinical Variables</h3>
+<section id="enhancing-clinical-relevance-adding-demographic-and-clinical-variables" class="level3" data-number="17.7.16">
+<h3 data-number="17.7.16" class="anchored" data-anchor-id="enhancing-clinical-relevance-adding-demographic-and-clinical-variables"><span class="header-section-number">17.7.16</span> Enhancing Clinical Relevance: Adding Demographic and Clinical Variables</h3>
 <p>To reflect more practical diagnostic settings, we extended the dataset to include additional <strong>demographic and clinical predictors</strong>:</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 31%">
-<col style="width: 68%">
+<col style="width: 33%">
+<col style="width: 66%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -2160,8 +2146,8 @@ Number of Fisher Scoring iterations: 4</code></pre>
 <span id="cb44-22"><a href="#cb44-22" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="boruta-analysis" class="level3" data-number="17.9.4">
-<h3 data-number="17.9.4" class="anchored" data-anchor-id="boruta-analysis"><span class="header-section-number">17.9.4</span> Boruta Analysis</h3>
+<section id="boruta-analysis" class="level3" data-number="17.7.17">
+<h3 data-number="17.7.17" class="anchored" data-anchor-id="boruta-analysis"><span class="header-section-number">17.7.17</span> Boruta Analysis</h3>
 <p>This chunk initiates a <strong>Boruta</strong> variable selection process to identify important predictors of mortality (<code>dead_or_alive</code>) using a <strong>wrapper around random forests</strong>.</p>
 <ul>
 <li><p><strong>Included variables</strong>: A mix of biomarkers (e.g.&nbsp;<code>ang_1</code>, <code>il_8</code>, <code>trail</code>), demographic (<code>age</code>, <code>sex</code>), and clinical measures (<code>temp</code>, <code>respiratory_rate</code>, <code>hiv_comb</code>).</p></li>
@@ -2196,7 +2182,7 @@ Number of Fisher Scoring iterations: 4</code></pre>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(boruta.train)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Boruta performed 58 iterations in 27.42112 secs.
+<pre><code>Boruta performed 58 iterations in 26.79694 secs.
  6 attributes confirmed important: ch3l1, hiv_comb, il_8, mxa,
 respiratory_rate and 1 more;
  11 attributes confirmed unimportant: age, ang_1, ang_2, azu, il_10 and
@@ -2219,7 +2205,7 @@ Returning original object.</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb50"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(final.boruta)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Boruta performed 58 iterations in 27.42112 secs.
+<pre><code>Boruta performed 58 iterations in 26.79694 secs.
  6 attributes confirmed important: ch3l1, hiv_comb, il_8, mxa,
 respiratory_rate and 1 more;
  11 attributes confirmed unimportant: age, ang_1, ang_2, azu, il_10 and
@@ -2458,8 +2444,8 @@ il_6              0.006263453 0.00000000  Rejected</code></pre>
 </ul></li>
 </ul>
 <p>This provides a clear and interpretable ranking of predictors contributing to classification performance.</p>
-<section id="boruta-variables-confirmed-chart" class="level4" data-number="17.9.4.1">
-<h4 data-number="17.9.4.1" class="anchored" data-anchor-id="boruta-variables-confirmed-chart"><span class="header-section-number">17.9.4.1</span> Boruta Variables Confirmed Chart</h4>
+<section id="boruta-variables-confirmed-chart" class="level4" data-number="17.7.17.1">
+<h4 data-number="17.7.17.1" class="anchored" data-anchor-id="boruta-variables-confirmed-chart"><span class="header-section-number">17.7.17.1</span> Boruta Variables Confirmed Chart</h4>
 <p>This chunk creates a visual summary of how consistently important each variable was across random forest iterations, with statistical robustness reflected in the spread and medians of their boxplots. This allows intuitive inspection of variable reliability and influence.</p>
 <p>Some calculations have to be done for this</p>
 <ul>
@@ -2500,8 +2486,9 @@ il_6              0.006263453 0.00000000  Rejected</code></pre>
 </div>
 </div>
 </section>
-<section id="recursive-feature-elimination-rfe-on-boruta-selected-variables" class="level4" data-number="17.9.4.2">
-<h4 data-number="17.9.4.2" class="anchored" data-anchor-id="recursive-feature-elimination-rfe-on-boruta-selected-variables"><span class="header-section-number">17.9.4.2</span> Recursive Feature Elimination (RFE) on Boruta-selected variables</h4>
+</section>
+<section id="recursive-feature-elimination-rfe-on-boruta-selected-variables" class="level3" data-number="17.7.18">
+<h3 data-number="17.7.18" class="anchored" data-anchor-id="recursive-feature-elimination-rfe-on-boruta-selected-variables"><span class="header-section-number">17.7.18</span> Recursive Feature Elimination (RFE) on Boruta-selected variables</h3>
 <p>This chunk applies <strong>Recursive Feature Elimination (RFE)</strong> to the <strong>Boruta-confirmed variables</strong> to identify the most parsimonious subset of predictors for classifying mortality (<code>dead_or_alive</code>).</p>
 <p>This step complements Boruta by ranking the predictive power of confirmed features and identifying a minimal, high-performing subset <strong>through repeated cross-validation</strong>, which ensures that feature selection is robust to sampling variation and generalises well to unseen data.</p>
 <p>Here, we also implement <strong>Parallel computing</strong> by dynamically detecting available CPU cores and registering a parallel backend to speed up RFE. It’s possible to run RFE without parallel approaches, but it will take longer.</p>
@@ -2541,9 +2528,8 @@ il_6              0.006263453 0.00000000  Rejected</code></pre>
 <span id="cb56-33"><a href="#cb56-33" aria-hidden="true" tabindex="-1"></a><span class="co"># Always stop the cluster afterward</span></span>
 <span id="cb56-34"><a href="#cb56-34" aria-hidden="true" tabindex="-1"></a><span class="fu">stopCluster</span>(cl)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</section>
-<section id="rfe-results---charts" class="level4" data-number="17.9.4.3">
-<h4 data-number="17.9.4.3" class="anchored" data-anchor-id="rfe-results---charts"><span class="header-section-number">17.9.4.3</span> RFE Results - Charts</h4>
+<section id="rfe-results---charts" class="level4" data-number="17.7.18.1">
+<h4 data-number="17.7.18.1" class="anchored" data-anchor-id="rfe-results---charts"><span class="header-section-number">17.7.18.1</span> RFE Results - Charts</h4>
 <p>This plot visualises the relationship between the number of features selected and the model’s cross-validated accuracy. Each point represents a different subset size tested by RFE, helping to identify the smallest number of predictors that yields near-maximum performance.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb57"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(rfe_result, <span class="fu">aes</span>(Variables, Accuracy)) <span class="sc">+</span> <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -2648,8 +2634,8 @@ il_6              0.006263453 0.00000000  Rejected</code></pre>
 <p>Technically this does not imply that this specific trio is the best model, but that they form a core signal under the RFE model.</p>
 <p>It’s still highly likely that they will constitute the best model, but In production, you’d still want to evaluate this 3-variable model’s PPV, sensitivity, etc., and potentially validate it on external data. Note that the addition of <code>MxA</code> to create a four-marker model increases the overall accuracy (see RFE results) but how you choose the final model should be conditioned not only on accuracy. For many contexts it may be more useful to look at PPV or NPV.</p>
 </section>
-<section id="glm-to-confirm-performance-using-a-different-approach" class="level4" data-number="17.9.4.4">
-<h4 data-number="17.9.4.4" class="anchored" data-anchor-id="glm-to-confirm-performance-using-a-different-approach"><span class="header-section-number">17.9.4.4</span> GLM to confirm performance using a different approach</h4>
+<section id="glm-to-confirm-performance-using-a-different-approach" class="level4" data-number="17.7.18.2">
+<h4 data-number="17.7.18.2" class="anchored" data-anchor-id="glm-to-confirm-performance-using-a-different-approach"><span class="header-section-number">17.7.18.2</span> GLM to confirm performance using a different approach</h4>
 <p>We can use a logistic regression to model the three markers and their associations with the outcome.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb60"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a>final_2var_model <span class="ot">&lt;-</span> <span class="fu">glm</span>(dead_or_alive <span class="sc">~</span> il_8 <span class="sc">+</span> hiv_comb <span class="sc">+</span> temp ,</span>
@@ -2716,8 +2702,8 @@ Number of Fisher Scoring iterations: 5</code></pre>
 </div>
 <p>Here, the lower AIC value in the interaction model (1394 <em>cf.</em> 1583) suggests a better fit. We can then use the predictions of this model to inform a ROC analysis.</p>
 </section>
-<section id="roc-analysis-of-boruta-rfe-parsimony-model" class="level4" data-number="17.9.4.5">
-<h4 data-number="17.9.4.5" class="anchored" data-anchor-id="roc-analysis-of-boruta-rfe-parsimony-model"><span class="header-section-number">17.9.4.5</span> ROC Analysis of Boruta + RFE parsimony model</h4>
+<section id="roc-analysis-of-boruta-rfe-parsimony-model" class="level4" data-number="17.7.18.3">
+<h4 data-number="17.7.18.3" class="anchored" data-anchor-id="roc-analysis-of-boruta-rfe-parsimony-model"><span class="header-section-number">17.7.18.3</span> ROC Analysis of Boruta + RFE parsimony model</h4>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb64"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Add model predictions if not already done</span></span>
 <span id="cb64-2"><a href="#cb64-2" aria-hidden="true" tabindex="-1"></a>df_wider<span class="sc">$</span>glm_prob <span class="ot">&lt;-</span> <span class="fu">predict</span>(final_2var_model, <span class="at">type =</span> <span class="st">"response"</span>)</span>
@@ -2759,30 +2745,25 @@ Number of Fisher Scoring iterations: 5</code></pre>
 </section>
 </section>
 </section>
-<section id="summary" class="level1" data-number="18">
-<h1 data-number="18"><span class="header-section-number">18</span> Summary</h1>
+<section id="summary" class="level2" data-number="17.8">
+<h2 data-number="17.8" class="anchored" data-anchor-id="summary"><span class="header-section-number">17.8</span> Summary</h2>
 <p>This analysis walks through a <strong>complete pipeline for biomarker evaluation</strong>, simulating what a robust approach might look like in real-world clinical research. It highlights best practices for handling, transforming, selecting, and modelling data — even though the data used here are synthetic.</p>
 <hr>
-<section id="data-import-pre-processing" class="level4" data-number="18.0.0.1">
-<h4 data-number="18.0.0.1" class="anchored" data-anchor-id="data-import-pre-processing"><span class="header-section-number">18.0.0.1</span> <strong>1. Data Import &amp; Pre-processing</strong></h4>
+<p><strong>1. Data Import &amp; Pre-processing</strong></p>
 <ul>
 <li><p><strong>Raw data</strong> representing biomarker values from assay plates (e.g., ELISA or multiplex formats) were loaded.</p></li>
 <li><p>Basic <strong>tidying</strong> included reshaping into wide format, handling missing data, and correcting formatting inconsistencies.</p></li>
 <li><p><strong>Z-score normalisation</strong> was applied to place all markers on a common scale, controlling for magnitude differences across assays.</p></li>
 </ul>
 <hr>
-</section>
-<section id="initial-outcome-assessment" class="level4" data-number="18.0.0.2">
-<h4 data-number="18.0.0.2" class="anchored" data-anchor-id="initial-outcome-assessment"><span class="header-section-number">18.0.0.2</span> <strong>2. Initial Outcome Assessment</strong></h4>
+<p><strong>2. Initial Outcome Assessment</strong></p>
 <ul>
 <li><p><strong>Univariate ROC curves</strong> were plotted for individual biomarkers (e.g., IL-8) to evaluate crude discriminatory power.</p></li>
 <li><p>Metrics like <strong>AUC</strong>, <strong>positive predictive value (PPV)</strong>, and <strong>logistic regression coefficients</strong> were calculated to get early performance estimates.</p></li>
 <li><p>A key point here: <em>PPV or NPV are especially important in clinical decision-making where ruling in, or ruling-out disease can sometimes matter more than balanced accuracy.</em></p></li>
 </ul>
 <hr>
-</section>
-<section id="multivariate-feature-profiling" class="level4" data-number="18.0.0.3">
-<h4 data-number="18.0.0.3" class="anchored" data-anchor-id="multivariate-feature-profiling"><span class="header-section-number">18.0.0.3</span> <strong>3. Multivariate Feature Profiling</strong></h4>
+<p><strong>3. Multivariate Feature Profiling</strong></p>
 <ul>
 <li><p><strong>Principal Component Analysis (PCA)</strong> was used to explore latent structure across all biomarkers:</p>
 <ul>
@@ -2792,35 +2773,27 @@ Number of Fisher Scoring iterations: 5</code></pre>
 <li><p><strong>Mahalanobis distance</strong> from control centroids was calculated to summarise overall biomarker deviation, capturing <strong>multivariate ‘anomaly’ signals</strong>.</p></li>
 </ul>
 <hr>
-</section>
-<section id="adding-clinical-covariates" class="level4" data-number="18.0.0.4">
-<h4 data-number="18.0.0.4" class="anchored" data-anchor-id="adding-clinical-covariates"><span class="header-section-number">18.0.0.4</span> <strong>4. Adding Clinical Covariates</strong></h4>
+<p><strong>4. Adding Clinical Covariates</strong></p>
 <ul>
 <li><p>Demographic and physiological variables (e.g., age, sex, temperature, respiratory rate) were added to mirror real clinical settings.</p></li>
 <li><p>These included both continuous and categorical variables, showing the need for <strong>flexible models</strong> that accommodate mixed data types.</p></li>
 </ul>
 <hr>
-</section>
-<section id="feature-selection-via-boruta" class="level4" data-number="18.0.0.5">
-<h4 data-number="18.0.0.5" class="anchored" data-anchor-id="feature-selection-via-boruta"><span class="header-section-number">18.0.0.5</span> <strong>5. Feature Selection via Boruta</strong></h4>
+<p><strong>5. Feature Selection via Boruta</strong></p>
 <ul>
 <li><p>The <strong>Boruta algorithm</strong> selected all relevant features using a robust wrapper method with a random forest backend.</p></li>
 <li><p>Tentative variables were resolved using <strong>median-based rough fixing</strong>, and variable importance was visualised clearly.</p></li>
 <li><p>The process retained both biomarkers and clinical indicators, showing that <strong>value can emerge from either domain</strong>.</p></li>
 </ul>
 <hr>
-</section>
-<section id="feature-reduction-with-rfe" class="level4" data-number="18.0.0.6">
-<h4 data-number="18.0.0.6" class="anchored" data-anchor-id="feature-reduction-with-rfe"><span class="header-section-number">18.0.0.6</span> <strong>6. Feature Reduction with RFE</strong></h4>
+<p><strong>6. Feature Reduction with RFE</strong></p>
 <ul>
 <li><p><strong>Recursive Feature Elimination (RFE)</strong> was applied to the confirmed Boruta variables.</p></li>
 <li><p>Through cross-validation, we identified a <strong>parsimonious 3-variable model</strong> (IL-8, HIV status, temperature) that achieved nearly optimal performance.</p></li>
 <li><p>This step is critical in preventing <strong>overfitting</strong> and improving model portability.</p></li>
 </ul>
 <hr>
-</section>
-<section id="multivariate-model-building-roc-evaluation" class="level4" data-number="18.0.0.7">
-<h4 data-number="18.0.0.7" class="anchored" data-anchor-id="multivariate-model-building-roc-evaluation"><span class="header-section-number">18.0.0.7</span> <strong>7. Multivariate Model Building &amp; ROC Evaluation</strong></h4>
+<p><strong>7. Multivariate Model Building &amp; ROC Evaluation</strong></p>
 <ul>
 <li><p>A logistic regression model using the top 3 features was fit and compared to IL-8 alone:</p>
 <ul>
@@ -2831,8 +2804,8 @@ Number of Fisher Scoring iterations: 5</code></pre>
 </ul>
 <hr>
 </section>
-<section id="final-reflection" class="level3" data-number="18.0.1">
-<h3 data-number="18.0.1" class="anchored" data-anchor-id="final-reflection"><span class="header-section-number">18.0.1</span> Final Reflection</h3>
+<section id="final-reflection" class="level2" data-number="17.9">
+<h2 data-number="17.9" class="anchored" data-anchor-id="final-reflection"><span class="header-section-number">17.9</span> Final Reflection</h2>
 <p>This approach exemplifies a <strong>best-practice pipeline</strong> for evaluating candidate biomarkers in biomedical research:</p>
 <ul>
 <li><p>It starts with <strong>rigorous data preparation</strong>,</p></li>
@@ -2842,7 +2815,6 @@ Number of Fisher Scoring iterations: 5</code></pre>
 <p>While simulated, this end-to-end workflow mirrors the decisions, trade-offs, and methods required in real-world biomarker discovery and translational modelling.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

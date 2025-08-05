@@ -9,3 +9,4 @@ renv.lock
 renv/activate.R
 renv/settings.json
 MosDef.Rproj
+.DS_Store
