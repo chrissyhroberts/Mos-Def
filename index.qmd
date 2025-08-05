@@ -17,7 +17,7 @@ These protocols also provide information on how to perform quality assurance exp
 ## Citation
 
 **To cite this work, please use:**\
-Marlais, T., Drakeley, C., & Roberts, C.H. (2025). *Design, Optimisation, Validation, and Analysis Framework for Multiplex Bead‑Based Biomarker Assays. London School of Hygiene & Tropical Medicine.* Retrieved \[YYYY-MM-DD\] from <https://chrissyhroberts.github.io/Mos-Def/Marker_List.html>. DOI pending.
+Marlais, T., Drakeley, C., & Roberts, C.H. (2025). *Design, Optimisation, Validation, and Analysis Framework for Multiplex Bead‑Based Biomarker Assays. London School of Hygiene & Tropical Medicine.* Retrieved \[YYYY-MM-DD\] from <https://chrissyhroberts.github.io/Mos-Def/> DOI pending.
 
 ## About the method
 
