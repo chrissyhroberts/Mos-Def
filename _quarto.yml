@@ -1,6 +1,6 @@
 project:
   type: book
-
+  output-dir: docs
 book:
   title: "Design, Optimisation, Validation, and Analysis Framework for Multiplex Bead‑Based Biomarker Assays"
   image: images/MosDef-logo.png
