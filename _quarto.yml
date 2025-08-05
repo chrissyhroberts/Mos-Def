@@ -1,0 +1,41 @@
+project:
+  type: book
+
+book:
+  title: "Design, Optimisation, Validation, and Analysis Framework for Multiplex Bead‑Based Biomarker Assays"
+  image: images/MosDef-logo.png
+
+  version: "2025-08-05"
+
+  chapters:
+  - index.qmd                      # Add link to Excel shopping list here. Add links to any other Excels to other files- dilutions calculator etc)Add authors & affiliations
+  - fever.qmd
+  - bloodspots.qmd
+  - Marker_List.qmd                # DONE
+  - Buffers_and_Reagents.qmd       # DONE
+  - Capture_Antibody_Prep.qmd      # DONE
+  - Bead_Coupling.qmd              # DONE
+  - Coupling_Confirmation.qmd      # DONE
+  - Detection_Antibody_Prep.qmd    # DONE
+  - antigens.qmd                   # DONE
+  - antibody_pairs.qmd             # DONE
+  - Cross_Reactivity.qmd           # DONE
+  - Standards_Prep.qmd             # DONE
+  - Magpix_Protocol.qmd            # DONE
+  - Coefficients_of_Variation.qmd  # DONE
+  - Specimen_Testing.qmd           # Update bead volumes table. Correct the µL etc.
+  - Analysis_02.qmd                # DONE
+  - appendix.qmd                   # DONE
+  - CRediT.qmd                     # DONE
+  - references.qmd                 # DONE
+
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+
+
+editor: visual
+

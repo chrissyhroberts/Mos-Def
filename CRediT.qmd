@@ -1,0 +1,87 @@
+# CRediT Framework
+
+We provide a high level classification of the diverse roles performed in the work leading to this publication through the CRediT (contributor role taxonomy) framework [@brand2015].
+
+## Conceptualization
+
+**Ideas; formulation or evolution of overarching research goals and aims**
+
+Tegwen Marlais, Heidi Hopkins, David Mabey, Chris Drakeley, Liz Ashley, Mayfong Mayxay, David Lalloo, Nick Feasey, Quique Bassat, Katharina Kranzer, Paul Newton, John Crump, David Bell, Yoel Lubell, Arjun Chandna and Chrissy h Roberts
+
+## Methodology
+
+**Development or design of methodology; creation of models**
+
+Tegwen Marlais, Chris Drakeley, Chrissy h Roberts
+
+## Software
+
+**Programming, software development; designing computer programs; implementation of the computer code and supporting algorithms; testing of existing code components**
+
+Chrissy h Roberts, Tegwen Marlais
+
+## Validation
+
+**Verification, whether as a part of the activity or separate, of the overall replication/ reproducibility of results/experiments and other research outputs**
+
+Chrissy h Roberts, Tegwen Marlais
+
+## Formal Analysis
+
+**Application of statistical, mathematical, computational, or other formal techniques to analyze or synthesize study data**
+
+Chrissy h Roberts, Tegwen Marlais
+
+## Investigation
+
+**Conducting a research and investigation process, specifically performing the experiments, or data/evidence collection**
+
+Tegwen Marlais, Becca Handley, Hira Tanvir
+
+## Resources
+
+**Provision of study materials, reagents, materials, patients, laboratory samples, animals, instrumentation, computing resources, or other analysis tools**
+
+Chrissy h Roberts, Tegwen Marlais
+
+## Data curation
+
+**Management activities to annotate (produce metadata), scrub data and maintain research data (including software code, where it is necessary for interpreting the data itself) for initial use and later reuse**
+
+Chrissy h Roberts, Tegwen Marlais
+
+## Writing -- Original Draft
+
+**Preparation, creation and/or presentation of the published work, specifically writing the initial draft (including substantive translation)**
+
+Chrissy h Roberts, Tegwen Marlais
+
+## Writing -- Review & Editing
+
+**Preparation, creation and/or presentation of the published work by those from the original research group, specifically critical review, commentary or revision -- including pre- or postpublication stages**
+
+Chrissy h Roberts, Tegwen Marlais, Chris Drakeley
+
+## Visualization
+
+**Preparation, creation and/or presentation of the published work, specifically visualization/ data presentation**
+
+Chrissy h Roberts, Tegwen Marlais
+
+## Supervision
+
+**Oversight and leadership responsibility for the research activity planning and execution, including mentorship external to the core team**
+
+Chrissy h Roberts, David Mabey, Chris Drakeley
+
+## Project Administration
+
+**Management and coordination responsibility for the research activity planning and execution**
+
+Becca Handley, Esther Amon
+
+## Funding acquisition
+
+**Acquisition of the financial support for the project leading to this publication.**
+
+Chrissy h Roberts, Heidi Hopkins, David Mabey, Chris Drakeley

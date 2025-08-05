@@ -1,0 +1,151 @@
+---
+title: "Detection Antibody Prep"
+---
+
+This includes:
+
+Biotinylation of un-labelled detection antibodies for Azu and MxA.
+
+Rehydration of already biotin-labelled antibodies
+
+Aliquotting of detection antibodies into single-use aliquots.
+
+Mixing of detection antibodies into ready-to-use volumes. (Note- storage of mixed detection antibodies was not evaluated during assay development, instead all detection antibodies were mixed immediately before use on the day.)
+
+## Reagents and materials
+
+1.  Make PBS and PBS-TBN as per the Buffers and Reagents protocol.
+
+Table 1. Specific reagents needed. Quantity of each item should be obtained from the Shopping List document for your number of samples.
+
+| Manufacturer | Part No. | Pack size | PRODUCT DESCRIPTION |
+|:---|:---|:---|:---|
+| bio-techne | 370-0010 | 3 | Lightning-Link (R) Rapid Type A Biotin Antibody Labeling Kit |
+| bio-techne | AF2200 | 100 ug | Human Azurocidin/CAP37/HBP Affinity Purified Polyclonal Ab |
+| bio-techne | AF7946 | 100 ug | Human MxA/Mx1 Affinity Purified Polyclonal Ab |
+| bio-techne | BAF1278 | 50 ug | Human TREM-1 Biotinylated Affinity Purified PAb |
+| bio-techne | BAF206 | 50 ug | Human/Primate IL-6 Biotinylated Affinity Purified PAb |
+| bio-techne | BAF208 | 50 ug | Human IL-8/CXCL8 Biotinylated Affinity Purified PAb |
+| bio-techne | BAF217 | 100 ug | Human IL-10 Biotinylated Affinity Purified PAb |
+| bio-techne | BAF225 | 50 ug | Human TNF RI/TNFRSF1A Biotinylated Affinity Purified PAb |
+| bio-techne | BAF2599 | 50 ug | Human/Primate Chitinase 3-like 1 Biotinylated Aff Pur PAb |
+| bio-techne | BAF266 | 50 ug | Human CXCL10/IP-10 Biotinylated Affinity Purified PAb |
+| bio-techne | BAF375 | 50 ug | Human/Primate TRAIL/TNFSF10 Biotinylated Aff Pur PAb |
+| bio-techne | BAF623 | 50 ug | Human Angiopoietin-2 Biotinylated Affinity Purified PAb |
+| bio-techne | BAF923 | 50 ug | Human Angiopoietin-1 Biotinylated Affinity Purified PAb |
+
+## Protocol
+
+#### Biotinylation of un-labelled detection antibodies for Azu & MxA
+
+Timing: about 30-40 mins, with optional overnight alternative.
+
+1\. From LightningLink(LL)-biotin kits, thaw LL-Modifier and LL-Quencher reagents and retrieve as many biotin vials as needed, one for each antibody to be conjugated.
+
+2\. Label the LL glass vials with 'Azu' or 'MxA', date, '0.833 µg/mL'.
+
+3\. Vortex and briefly spin down the LL-Modifier and LL-Quencher tubes.
+
+4\. Rehydrate Anti Azu (AF2200) and Anti MxA (AF7946) each with 100 µL of filtered PBS to give 1 mg/mL. Allow 60 sec for the antibody to rehydrate then vortex gently and spin down briefly.
+
+5\. Add 10 µL of LL-Modifier from the LL kit to each of the antibody vials and mix by pipetting up and down gently.
+
+6\. Transfer all 110 µL to the respective glass vial and ensure that the lyophilised biotin is rehydrated by gently pipetting up and down once or twice.
+
+7\. Incubate for at least 15 mins at room temp. Can be left even overnight if more convenient.
+
+8\. Add 10 µL of LL-Quencher to each glass vial and pipette gently to mix.
+
+9\. Leave for 5 mins before use.
+
+10\. Store the biotinylated antibodies in the fridge. Expiry is 18 months from conjugation date.
+
+#### Rehydration of already biotin-labelled antibodies
+
+All other detection antibodies are already biotinylated- they need to be rehydrated to achieve their respective stock concentrations.
+
+Rehydration concentrations have been calculated so that equal volumes of each of the biotin antibodies is added during running the assay (Table 2). This makes the process quicker and less error-prone.
+
+Note that this **does NOT apply to MxA and Azu** which are biotin labelled as above using Lightning Link kits and will be used at different volumes on assay day.
+
+Table 2. Lab worksheet to record lot numbers of detection antibody stocks during rehydration.
+
++------------+--------------+----------------------+------------------------------------------------------+-----------------------------------------+
+| Assay      | Cat. no      | Record lot number(s) | **Rehydrate each vial with this volume of PBS (ul)** | Which will give this stock conc (ug/ml) |
+|            |              |                      |                                                      |                                         |
+|            | (bio-techne) |                      |                                                      |                                         |
++------------+--------------+----------------------+------------------------------------------------------+-----------------------------------------+
+| **Ang2**   | BAF623       |                      | **221.52**                                           | 225.7                                   |
++------------+--------------+----------------------+------------------------------------------------------+-----------------------------------------+
+| **IL-6**   | BAF206       |                      | **221.52**                                           | 225.7                                   |
++------------+--------------+----------------------+------------------------------------------------------+-----------------------------------------+
+| **TRAIL**  | BAF375       |                      | **221.52**                                           | 225.7                                   |
++------------+--------------+----------------------+------------------------------------------------------+-----------------------------------------+
+| **IP-10**  | BAF266       |                      | **221.52**                                           | 225.7                                   |
++------------+--------------+----------------------+------------------------------------------------------+-----------------------------------------+
+| **CHI3L1** | BAF2599      |                      | **221.52**                                           | 225.7                                   |
++------------+--------------+----------------------+------------------------------------------------------+-----------------------------------------+
+| **Ang1**   | BAF923       |                      | **147.68**                                           | 338.6                                   |
++------------+--------------+----------------------+------------------------------------------------------+-----------------------------------------+
+| **TNFR1**  | BAF225       |                      | **147.68**                                           | 338.6                                   |
++------------+--------------+----------------------+------------------------------------------------------+-----------------------------------------+
+| **IL-8**   | BAF208       |                      | **147.68**                                           | 338.6                                   |
++------------+--------------+----------------------+------------------------------------------------------+-----------------------------------------+
+| **IL-10**  | BAF217       |                      | **295.36**                                           | 338.6                                   |
++------------+--------------+----------------------+------------------------------------------------------+-----------------------------------------+
+| **TREM1**  | BAF1278      |                      | **110.76**                                           | 451.4                                   |
++------------+--------------+----------------------+------------------------------------------------------+-----------------------------------------+
+
+#### Aliquotting of detection antibodies into single-use aliquots for storage
+
+22. To make per-plate aliquots of detection antibodies, aliquot each one into tubes at the volume given in column 2 of Table 3 below i.e. for single plate aliquots, dispense 14 ul of each antibody into separate tubes. Antibodies should be kept separate at this stage. Store aliquots at -20.
+
+    NOTE that this does NOT apply to MxA and Azu which are stored refigerated and added only upon mixing.
+
+#### Mixing of detection antibodies into ready-to-use volumes
+
+22. To make detection antibody mix on day of use, add **PBS-TBN** to a tube for the number of plates being run, as per column 4, Table 3.
+23. Then use this volume to recover the antibody in each aliquot and re-combine them i.e. add 100 ul of PBS-TBN to each aliquot tube, vortex mix, spin down, then transfer all of it back to the main tube. This is because the amount aliquotted is exactly as much as needed, so this ensures that all of it is recovered.
+24. Finally, add the volumes of MxA and Azu to the mixture from their glass stock vials (columns 5 & 6).
+
+Table 3. Volumes for making Detection Antibody mix on assay day.
+
++--------------------------+---------------------------------------------+-----------------------------------------------------------------+--------------------------------+------------------------------+-----------------------------+
+| 1.  **Number of plates** | 2.  Volume of each Ab (NOT MxA or Azu) (ul) | 3.  Total (ul)                                                  | 4.  **Volume of PBS-TBN (ul)** | 5.  MxA antibody volume (ul) | 6.  Azu antibdy volume (ul) |
+|                          |                                             |                                                                 |                                |                              |                             |
+|                          |                                             |     (allowing 3.16 ml per plate which allows almost 10% excess) |                                |                              |                             |
++--------------------------+---------------------------------------------+-----------------------------------------------------------------+--------------------------------+------------------------------+-----------------------------+
+| **1**                    | 14                                          | 3,160                                                           | 3,010.6                        | 3.8                          | 5.6                         |
++--------------------------+---------------------------------------------+-----------------------------------------------------------------+--------------------------------+------------------------------+-----------------------------+
+| **2**                    | 28                                          | 6,320                                                           | 6,021.2                        | 7.6                          | 11.2                        |
++--------------------------+---------------------------------------------+-----------------------------------------------------------------+--------------------------------+------------------------------+-----------------------------+
+| **3**                    | 42                                          | 9,480                                                           | 9,031.8                        | 11.4                         | 16.8                        |
++--------------------------+---------------------------------------------+-----------------------------------------------------------------+--------------------------------+------------------------------+-----------------------------+
+| **4**                    | 56                                          | 12,640                                                          | 12,042.4                       | 15.2                         | 22.4                        |
++--------------------------+---------------------------------------------+-----------------------------------------------------------------+--------------------------------+------------------------------+-----------------------------+
+| **5**                    | 70                                          | 15,800                                                          | 15,053.0                       | 19.0                         | 28.0                        |
++--------------------------+---------------------------------------------+-----------------------------------------------------------------+--------------------------------+------------------------------+-----------------------------+
+| **6**                    | 84                                          | 18,960                                                          | 18,063.6                       | 22.8                         | 33.6                        |
++--------------------------+---------------------------------------------+-----------------------------------------------------------------+--------------------------------+------------------------------+-----------------------------+
+| **7**                    | 98                                          | 22,120                                                          | 21,074.2                       | 26.6                         | 39.2                        |
++--------------------------+---------------------------------------------+-----------------------------------------------------------------+--------------------------------+------------------------------+-----------------------------+
+| **8**                    | 112                                         | 25,280                                                          | 24,084.8                       | 30.4                         | 44.8                        |
++--------------------------+---------------------------------------------+-----------------------------------------------------------------+--------------------------------+------------------------------+-----------------------------+
+| **9**                    | 126                                         | 28,440                                                          | 27,095.4                       | 34.2                         | 50.4                        |
++--------------------------+---------------------------------------------+-----------------------------------------------------------------+--------------------------------+------------------------------+-----------------------------+
+| **10**                   | 140                                         | 31,600                                                          | 30,106.0                       | 38.0                         | 56.0                        |
++--------------------------+---------------------------------------------+-----------------------------------------------------------------+--------------------------------+------------------------------+-----------------------------+
+
+Tick as you add each Ab:
+
++--------------------+--------------------+----------------+
+|         TNFR1      |         Ang1       |         IL10   |
+|                    |                    |                |
+|         IL6        |         Ang2       |         TREM   |
+|                    |                    |                |
+|         IL8        |         TRAIL      |         IP-10  |
+|                    |                    |                |
+|         MxA \*\*\* |         Azu \*\*\* |         CHI3L1 |
++--------------------+--------------------+----------------+
+
+25. After use in your assay, any remaining antibody mixture can be stored frozen for incidental use. Note that we have not directly compared performance of detection antibodies that have been stored long-term as a mixture versus those stored individually as in this protocol.

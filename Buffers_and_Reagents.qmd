@@ -1,0 +1,65 @@
+# Buffers & Reagents
+
+## Buffers for general assay procedures
+
+## Reagents
+
+The following reagents are needed
+
+| PRODUCT DESCRIPTION | Manufacturer | Part No. | Pack size |
+|----|:---|:---|:---|
+| PBS tablets | Sigma | P4417-100TAB | 100 tablets |
+| Protease inhibitor (for DBS samples only) | Roche | 11697498001 | 20 tabs |
+| BSA | Sigma | A4503-100G | 100 g |
+| EDC | Sigma | 11851335 | 5 g |
+| NHS | Sigma | 10391314 | 500 mg |
+| MES | Sigma | M3671 | 50 g |
+| Sodium phosphate monobasic | Sigma | S8282 | 500 g |
+| Tween 20 | Sigma | P1379-100ML | 100 ml |
+| NaOH (sodium hydroxide) | Sigma | S5881-500G | 500 g |
+
+### Deionised water (dH~2~O)
+
+Filter 50 mL of deionised water through a 0.2 µm filter into a sterile container.
+
+### PBS
+
+1 tablet (Sigma; P4417) per 200 mL deionised water.
+
+Filter through 0.2 µm filter into one or more sterile containers.
+
+### PBST (wash buffer)
+
+PBS + 0.5 mL/L (0.05% v/v) Tween 20
+
+Make fresh every week.
+
+### PBS-TBN (blocking/storage/assay buffer)
+
+PBST + 10 mg/mL BSA + 0.5 mg/mL sodium azide
+
+Per 100 mL PBST, add:
+
+-   1 g BSA
+-   500 µL of 10% (100 mg/mL) sodium azide solution in deionised water
+    -   \*CAUTION\* - use appropriate PPE and safety measures when handling solid and liquids with sodium azide.
+
+Filter through 0.2 µm filter and store in fridge until use.
+
+## Buffers for bead coupling
+
+### Activation buffer
+
+0.1 M sodium phosphate monobasic, pH 6.2
+
+-   1.19 g NaH~2~PO~4~ (Sigma, S8282)
+-   100 mL dH~2~O
+-   Adjust pH to 6.2 with 5 or 10 M NaOH. Filter through 0.2 µm filter and store in the fridge or freeze aliquots until use.
+
+### Coupling buffer
+
+50 mM MES, pH 5.0
+
+-   0.976 g MES (Sigma, M3671)
+-   100 mL dH~2~O
+-   Adjust pH to 5 with 5 or 10 M NaOH. Filter through 0.2 µm filter and store in the fridge or freeze aliquots until use.

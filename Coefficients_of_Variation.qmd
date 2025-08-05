@@ -1,0 +1,417 @@
+# Coefficients of Variation
+
+## Overview
+
+This protocol can be used to calculate the inter- and intra-assay variation. It can be performed repeatedly on different days or by different operators to provide a measure of variation.
+
+This protocol measures how consistent an assay’s results are:
+
+-   **Intra-assay variation** is variation within the same run
+
+    -   (e.g., running the same samples multiple times in one experiment).
+
+    -   This tells you the precision of the assay in a single test session.
+
+-   **Inter-assay variation** is variation between different runs
+
+    -   (e.g., same samples tested on different days or by different people).
+
+    -   This tells you the reproducibility across time and operators.
+
+By performing the assay repeatedly under these conditions, you can quantify both types of variation, usually as a coefficient of variation (CV%) to confirm reliability. CV measures percentage variation in the estimate of the analyte concentration compared to the mean of all results.
+
+$$
+\mathrm{CV\%} = \frac{\sigma}{\mu} \times 100\quad\text{where}\quad\sigma = \sqrt{\frac{\sum_{i=1}^n (x_i - \mu)^2}{n - 1}}, \;\mu = \frac{\sum_{i=1}^n x_i}{n}
+$$
+
+The protocol was run here using anonymous DBS samples and recombinant protein standards.
+
+## Reagents, consumables & equipment
+
+1.  General Assay Buffers as per [buffers & reagents section](Buffers_and_Reagents.qmd).
+
+2.  [Capture](Capture_Antibody_Prep.qmd) and [detection antibodies](Detection_Antibody_Prep.qmd) and [recombinant protein standards](Standards_Prep.qmd) as per the respective protocols.
+
+3.  [Coupled](Bead_Coupling.qmd) and [confirmed](Coupling_Confirmation.qmd) beads as per the respective protocols.
+
+Table 1. Lab worksheet to record batch dates and reagents. Supplier is bio-techne unless specified.
+
++-------------+--------------------+--------------------------------+-------------+--------------------+--------------------+--------------+----------------------+
+|             | Antibody on bead   | Bead Ab conc (µg/millionbeads) | Bead region | Date beads coupled | Antigen            | Detection Ab | Detection Ab (µg/mL) |
++-------------+--------------------+--------------------------------+-------------+--------------------+--------------------+--------------+----------------------+
+| **CRP**     | MAB17071           | **5**                          | 12          | n/a                | 1707-CR            | BAM17072     | 1                    |
++-------------+--------------------+--------------------------------+-------------+--------------------+--------------------+--------------+----------------------+
+| **IL8**     | M801 (Thermo)      | **5**                          | 22          |                    | 208-IL             | BAF208       | 1.5                  |
++-------------+--------------------+--------------------------------+-------------+--------------------+--------------------+--------------+----------------------+
+| **sTNF-R1** | MAB225             | **6**                          | 20          |                    | 636-R1             | BAF225       | 1.5                  |
++-------------+--------------------+--------------------------------+-------------+--------------------+--------------------+--------------+----------------------+
+| **IL6**     | MAB206             | **5**                          | 21          |                    | 206-IL             | BAF206       | 1                    |
++-------------+--------------------+--------------------------------+-------------+--------------------+--------------------+--------------+----------------------+
+| **Ang2**    | NB110-85467        | **5**                          | 15          |                    | 623-AN             | BAF623       | 1                    |
++-------------+--------------------+--------------------------------+-------------+--------------------+--------------------+--------------+----------------------+
+| **Ang1**    | MAB9231            | **5**                          | 18          |                    | 923-AN             | BAF923       | 1.5                  |
++-------------+--------------------+--------------------------------+-------------+--------------------+--------------------+--------------+----------------------+
+| **TRAIL**   | MAB375             | **6**                          | 25          |                    | 375-TL             | BAF375       | 1                    |
++-------------+--------------------+--------------------------------+-------------+--------------------+--------------------+--------------+----------------------+
+| **IL10**    | MAB2172            | **4**                          | 26          |                    | 1064-IL            | BAF217       | 1.5                  |
++-------------+--------------------+--------------------------------+-------------+--------------------+--------------------+--------------+----------------------+
+| **sTREM1**  | H00054210-M04      | **6**                          | 14          |                    | 1278-TR            | BAF1278      | 2                    |
++-------------+--------------------+--------------------------------+-------------+--------------------+--------------------+--------------+----------------------+
+| **IP-10**   | MAB266             | **5**                          | 29          |                    | 266-IP             | BAF266       | 1                    |
++-------------+--------------------+--------------------------------+-------------+--------------------+--------------------+--------------+----------------------+
+| **Azu**     | NBP2-12045         | **7**                          | 27          |                    | 2200-SE            | AF2200+B     | 1.5                  |
++-------------+--------------------+--------------------------------+-------------+--------------------+--------------------+--------------+----------------------+
+| **MxA**     | MA5-24914 (Thermo) | **6**                          | 28          |                    | TP307418 (OriGene) | AF7946+B     | 1                    |
++-------------+--------------------+--------------------------------+-------------+--------------------+--------------------+--------------+----------------------+
+| **CHI3L1**  | MAB25991           | **4.5**                        | 30          |                    | 2599-CH            | BAF2599      | 1                    |
++-------------+--------------------+--------------------------------+-------------+--------------------+--------------------+--------------+----------------------+
+
+### Samples
+
+-   DBS samples 1-4 from 4 different individuals
+
+    -   DBS1, DBS2, DBS3, DBS4
+
+-   Spiked DBS made with healthy human blood spiked with the recombinant protein antigens at high, medium, low and zero levels
+
+    -   High DBS, Med DBS, Low DBS, Blank DBS
+
+        -   spiked analyte activity identical to standards 1, 3, 6 and 8, respectively.
+
+-   Recombinant protein standards 1-8 in PBS-TBN
+
+    -   Std1, Std2, Std3, Std4, Std5, Std6, Std7, Std8
+
+### Experimental Design : Intra-assay CV
+
+-   Twelve within-plate repeats of pooled DBS eluate (DBS1-DBS4) were run on plate 1
+
+-   Twelve within-plate repeats of the spiked DBS (High DBS, Med DBS etc) were run on plate 1
+
+-   Twelve within-plate repeats of the protein standards (Std1-Std8) were run on plate 2
+
+    *N.B. This protocol was carried out when the CRP assay was still part of the multiplex. It has since been removed.*
+
+    #### Plate 1 Layout (Intra-assay)
+
+|   | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
+|------|------|------|------|------|------|------|------|------|------|------|------|------|
+| A | DBS1 | DBS1 | DBS1 | DBS1 | DBS1 | DBS1 | DBS1 | DBS1 | DBS1 | DBS1 | DBS1 | DBS1 |
+| B | DBS2 | DBS2 | DBS2 | DBS2 | DBS2 | DBS2 | DBS2 | DBS2 | DBS2 | DBS2 | DBS2 | DBS2 |
+| C | DBS3 | DBS3 | DBS3 | DBS3 | DBS3 | DBS3 | DBS3 | DBS3 | DBS3 | DBS3 | DBS3 | DBS3 |
+| D | DBS4 | DBS4 | DBS4 | DBS4 | DBS4 | DBS4 | DBS4 | DBS4 | DBS4 | DBS4 | DBS4 | DBS4 |
+| E | High DBS | High DBS | High DBS | High DBS | High DBS | High DBS | High DBS | High DBS | High DBS | High DBS | High DBS | High DBS |
+| F | Med DBS | Med DBS | Med DBS | Med DBS | Med DBS | Med DBS | Med DBS | Med DBS | Med DBS | Med DBS | Med DBS | Med DBS |
+| G | Low DBS | Low DBS | Low DBS | Low DBS | Low DBS | Low DBS | Low DBS | Low DBS | Low DBS | Low DBS | Low DBS | Low DBS |
+| H | Blank DBS | Blank DBS | Blank DBS | Blank DBS | Blank DBS | Blank DBS | Blank DBS | Blank DBS | Blank DBS | Blank DBS | Blank DBS | Blank DBS |
+
+#### Plate 2 Layout (Intra-assay)
+
+|     | 1    | 2    | 3    | 4    | 5    | 6    | 7    | 8    | 9    | 10   | 11   | 12   |
+|-----|------|------|------|------|------|------|------|------|------|------|------|------|
+| A   | Std1 | Std1 | Std1 | Std1 | Std1 | Std1 | Std1 | Std1 | Std1 | Std1 | Std1 | Std1 |
+| B   | Std2 | Std2 | Std2 | Std2 | Std2 | Std2 | Std2 | Std2 | Std2 | Std2 | Std2 | Std2 |
+| C   | Std3 | Std3 | Std3 | Std3 | Std3 | Std3 | Std3 | Std3 | Std3 | Std3 | Std3 | Std3 |
+| D   | Std4 | Std4 | Std4 | Std4 | Std4 | Std4 | Std4 | Std4 | Std4 | Std4 | Std4 | Std4 |
+| E   | Std5 | Std5 | Std5 | Std5 | Std5 | Std5 | Std5 | Std5 | Std5 | Std5 | Std5 | Std5 |
+| F   | Std6 | Std6 | Std6 | Std6 | Std6 | Std6 | Std6 | Std6 | Std6 | Std6 | Std6 | Std6 |
+| G   | Std7 | Std7 | Std7 | Std7 | Std7 | Std7 | Std7 | Std7 | Std7 | Std7 | Std7 | Std7 |
+| H   | Std8 | Std8 | Std8 | Std8 | Std8 | Std8 | Std8 | Std8 | Std8 | Std8 | Std8 | Std8 |
+
+## Experimental Design : Inter-assay CV
+
+-   On each of six plates, single replicates of all specimens (Pooled DBS, Spiked DBS, Standards)
+
+#### Plate 3-8 Layout (Interassay)
+
+|     | 1         | 2    | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  | 11  | 12  |
+|-----|-----------|------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| A   | DBS1      | Std1 |     |     |     |     |     |     |     |     |     |     |
+| B   | DBS2      | Std2 |     |     |     |     |     |     |     |     |     |     |
+| C   | DBS3      | Std3 |     |     |     |     |     |     |     |     |     |     |
+| D   | DBS4      | Std4 |     |     |     |     |     |     |     |     |     |     |
+| E   | High DBS  | Std5 |     |     |     |     |     |     |     |     |     |     |
+| F   | Med DBS   | Std6 |     |     |     |     |     |     |     |     |     |     |
+| G   | Low DBS   | Std7 |     |     |     |     |     |     |     |     |     |     |
+| H   | Blank DBS | Std8 |     |     |     |     |     |     |     |     |     |     |
+
+## Protocol
+
+⌚ Timing: 1-2 hours to prepare prior to assay day, about 6-7 hours on assay day, including incubations.
+
+1.  Eluting DBS samples: The day before assay day, prepare elution buffer with 1 mL of 25X protease inhibitor plus 24 mL PBS-TBN. In 8 x 5 mL tubes, add 20 DBS to each tube of the individual donor and spiked DBS. Add 1 mL elution buffer to each tube and incubate overnight at 4C.
+
+<!-- -->
+
+1.  On assay day, get coupled beads from fridge, vortex and sonicate for 30 sec of each.
+
+2.  Dilute beads: add **14.183 mL of PBS-TBN** to a universal. Total final volume after addition of beads, will be 14.7 mL. (14.7 mL minus 517.4 µL) (288 wells, 3 plates' worth x 50 ul = 14.4 mL)
+
+3.  Vortex bead stocks again immediately before pipetting and add \_\_\_\_ µL **of each bead** to the tube (to get 20k beads/mL \[ie 1000 beads/well\] based on stock of \_\_\_\_x10^6^ beads/mL). Tick as you add the beads:
+
+    +-------+-------+--------+--------+
+    | Ang1  | IL-6  | IP-10  | sTREM1 |
+    |       |       |        |        |
+    | Ang2  | IL-8  | CHI3L1 | sTNFR1 |
+    |       |       |        |        |
+    | Azu   | IL-10 | MxA    | TRAIL  |
+    +-------+-------+--------+--------+
+
+4.  Label 8 black plates with plate number, date, etc.
+
+5.  Add 50 µL of diluted beads to all required wells, as per plate layouts:
+
+6.  Wash the beads once: put plate on magnet, wait 60 sec, flick out liquid, remove from magnet, add 100 µL PBST to each well, back on magnet 60 sec, flick out liquid, bang gently on tissue.
+
+7.  Vortex the eluted DBS samples.
+
+8.  Thaw, vortex & pool the buffer standards. Mix again before dispensing.
+
+9.  Add **30 µL/well** of standards and RBC-DBS eluate to respective wells.
+
+10. Add **30** **µL/well** of PBS-TBN+pi as standard 8.
+
+11. Cover and incubate on gentle shaker for **120 mins**. Record start time:\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+12. During the incubation, prepare biotin detection antibodies for 3 plates. The excess can be stored frozen for future use.
+
+13. Wash the plates 3 times with PBST as before.
+
+14. Add 30 µL per well of the detection antibody mix to all used wells.
+
+15. Cover and incubate, shaking, for 1 hour.
+
+16. During incubation, prepare SA-PE at 3 µg/mL by adding **\_\_\_TBC\_\_\_** µL of SA-PE stock (1 mg/mL) into **\_\_\_ TBC\_\_**mL PBS-TBN.
+
+17. Wash plates 3 times with PBST as before.
+
+18. Add 30 µL per well of the diluted SA-PE to all used wells.
+
+19. Cover and incubate, shaking, for 45 minutes.
+
+20. Wash plates 3 times with PBST as before.
+
+21. Add 100 µL PBS-TBN to each well, cover and refrigerate overnight.
+
+22. Read plates on MagPix first thing the next day.
+
+    Example data analysis using real data is given below.
+
+## Analysis & interpretation of results
+
+### Libraries
+
+```{r,message=F,warning=F}
+library(readxl)
+library(dplyr)
+library(reshape2)
+library(flextable)
+library(tidyverse)
+library(kableExtra)
+```
+
+### Intra-assay CV Estimation
+
+```{r,message=F,warning=F}
+# Helper function to calculate CV table for a given data frame
+calc_cv <- function(data, keep = NULL) {
+  if (!is.null(keep)) data <- data[keep, ]
+  
+  data %>%
+    group_by(Sample, Assay) %>%
+    summarise(
+      n = n(),
+      mean = mean(MFI, na.rm = TRUE),
+      sd = sd(MFI, na.rm = TRUE),
+      CV = 100 * (sd / mean),
+      .groups = "drop"
+    ) %>%
+    group_by(Assay) %>%
+    summarise(CV = mean(CV, na.rm = TRUE), .groups = "drop")
+}
+
+# Read and reshape a plate CSV
+read_plate <- function(file, assay_cols) {
+  read_csv(file, skip = 41, show_col_types = FALSE,name_repair = "universal") %>%
+    slice(1:96) %>%
+    mutate(across(3:16, as.numeric)) %>%
+    pivot_longer(
+      cols = {{ assay_cols }},
+      names_to = "Assay",
+      values_to = "MFI"
+    )
+}
+
+# Process plates
+p1 <- read_plate("data/cv/INTRAASSAY_CV_plate_01.csv", CRP:CH3L1)
+p2 <- read_plate("data/cv/INTRAASSAY_CV_plate_02.csv", Ang.1:TRAIL)
+
+# Calculate CVs
+# Works without NSE issues:
+pooled_dbs_results <- calc_cv(p1, str_starts(p1$Sample, "DBS")) %>% rename("Intra_CV_Pooled_DBS"=CV )
+spiked_dbs_results <- calc_cv(p1, !str_starts(p1$Sample, "DBS")) %>% rename("Intra_CV_Spiked_DBS"=CV )
+recombinant_results <- calc_cv(p2)  %>% rename("Intra_CV_Standards"=CV ) # no filter
+
+# Combine into one table
+CV_table_intra_assay <- pooled_dbs_results %>%
+  left_join(spiked_dbs_results, by = "Assay") %>%
+  left_join(recombinant_results, by = "Assay")
+
+# Display
+kable(CV_table_intra_assay,digits = 2)
+```
+
+### interpretation
+
+**1. All CVs are comfortably low**
+
+-   Generally, intra-assay CVs under **10%** are considered very good for immunoassays, and under **15%** is acceptable for most biomarker work.
+
+-   The pooled DBS and spiked DBS samples are all well under 10%, which suggests that the assay reproducibility is strong.
+
+-   The recombinant standards are a little higher for a few assays (12–25%), but still mostly within acceptable bounds except for **sTREM1**.
+
+**2. sTREM1 might be the one to watch**
+
+-   **25%** CV in recombinant standards is high.
+
+-   This might be due to:
+
+    -   Low signal strength near the detection limit.
+
+    -   Pipetting or bead-count variability.
+
+    -   Poor stability in recombinant form.
+
+-   Worth checking raw MFI values to see if it’s just noise from low readings.
+
+-   Also worth remembering this when looking at clinical data.
+
+**3. Recombinant standards tend to have higher CVs than DBS**
+
+-   For example, **Ang.1** is 6.8% (pooled DBS) vs. 12.6% (standards).
+
+-   This pattern might be due to:
+
+    -   Matrix mismatch. The recombinant standards are in buffer rather than a complex matrix like DBS.
+
+    -   Bead performance differences when analytes are spiked into clean buffer.
+
+-   This isn’t unusual, but it’s worth noting if you ever compare results directly between recombinant standards and real samples.
+
+**5. No obvious systematic matrix-specific instability**
+
+-   There's no assay where the pooled DBS CV is high but standards are low, meaning that the DBS format doesn’t seem to be introducing extra noise.
+
+-   That’s a good sign for assay robustness in the intended sample type.
+
+### Inter-assay CV
+
+```{r,message=F,warning=F}
+
+# Vector of plate numbers
+plates <- sprintf("P%d", 1:6)
+
+# Read and combine without ...17 column that R creates on read
+df2 <- map_dfr(plates, function(plate) {
+  file <- sprintf("data/cv/INTERASSAY_CV_plate_%02d.csv", as.integer(sub("P", "", plate)))
+  
+  read_csv(file, skip = 41, show_col_types = FALSE) %>%
+    slice(1:16) %>%
+    select(-starts_with("...")) %>%  # drop those unnamed columns
+    mutate(plate = plate)
+})
+
+
+# Convert assay columns to numeric
+df2_num <- df2 %>%
+  mutate(across(
+    c(`CRP`:`CH3L1`), # all your assay columns in order
+    as.numeric
+  ))
+
+# Pivot longer like p1/p2
+df2 <- df2_num %>%
+  pivot_longer(
+    cols = CRP:CH3L1,  # all assay columns
+    names_to = "Assay",
+    values_to = "MFI"
+  )
+
+# 1. Pooled DBS
+inter_pooled_dbs <- calc_cv(
+  df2, 
+  str_starts(df2$Sample, "DBS")
+) %>%
+  rename(inter_CV_pooled_DBS = CV)
+
+# 2. Spiked DBS (but not starting with "DBS")
+inter_spiked_dbs <- calc_cv(
+  df2, 
+  !str_starts(df2$Sample, "DBS")
+) %>%
+  rename(inter_CV_spiked_DBS = CV)
+
+# 3. Recombinant standards
+#    If recombinant standards are in a separate pattern like "Rec" or "Std", filter accordingly
+#    Here, I'll assume they're *everything* in df2_long (same as your recombinant p2 case)
+inter_recombinant <- calc_cv(
+  df2,str_starts(df2$Sample,"Std")
+) %>%
+  rename(inter_CV_recombinant = CV)
+
+# ---- Join into one table ----
+inter_assay_table <- inter_pooled_dbs %>%
+  left_join(inter_spiked_dbs, by = "Assay") %>%
+  left_join(inter_recombinant, by = "Assay")
+
+kable(inter_assay_table,digits = 2)
+
+
+```
+
+### Interpretation
+
+**1. All inter-assay CVs are comfortably low**
+
+-   Everything is below \~8%, which is excellent for inter-assay reproducibility.
+
+-   In biomarker assays, inter-assay CVs under 10% are considered very strong; you’re well under that threshold across the board.
+
+**2. Pooled DBS vs. Spiked DBS vs. Recombinant**
+
+-   **Pooled DBS** CVs are consistently lowest for most analytes.
+
+    -   Suggests that the pooled DBS specimens are very stable and reproducible across plates.
+
+-   **Spiked DBS** sometimes slightly higher
+
+    -   e.g., IL-8 jumps to 7.16% from 3.81% in pooled DBS.
+
+    -   This could be due to pipetting variability or how spikes integrate into the DBS matrix.
+
+-   **Recombinant** CVs are generally a little higher than pooled DBS but not alarmingly so (e.g., CRP: 2.42% → 4.82%).
+
+    -   This is common because recombinant standards are often in a clean buffer and don’t always mimic real sample matrix behavior.
+
+**3. No major outliers**
+
+-   The worst CV is IL-8 in spiked DBS (7.16%), but this is still well within the “good” range.
+
+-   No single assay looks unstable across all sample types.
+
+-   Some analytes (e.g., MxA, IL-6) have slightly higher pooled DBS CVs than recombinants, but the differences are small (\<1–2%).
+
+## Summary
+
+The intra- and inter-assay precision results indicate that the multiplex immunoassay is performing with strong reproducibility across sample types.
+
+-   **Reliable performance in DBS format** – Both pooled and spiked DBS specimens showed consistently low intra- and inter-assay CVs, all well below the commonly accepted 10% threshold for high-quality immunoassays. This supports the use of DBS as a stable and reproducible matrix for these analytes.
+
+-   **Recombinant standards less precise but acceptable** – CVs for recombinant standards were generally higher than for DBS, particularly for a few analytes such as sTREM1. This is likely due to matrix differences (buffer vs. DBS), lower signal levels, or inherent instability of some recombinant proteins. While still mostly within acceptable limits, this should be considered when interpreting calibration and QC data.
+
+-   **sTREM1 warrants monitoring** – Elevated CV (\~25%) in recombinant standards suggests potential instability or variability in this assay. This should be monitored in future runs, and raw signal data reviewed to confirm whether variability is due to low-level signal noise or other technical factors.
+
+-   **No evidence of matrix-specific instability** – The lack of any assay showing high CVs in DBS but low CVs in standards suggests the DBS format itself is not introducing additional variability.
+
+Overall, these findings provide confidence in the robustness of the assay system for use with DBS samples, while highlighting the importance of monitoring recombinant standard performance, particularly for sTREM1.

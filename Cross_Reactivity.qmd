@@ -1,0 +1,294 @@
+# Cross-reactivity Testing
+
+## Intro
+
+Cross-reactivity would occur if an analyte triggered a measurable response in an assay other than that which was intended, for instance if an assay based on detection antibodies intended to be specific for MxA were reactive to purified sTNFR1 antigen. Cross-reactive antibody pairs cannot be trusted to provide specific and accurate estimates of analyte concentration.
+
+To establish whether any assays were cross-reactive, we tested each assay against a standard curve of purified antigens for both its target analyte (which should be reactive) and all other analytes. Note that this approach cannot rule out assay cross-reactivity to analytes in the blood (or other sample) that were not directly tested here.
+
+The illustrative data presented here include 13 antigens; those on the final 12-plex [list of markers](./Marker_List.qmd), plus C-Reactive Protein (CRP), which was part of our initial screening process.
+
+## Protocol
+
+The protocol is initiated by making 12X stocks of the pure recombinant protein standards (12X because it is a 12-plex). Equal volumes of the 12X analytes were then mixed to achieve a multi-analyte pool in which each of the 12 analytes was at 1X concentrations. Separately, each 12X antigen is also diluted 1 in 12 to achieve a 1X concentration standard curve of that antigen alone. This is so that each standard curve, either multi- or single-plex, originates from the same dilutions series, thus minimising variability.
+
+The cross-reactivity assessment can be conducted for any level of multiplex (N-plex) by generating initial protein standards at N times the 1X concentrations. This cross-reactivity assessment should be repeated if any changes are made to the antibodies or antigens in the assay i.e. if an additional assay were to be added to the multiplex, or a specific antibody or recombinant antigen replaced with another.
+
+### **Preparation needed prior to running the Cross-Reactivity protocol**
+
+1.  Prepare buffers for general assay procedures as per the Buffers and Reagents protocol.
+
+2.  Prepare recombinant protein antigen stock aliquots as per the Antigens protocol.
+
+3.  Prepare coupled beads as per the [bead coupling protocol](./Bead_Coupling.qmd) and [coupling confirmation](./Coupling_Confirmation.qmd) protocols.
+
+4.  Prepare biotin detection antibodies as per the Detection_Antibody_Prep protocol.
+
+5.  Ensure that your MagPix is ready for use.
+
+### Prepare analytes
+
+⌚ Timing: 1-2 hours set-up, 2 hr + 1 hr + 45 min incubations. Total approx. 6h.
+
+All incubations are at ambient temperature.
+
+**Tip:** Handle recombinant proteins on ice at all times to minimise degradation.
+
+**NOTE:** All 12 antibody-coupled beads and all 12 biotin-conjugated detection antibodies are present in [**all assays**]{.underline}. Only the antigens differ between wells.
+
+1.  Get coupled beads from fridge, bring to ambient temperature, vortex and sonicate for 30 sec of each.
+
+2.  Put aliquots of the recombinant protein stocks on ice to thaw.
+
+3.  In a protein lo-bind 96-well plate, or tubes laid out in this format, prepare 4-fold analyte dilutions of each antigen separately (i.e. one column per antigen) in PBS-TBN at 12X the final required concentration. Label the plate to know which order the antigens are in. Some analytes may need an initial pre-dilution in a separate tube.
+
+    e.g. make 100 µL of dilution 1 in row 1, then serially transfer 25 µL into subsequent wells with 75 µL of PBS-TBN, pipetting up and down to mix well between transfers. The standard_dilutions_calculator Excel document ([Standard_dilutions_calculator.xlsx](./Standard_dilutions_calculator.xlsx)) can also be adjusted for the number of analytes in the multiplex and for the final volume needed.
+
+4.  In a second lo-bind plate, for the multiplex standards ('12-plex'), combine equal volumes (e.g. 10 µL) of each of the 12X analyte stocks. i.e. 10 ul of each standard 1 will be transferred into well A1 to make 120 µL total, 10 ul of each standard 2 into well A2, etc. Again mixing well by pipetting up and down carefully several times. If a plate well capacity is not going to be enough, microtubes can be used instead.
+
+5.  Into subsequent columns of the second lo-bind plate, perform a 1 in N-plex dilution, in this case, add 110 µL of PBS-TBN and transfer 10 µL of each 12X standard to achieve 1X standards of each antigen, pipetting up and down to mix well.
+
+    ### Prepare beads
+
+    6.  Prepare beads for all wells, plus 10% volume surplus. The aim is to get 20,000 beads/mL \[ie 1000 beads/well\] based on stock of 7.5x10^6^ beads/mL:
+
+        Add **11.074 ml of PBS-TBN** to a Universal (20 mL capacity tube) i.e. 11,440 µL final wanted volume - (30.5 µL of 12 bead regions = 366 µL total bead volume) = 11,074 µL. Total final volume after addition of beads, will be 11.44 mL which allows the 10% surplus volume.
+
+    7.  Vortex bead stocks again as you add **30.5 µL of each bead** to the tube.
+
+    8.  Label black plates ("assay plates") with date, plate number, etc.
+
+    9.  Add 50 µL of the mixed, diluted, beads to all 96 wells of 2 plates, plus columns 01 and 02 of a third plate.
+
+    10. Wash beads once: put plates on magnet for 60 s, discard liquid, remove from magnet and add 100 µL PBST, replace on magnet for 60 s, discard liquid, dab gently on tissue to remove excess liquid. Cover plates until addition of antigens to prevent drying.
+
+    11. Transfer the multiplex and single-plex standards to the assay plates into duplicate wells of 30 µL each, as per the plate layouts below.
+
+    12. Cover and incubate the plates on a shaker at \~200 rpm for 2 hours.
+
+Tables. Plate layouts for cross-reactivity assessment assay. Each well contains all capture antibodies (beads) and all detection antibodies, but either all antigens (12-plex) or each antigen alone (where named).
+
+| Plate 1 | 12-plex    | CHI3L1     | IL-8       | sTNFR1     | IL-6       | Ang-2      |
+|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
+| Columns | 01-02      | 03-04      | 05-06      | 07-08      | 09-10      | 11-12      |
+| Row A   | Standard 1 | Standard 1 | Standard 1 | Standard 1 | Standard 1 | Standard 1 |
+| Row B   | Standard 2 | Standard 2 | Standard 2 | Standard 2 | Standard 2 | Standard 2 |
+| Row C   | Standard 3 | Standard 3 | Standard 3 | Standard 3 | Standard 3 | Standard 3 |
+| Row D   | Standard 4 | Standard 4 | Standard 4 | Standard 4 | Standard 4 | Standard 4 |
+| Row E   | Standard 5 | Standard 5 | Standard 5 | Standard 5 | Standard 5 | Standard 5 |
+| Row F   | Standard 6 | Standard 6 | Standard 6 | Standard 6 | Standard 6 | Standard 6 |
+| Row G   | Standard 7 | Standard 7 | Standard 7 | Standard 7 | Standard 7 | Standard 7 |
+| Row H   | Blank      | Blank      | Blank      | Blank      | Blank      | Blank      |
+
+| Plate 2 | Ang-1      | Azu        | MxA        | TRAIL      | IL-10      | IP-10      |
+|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
+| Columns | 01-02      | 03-04      | 05-06      | 07-08      | 09-10      | 11-12      |
+| Row A   | Standard 1 | Standard 1 | Standard 1 | Standard 1 | Standard 1 | Standard 1 |
+| Row B   | Standard 2 | Standard 2 | Standard 2 | Standard 2 | Standard 2 | Standard 2 |
+| Row C   | Standard 3 | Standard 3 | Standard 3 | Standard 3 | Standard 3 | Standard 3 |
+| Row D   | Standard 4 | Standard 4 | Standard 4 | Standard 4 | Standard 4 | Standard 4 |
+| Row E   | Standard 5 | Standard 5 | Standard 5 | Standard 5 | Standard 5 | Standard 5 |
+| Row F   | Standard 6 | Standard 6 | Standard 6 | Standard 6 | Standard 6 | Standard 6 |
+| Row G   | Standard 7 | Standard 7 | Standard 7 | Standard 7 | Standard 7 | Standard 7 |
+| Row H   | Blank      | Blank      | Blank      | Blank      | Blank      | Blank      |
+
+| Plate 3 | sTREM1     | Empty | **Empty** | **Empty** | **Empty** | **Empty** |
+|---------|------------|-------|-----------|-----------|-----------|-----------|
+| Columns | 01-02      | 03-04 | 05-06     | 07-08     | 09-10     | 11-12     |
+| Row A   | Standard 1 |       |           |           |           |           |
+| Row B   | Standard 2 |       |           |           |           |           |
+| Row C   | Standard 3 |       |           |           |           |           |
+| Row D   | Standard 4 |       |           |           |           |           |
+| Row E   | Standard 5 |       |           |           |           |           |
+| Row F   | Standard 6 |       |           |           |           |           |
+| Row G   | Standard 7 |       |           |           |           |           |
+| Row H   | Blank      |       |           |           |           |           |
+
+12\. During the incubation, prepare biotin detection antibodies for 3 plates. The excess can be stored frozen for future use.
+
+13. Wash the plates 3 times with PBST as before.
+14. Add 30 µL per well of the detection antibody mix to all used wells.
+15. Cover and incubate, shaking, for 1 hour.
+16. During incubation, prepare SA-PE at 3 µg/mL by adding 20.7 µL of SA-PE stock (1 mg/mL) into 6.9 mL PBS-TBN.
+17. Wash plates 3 times with PBST as before.
+18. Add 30 µL per well of the diluted SA-PE to all used wells.
+19. Cover and incubate, shaking, for 45 minutes.
+20. Wash plates 3 times with PBST as before.
+21. Add 100 µL PBS-TBN to each well, cover and refrigerate overnight.
+22. Read plates on MagPix first thing the next day.
+
+Example data analysis using real data are given below.
+
+## Results & Analysis
+
+The raw data are in long format in the file [data/crossreactivity_data/crossreactivity_data_long.csv](data/crossreactivity_data/crossreactivity_data_long.csv)
+
+Each line represents a well of the Luminex plate in which there was...
+
+-   An analyte at one of 8 concentrations
+
+-   Detection antibodies for one of the 13 individual assays (as there were 13 at the time of performing this cross-reactivity assessment).
+
+### Load libraries
+
+```{r message=FALSE, warning=FALSE,echo=FALSE,echo=F}
+
+library(tidyverse)
+library(dplyr)
+library(ggplot2)
+library(plotly)
+library(knitr)
+```
+
+### Read in the data from the cross-reactivity experiments.
+
+```{r message=FALSE, warning=FALSE,echo=FALSE}
+mfi_allplates = read_csv("data/crossreactivity_data/crossreactivity_data_long.csv", show_col_types = FALSE)
+kable(head(mfi_allplates,10))
+```
+
+### Create counterfactuals and bind to data
+
+The counterfactuals are used in the charts below to show the response curves when the assay is tested against its own analyte. These are shown as grey bars in the charts.
+
+```{r message=FALSE, warning=FALSE}
+counterfactuals = filter(mfi_allplates,assay==analyte) %>% 
+  select(
+    assay,
+    standard,
+    rep,
+    mfi
+  ) %>% 
+  rename(mfi.cf = mfi)
+
+mfi_allplates <- left_join(mfi_allplates,counterfactuals)
+```
+
+### Show results for individual analytes against all assays
+
+Each experiment was repeated and charts below show the results of experiments 1 & 2.
+
+Define a function to plot each analyte.
+
+```{r}
+assay.plot<-function(showanalyte){
+ggplot(filter(mfi_allplates,analyte==showanalyte,assay!="13plex"))+
+  geom_bar(stat = "identity",aes(standard,mfi.cf),fill="grey",alpha=0.5)+
+  geom_bar(stat = "identity",aes(standard,mfi),fill="black")+
+  
+  facet_grid(analyte~assay) +
+  xlab("Assay & Standard being tested") +
+  ylab("Analyte Response (MFI)")
+}
+```
+
+#### Ang-1
+
+```{r message=FALSE, warning=FALSE}
+
+assay.plot(showanalyte = "Ang.1")
+
+```
+
+#### Ang-2
+
+```{r message=FALSE, warning=FALSE}
+
+assay.plot(showanalyte = "Ang.2")
+
+```
+
+#### Azu
+
+```{r message=FALSE, warning=FALSE}
+assay.plot(showanalyte = "Azu")
+
+```
+
+#### CHI3L1
+
+```{r message=FALSE, warning=FALSE}
+assay.plot(showanalyte = "CHI3L1")
+
+```
+
+#### CRP
+
+```{r message=FALSE, warning=FALSE}
+assay.plot(showanalyte = "CRP")
+
+```
+
+#### IL-10
+
+```{r message=FALSE, warning=FALSE}
+assay.plot(showanalyte = "IL.10")
+```
+
+#### IL-6
+
+```{r message=FALSE, warning=FALSE}
+assay.plot(showanalyte = "IL.6")
+```
+
+#### IL-8
+
+```{r message=FALSE, warning=FALSE}
+assay.plot(showanalyte = "IL.8")
+```
+
+#### IP-10
+
+```{r message=FALSE, warning=FALSE}
+assay.plot(showanalyte = "IP.10")
+```
+
+#### MxA
+
+```{r message=FALSE, warning=FALSE}
+assay.plot(showanalyte = "MxA")
+
+```
+
+#### sTNF-R1
+
+```{r message=FALSE, warning=FALSE}
+assay.plot(showanalyte = "sTNFR.1")
+```
+
+#### sTREM-1
+
+```{r message=FALSE, warning=FALSE}
+assay.plot(showanalyte = "sTREM.1")
+```
+
+#### TRAIL
+
+```{r message=FALSE, warning=FALSE}
+assay.plot(showanalyte = "TRAIL")
+```
+
+#### Show 13-plex results
+
+```{r message=FALSE, warning=FALSE}
+
+library(ggplot2)
+library(dplyr)
+library(readr)
+
+# Load the data
+mfi_allplates = read_csv("data/crossreactivity_data/crossreactivity_data_long.csv", show_col_types = FALSE)
+
+# Create the plot with rotated facet labels and reduced y-axis ticks
+myplot <- ggplot(filter(mfi_allplates, assay != "13plex")) +
+  geom_bar(stat = "identity", aes(standard, mfi), fill = "black") +
+  facet_grid(analyte ~ assay,scales = "free_y") +
+  xlab("Assay & Standard being tested") +
+  ylab("Analyte Response (MFI)") +
+  theme(
+    strip.text.x = element_text(angle = 90, hjust = 0),
+    strip.text.y = element_text(angle = 0)
+  )
+
+myplot
+```

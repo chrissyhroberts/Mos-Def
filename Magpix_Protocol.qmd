@@ -1,0 +1,49 @@
+# MagPix Protocol
+
+## Overview
+
+This protocol will support you to set up a run on the xPONENT software, as was performed for this study. This protocol is used to test specimens with the final [12-plex assay](Specimen_Testing.qmd) on the MagPix machine, as well as to carry out the [confirmations of bead conjugation](Coupling_Confirmation.qmd) and the [cross-reactivity tests](Cross_Reactivity.qmd),
+
+[**Please note**]{.underline} that this protocol does not detail basic operations, routine maintenance and calibration of the MagPix. Please refer to the manufacturer's guidance on this.
+
+## Setup
+
+1.  In the xPONENT software, go to 'Protocols' \> 'Create new Protocol'.
+2.  Enter a name for the protocol e.g. "12-plex Biomarker" and select the appropriate plate type from the drop-down menu.
+3.  Set the sample volume to 50 µL. Click 'Next'.
+4.  Select and label the required bead regions with their coupled antibodies so that the table on screen maps to the table below:
+
+| Name   | Analysis    | Units | Count | Region |
+|--------|-------------|-------|-------|--------|
+| sTREM1 | No Analysis |       | 50    | 14     |
+| Ang2   | No Analysis |       | 50    | 15     |
+| Ang1   | No Analysis |       | 50    | 18     |
+| sTNFR1 | No Analysis |       | 50    | 20     |
+| IL6    | No Analysis |       | 50    | 21     |
+| IL8    | No Analysis |       | 50    | 22     |
+| TRAIL  | No Analysis |       | 50    | 25     |
+| IL10   | No Analysis |       | 50    | 26     |
+| Azu    | No Analysis |       | 50    | 27     |
+| MxA    | No Analysis |       | 50    | 28     |
+| IP10   | No Analysis |       | 50    | 29     |
+| CHI3L1 | No Analysis |       | 50    | 30     |
+
+5.  Click 'Next'
+
+## Plate Layout
+
+6.  Highlight all wells and select 'Unknown' so that the whole plate is yellow.
+
+7.  Ensure that 'Direction' is the left-hand option for vertical reading order.
+
+8.  Add a 'Post-Batch Routine' under 'Commands and Routines'.
+
+9.  Click 'Save'.
+
+The protocol is ready to use and can now be found under 'Protocols'.
+
+We have used this uniform plate layout for all plates, but it is also possible to add standards with their concentrations, and blanks, to the layout if this is desirable.
+
+We recommend uploading or adding sample (or well) IDs to each plate ('batch') before running a plate so that raw data contains sample IDs.
+
+NOTE - Adding standards to the plate layout may cause the output csv file to have additional rows and produce errors if used with our R analysis script. The analysis script should be modified in the relevant places to accommodate this change if you wish to add standards.

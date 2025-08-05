@@ -1,0 +1,68 @@
+# Funding & Declarations
+
+```{r,echo=F,message=F,warning=FALSE}
+library(dplyr) 
+library(kableExtra)
+knitr::include_graphics("images/MosDef-logo.png", dpi = 270)
+
+```
+
+## Funding
+
+This work is part of the Mos-Def study. It was funded by GHLabs (<https://www.ghlabs.org/>).
+
+## Ethics statement
+
+Ethical approval for this study was granted by the ethics committee of the London School of Hygiene & Tropical Medicine.
+
+## MIT License
+
+\(C\) 2024, 2025, Chrissy h Roberts, Tegwen Marlais. LSHTM
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+### **Disclaimer**
+
+This project makes use of third-party R packages, which are dynamically linked. The licenses of these third-party packages are respected and their respective notices are included below. Please refer to the documentation of each package for more details about their licenses and terms of use.
+
+```{r,message=F,echo=F,warning=F}
+
+# ---- 1) Update packages in renv project library ----
+#update.packages(ask = FALSE, checkBuilt = TRUE, lib.loc = renv::paths$library())
+
+# ---- 2) Snapshot new state to renv.lock ----
+#renv::snapshot(prompt = FALSE)
+
+# ---- Helper: read license from DESCRIPTION ----
+get_license <- function(package, lib_path) {
+  desc_file <- file.path(lib_path, package, "DESCRIPTION")
+  if (file.exists(desc_file)) {
+    lic <- tryCatch(
+      read.dcf(desc_file)[1, "License"],
+      error = function(e) NA
+    )
+  } else {
+    lic <- NA
+  }
+  return(lic)
+}
+
+# ---- 3) Get package info from renv library ----
+lib_path <- renv::paths$library()
+pkg_list <- installed.packages(lib.loc = lib_path)
+pkg_df <- as.data.frame(pkg_list, stringsAsFactors = FALSE)
+
+license_info <- pkg_df %>%
+  rowwise() %>%
+  mutate(License = get_license(Package, lib_path)) %>%
+  ungroup() %>%
+  select(package = Package, Version, License) %>%
+  arrange(package)
+
+# ---- 4) Output ----
+kable(license_info, n = Inf) 
+```
+
+Please respect the licenses of the code originators.

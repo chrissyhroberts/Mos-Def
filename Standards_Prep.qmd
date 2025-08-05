@@ -1,0 +1,62 @@
+---
+title: "Standard curves"
+---
+
+```{r,echo=F,warning=F,message=F}
+library(tidyverse)
+library(knitr)
+```
+
+## Overview
+
+This protocol will support you to create a set of standard curves against which experimental fluorescence measurements from clinical specimens will be calibrated, normalised, and converted in to analyte concentration estimates.
+
+The standards are made as a multiplexed pool of the recombinant [antigens](antigens.qmd) for the various bead-conjugated sandwich assays (see [bead coupling](Bead_Coupling.qmd) and [antibody pairs](antibody_pairs.qmd)) in the test. This pool is diluted seven times, and the dilution series, along with an antigen free 'buffer blank', are included on every plate that is run on the MagPix device. This allows the user to normalise fluorescence signal variation between plates, and to establish a dose-response curve for each antigen on each plate. The dose-response curve is later used to convert the fluorescence signals from the multiplexed testing of clinical specimens in to estimates of the concentration of each analyte (see [Analysis](Analysis_01.qmd)).
+
+## Recommendations
+
+-   Label all vials with with expiry date (as per data sheet, but rule of thumb 3 months)
+
+-   Handle all protein on ice or in chilled racks.
+
+-   Aliquot standards into single-use volumes and store at -70°C.
+
+-   Aliquot of protein stocks should be thawed on ice and marked for each freeze-thaw cycle, but ideally this should be minimised or avoided.
+
+-   Make substantial volumes of standards for homogeneity. Ideally you should synthesise enough standards for all of your test plates using a single batch of standards. If you have 100 plates to run, you will need 100 \* 70 µL = 7 mL per standard. You should make at least 20% extra to account for liquid handling errors and the need to occasionally repeat runs.
+
+-   Standards degrade with time and are best used within 2-3 months. You should aim to process all of your plates in the shortest time-frame possible.
+
+-   Test new standards side-by-side with older formulations, to assess conformity and uniformity
+
+## **Protocol**
+
+-   Prepare antigen stocks as per the Antigens protocol.
+
+-   Prepare PBS-TBN as per the Buffers and Reagents protocol.
+
+-   You will aim to create a multiplexed top-standard by mixing volumes of the [recombinant antigen](antigens.qmd) stocks together in PBS-TBN and then serially diluting, to make a series of 7, 4-fold, multiplex dilutions. A blank (Standard 8) consists only of PBS-TBN buffer.
+
+-   These are then aliquotted as 7 separate standards into volumes for running different numbers of plates so that each aliquot is single-use.
+
+-   See [Standard_dilutions_calculator](./Standard_dilutions_calculator.xlsx) Excel document for the step-by-step printable protocol
+
+The final concentrations of the recombinant protein in the standards are shown in Table 1.
+
+Table 1. Concentration of recombinant protein analytes in the 7 standards (ng/ml).
+
+|         |       |       |       |       |       |        |        |
+|---------|-------|-------|-------|-------|-------|--------|--------|
+| Analyte | 1     | 2     | 3     | 4     | 5     | 6      | 7      |
+| Ang-1   | 50.0  | 12.50 | 3.13  | 0.781 | 0.195 | 0.0488 | 0.0122 |
+| Ang-2   | 100.0 | 25.00 | 6.25  | 1.563 | 0.391 | 0.0977 | 0.0244 |
+| Azu     | 200.0 | 50.00 | 12.50 | 3.125 | 0.781 | 0.1953 | 0.0488 |
+| CHI3L1  | 100.0 | 25.00 | 6.25  | 1.563 | 0.391 | 0.0977 | 0.0244 |
+| IL-6    | 10.0  | 2.50  | 0.63  | 0.156 | 0.039 | 0.0098 | 0.0024 |
+| IL-8    | 2.5   | 0.63  | 0.16  | 0.039 | 0.010 | 0.0024 | 0.0006 |
+| IL-10   | 4.0   | 1.00  | 0.25  | 0.063 | 0.016 | 0.0039 | 0.0010 |
+| IP-10   | 10.0  | 2.50  | 0.63  | 0.156 | 0.039 | 0.0098 | 0.0024 |
+| MxA     | 300.0 | 75.00 | 18.75 | 4.688 | 1.172 | 0.2930 | 0.0732 |
+| sTREM1  | 10.0  | 2.50  | 0.63  | 0.156 | 0.039 | 0.0098 | 0.0024 |
+| TNFR1   | 2.5   | 0.63  | 0.16  | 0.039 | 0.010 | 0.0024 | 0.0006 |
+| TRAIL   | 10.0  | 2.50  | 0.63  | 0.156 | 0.039 | 0.0098 | 0.0024 |

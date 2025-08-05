@@ -1,2 +1,11 @@
 data/.DS_Store
 .DS_Store
+.Rproj.user
+
+/.quarto/
+.DS_Store
+docs/.DS_Store
+renv.lock
+renv/activate.R
+renv/settings.json
+MosDef.Rproj

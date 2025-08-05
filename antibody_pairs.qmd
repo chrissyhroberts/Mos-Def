@@ -1,0 +1,54 @@
+# Antibody pair screening
+
+## Overview
+
+The following tables provide information on how capture and detection antibodies are paired in the assay. A relatively large number of pairs were tested and we continued to screen pairs until we identified a pair for each marker which met the following quality criteria.
+
+-   Absence of cross-reactivity with other analytes or antibodies in the multiplex.
+
+-   A working detection range of the target analyte within the physiologically expected range.
+
+In some cases, different sources for recombinant protein analyte were also screened, where the first option was not detected successfully.
+
+## Antibody pairs and analytes screened and selected for the final assay
+
+Table 1. Antibody combinations and recombinant antigens screened and reason for failure, or if passed screening and included in final multiplex. Reagents and catalogue numbers are from bio-techne unless specified otherwise. Product codes beginning AF relate to antigen-affinity-purified polyclonal antibodies and BAF to biotinylated versions of the same. MAB are monoclonal antibodies and BAM are biotinylated monoclonal antibodies. Clone numbers are given for monoclonal antibodies. Reagents and markers in bold were included in the final 12-plex.
+
+| Marker      | Capture antibody                      | Recombinant antigen    | Detection antibody           | Included in final assay (Pass), or reason for failure                                                                                                 |
+|-------------|---------------------------------------|------------------------|------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Ang-1**   | **MAB9231** (clone 171733)            | **923-AN**             | **BAF923**                   | Pass                                                                                                                                                  |
+| **Ang-2**   | MAB098 (clone 85816)                  | 623-AN                 | BAM0981 (clone 85834)        | Cross-reaction with Ang-1                                                                                                                             |
+|             | MAB0983 (clone 180102)                | 623-AN                 | BAM0981 (clone 85834)        | Widespread cross-reactivity in multiplex                                                                                                              |
+|             | **NB110-85467** (clone MM0020-1F29)   | **623-AN**             | **BAF623**                   | Pass                                                                                                                                                  |
+| **Azu**     | MAB2200 (clone 246322)                | 2200-SE                | AF2200\*                     | Poor sensitivity                                                                                                                                      |
+|             | **NBP2-12045**                        | **2200-SE**            | **AF2200\***                 | Pass                                                                                                                                                  |
+| **CHI3L1**  | **MAB25991**                          | **2599-CH**            | **BAF2599**                  | Pass                                                                                                                                                  |
+| CRP         | MAB17071 (clone 232007)               | 1707-CR                | BAM17072 (clone 232024)      | Cross-reactivity with Azu antigen                                                                                                                     |
+|             | MAB17071 (clone 232007)               | 1707-CR                | MA1-10323 (Thermo, clone C7) | Assay removed from multiplex due to sample dilution needed and unreliable standard curve.                                                             |
+| **IL-6**    | **MAB206** (clone 6708)               | **206-IL**             | **BAF206**                   | Pass                                                                                                                                                  |
+| **IL-8**    | MAB208 (clone 6217)                   | 208-IL                 | BAF208                       | Poor sensitivity                                                                                                                                      |
+|             | **M801** (Thermo, clone 3IL8-H10)     | **208-IL**             | **BAF208**                   | Pass                                                                                                                                                  |
+| **IL-10**   | **MAB2172** (clone 127107)            | **1064-IL**            | **BAF217**                   | Pass                                                                                                                                                  |
+| **IP-10**   | **MAB266** (clone 33036)              | **266-IP**             | **BAF266**                   | Pass                                                                                                                                                  |
+| **MxA**     | AF7946                                | TP307418 (OriGene)     | AF7946\*                     | Cross-reactivity with other antigens (ELISA screen)                                                                                                   |
+|             | MA5-24914 (Thermo, clone OTI2G12)     | NBP2-51838             | AF7946\*                     | Lower signal than OriGene antigen                                                                                                                     |
+|             | **MA5-24914** (Thermo, clone OTI2G12) | **TP307418** (OriGene) | **AF7946\***                 | Pass                                                                                                                                                  |
+| PCT         | MAB83501 (clone 944002)               | 9607-PN                | MAB8350\* (clone 919510)     | General cross-reactivity in multiplex                                                                                                                 |
+|             | MAB83502 (clone 95123)                | 9607-PN                | MAB8350\* (clone 919510)     | General cross-reactivity in multiplex                                                                                                                 |
+|             | MAB8350 (clone 919510)                | 9607-PN                | MAB83502\* (clone 95123)     | No signal (ELISA screen)                                                                                                                              |
+|             | AF8350                                | 9607-PN                | AF8350\*                     | General cross-reactivity in multiplex. This assay was dropped due to high cross-reactivity or poor performance of all screened antibody combinations. |
+| sFlt-1      | MAB321 (clone 49560)                  | 321-FL                 | BAF321                       | No signal (multiplex)                                                                                                                                 |
+|             | NBP2-34619 (clone FLT1/659)           | 321-FL                 | MAB321\* (clone 49560)       | Poor sensitivity (ELISA screen)                                                                                                                       |
+|             | AF321                                 | 321-FL                 | BAF321                       | Poor sensitivity (ELISA screen)                                                                                                                       |
+|             | AF321                                 | 321-FL                 | MAB321\* (clone 49560)       | Ok in singleplex (ELISA screen). Very low sensitivity in multiplex                                                                                    |
+|             | AF321                                 | RP-75748 (Thermo)      | MAB321\* (clone 49560)       | No signal (multiplex). This assay was dropped due to difficulty in finding a working antibody pair and recombinant antigen standard.                  |
+| **sTNF-R1** | MAB625 (clone 16805)                  | 636-R1                 | BAF225                       | Poor sensitivity                                                                                                                                      |
+|             | MAB6251 (clone 925224)                | 636-R1                 | BAF225                       | No signal                                                                                                                                             |
+|             | **MAB225** (clone 16803)              | **636-R1**             | **BAF225**                   | Pass                                                                                                                                                  |
+| **sTREM-1** | AF1278                                | 1278-TR                | BAF1278                      | High background                                                                                                                                       |
+|             | MAB1278 (clone 193015)                | 1278-TR                | BAF1278                      | Poor sensitivity and cross-reaction with MxA antigen                                                                                                  |
+|             | **H00054210-M01** (clone 2E2)         | **1278-TR**            | **BAF1278**                  | Pass                                                                                                                                                  |
+| **TRAIL**   | MAB3751 (clone 124723)                | 375-TL                 | BAF375                       | Poor sensitivity                                                                                                                                      |
+|             | **MAB375** (clone 75411)              | **375-TL**             | **BAF375**                   | Pass                                                                                                                                                  |
+
+\*These detection antibodies were biotinylated using a Lightning Link kit.

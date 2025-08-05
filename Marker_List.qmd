@@ -1,0 +1,71 @@
+# List of Markers
+
+## Markers included in the exemplar assay
+
+### Angiopoietin-1 (Ang-1)
+
+Constitutively expressed by pericytes and smooth muscle cells, also stored in platelets [@brouwers2013]. Ang-1 is an agonist binding the TIE2 receptor. It promotes endothelial cell survival and maintains vascular quiescence. Activates or inhibits angiogenesis, depending on the context. Ang-1 mediates blood vessel maturation/stability [@leligdowicz2018].
+
+### Angiopoietin-2 (Ang-2)
+
+Expressed by endothelial cells. Ang-2 binds to TIE2 in competition with Ang-1 but is an antagonist. Increased Ang-2 levels lead to increased vascular leakage, resulting from destabilised vascular endothelium, remodelling, and leakiness [@kim2016]. Ang/Tie2 dysregulation is thought to be "pathogen agnostic" [@leligdowicz2018].
+
+### Azurocidin 1 (Azu)
+
+Released early in infection from granules in polymorphonuclear leukocytes. Azu acts as a chemo-attractant to several leukocyte types, provokes cytokine secretion, and induces capillary leakage. Azu is directly cytotoxic to certain Gram-negative bacteria [@fisher2017].
+
+### Chitinase 3-like 1 (CHI3L1)
+
+Produced by many cell types, including immune, epithelial and others. Overexpressed in infectious and non-infectious inflammatory conditions, including sepsis and cancer. Crucial role in protecting against pathogens, antigen- and oxidant-induced injury responses, inflammation, and tissue repair and remodelling. Regulates a range of essential biological processes [@zhao2020].
+
+### Interleukin 6 (IL-6)
+
+Produced by immune and other cell types during chronic and acute inflammation. Triggers acute phase proteins in the liver. Can be pro- and anti-inflammatory. Stimulates B cells to produce antibodies. Links innate to acquired immune response by promoting differentiation of CD4+ T cells. Pyrogenic and pro-coagulative [@Tanaka2014], [@Kang2021].
+
+### Interleukin 8 (IL-8)
+
+Produced by many cell types including monocytes, lymphocytes, granulocytes, fibroblasts, endothelial and epithelial cells, hepatocytes, mesangial cells and chondrocytes and is released only under inflammatory conditions. Platelets store IL-8 in their granules and rapidly release IL-8 in inflammation [@matsushima2022].
+
+### Interleukin 10 (IL-10)
+
+A key anti-inflammatory mediator. Regulator of cellular immune response. Produced by various cell types and detected by macrophages and a range of other cell types. Limits antigen presentation and anti-microbial mechanisms such as nitric oxide production [@Saraiva2019].
+
+### Interferon gamma inducible protein 10 (IP-10)
+
+A chemokine released from various immune cells in response to IFNg and other cytokines. Activates and recruits lymphocytes. Elevated in viral and HIV infection, particularly acute HIV [@lei2019],[@hayney2017]. Associated with disease progression.
+
+### Myxovirus resistance protein A (MxA)
+
+Cytoplasmic GTPase with activity against Influenza A and a range of other viruses. Inhibits viral gene transcription by binding to the viral nucleoprotein. MxA is activated by type I and type III interferons [@Haller2019].
+
+### Soluble Tumor necrosis factor receptor 1 (sTNFR1)
+
+The soluble form of TNFR1 is a competitive inhibitor for circulating TNF, thereby reducing signalling through TNFR1 (an endogenous pyrogen), that can promote a wide range of functions from cell death, tissue damage and subsequent inflammation, to cell proliferation and immune modulation [@Ruiz2021], [@Bemelmans2017], [@AlLamki2015]
+
+### Soluble Triggering receptor expressed on myeloid cells 1 (sTREM-1)
+
+Soluble form of TREM‐1 shed from the membrane of activated phagocytes in response to bacterial and fungal infections. sTREM-1 contains an immunoglobulin-like domain that recognises ligands including those connected to bacterial-derived molecules. sTREM-1 possibly originates from the activation of TREM-1 by an infection, being at very low levels in healthy controls. sTREM-1 may also competitively bind TREM-1 ligands and be anti-inflammatory [@Theobald2024]
+
+### TNF-related apoptosis-inducing ligand (TRAIL)
+
+TRAIL is consitutively expressed in various tissues, and by various immune cells including natural killer (NK) cells, activated T cells, natural killer T cells (NKT cells), dendritic cells and monocyte/macrophages. Elevated in viral infections and possibly downregulated in bacterial infections. Viruses may stimulate TRAIL expression in host or immune cells, and may also sensitize host cells to TRAIL-mediated induction of apoptosis [@Gyurkovska2016].
+
+## Markers which were screened, but which failed assay quality tests
+
+### **Procalcitonin (PCT)**
+
+Produced in the thyroid, but also in all parenchymal tissues during bacterial infection. PCT is secreted in response to bacterial endotoxins, lipopolysaccharides, and inflammatory cytokines. It is inhibited by IFN-gamma during the response to viral infections [@Davies2015]
+
+The PCT assay was screened out of our multiplex due to difficulty in finding a working pair of antibodies that did not cross-react with other antigens in the multiplex, particularly azurocidin.
+
+### C-Reactive Protein (CRP)
+
+An acute phase component of the innate immune response, decreasing within hours once the stimulus is removed. CRP is produced by hepatocytes and several other cell types in response to IL-6 in combination with other stimuli. Serum levels can rise by up to 1000-fold. CRP acts by triggering complement, and activates the cellular response by binding to the Fc portion of IgG [@Sproston2018].
+
+The CRP assay was dropped from the multiplex because a reliable standard curve could not be obtained and, crucially, because of the need for much higher sample dilution than the other markers.
+
+### Soluble FEMS-like tyrosine kinase 1 (sFlt-1)
+
+Flt-1, also known as VEGF Receptor 1, is primarily active in the vascular endothelium. The soluble form, sFlt-1, binds to circulating VEGF, reducing the effect of VEGF which normally induces neovascularisation. sFlt-1 is elevated in endothelial dysfunction, such as sepsis [@Ugalde2024], [@Wazan2024], [@Greco2018].
+
+The sFlt-1 assay was removed from the multiplex due to difficulty in finding a working antibody pair and respective recombinant protein. All screened options gave little or no signal.

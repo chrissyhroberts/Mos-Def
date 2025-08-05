@@ -1,0 +1,84 @@
+# Antigens
+
+The following list of purified antigens are used in the multiplex to produce standard curves which are present on each plate of samples tested. These antigens were used in cross-reactivity tests to establish which pairs of antibodies were specific for binding to the target analytes.
+
+This protocol describes how to prepare and aliquot antigens in advance of standard curve preparation, and for future use.
+
+| Manufacturer | Part No. | Pack size | Product name |
+|:---|:---|:---|:---|
+| bio-techne | 923-AN-025 | 25 µg | Recombinant Human Angiopoietin-1 Protein |
+| bio-techne | 623-AN-025 | 25 µg | Recombinant Human Angiopoietin-2 Protein |
+| bio-techne | 2200-SE-050 | 50 µg | Recombinant Human Azurocidin/CAP37/HBP Protein |
+| bio-techne | 2599-CH-050 | 50 µg | Recombinant Human Chitinase 3-like 1 Protein |
+| bio-techne | 206-IL-010 | 10 µg | Recombinant Human IL-6 Protein |
+| bio-techne | 208-IL-010 | 10 µg | Recombinant Human IL-8/CXCL8 Protein |
+| bio-techne | 1064-IL-010 | 10 µg | Recombinant Human IL-10 (aa 19-178) Protein |
+| bio-techne | 266-IP-010 | 10 µg | Recombinant Human CXCL10/IP-10 Protein |
+| Insight Biotechnology | TP307418 | 20 µg | MX1 (NM_002462) Human Recombinant Protein |
+| bio-techne | 636-R1-025 | 25 µg | Recombinant Human sTNFR1/TNFRSF1A Protein |
+| bio-techne | 375-TL-010 | 10 µg | Recombinant Human TRAIL/TNFSF10 Protein |
+| bio-techne | 1278-TR-050 | 50 µg | Recombinant Human TREM-1 Fc Chimera Protein |
+
+**NOTE** : Expiry dates are three months from re-hydration, according to the manufacturer.
+
+**Antigens tested but later removed** from the final multiplex are listed below. These are not needed in order to run the multiplex and are therefore not included in the Shopping List document. They are provided here for completeness.
+
+| Manufacturer | Part No. | Pack size | PRODUCT DESCRIPTION |
+|:---|:---|:---|:---|
+| bio-techne | 1707-CR-200 | 200 µg | Recombinant Human C-Reactive Protein/CRP Protein |
+| bio-techne | 321-FL-050 | 50 µg | Recombinant Human VEGFR1/Flt-1 Fc Chimera Protein |
+| bio-techne | 9607-PN-050 | 50 µg | Recombinant Human Procalcitonin Protein CF |
+
+## Protocol
+
+⌚ Timing: \~3 hours, but can be split into shorter periods if needed (see Tip 2).
+
+This protocol takes place at ambient temperature. All incubations are at ambient temperature.
+
+**Tip:** Keep the proteins as cold as possible, for as long as possible, to avoid degradation. Work with tubes on ice or in chilled racks. Likewise, thaw proteins that are in solution on ice.
+
+**Tip 2**: If time is limited, prepare a smaller number of proteins at one time, completing the full process of rehydration, aliquotting and storage for these, and return another time to complete the next batch.
+
+1.  Prepare filter-sterlised PBS as per Buffers and Reagents protocol.
+
+2.  Label protein lo-bind tubes with antigen name, catalogue number, concentration, volume and expiry date. The approximate number of tubes needed for each antigen is shown in column 6 in Table 1 below.
+
+3.  Rehydrate lyophylised antigens using the volumes of PBS listed in column 2 of Table 1.
+
+    NOTE: MxA comes in solution and does not need rehydrating. See manufacturer's data sheet for concentration.
+
+4.  Leave vials to sit for 60 seconds to rehydrate, then vortex gently and spin down.
+
+5.  Aliquot into the volumes and number of tubes indicated in columns 5 and 6 of Table 1.
+
+6.  Store aliquots at -70 or below immediately.
+
+Table 1. Recombinant antigen stock aliquotting.
+
++-----------------+-------------------------------------------+---------------------------------+----------------------------------+---------------------------+----------------------------+
+| 1.  **Antigen** | 2.  PBS to add to vial to make stock (ul) | 3.  Stock concentration (ug/ml) | 4.  Volume needed each time (ul) | 5.  **Aliquot size (ul)** | 6.  **Number of aliquots** |
++-----------------+-------------------------------------------+---------------------------------+----------------------------------+---------------------------+----------------------------+
+| **Ang1**        | 250                                       | 100                             | 6                                | **27**                    | **9**                      |
++-----------------+-------------------------------------------+---------------------------------+----------------------------------+---------------------------+----------------------------+
+| **Ang2**        | 250                                       | 100                             | 12                               | **20**                    | **9**                      |
++-----------------+-------------------------------------------+---------------------------------+----------------------------------+---------------------------+----------------------------+
+| **Azu**         | 250                                       | 200                             | 12                               | **26**                    | **9**                      |
++-----------------+-------------------------------------------+---------------------------------+----------------------------------+---------------------------+----------------------------+
+| **CHI3L1**      | 250                                       | 200                             | 6                                | **27**                    | **9**                      |
++-----------------+-------------------------------------------+---------------------------------+----------------------------------+---------------------------+----------------------------+
+| **IL-6**        | 100                                       | 100                             | 4                                | **10**                    | **9**                      |
++-----------------+-------------------------------------------+---------------------------------+----------------------------------+---------------------------+----------------------------+
+| **IL-8**        | 100                                       | 100                             | 4                                | **10**                    | **9**                      |
++-----------------+-------------------------------------------+---------------------------------+----------------------------------+---------------------------+----------------------------+
+| **IL-10**       | 100                                       | 100                             | 4                                | **10**                    | **9**                      |
++-----------------+-------------------------------------------+---------------------------------+----------------------------------+---------------------------+----------------------------+
+| **IP-10**       | 100                                       | 100                             | 4                                | **10**                    | **9**                      |
++-----------------+-------------------------------------------+---------------------------------+----------------------------------+---------------------------+----------------------------+
+| **MxA**         | none (already liquid)                     | See data sheet                  | Depends on stock conc.           | **e.g. 13**               | **e.g. 4**                 |
++-----------------+-------------------------------------------+---------------------------------+----------------------------------+---------------------------+----------------------------+
+| **sTNFR1**      | 250                                       | 100                             | 4                                | **10**                    | **9**                      |
++-----------------+-------------------------------------------+---------------------------------+----------------------------------+---------------------------+----------------------------+
+| **TRAIL**       | 100                                       | 100                             | 4                                | **10**                    | **9**                      |
++-----------------+-------------------------------------------+---------------------------------+----------------------------------+---------------------------+----------------------------+
+| **TREM1**       | 500                                       | 100                             | 4                                | **54**                    | **9**                      |
++-----------------+-------------------------------------------+---------------------------------+----------------------------------+---------------------------+----------------------------+

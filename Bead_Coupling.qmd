@@ -1,0 +1,252 @@
+---
+title: "Bead Coupling"
+---
+
+We provide two versions of this protocol for coupling enough beads for 8 plates using 120 µL of bead stock (Protocol A), or a larger-scale coupling which provides enough beads for about 52 plates using 500 µL of bead stock (Protocol B).
+
+Variations on the number of beads may be calculated using the Luminex Cookbook scaling table available online from Luminex.
+
+## Assay-specific reagents
+
+Table 1. Assay-specific reagents needed for bead coupling.
+
+| Marker | Component | Catalogue \# | Supplier | Bead region | µg antibody/million beads |
+|----|----|----|----|----|----|
+| Ang-1 | Beads | MC10018-01 | Luminex | 18 | 5 |
+| Ang-2 | Beads | MC10015-01 | Luminex | 15 | 5 |
+| Azu | Beads | MC10027-01 | Luminex | 27 | 7 |
+| CHI3L1 | Beads | MC10030-01 | Luminex | 30 | 4.5 |
+| IL-6 | Beads | MC10021-01 | Luminex | 21 | 5 |
+| IL-8 | Beads | MC10022-01 | Luminex | 22 | 5 |
+| IL-10 | Beads | MC10026-01 | Luminex | 26 | 4 |
+| IP-10 | Beads | MC10029-01 | Luminex | 29 | 5 |
+| MxA | Beads | MC10028-01 | Luminex | 28 | 6 |
+| sTNFR1 | Beads | MC10020-01 | Luminex | 20 | 6 |
+| sTREM-1 | Beads | MC10014-01 | Luminex | 14 | 6 |
+| TRAIL | Beads | MC10025-01 | Luminex | 25 | 6 |
+| Ang-1 | Capture antibody | MAB9231 | Bio-techne | 18 | 5 |
+| Ang-2 | Capture antibody | NB110-85467 | Bio-techne | 15 | 5 |
+| Azu | Capture antibody | NBP2-12045 | Bio-techne | 27 | 7 |
+| CHI3L1 | Capture antibody | MAB25991 | Bio-techne | 30 | 4.5 |
+| IL-6 | Capture antibody | MAB206 | Bio-techne | 21 | 5 |
+| IL-8 | Capture antibody | M801 | Thermo | 22 | 5 |
+| IL-10 | Capture antibody | MAB2172 | Bio-techne | 26 | 4 |
+| IP-10 | Capture antibody | MAB266 | Bio-techne | 29 | 5 |
+| MxA | Capture antibody | MA5-24914 | Bio-techne | 28 | 6 |
+| sTNFR1 | Capture antibody | MAB225 | Bio-techne | 20 | 6 |
+| sTREM-1 | Capture antibody | H00054210-M04 | Bio-techne | 14 | 6 |
+| TRAIL | Capture antibody | MAB375 | Bio-techne | 25 | 6 |
+
+## Other consumables, reagents and equipment needed.
+
+Table 2. Other materials needed for bead coupling.
+
+| Item | Supplier | Catalogue number |
+|----|----|----|
+| Sodium phosphate monobasic (NaH~2~PO~4~) | Sigma | S8282 |
+| Sodium hydroxide (NaOH) | Sigma | S5881 |
+| Phosphate buffered saline (PBS) | Sigma | P4417 |
+| Sulfo-NHS | Thermo | 24510 |
+| EDC | Thermo | 22980 |
+| Protein low-bind microtubes, 1 per coupling | Eppendorf | 0030108116 or 0030108132 |
+| Pipettes and tips for 10 µL, 200 µL, 1 mL | Any suitable |  |
+| 0.2 µm syringe filters | Any suitable |  |
+| Syringe, 50 mL, sterile | Any suitable |  |
+| 50 mL tube, sterile | Any suitable |  |
+| Magnetic tube rack | Invitrogen | 12321D |
+| End-over-end rotating mixer | Any suitable |  |
+| Fine balance | Any suitable |  |
+| pH meter | Any suitable |  |
+| Sonicating waterbath | VWR | 142-6044 |
+
+## Preparation
+
+This protocol uses EDC \[1-ethyl-3-(3-dimethylaminopropyl)-carbodiimide hydrochloride\]. EDC absorbs moisture from the air. It is helpful to aliquot it into 50 mg, single-use, amounts in screw cap tubes on receipt and to store these in individual ziplock bags with desiccant, at -20° C.
+
+For quality assurance processes, we recommend keeping note of the lot numbers and expiry dates of both beads and capture antibodies. The diagnostic performance of beads changes with time, see bead validity information elsewhere in this paper for individual bead validity, however all beads are useable for 3 months.
+
+## Protocol A - Coupling beads for 8 plates
+
+⌚ Timing: 2 hours, then 2 hours incubation, 1h45m to finish. Total approx. 5h45m.
+
+This protocol takes place at ambient temperature. All incubations are at ambient temperature.
+
+**Tip:** Protect beads from light with a foil cover when they are not being manipulated such as during incubations.
+
+1.  Prepare the General Buffers and Buffers for Bead Coupling, as detailed in the Buffers and Reagents file.
+2.  Retrieve capture antibodies: consult Table 3 below for the required number of aliquots of each capture antibody (prepared as detailed in Capture Antibody Prep), and place these in the fridge to thaw.
+3.  Label microtubes (Eppendorf, protein lo-bind) one for each coupling, with at least antigen name and bead region.
+4.  Vortex and sonicate the bead stocks for \~60 seconds of each. Vortex some more immediately before pipetting.
+5.  Transfer 120 µL of bead stock (1.5 x 10^6^ beads for 8 full plates) into each respective tube.
+6.  Put tubes in magnet rack for 60 s.
+7.  Remove supernatant without disturbing beads.
+8.  Wash beads: Remove tubes from magnet rack. Add 100 µL dH~2~O. Vortex & sonicate for \~20 s of each.
+9.  Insert tube into magnet rack, 60 s.
+10. Remove supernatant without disturbing beads.
+11. Activate beads: Remove tube from magnet rack. Add 80 µL Activation buffer. Vortex & sonicate, \~20 s each.
+12. In two separate tubes, make up 50 mg/mL sulfo-NHS and 50 mg/mL EDC in Activation buffer. 25 mg in 500 µL is sufficient for 12 bead couplings. These should always be made fresh during the protocol immediately before use, and not stored.
+13. Add 10 µL of the sulfo-NHS solution to the beads. Vortex.
+14. Add 10 µL of the EDC solution to the beads. Vortex.
+15. Incubate 10 mins \@ room temp. Vortex. Incubate for further 10 mins.
+16. During the incubation, set up new 1.5 mL tubes for antibody dilution in MES buffer, one tube per bead region.
+17. Dispense 400 µL MES to each tube.
+18. Remove the MES volume indicated for each antibody in Table 3, column 5 (so that when antibody is added, the volume is restored to 400 µL in each case).
+19. Add in the required volume of each antibody (Table 3, column 5):
+
+Table 3. Capture antibody for 1.5 x 10^6^ beads, for 8 plates.
+
++----------------------+----------------------------------------------------+--------------------------------------------+---------------------------------------------------+--------------------------------------------------------------+
+| 1.  Antibody on bead | 2.  Ab catalogue number (bio-techne unless stated) | 3.  Antibody amount (µg) per million beads | 4.  Number of 10 ul aliquots of capture Ab needed | 5.  Volume of capture antibody needed for 1.5e^6^ beads (µL) |
++======================+====================================================+============================================+===================================================+==============================================================+
+| Ang-1                | MAB9231                                            | 5                                          | 1                                                 | 7.5                                                          |
++----------------------+----------------------------------------------------+--------------------------------------------+---------------------------------------------------+--------------------------------------------------------------+
+| Ang-2                | NB110-85467                                        | 5                                          | 1                                                 | 7.5                                                          |
++----------------------+----------------------------------------------------+--------------------------------------------+---------------------------------------------------+--------------------------------------------------------------+
+| Azu                  | NBP2-12045                                         | 7                                          | 2                                                 | 10.5                                                         |
++----------------------+----------------------------------------------------+--------------------------------------------+---------------------------------------------------+--------------------------------------------------------------+
+| CHI3L1               | MAB25991                                           | 4.5                                        | 1                                                 | 6.8                                                          |
++----------------------+----------------------------------------------------+--------------------------------------------+---------------------------------------------------+--------------------------------------------------------------+
+| IL-6                 | MAB206                                             | 5                                          | 1                                                 | 7.5                                                          |
++----------------------+----------------------------------------------------+--------------------------------------------+---------------------------------------------------+--------------------------------------------------------------+
+| IL-8                 | M801 (Thermo)                                      | 5                                          | 1                                                 | 7.5                                                          |
++----------------------+----------------------------------------------------+--------------------------------------------+---------------------------------------------------+--------------------------------------------------------------+
+| IL-10                | MAB2172                                            | 4                                          | 1                                                 | 6.0                                                          |
++----------------------+----------------------------------------------------+--------------------------------------------+---------------------------------------------------+--------------------------------------------------------------+
+| IP-10                | MAB266                                             | 5                                          | 1                                                 | 7.5                                                          |
++----------------------+----------------------------------------------------+--------------------------------------------+---------------------------------------------------+--------------------------------------------------------------+
+| MxA                  | MA5-24914 (Thermo)                                 | 6                                          | 1                                                 | 9.0                                                          |
++----------------------+----------------------------------------------------+--------------------------------------------+---------------------------------------------------+--------------------------------------------------------------+
+| sTNF-R1              | MAB225                                             | 6                                          | 1                                                 | 9.0                                                          |
++----------------------+----------------------------------------------------+--------------------------------------------+---------------------------------------------------+--------------------------------------------------------------+
+| sTREM1               | H00054210-M04                                      | 6                                          | 1                                                 | 9.0                                                          |
++----------------------+----------------------------------------------------+--------------------------------------------+---------------------------------------------------+--------------------------------------------------------------+
+| TRAIL                | MAB375                                             | 6                                          | 1                                                 | 9.0                                                          |
++----------------------+----------------------------------------------------+--------------------------------------------+---------------------------------------------------+--------------------------------------------------------------+
+
+20. Set these antibody tubes aside and continue with the beads.
+21. Insert bead tube into magnet rack, 60 s.
+22. Remove supernatant without disturbing beads.
+23. MES wash 1: Remove tube from magnet rack. Add 250 µL MES buffer. Vortex & sonicate for \~ 20 s each.
+24. Insert tube into magnet rack, 60 s.
+25. Remove supernatant without disturbing beads.
+26. MES wash 2: Remove tube from magnet rack. Add 250 µL MES buffer. Vortex & sonicate for \~ 20 s each.
+27. Insert tube into magnet rack, 60 s.
+28. Remove supernatant without disturbing beads.
+29. Add 100 µL MES buffer to each bead tube.
+30. Transfer all 400 µL of each antibody dilution into the respective bead tubes and vortex. (So that the antibody amount is eventually diluted in 0.5 mL of MES by the time it is incubated with the beads, as per Luminex scale-up table).
+31. Incubate 2 hours on rotating mixer at room temp. Record start time \_\_\_\_\_\_\_\_\_\_\_\_\_\_
+32. Insert tube into magnet rack, 60 s.
+33. Remove supernatant without disturbing beads.
+34. Remove tube from magnet rack. Add 500 µL PBS-TBN. Vortex & sonicate for \~20 s.
+35. Insert tube into magnet rack, 60 s.
+36. Remove supernatant without disturbing beads.
+37. PBS-TBN wash 1: Remove tube from magnet rack. Add 1 mL PBS-TBN. Vortex & sonicate for \~20 s.
+38. Insert tube into magnet rack, 60 s.
+39. Remove supernatant without disturbing beads.
+40. PBS-TBN wash 2: Remove tube from magnet rack. Add 1 mL PBS-TBN. Vortex & sonicate for \~20 s.
+41. Insert tube into magnet rack, 60 s.
+42. Remove supernatant without disturbing beads.
+43. Remove tube from magnet rack. Resuspend coupled beads in 200 µL PBS-TBN. Vortex. This is 1.66x the original volume (120 µL) to give a theoretical count of 7.5 x 10^6^ beads/mL.
+44. Ensure newly coupled bead tubes are fully labelled with at least: assay, bead region, date.
+45. Store the coupled beads at +4°C and protect from light.
+
+## Protocol B - Coupling beads for 52 plates
+
+⌚ Timing: 2 hours, then 2 hours incubation, 1h45m to finish. Total approx. 5h45m.
+
+The protocol takes place at ambient temperature. All incubations are at ambient temperature.
+
+1.  Prepare the General Buffers and Buffers for Bead Coupling, as detailed in the Buffers and Reagents file.
+
+2.  Retrieve capture antibodies: consult Table 2 below for the required number of aliquots of each capture antibody (prepared as detailed in Capture Antibody Prep), and place these in the fridge to thaw.
+
+3.  Label microtubes (Eppendorf, protein lo-bind) one for each coupling, with at least antigen name and bead region.
+
+4.  Vortex and sonicate the bead stocks for \~60 seconds of each. Vortex some more immediately before pipetting.
+
+5.  Transfer 500 µL of bead stock (6.25 x 10^6^ beads for \~52 full plates) into each respective tube.
+
+6.  Put tube in magnet rack for 60 s.
+
+7.  Remove supernatant without disturbing beads.
+
+8.  Wash beads: Remove tubes from magnet rack. Add 100 µL dH~2~O. Vortex & sonicate for \~20 s of each.
+
+9.  Insert tube into magnet rack, 60 s.
+
+10. Remove supernatant without disturbing beads.
+
+11. Activate beads: Remove tube from magnet rack. Add 80 µL Activation buffer. Vortex & sonicate, \~20 s each.
+
+12. In two separate tubes, make up 50 mg/mL sulfo-NHS and 50 mg/mL EDC in Activation buffer. 25 mg in 500 µL is sufficient for 12 bead couplings. These should always be made fresh during the protocol immediately before use, and not stored.
+
+13. Add 10 µL of the sulfo-NHS solution to the beads. Vortex.
+
+14. Add 10 µL of the EDC solution to the beads. Vortex.
+
+15. Incubate 10 mins \@ room temp. Vortex. Incubate for further 10 mins.
+
+16. During the incubation, set up new 1.5 mL tubes for antibody dilution in MES buffer, one tube per bead region.
+
+17. Dispense 400 µL MES to each tube.
+
+18. Remove the MES volume indicated for each antibody in Table 4, column 5 (so that when antibody is added, the volume is restored to 400 µL in each case).
+
+19. Add in the required volume of each antibody (Table 4, column 5):
+
+    Table 4. Capture antibody for 6.25 x 10^6^ beads, for approx. 52 plates.
+
++----------------------+----------------------------------------------------+---------------------------------------+---------------------------------------------------+--------------------------------------------------------------+
+| 1.  Antibody on bead | 2.  Ab catalogue number (bio-techne unless stated) | 3.  Antibody amount per million beads | 4.  Number of 10 µL aliquots of capture Ab needed | 5.  Volume of capture antibody needed for 1.5e^6^ beads (µL) |
++======================+====================================================+=======================================+===================================================+==============================================================+
+| Ang-1                | MAB9231                                            | 5                                     | 4                                                 | 31.3                                                         |
++----------------------+----------------------------------------------------+---------------------------------------+---------------------------------------------------+--------------------------------------------------------------+
+| Ang-2                | NB110-85467                                        | 5                                     | 4                                                 | 31.3                                                         |
++----------------------+----------------------------------------------------+---------------------------------------+---------------------------------------------------+--------------------------------------------------------------+
+| Azu                  | NBP2-12045                                         | 7                                     | 5                                                 | 43.8                                                         |
++----------------------+----------------------------------------------------+---------------------------------------+---------------------------------------------------+--------------------------------------------------------------+
+| CH3L1                | MAB25991                                           | 4.5                                   | 3                                                 | 28.1                                                         |
++----------------------+----------------------------------------------------+---------------------------------------+---------------------------------------------------+--------------------------------------------------------------+
+| IL-6                 | MAB206                                             | 5                                     | 4                                                 | 31.3                                                         |
++----------------------+----------------------------------------------------+---------------------------------------+---------------------------------------------------+--------------------------------------------------------------+
+| IL-8                 | M801 (Thermo)                                      | 5                                     | 4 (1 if 50 µL aliquot)                            | 31.3                                                         |
++----------------------+----------------------------------------------------+---------------------------------------+---------------------------------------------------+--------------------------------------------------------------+
+| IL-10                | MAB2172                                            | 4                                     | 3                                                 | 25.0                                                         |
++----------------------+----------------------------------------------------+---------------------------------------+---------------------------------------------------+--------------------------------------------------------------+
+| IP-10                | MAB266                                             | 5                                     | 4                                                 | 31.3                                                         |
++----------------------+----------------------------------------------------+---------------------------------------+---------------------------------------------------+--------------------------------------------------------------+
+| MxA                  | MA5-24914 (Thermo)                                 | 6                                     | 4                                                 | 37.5                                                         |
++----------------------+----------------------------------------------------+---------------------------------------+---------------------------------------------------+--------------------------------------------------------------+
+| sTNF-R1              | MAB225                                             | 6                                     | 4                                                 | 37.5                                                         |
++----------------------+----------------------------------------------------+---------------------------------------+---------------------------------------------------+--------------------------------------------------------------+
+| sTREM1               | H00054210-M04                                      | 6                                     | 4                                                 | 37.5                                                         |
++----------------------+----------------------------------------------------+---------------------------------------+---------------------------------------------------+--------------------------------------------------------------+
+| TRAIL                | MAB375                                             | 6                                     | 4                                                 | 37.5                                                         |
++----------------------+----------------------------------------------------+---------------------------------------+---------------------------------------------------+--------------------------------------------------------------+
+
+20. Set these antibody tubes aside and continue with the beads.
+21. Insert bead tube into magnet rack, 60 s.
+22. Remove supernatant without disturbing beads.
+23. MES wash 1: Remove tube from magnet rack. Add 500 µL MES buffer. Vortex & sonicate for \~ 20 s each.
+24. Insert tube into magnet rack, 60 s.
+25. Remove supernatant without disturbing beads.
+26. MES wash 2: Remove tube from magnet rack. Add 500 µL MES buffer. Vortex & sonicate for \~ 20 s each.
+27. Insert tube into magnet rack, 60 s.
+28. Remove supernatant without disturbing beads.
+29. Add 100 µL MES buffer to beads.
+30. Transfer all 400 µL of each antibody dilution into the respective bead tubes and vortex. (So that the antibody amount is eventually diluted in 0.5 mL of MES by the time it is incubated with the beads, as per Luminex scale-up table).
+31. Incubate 2 hours on rotating mixer at room temp. Record start time \_\_\_\_\_\_\_\_\_\_\_\_\_\_
+32. Insert tube into magnet rack, 60 s.
+33. Remove supernatant without disturbing beads.
+34. Remove tube from magnet rack. Add 500 µL PBS-TBN. Vortex & sonicate for \~20 s.
+35. Insert tube into magnet rack, 60 s.
+36. Remove supernatant without disturbing beads.
+37. PBS-TBN wash 1: Remove tube from magnet rack. Add 1 mL PBS-TBN. Vortex & sonicate for \~20 s.
+38. Insert tube into magnet rack, 60 s.
+39. Remove supernatant without disturbing beads.
+40. PBS-TBN wash 2: Remove tube from magnet rack. Add 1 mL PBS-TBN. Vortex & sonicate for \~20 s.
+41. Insert tube into magnet rack, 60 s.
+42. Remove supernatant without disturbing beads.
+43. Remove tube from magnet rack. Resuspend coupled beads in 830 µL PBS-TBN. Vortex. This is 1.66x the original volume (500 µL) to give a theoretical count of 7.5 x 10^6^ beads/mL.
+44. Ensure newly coupled bead tubes are fully labelled with at least: assay, bead region, date.
+45. Store the coupled beads at +4°C and protect from light.

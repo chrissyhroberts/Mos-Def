@@ -1,0 +1,46 @@
+---
+title: "Capture Antibody Preparation"
+---
+
+This procedure prepares all the capture antibodies, to be ready for coupling them to the MagPlex beads and storing for future use.
+
+## Capture Antibodies
+
+| Manufacturer | Part No. | Pack size | PRODUCT DESCRIPTION | Component |
+|:---|:---|:---|:---|:---|
+| bio-techne | H00054210-M04 | 100 µg | TREM1 Antibody (2E2) | Capture |
+| bio-techne | MAB206-100 | 100 µg | Human/Primate IL-6 MAb (Clone 6708) | Capture |
+| bio-techne | MAB2172-100 | 100 µg | Human IL-10 MAb (Clone 127107) | Capture |
+| bio-techne | MAB225-100 | 100 µg | Human TNF RI/TNFRSF1A MAb (Clone 16803) | Capture |
+| bio-techne | MAB25991-100 | 100 µg | Human/Primate Chitinase 3-like 1 MAb (Clone 384327) | Capture |
+| bio-techne | MAB266-100 | 100 µg | Human CXCL10/IP-10/CRG-2 MAb (Clone 33036) | Capture |
+| bio-techne | MAB375-100 | 100 µg | Human TRAIL/TNFSF10 MAb (Clone 75411) | Capture |
+| bio-techne | MAB9231-100 | 100 µg | Human Angiopoietin-1 MAb (Clone 171733) | Capture |
+| bio-techne | NB110-85467 | 100 µg | Angiopoietin-2 Antibody (MM0020-1F29) | Capture |
+| bio-techne | NBP2-12045 | 100 µg | Azurocidin/CAP37/HBP Antibody (MM0099-7F31) | Capture |
+| Thermo | M801 | 500 µg | Anti IL-8 (clone 3IL8-H10) | Capture |
+| Thermo | MA5-24914 | 100 µg | Anti MxA | Capture |
+
+## Equipment & Consumables
+
+| Item                                        | Supplier     | Catalogue Number |
+|---------------------------------------------|--------------|------------------|
+| Pipettes and tips for 100-200 µL            | Any suitable |                  |
+| 0.2 µm syringe filter or bottle filter unit | Any suitable |                  |
+| Syringe, 50 mL, sterile                     | Any suitable |                  |
+| 50 mL tube, sterile                         | Any suitable |                  |
+| Protein low-bind microtubes                 | Eppendorf    | 0030108116       |
+| Labels or permanent marker pen              | Any suitable |                  |
+| Phosphate buffered saline (PBS)             | Sigma        | P4417            |
+
+## Protocol
+
+1.  Make up PBS as per the Buffers and Reagents protocol.
+2.  Set out and label 10 microtubes per capture antibody.
+3.  Remove antibodies from freezer storage.
+4.  Add 100 µL of the PBS to each lyophilised antibody (anti IL-8 and anti MxA are already liquid at 1 mg/ml so do not need any liquid adding).
+5.  Allow to rehydrate for a few minutes, vortex gently then spin liquid down briefly.
+6.  Aliquot all antibodies into 10 µL volumes, or 50 µl volumes for IL-8.
+7.  Store at -20°C or below.
+
+All capture antibodies are now at the same stock concentration of 1 mg/mL.

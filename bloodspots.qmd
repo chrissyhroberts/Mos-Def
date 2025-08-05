@@ -1,0 +1,13 @@
+# Dried Blood Spots 
+
+Venous blood was initially collected in EDTA tubes.
+
+EDTA blood was spotted onto filter paper at 10 ul per disk (FP, TropBio, Cellabs, Australia), dried overnight, sealed with desiccant, then transported and stored at ambient temperature until testing.
+
+## Spiked DBS variations
+
+Recombinant protein standards were tested for performance when diluted in various diluents and dried onto filter paper disks to see which most closely represented expected antigen levels and human blood samples. The following were tested as diluents: healthy human blood, sheep serum, horse serum, horse blood, PBS buffer and PBS with added washed red blood cells (McDade 2014) from healthy donors
+
+## DBS elution
+
+Elution conditions were tested to achieve optimal recovery of antigens while maintaining assay workflow. Final elution conditions were: two DBS of 6 mm diameter each (TropBio, Australia), rehydrated in 100 ul of elution buffer overnight in a sealed low-bind 96 well plate at 4°C. According to the manufacturer, the DBS hold 10 ul of blood each, giving a final dilution factor of whole blood of 1 in 5.
